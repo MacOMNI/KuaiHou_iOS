@@ -1,0 +1,6 @@
+framework module Pods_KuaiHou_iOS {
+  umbrella header "Pods-KuaiHou_iOS-umbrella.h"
+
+  export *
+  module * { export * }
+}

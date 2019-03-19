@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="NearbyDynamicsVC">
+            <connections>
+                <outlet property="tableView" destination="XUz-Bi-aRE" id="ykz-AP-tcz"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="grouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="XUz-Bi-aRE">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="QgN-Ze-8IS"/>
+                        <outlet property="delegate" destination="-1" id="4fU-8H-yWZ"/>
+                    </connections>
+                </tableView>
+            </subviews>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="XUz-Bi-aRE" secondAttribute="bottom" id="bT0-f3-OLY"/>
+                <constraint firstAttribute="trailing" secondItem="XUz-Bi-aRE" secondAttribute="trailing" id="gCc-22-t8H"/>
+                <constraint firstItem="XUz-Bi-aRE" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="gTb-P1-eAl"/>
+                <constraint firstItem="XUz-Bi-aRE" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="yAs-kS-WbV"/>
+            </constraints>
+        </view>
+    </objects>
+</document>
