@@ -72,6 +72,29 @@
     }
 }
 
+- (IBAction)qrCodeAction:(id)sender {
+    if (self.itemBlock) {
+        self.itemBlock(1);
+    }
+}
+- (IBAction)setAction:(id)sender {
+    if (self.itemBlock) {
+        self.itemBlock(2);
+    }
+}
+- (IBAction)showQrAction:(id)sender {
+    if (self.itemBlock) {
+        self.itemBlock(3);
+    }
+}
+- (IBAction)changeAction:(id)sender {
+    if (self.itemBlock) {
+        self.itemBlock(4);
+    }
+}
+
+
+
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated {
     [super setSelected:selected animated:animated];
 

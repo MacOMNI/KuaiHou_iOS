@@ -9,6 +9,7 @@
 #import "AppDelegate.h"
 #import "AppDelegate+Config.h"
 #import "AppDelegate+Logging.h"
+#import "AppDelegate+AvoidCrash.h"
 
 
 @interface AppDelegate ()
@@ -25,6 +26,8 @@
     [self initTABViewAnimat];
     // 初始化登录
     [self regisLogginConfig];
+    // 初始化崩溃拦截（可以防止常见崩溃，并注明崩溃地方）
+    [self initAvoidCrash];
     
     return YES;
 }

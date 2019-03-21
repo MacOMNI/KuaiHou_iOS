@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "A99E14FDF9206315A0E0ED9E6CAFB421"
+               BlueprintIdentifier = "EFA26E1433F000654F7C2A5180F33B68"
                BuildableName = "TABAnimated.framework"
                BlueprintName = "TABAnimated"
                ReferencedContainer = "container:Pods.xcodeproj">

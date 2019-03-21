@@ -43,6 +43,10 @@
 #import "BaseCell.h"
 #import "NetWorkManager.h"
 
+#import "GKNavigationBarViewController.h"
+#import "GKPageScrollView.h"
+#import "JXCategoryView.h"
+
 
 #endif
 

@@ -24,7 +24,9 @@ target 'KuaiHou_iOS' do
   pod 'DZNEmptyDataSet'
   # 骨骼过度动画
   pod 'TABAnimated'
-    
+  #
+  pod 'WMPageController'
+
   use_frameworks!
 
 end

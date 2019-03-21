@@ -33,6 +33,9 @@
                             <constraint firstAttribute="height" constant="26" id="lHe-by-sRa"/>
                         </constraints>
                         <state key="normal" image="mine_set"/>
+                        <connections>
+                            <action selector="setAction:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="6kK-YK-IiV"/>
+                        </connections>
                     </button>
                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="s7V-f6-4to">
                         <rect key="frame" x="231.5" y="39.5" width="27.5" height="23.5"/>
@@ -41,6 +44,9 @@
                             <constraint firstAttribute="width" constant="27.5" id="uj5-Ud-Ygm"/>
                         </constraints>
                         <state key="normal" image="mine_qr"/>
+                        <connections>
+                            <action selector="qrCodeAction:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="J58-df-msm"/>
+                        </connections>
                     </button>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4c4-Nd-Ktz">
                         <rect key="frame" x="15" y="85" width="290" height="103"/>
@@ -57,6 +63,9 @@
                                 <state key="normal" title="    编辑" image="mine_change">
                                     <color key="titleColor" red="0.88627450980392153" green="0.2627450980392157" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="changeAction:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="KOs-eD-qyD"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="F9x-dE-ix2">
                                 <rect key="frame" x="253" y="66" width="22" height="22"/>
@@ -65,6 +74,9 @@
                                     <constraint firstAttribute="height" constant="22" id="bGz-6c-peq"/>
                                 </constraints>
                                 <state key="normal" image="mine_qrcode"/>
+                                <connections>
+                                    <action selector="showQrAction:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="ZBp-nj-oIo"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="时光无声" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cea-b3-6Gt">
                                 <rect key="frame" x="15" y="41" width="74" height="21"/>
@@ -141,9 +153,13 @@
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="aW0-zy-SZf"/>
             <connections>
+                <outlet property="bgImageView" destination="jo7-jI-poW" id="uhq-MM-e87"/>
+                <outlet property="headImageView" destination="sOL-QB-2HV" id="lFY-6c-uon"/>
                 <outlet property="infoBgView" destination="4c4-Nd-Ktz" id="hRh-Gc-fsR"/>
                 <outlet property="levelBgView" destination="BG4-bK-dKb" id="emZ-nY-z5c"/>
                 <outlet property="levelLab" destination="dEM-qL-dYm" id="gBv-NH-nUA"/>
+                <outlet property="nickNameLab" destination="Cea-b3-6Gt" id="g87-92-D2X"/>
+                <outlet property="ypLab" destination="KjN-U3-SQe" id="5MS-7H-HIt"/>
             </connections>
             <point key="canvasLocation" x="49.600000000000001" y="81.859070464767626"/>
         </tableViewCell>

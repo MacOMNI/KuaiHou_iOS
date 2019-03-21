@@ -9,6 +9,9 @@
 #import "MainMineVC.h"
 #import "MainMineHeadCell.h"
 #import "MainMineListCell.h"
+#import "MainSetVC.h"
+#import "SWQRCode.h"
+#import "ChangeInfoVC.h"
 
 @interface MainMineVC ()
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
@@ -44,8 +47,8 @@
     [self.tableView registerNib:[UINib nibWithNibName:NSStringFromClass([MainMineHeadCell class]) bundle:[NSBundle mainBundle]] forCellReuseIdentifier:NSStringFromClass([MainMineHeadCell class])];
     [self.tableView registerNib:[UINib nibWithNibName:NSStringFromClass([MainMineListCell class]) bundle:[NSBundle mainBundle]] forCellReuseIdentifier:NSStringFromClass([MainMineListCell class])];
     
-    // @{@"image":@"mine_list4", @"title":@"认证"},
-    self.listArray = @[@{@"image":@"mine_list1", @"title":@"任务"},@{@"image":@"mine_list2", @"title":@"活动"},@{@"image":@"mine_list3", @"title":@"道具"},@{@"image":@"mine_list5", @"title":@"代理人"},@{@"image":@"mine_list6", @"title":@"经理人"}];
+    // @{@"image":@"mine_list4", @"title":@"认证"},@{@"image":@"mine_list3", @"title":@"道具"},
+    self.listArray = @[@{@"image":@"mine_list1", @"title":@"任务"},@{@"image":@"mine_list2", @"title":@"活动"},@{@"image":@"mine_list5", @"title":@"代理人"},@{@"image":@"mine_list6", @"title":@"经理人"}];
 }
 
 #pragma mark - UITableViewDelegate & Datasource
@@ -86,25 +89,53 @@
 - (UITableViewCell*)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
     if (indexPath.section == 0) {
         MainMineHeadCell *cell = [tableView dequeueReusableCellWithIdentifier:NSStringFromClass([MainMineHeadCell class]) forIndexPath:indexPath];
+        [cell setItemBlock:^(int tag) {
+            switch (tag) {
+                case 1:{ // 扫一扫
+                    SWQRCodeConfig *config = [[SWQRCodeConfig alloc]init];
+                    config.scannerType = SWScannerTypeBoth;
+                    
+                    SWQRCodeViewController *qrcodeVC = [[SWQRCodeViewController alloc]init];
+                    qrcodeVC.codeConfig = config;
+                    [self.navigationController pushViewController:qrcodeVC animated:YES];
+                }
+                    break;
+                case 2:{ // 设置
+                    [self.navigationController pushViewController:[MainSetVC new] animated:YES];
+                }
+                    break;
+                case 3:{ // 二维码
+                    
+                }
+                    break;
+                case 4:{ // 修改资料
+                    [self.navigationController pushViewController:[ChangeInfoVC new] animated:YES];
+                }
+                    break;
+                default:
+                    break;
+            }
+        }];
         return cell;
     }
     NSDictionary *dict = self.listArray[indexPath.row];
     MainMineListCell *cell = [tableView dequeueReusableCellWithIdentifier:NSStringFromClass([MainMineListCell class]) forIndexPath:indexPath];
     cell.titleLab.text = dict[@"title"];
     cell.headImageView.image = [UIImage loadImageWithName:dict[@"image"]];
+    
     return cell;
 }
 
 
 
 /*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
+ #pragma mark - Navigation
+ 
+ // In a storyboard-based application, you will often want to do a little preparation before navigation
+ - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+ // Get the new view controller using [segue destinationViewController].
+ // Pass the selected object to the new view controller.
+ }
+ */
 
 @end

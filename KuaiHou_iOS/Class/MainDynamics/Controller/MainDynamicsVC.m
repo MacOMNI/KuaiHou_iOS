@@ -29,12 +29,14 @@
     // Do any additional setup after loading the view from its nib.
     [self fixUI];
     [self createRightSendItem];
+    
 }
 
 -(void)fixUI{
     NSArray *items = @[@"附近", @"特惠", @"关注"];
     self.titleView = [[FSSegmentTitleView alloc]initWithFrame:CGRectMake(15, 25, 200, 40) titles:items delegate:self indicatorType:FSIndicatorTypeDIY];
     self.titleView.indicatorExtension = 15;
+//    self.titleView.backgroundColor = [UIColor whiteColor];
     self.titleView.indicatorColor = kMainColor;
     self.titleView.titleNormalColor = kMain_TextColor;
     self.titleView.titleSelectColor = kMain_TextColor;
@@ -57,6 +59,8 @@
     self.pageContentView.contentViewCanScroll = YES;//设置滑动属性
     self.pageContentView.contentViewCurrentIndex = 0;
     [self.view addSubview:self.pageContentView];
+    
+    self.view.backgroundColor = [UIColor whiteColor];
     
 }
 

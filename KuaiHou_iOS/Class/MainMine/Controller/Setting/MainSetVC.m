@@ -7,9 +7,12 @@
 //
 
 #import "MainSetVC.h"
+#import "MainSetListCell.h"
+#import "MainSetBtnCell.h"
 
 @interface MainSetVC ()
-
+@property (weak, nonatomic) IBOutlet UITableView *tableView;
+@property (nonatomic, strong) NSArray *dataArray;
 @end
 
 @implementation MainSetVC
@@ -18,11 +21,74 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
     self.title = @"设置";
+    [self fixUI];
 }
 
 -(void)fixUI{
+    self.tableView.superAnimationType = TABViewSuperAnimationTypeClassic;
+    self.tableView.estimatedRowHeight = 0;
+    self.tableView.estimatedSectionFooterHeight = 0;
+    self.tableView.estimatedSectionHeaderHeight = 0;
+    self.dataArray = [NSMutableArray arrayWithObjects:@[@"安全中心", @"使用帮助"],@[@"屏蔽设置", @"屏蔽的号码", @"屏蔽的动态"], @[@"开启锁屏", @"静音", @"震动"], @[@"清除聊天记录", @"关于我们"], @[@"退出账号"],  nil];
+    
+    [self.tableView registerNib:[UINib nibWithNibName:NSStringFromClass([MainSetListCell class]) bundle:[NSBundle mainBundle]] forCellReuseIdentifier:NSStringFromClass([MainSetListCell class])];
+    
+    [self.tableView registerNib:[UINib nibWithNibName:NSStringFromClass([MainSetBtnCell class]) bundle:[NSBundle mainBundle]] forCellReuseIdentifier:NSStringFromClass([MainSetBtnCell class])];
+}
+#pragma mark - UITableViewDelegate & Datasource
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
+    return self.dataArray.count;
+}
+
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+    NSArray *array = self.dataArray[section];
+    return array.count;
+}
+
+- (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section {
+    return 0.001;
+}
+
+- (CGFloat)tableView:(UITableView *)tableView heightForFooterInSection:(NSInteger)section {
+    if (section == 4) {
+        return 0.001;
+    }
+    return 10;
+}
+
+- (nullable UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section{
+    UIView *lineView = [[UIView alloc] init];
+    lineView.backgroundColor = kMain_lineColor;
+    return lineView;
+}
+
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
+    if (indexPath.section == 4) {
+        return 86;
+    }
+    return 44;
+}
+
+- (UITableViewCell*)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
+    
+    NSArray *array = self.dataArray[indexPath.section];
+    
+    
+    if (indexPath.section == 4) {
+        MainSetBtnCell *cell = [tableView dequeueReusableCellWithIdentifier:NSStringFromClass([MainSetBtnCell class]) forIndexPath:indexPath];
+        [cell.itemBtn setTitle:array[indexPath.row] forState:(UIControlStateNormal)];
+        return cell;
+    }else{
+        MainSetListCell *cell = [tableView dequeueReusableCellWithIdentifier:NSStringFromClass([MainSetListCell class]) forIndexPath:indexPath];
+        cell.switchBtn.hidden = indexPath.section != 2;
+        cell.titleLab.text = array[indexPath.row];
+        return cell;
+    }
+    
+    return nil;
     
 }
+
 
 /*
 #pragma mark - Navigation

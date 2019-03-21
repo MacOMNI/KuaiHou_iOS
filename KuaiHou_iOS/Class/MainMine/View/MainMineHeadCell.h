@@ -14,6 +14,12 @@ NS_ASSUME_NONNULL_BEGIN
 @property (weak, nonatomic) IBOutlet UIView *infoBgView;
 @property (weak, nonatomic) IBOutlet UIView *levelBgView;
 @property (weak, nonatomic) IBOutlet UILabel *levelLab;
+@property (weak, nonatomic) IBOutlet UIImageView *bgImageView;
+@property (weak, nonatomic) IBOutlet UIImageView *headImageView;
+@property (weak, nonatomic) IBOutlet UILabel *nickNameLab;
+@property (weak, nonatomic) IBOutlet UILabel *ypLab;
+
+@property (nonatomic, copy) void (^itemBlock) (int tag);
 
 @end
 
