@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SendDynamicsVC">
+            <connections>
+                <outlet property="safeBottomH" destination="ny6-pm-jXW" id="0Fk-q9-zYe"/>
+                <outlet property="selPhotoBtn" destination="Sbt-p8-sc3" id="rqZ-ok-9QL"/>
+                <outlet property="selVideoBtn" destination="UHf-7s-L9H" id="Qqw-lp-YxA"/>
+                <outlet property="tableView" destination="AxW-K4-daz" id="nwg-7a-8v0"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3IE-69-cSk">
+                    <rect key="frame" x="0.0" y="606.5" width="375" height="0.5"/>
+                    <color key="backgroundColor" red="0.93333333333333335" green="0.93333333333333335" blue="0.93333333333333335" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="0.5" id="7Hh-WH-Lqo"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ylp-bZ-NFw">
+                    <rect key="frame" x="0.0" y="607" width="375" height="60"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sbt-p8-sc3">
+                            <rect key="frame" x="15" y="8" width="44" height="44"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="44" id="Oby-0t-Wi6"/>
+                                <constraint firstAttribute="width" constant="44" id="WYt-UR-RL1"/>
+                            </constraints>
+                            <state key="normal" image="dynamics_selphoto"/>
+                            <state key="disabled" image="dynamics_selphoto_dis"/>
+                            <connections>
+                                <action selector="selPhotoAction:" destination="-1" eventType="touchUpInside" id="6Uf-hB-ehM"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UHf-7s-L9H">
+                            <rect key="frame" x="79" y="8" width="44" height="44"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="44" id="HFP-GG-UPp"/>
+                                <constraint firstAttribute="width" constant="44" id="Qgk-7H-w6h"/>
+                            </constraints>
+                            <state key="normal" image="dynamics_selvideo"/>
+                            <state key="disabled" image="dynamics_selvideo_dis"/>
+                            <connections>
+                                <action selector="selVideoAction:" destination="-1" eventType="touchUpInside" id="lLd-7l-SrD"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="UHf-7s-L9H" firstAttribute="leading" secondItem="Sbt-p8-sc3" secondAttribute="trailing" constant="20" id="F9b-hg-TSp"/>
+                        <constraint firstItem="Sbt-p8-sc3" firstAttribute="centerY" secondItem="ylp-bZ-NFw" secondAttribute="centerY" id="HmX-6Z-qvT"/>
+                        <constraint firstItem="Sbt-p8-sc3" firstAttribute="leading" secondItem="ylp-bZ-NFw" secondAttribute="leading" constant="15" id="QmT-OR-GVI"/>
+                        <constraint firstItem="UHf-7s-L9H" firstAttribute="centerY" secondItem="Sbt-p8-sc3" secondAttribute="centerY" id="XcE-Ko-iPX"/>
+                    </constraints>
+                </view>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="AxW-K4-daz">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="606.5"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="xdD-5J-sg7"/>
+                        <outlet property="delegate" destination="-1" id="a1S-Uf-fwo"/>
+                    </connections>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="ylp-bZ-NFw" secondAttribute="trailing" id="5Vl-Wl-ivf"/>
+                <constraint firstItem="3IE-69-cSk" firstAttribute="top" secondItem="AxW-K4-daz" secondAttribute="bottom" id="IS6-t4-Ai7"/>
+                <constraint firstItem="AxW-K4-daz" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="SGs-wQ-i3a"/>
+                <constraint firstAttribute="trailing" secondItem="AxW-K4-daz" secondAttribute="trailing" id="Z9o-Fe-hBZ"/>
+                <constraint firstAttribute="trailing" secondItem="3IE-69-cSk" secondAttribute="trailing" id="f00-j0-35x"/>
+                <constraint firstItem="ylp-bZ-NFw" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="gTR-gI-x1j"/>
+                <constraint firstAttribute="bottom" secondItem="3IE-69-cSk" secondAttribute="bottom" constant="60" id="ny6-pm-jXW"/>
+                <constraint firstAttribute="bottom" secondItem="ylp-bZ-NFw" secondAttribute="bottom" id="o1A-V2-zbY"/>
+                <constraint firstItem="AxW-K4-daz" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="pbD-VI-hRC"/>
+                <constraint firstItem="ylp-bZ-NFw" firstAttribute="top" secondItem="3IE-69-cSk" secondAttribute="bottom" id="seT-Rg-Ijb"/>
+                <constraint firstItem="3IE-69-cSk" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="syB-TP-ihX"/>
+            </constraints>
+            <point key="canvasLocation" x="130.40000000000001" y="152.47376311844079"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="dynamics_selphoto" width="44" height="44"/>
+        <image name="dynamics_selphoto_dis" width="16" height="16"/>
+        <image name="dynamics_selvideo" width="88" height="88"/>
+        <image name="dynamics_selvideo_dis" width="44" height="44"/>
+    </resources>
+</document>

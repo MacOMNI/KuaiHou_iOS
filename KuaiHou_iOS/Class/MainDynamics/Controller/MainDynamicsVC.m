@@ -11,6 +11,7 @@
 #import "NearbyDynamicsVC.h"
 #import "FavorableDynamicsVC.h"
 #import "HeedDynamicsVC.h"
+#import "SendDynamicsVC.h"
 
 @interface MainDynamicsVC ()<FSPageContentViewDelegate,FSSegmentTitleViewDelegate>
 
@@ -117,7 +118,8 @@
 }
 
 -(void)sendAction{
-    
+    SendDynamicsVC *send = [SendDynamicsVC new];
+    [self.navigationController pushViewController:send animated:YES];
 }
 
 

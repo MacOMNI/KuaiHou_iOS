@@ -27,7 +27,7 @@
     self.tableView.estimatedRowHeight = 0;
     self.tableView.estimatedSectionFooterHeight = 0;
     self.tableView.estimatedSectionHeaderHeight = 0;
-    [self.tableView registerNib:[UINib nibWithNibName:NSStringFromClass([NewMessageCell class]) bundle:[NSBundle mainBundle]] forCellReuseIdentifier:NSStringFromClass([NewMessageVC class])];
+    [self.tableView registerNib:[UINib nibWithNibName:NSStringFromClass([NewMessageCell class]) bundle:[NSBundle mainBundle]] forCellReuseIdentifier:NSStringFromClass([NewMessageCell class])];
 }
 
 #pragma mark - UITableViewDelegate & Datasource
@@ -51,7 +51,7 @@
 }
 
 - (UITableViewCell*)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
-    NewMessageCell *cell = [tableView dequeueReusableCellWithIdentifier:NSStringFromClass([NewMessageVC class]) forIndexPath:indexPath];
+    NewMessageCell *cell = [tableView dequeueReusableCellWithIdentifier:NSStringFromClass([NewMessageCell class]) forIndexPath:indexPath];
     return cell;
 }
 

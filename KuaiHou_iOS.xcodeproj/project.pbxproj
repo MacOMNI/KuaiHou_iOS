@@ -26,7 +26,6 @@
 		CE9C4C15223B740D00DE9DC1 /* NetWorkManager.m in Sources */ = {isa = PBXBuildFile; fileRef = CE9C4C14223B740D00DE9DC1 /* NetWorkManager.m */; };
 		CE9C4C1E223B7B3F00DE9DC1 /* AppUrlConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = CE9C4C1D223B7B3F00DE9DC1 /* AppUrlConfig.m */; };
 		CECC0D18223A411D001CF0A2 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CECC0D17223A411D001CF0A2 /* AppDelegate.m */; };
-		CECC0D1B223A411D001CF0A2 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CECC0D1A223A411D001CF0A2 /* ViewController.m */; };
 		CECC0D1E223A411D001CF0A2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CECC0D1C223A411D001CF0A2 /* Main.storyboard */; };
 		CECC0D21223A411D001CF0A2 /* KuaiHou_iOS.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = CECC0D1F223A411D001CF0A2 /* KuaiHou_iOS.xcdatamodeld */; };
 		CECC0D23223A411F001CF0A2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CECC0D22223A411F001CF0A2 /* Assets.xcassets */; };
@@ -42,6 +41,10 @@
 		CECC0D6A223A56B8001CF0A2 /* NSString+unicode.m in Sources */ = {isa = PBXBuildFile; fileRef = CECC0D64223A56B8001CF0A2 /* NSString+unicode.m */; };
 		CECC0D6B223A56B8001CF0A2 /* NSArray+Log.m in Sources */ = {isa = PBXBuildFile; fileRef = CECC0D67223A56B8001CF0A2 /* NSArray+Log.m */; };
 		CECC0D6E223A5849001CF0A2 /* MyTool.m in Sources */ = {isa = PBXBuildFile; fileRef = CECC0D6D223A5849001CF0A2 /* MyTool.m */; };
+		CEE28EAA224329A900C3D7E9 /* MainSetVC.m in Sources */ = {isa = PBXBuildFile; fileRef = CEE28EA8224329A900C3D7E9 /* MainSetVC.m */; };
+		CEE28EAB224329A900C3D7E9 /* MainSetVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = CEE28EA9224329A900C3D7E9 /* MainSetVC.xib */; };
+		CEE6E37C22420731006ED98F /* SendDynamicsVideoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CEE6E37A22420731006ED98F /* SendDynamicsVideoCell.m */; };
+		CEE6E37D22420731006ED98F /* SendDynamicsVideoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CEE6E37B22420731006ED98F /* SendDynamicsVideoCell.xib */; };
 		CEFA9210223F535E0015F7EE /* AppDelegate+Config.m in Sources */ = {isa = PBXBuildFile; fileRef = CEFA920F223F535E0015F7EE /* AppDelegate+Config.m */; };
 		CEFA9213223F5AAA0015F7EE /* UILabel+BaseChangeDefaultFont.m in Sources */ = {isa = PBXBuildFile; fileRef = CEFA9212223F5AAA0015F7EE /* UILabel+BaseChangeDefaultFont.m */; };
 		CEFA9219223F5DC40015F7EE /* BaseTableBar.m in Sources */ = {isa = PBXBuildFile; fileRef = CEFA9217223F5DC40015F7EE /* BaseTableBar.m */; };
@@ -76,6 +79,22 @@
 		CEFA92A3224088500015F7EE /* FriendMessageVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = CEFA92A1224088500015F7EE /* FriendMessageVC.xib */; };
 		CEFA92A7224091000015F7EE /* NewMessageCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CEFA92A5224091000015F7EE /* NewMessageCell.m */; };
 		CEFA92A8224091000015F7EE /* NewMessageCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CEFA92A6224091000015F7EE /* NewMessageCell.xib */; };
+		CEFA92AC2240A01C0015F7EE /* FriendMessageCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CEFA92AA2240A01C0015F7EE /* FriendMessageCell.m */; };
+		CEFA92AD2240A01C0015F7EE /* FriendMessageCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CEFA92AB2240A01C0015F7EE /* FriendMessageCell.xib */; };
+		CEFA92B52240A6030015F7EE /* SCIndexViewConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = CEFA92AF2240A6030015F7EE /* SCIndexViewConfiguration.m */; };
+		CEFA92B62240A6030015F7EE /* SCIndexView.m in Sources */ = {isa = PBXBuildFile; fileRef = CEFA92B12240A6030015F7EE /* SCIndexView.m */; };
+		CEFA92B72240A6030015F7EE /* UITableView+SCIndexView.m in Sources */ = {isa = PBXBuildFile; fileRef = CEFA92B32240A6030015F7EE /* UITableView+SCIndexView.m */; };
+		CEFA92C02240CB870015F7EE /* MainMineHeadCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CEFA92BE2240CB870015F7EE /* MainMineHeadCell.m */; };
+		CEFA92C12240CB870015F7EE /* MainMineHeadCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CEFA92BF2240CB870015F7EE /* MainMineHeadCell.xib */; };
+		CEFA92C52240ED9C0015F7EE /* MainMineListCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CEFA92C32240ED9C0015F7EE /* MainMineListCell.m */; };
+		CEFA92C62240ED9C0015F7EE /* MainMineListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CEFA92C42240ED9C0015F7EE /* MainMineListCell.xib */; };
+		CEFA92CB2241C93D0015F7EE /* SendDynamicsVC.m in Sources */ = {isa = PBXBuildFile; fileRef = CEFA92C92241C93D0015F7EE /* SendDynamicsVC.m */; };
+		CEFA92CC2241C93D0015F7EE /* SendDynamicsVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = CEFA92CA2241C93D0015F7EE /* SendDynamicsVC.xib */; };
+		CEFA92CF2241CEB70015F7EE /* BaseView.m in Sources */ = {isa = PBXBuildFile; fileRef = CEFA92CE2241CEB70015F7EE /* BaseView.m */; };
+		CEFA92D32241D16A0015F7EE /* SendDynamicsHeadView.m in Sources */ = {isa = PBXBuildFile; fileRef = CEFA92D22241D16A0015F7EE /* SendDynamicsHeadView.m */; };
+		CEFA92D52241D1970015F7EE /* SendDynamicsHeadView.xib in Resources */ = {isa = PBXBuildFile; fileRef = CEFA92D42241D1970015F7EE /* SendDynamicsHeadView.xib */; };
+		CEFA92D92241DDF40015F7EE /* SendDynamicsHeadCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CEFA92D72241DDF40015F7EE /* SendDynamicsHeadCell.m */; };
+		CEFA92DA2241DDF40015F7EE /* SendDynamicsHeadCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CEFA92D82241DDF40015F7EE /* SendDynamicsHeadCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -133,8 +152,6 @@
 		CECC0D13223A411D001CF0A2 /* KuaiHou_iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KuaiHou_iOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CECC0D16223A411D001CF0A2 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		CECC0D17223A411D001CF0A2 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		CECC0D19223A411D001CF0A2 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		CECC0D1A223A411D001CF0A2 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		CECC0D1D223A411D001CF0A2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CECC0D20223A411D001CF0A2 /* KuaiHou_iOS.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = KuaiHou_iOS.xcdatamodel; sourceTree = "<group>"; };
 		CECC0D22223A411F001CF0A2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -165,6 +182,12 @@
 		CECC0D68223A56B8001CF0A2 /* NSString+unicode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+unicode.h"; sourceTree = "<group>"; };
 		CECC0D6C223A5849001CF0A2 /* MyTool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyTool.h; sourceTree = "<group>"; };
 		CECC0D6D223A5849001CF0A2 /* MyTool.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyTool.m; sourceTree = "<group>"; };
+		CEE28EA7224329A900C3D7E9 /* MainSetVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainSetVC.h; sourceTree = "<group>"; };
+		CEE28EA8224329A900C3D7E9 /* MainSetVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainSetVC.m; sourceTree = "<group>"; };
+		CEE28EA9224329A900C3D7E9 /* MainSetVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainSetVC.xib; sourceTree = "<group>"; };
+		CEE6E37922420731006ED98F /* SendDynamicsVideoCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SendDynamicsVideoCell.h; sourceTree = "<group>"; };
+		CEE6E37A22420731006ED98F /* SendDynamicsVideoCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SendDynamicsVideoCell.m; sourceTree = "<group>"; };
+		CEE6E37B22420731006ED98F /* SendDynamicsVideoCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SendDynamicsVideoCell.xib; sourceTree = "<group>"; };
 		CEFA920E223F535E0015F7EE /* AppDelegate+Config.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AppDelegate+Config.h"; sourceTree = "<group>"; };
 		CEFA920F223F535E0015F7EE /* AppDelegate+Config.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "AppDelegate+Config.m"; sourceTree = "<group>"; };
 		CEFA9211223F5AAA0015F7EE /* UILabel+BaseChangeDefaultFont.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UILabel+BaseChangeDefaultFont.h"; sourceTree = "<group>"; };
@@ -222,6 +245,32 @@
 		CEFA92A4224091000015F7EE /* NewMessageCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NewMessageCell.h; sourceTree = "<group>"; };
 		CEFA92A5224091000015F7EE /* NewMessageCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NewMessageCell.m; sourceTree = "<group>"; };
 		CEFA92A6224091000015F7EE /* NewMessageCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NewMessageCell.xib; sourceTree = "<group>"; };
+		CEFA92A92240A01C0015F7EE /* FriendMessageCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FriendMessageCell.h; sourceTree = "<group>"; };
+		CEFA92AA2240A01C0015F7EE /* FriendMessageCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FriendMessageCell.m; sourceTree = "<group>"; };
+		CEFA92AB2240A01C0015F7EE /* FriendMessageCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FriendMessageCell.xib; sourceTree = "<group>"; };
+		CEFA92AF2240A6030015F7EE /* SCIndexViewConfiguration.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCIndexViewConfiguration.m; sourceTree = "<group>"; };
+		CEFA92B02240A6030015F7EE /* UITableView+SCIndexView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableView+SCIndexView.h"; sourceTree = "<group>"; };
+		CEFA92B12240A6030015F7EE /* SCIndexView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCIndexView.m; sourceTree = "<group>"; };
+		CEFA92B22240A6030015F7EE /* SCIndexViewConfiguration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCIndexViewConfiguration.h; sourceTree = "<group>"; };
+		CEFA92B32240A6030015F7EE /* UITableView+SCIndexView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableView+SCIndexView.m"; sourceTree = "<group>"; };
+		CEFA92B42240A6030015F7EE /* SCIndexView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCIndexView.h; sourceTree = "<group>"; };
+		CEFA92BD2240CB870015F7EE /* MainMineHeadCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainMineHeadCell.h; sourceTree = "<group>"; };
+		CEFA92BE2240CB870015F7EE /* MainMineHeadCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainMineHeadCell.m; sourceTree = "<group>"; };
+		CEFA92BF2240CB870015F7EE /* MainMineHeadCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainMineHeadCell.xib; sourceTree = "<group>"; };
+		CEFA92C22240ED9C0015F7EE /* MainMineListCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainMineListCell.h; sourceTree = "<group>"; };
+		CEFA92C32240ED9C0015F7EE /* MainMineListCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainMineListCell.m; sourceTree = "<group>"; };
+		CEFA92C42240ED9C0015F7EE /* MainMineListCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainMineListCell.xib; sourceTree = "<group>"; };
+		CEFA92C82241C93D0015F7EE /* SendDynamicsVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SendDynamicsVC.h; sourceTree = "<group>"; };
+		CEFA92C92241C93D0015F7EE /* SendDynamicsVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SendDynamicsVC.m; sourceTree = "<group>"; };
+		CEFA92CA2241C93D0015F7EE /* SendDynamicsVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SendDynamicsVC.xib; sourceTree = "<group>"; };
+		CEFA92CD2241CEB70015F7EE /* BaseView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseView.h; sourceTree = "<group>"; };
+		CEFA92CE2241CEB70015F7EE /* BaseView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseView.m; sourceTree = "<group>"; };
+		CEFA92D12241D16A0015F7EE /* SendDynamicsHeadView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SendDynamicsHeadView.h; sourceTree = "<group>"; };
+		CEFA92D22241D16A0015F7EE /* SendDynamicsHeadView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SendDynamicsHeadView.m; sourceTree = "<group>"; };
+		CEFA92D42241D1970015F7EE /* SendDynamicsHeadView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SendDynamicsHeadView.xib; sourceTree = "<group>"; };
+		CEFA92D62241DDF40015F7EE /* SendDynamicsHeadCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SendDynamicsHeadCell.h; sourceTree = "<group>"; };
+		CEFA92D72241DDF40015F7EE /* SendDynamicsHeadCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SendDynamicsHeadCell.m; sourceTree = "<group>"; };
+		CEFA92D82241DDF40015F7EE /* SendDynamicsHeadCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SendDynamicsHeadCell.xib; sourceTree = "<group>"; };
 		F72C78518845A6C8D2F549AB /* Pods_KuaiHou_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KuaiHou_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -325,8 +374,6 @@
 				CECC0D51223A46F4001CF0A2 /* Service */,
 				CECC0D4F223A4615001CF0A2 /* ThirdLib */,
 				CECC0D4D223A45C2001CF0A2 /* Class */,
-				CECC0D19223A411D001CF0A2 /* ViewController.h */,
-				CECC0D1A223A411D001CF0A2 /* ViewController.m */,
 				CECC0D1C223A411D001CF0A2 /* Main.storyboard */,
 				CECC0D22223A411F001CF0A2 /* Assets.xcassets */,
 				CECC0D24223A411F001CF0A2 /* LaunchScreen.storyboard */,
@@ -400,6 +447,7 @@
 		CECC0D4F223A4615001CF0A2 /* ThirdLib */ = {
 			isa = PBXGroup;
 			children = (
+				CEFA92AE2240A6030015F7EE /* SCIndexView */,
 				CEFA9294224081250015F7EE /* XXTextView */,
 				CEFA9259223F84750015F7EE /* FSScrollContentViewLib */,
 				CE9C4BE7223B4F9B00DE9DC1 /* Empty */,
@@ -471,6 +519,16 @@
 			path = "../../../../Documents/项目/信书/LetterBookProject/LetterBookProject/Class/UserAndMineProject/Category/log";
 			sourceTree = "<group>";
 		};
+		CEE28EA52243297000C3D7E9 /* Setting */ = {
+			isa = PBXGroup;
+			children = (
+				CEE28EA7224329A900C3D7E9 /* MainSetVC.h */,
+				CEE28EA8224329A900C3D7E9 /* MainSetVC.m */,
+				CEE28EA9224329A900C3D7E9 /* MainSetVC.xib */,
+			);
+			path = Setting;
+			sourceTree = "<group>";
+		};
 		CEFA9214223F5D1F0015F7EE /* Controller */ = {
 			isa = PBXGroup;
 			children = (
@@ -493,6 +551,8 @@
 				CEFA9217223F5DC40015F7EE /* BaseTableBar.m */,
 				CEFA9278223FA59A0015F7EE /* BaseCell.h */,
 				CEFA9279223FA59A0015F7EE /* BaseCell.m */,
+				CEFA92CD2241CEB70015F7EE /* BaseView.h */,
+				CEFA92CE2241CEB70015F7EE /* BaseView.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -566,6 +626,7 @@
 			children = (
 				CEFA9232223F639D0015F7EE /* MainDynamicsVC.h */,
 				CEFA9233223F639D0015F7EE /* MainDynamicsVC.m */,
+				CEFA92C72241C8FB0015F7EE /* SendDynamics */,
 				CEFA9261223F98EC0015F7EE /* NearbyDynamics */,
 				CEFA9262223F991A0015F7EE /* FavorableDynamics */,
 				CEFA9263223F99520015F7EE /* HeedDynamics */,
@@ -576,6 +637,7 @@
 		CEFA9222223F62720015F7EE /* View */ = {
 			isa = PBXGroup;
 			children = (
+				CEFA92D02241D14A0015F7EE /* SendDynamics */,
 				CEFA9277223FA2880015F7EE /* NearbyDynamics */,
 			);
 			path = View;
@@ -605,6 +667,9 @@
 				CEFA92A4224091000015F7EE /* NewMessageCell.h */,
 				CEFA92A5224091000015F7EE /* NewMessageCell.m */,
 				CEFA92A6224091000015F7EE /* NewMessageCell.xib */,
+				CEFA92A92240A01C0015F7EE /* FriendMessageCell.h */,
+				CEFA92AA2240A01C0015F7EE /* FriendMessageCell.m */,
+				CEFA92AB2240A01C0015F7EE /* FriendMessageCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -622,6 +687,7 @@
 				CEFA9241223F63E70015F7EE /* MainMineVC.h */,
 				CEFA9242223F63E70015F7EE /* MainMineVC.m */,
 				CEFA9243223F63E70015F7EE /* MainMineVC.xib */,
+				CEE28EA52243297000C3D7E9 /* Setting */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -629,6 +695,12 @@
 		CEFA9228223F627E0015F7EE /* View */ = {
 			isa = PBXGroup;
 			children = (
+				CEFA92BD2240CB870015F7EE /* MainMineHeadCell.h */,
+				CEFA92BE2240CB870015F7EE /* MainMineHeadCell.m */,
+				CEFA92BF2240CB870015F7EE /* MainMineHeadCell.xib */,
+				CEFA92C22240ED9C0015F7EE /* MainMineListCell.h */,
+				CEFA92C32240ED9C0015F7EE /* MainMineListCell.m */,
+				CEFA92C42240ED9C0015F7EE /* MainMineListCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -728,6 +800,45 @@
 				CEFA92A1224088500015F7EE /* FriendMessageVC.xib */,
 			);
 			path = FriendMessage;
+			sourceTree = "<group>";
+		};
+		CEFA92AE2240A6030015F7EE /* SCIndexView */ = {
+			isa = PBXGroup;
+			children = (
+				CEFA92AF2240A6030015F7EE /* SCIndexViewConfiguration.m */,
+				CEFA92B02240A6030015F7EE /* UITableView+SCIndexView.h */,
+				CEFA92B12240A6030015F7EE /* SCIndexView.m */,
+				CEFA92B22240A6030015F7EE /* SCIndexViewConfiguration.h */,
+				CEFA92B32240A6030015F7EE /* UITableView+SCIndexView.m */,
+				CEFA92B42240A6030015F7EE /* SCIndexView.h */,
+			);
+			path = SCIndexView;
+			sourceTree = "<group>";
+		};
+		CEFA92C72241C8FB0015F7EE /* SendDynamics */ = {
+			isa = PBXGroup;
+			children = (
+				CEFA92C82241C93D0015F7EE /* SendDynamicsVC.h */,
+				CEFA92C92241C93D0015F7EE /* SendDynamicsVC.m */,
+				CEFA92CA2241C93D0015F7EE /* SendDynamicsVC.xib */,
+			);
+			path = SendDynamics;
+			sourceTree = "<group>";
+		};
+		CEFA92D02241D14A0015F7EE /* SendDynamics */ = {
+			isa = PBXGroup;
+			children = (
+				CEFA92D12241D16A0015F7EE /* SendDynamicsHeadView.h */,
+				CEFA92D22241D16A0015F7EE /* SendDynamicsHeadView.m */,
+				CEFA92D42241D1970015F7EE /* SendDynamicsHeadView.xib */,
+				CEFA92D62241DDF40015F7EE /* SendDynamicsHeadCell.h */,
+				CEFA92D72241DDF40015F7EE /* SendDynamicsHeadCell.m */,
+				CEFA92D82241DDF40015F7EE /* SendDynamicsHeadCell.xib */,
+				CEE6E37922420731006ED98F /* SendDynamicsVideoCell.h */,
+				CEE6E37A22420731006ED98F /* SendDynamicsVideoCell.m */,
+				CEE6E37B22420731006ED98F /* SendDynamicsVideoCell.xib */,
+			);
+			path = SendDynamics;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -836,12 +947,20 @@
 			buildActionMask = 2147483647;
 			files = (
 				CE9C4BF6223B4F9B00DE9DC1 /* icon_error_network.png in Resources */,
+				CEFA92C62240ED9C0015F7EE /* MainMineListCell.xib in Resources */,
+				CEFA92C12240CB870015F7EE /* MainMineHeadCell.xib in Resources */,
 				CE9C4BF8223B4F9B00DE9DC1 /* icon_no_data.png in Resources */,
+				CEFA92D52241D1970015F7EE /* SendDynamicsHeadView.xib in Resources */,
 				CEFA92A3224088500015F7EE /* FriendMessageVC.xib in Resources */,
+				CEFA92AD2240A01C0015F7EE /* FriendMessageCell.xib in Resources */,
 				CEFA9231223F634D0015F7EE /* MainHomeVC.xib in Resources */,
+				CEFA92DA2241DDF40015F7EE /* SendDynamicsHeadCell.xib in Resources */,
+				CEFA92CC2241C93D0015F7EE /* SendDynamicsVC.xib in Resources */,
 				CEFA929E2240883B0015F7EE /* NewMessageVC.xib in Resources */,
 				CECC0D26223A411F001CF0A2 /* LaunchScreen.storyboard in Resources */,
+				CEE28EAB224329A900C3D7E9 /* MainSetVC.xib in Resources */,
 				CECC0D23223A411F001CF0A2 /* Assets.xcassets in Resources */,
+				CEE6E37D22420731006ED98F /* SendDynamicsVideoCell.xib in Resources */,
 				CEFA9271223F99BB0015F7EE /* FavorableDynamicsVC.xib in Resources */,
 				CEFA9284223FA6920015F7EE /* NearByDynamicsHeadCell.xib in Resources */,
 				CEFA9276223F99CF0015F7EE /* HeedDynamicsVC.xib in Resources */,
@@ -948,11 +1067,13 @@
 				CEFA9287223FAB190015F7EE /* NearByDynamicsTextCell.m in Sources */,
 				CEFA928E223FAB430015F7EE /* NearByDynamicsToolCell.m in Sources */,
 				CE9C4C03223B5B1600DE9DC1 /* BaseTabBarController.m in Sources */,
+				CEFA92CB2241C93D0015F7EE /* SendDynamicsVC.m in Sources */,
 				CE9C4C0D223B662600DE9DC1 /* BaseWebViewController.m in Sources */,
 				CEFA9293223FB8870015F7EE /* CirclePhotosView.m in Sources */,
 				CEFA928A223FAB310015F7EE /* NearByDynamicsImageCell.m in Sources */,
-				CECC0D1B223A411D001CF0A2 /* ViewController.m in Sources */,
+				CEFA92B52240A6030015F7EE /* SCIndexViewConfiguration.m in Sources */,
 				CEFA9244223F63E70015F7EE /* MainMineVC.m in Sources */,
+				CEFA92C02240CB870015F7EE /* MainMineHeadCell.m in Sources */,
 				CEFA9210223F535E0015F7EE /* AppDelegate+Config.m in Sources */,
 				CEFA9248223F6F450015F7EE /* AppDelegate+Logging.m in Sources */,
 				CE9C4BFD223B4F9B00DE9DC1 /* PLEmptyViewFactory.m in Sources */,
@@ -963,6 +1084,7 @@
 				CECC0D6A223A56B8001CF0A2 /* NSString+unicode.m in Sources */,
 				CE9C4BF9223B4F9B00DE9DC1 /* PLEmptyConfig.m in Sources */,
 				CEFA92A2224088500015F7EE /* FriendMessageVC.m in Sources */,
+				CEFA92C52240ED9C0015F7EE /* MainMineListCell.m in Sources */,
 				CECC0D58223A525F001CF0A2 /* UIColor+Hex.m in Sources */,
 				CE9C4C00223B58F800DE9DC1 /* BaseNavigationController.m in Sources */,
 				CEFA9260223F84750015F7EE /* FSPageContentView.m in Sources */,
@@ -973,22 +1095,30 @@
 				CECC0D18223A411D001CF0A2 /* AppDelegate.m in Sources */,
 				CEFA9219223F5DC40015F7EE /* BaseTableBar.m in Sources */,
 				CECC0D69223A56B8001CF0A2 /* NSDictionary+Log.m in Sources */,
+				CEFA92D92241DDF40015F7EE /* SendDynamicsHeadCell.m in Sources */,
 				CECC0D6B223A56B8001CF0A2 /* NSArray+Log.m in Sources */,
+				CEFA92B72240A6030015F7EE /* UITableView+SCIndexView.m in Sources */,
 				CEFA9235223F639D0015F7EE /* MainDynamicsVC.m in Sources */,
 				CE9C4C06223B5ED800DE9DC1 /* UIImage+BundleImage.m in Sources */,
 				CE9C4C09223B650C00DE9DC1 /* BaseViewController.m in Sources */,
 				CE9C4BFA223B4F9B00DE9DC1 /* PLScrollViewEmptyView.m in Sources */,
 				CEFA925F223F84750015F7EE /* FSSegmentTitleView.m in Sources */,
+				CEFA92D32241D16A0015F7EE /* SendDynamicsHeadView.m in Sources */,
 				CE9C4BFC223B4F9B00DE9DC1 /* NSString+Size.m in Sources */,
 				CE9C4BFB223B4F9B00DE9DC1 /* UIViewController+Empty.m in Sources */,
 				CECC0D29223A411F001CF0A2 /* main.m in Sources */,
 				CECC0D5D223A5670001CF0A2 /* UIView+Tap.m in Sources */,
+				CEFA92B62240A6030015F7EE /* SCIndexView.m in Sources */,
 				CEFA927A223FA59A0015F7EE /* BaseCell.m in Sources */,
+				CEFA92AC2240A01C0015F7EE /* FriendMessageCell.m in Sources */,
 				CECC0D21223A411D001CF0A2 /* KuaiHou_iOS.xcdatamodeld in Sources */,
 				CECC0D5E223A5670001CF0A2 /* UIView+LayoutMethods.m in Sources */,
 				CEFA9270223F99BB0015F7EE /* FavorableDynamicsVC.m in Sources */,
 				CEFA9283223FA6920015F7EE /* NearByDynamicsHeadCell.m in Sources */,
+				CEFA92CF2241CEB70015F7EE /* BaseView.m in Sources */,
 				CEFA9213223F5AAA0015F7EE /* UILabel+BaseChangeDefaultFont.m in Sources */,
+				CEE6E37C22420731006ED98F /* SendDynamicsVideoCell.m in Sources */,
+				CEE28EAA224329A900C3D7E9 /* MainSetVC.m in Sources */,
 				CE9C4C1E223B7B3F00DE9DC1 /* AppUrlConfig.m in Sources */,
 				CECC0D6E223A5849001CF0A2 /* MyTool.m in Sources */,
 				CE9C4C15223B740D00DE9DC1 /* NetWorkManager.m in Sources */,

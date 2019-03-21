@@ -23,7 +23,7 @@
 #import <UIImageView+WebCache.h>
 #import <SDWebImage/UIButton+WebCache.h>
 #import <IQKeyboardManager/IQKeyboardManager.h>
-#import <AFNetworking.h>
+#import <AFNetworking/AFNetworking.h>
 #import <UIImageView+AFNetworking.h>
 #import <TZImagePickerController/TZImagePickerController.h>
 #import <JSONModel/JSONModel.h>
@@ -41,7 +41,7 @@
 
 #import "BaseViewController.h"
 #import "BaseCell.h"
-
+#import "NetWorkManager.h"
 
 
 #endif

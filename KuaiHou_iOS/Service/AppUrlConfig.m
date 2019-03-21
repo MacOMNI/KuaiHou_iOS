@@ -60,7 +60,7 @@ static AppUrlConfig* _urlConfig = nil;
 
 - (NSArray *)urlArrays {
     NSArray *array = @[
-                       @{@"BaseUrl": @"http://dev.qinzixx.com", @"name":@"Dev环境"},
+                       @{@"BaseUrl": @"http://192.168.1.150:8080", @"name":@"黄康环境"},
                        @{@"BaseUrl": @"http://ms.qinzixx.com", @"name":@"正式环境"},
                        ];
     return array;

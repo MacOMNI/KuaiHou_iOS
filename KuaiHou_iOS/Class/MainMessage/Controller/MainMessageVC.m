@@ -16,6 +16,8 @@
 @property (nonatomic, strong) FSPageContentView *pageContentView;
 @property (nonatomic, strong) FSSegmentTitleView *titleView;
 
+@property (nonatomic, assign) int selectIndex;
+
 @end
 
 @implementation MainMessageVC
@@ -42,17 +44,31 @@
     self.pageContentView.contentViewCanScroll = YES;//设置滑动属性
     self.pageContentView.contentViewCurrentIndex = 0;
     [self.view addSubview:self.pageContentView];
+    
+    self.selectIndex = 0;
+
+}
+
+-(void)setSelectIndex:(int)selectIndex{
+    _selectIndex = selectIndex;
+    UIImage *image = selectIndex == 0 ? [UIImage new] : [UIImage loadImageWithName:@"message_friendsearch"];
+    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithImage:image style:(UIBarButtonItemStylePlain) target:self action:@selector(questionAction)];
+}
+-(void)questionAction{
+    
 }
 
 #pragma mark 选择器的delegate
 - (void)FSSegmentTitleView:(FSSegmentTitleView *)titleView startIndex:(NSInteger)startIndex endIndex:(NSInteger)endIndex
 {
     self.pageContentView.contentViewCurrentIndex = endIndex;
+    self.selectIndex = (int)endIndex;
 }
 
 - (void)FSContenViewDidEndDecelerating:(FSPageContentView *)contentView startIndex:(NSInteger)startIndex endIndex:(NSInteger)endIndex
 {
     self.titleView.selectIndex = endIndex;
+    self.selectIndex = (int)endIndex;
 }
 /*
 #pragma mark - Navigation
