@@ -155,7 +155,7 @@
 }
 
 - (CGRect)pageController:(WMPageController *)pageController preferredFrameForMenuView:(WMMenuView *)menuView {
-    return CGRectMake(0, 0, kScreenSizeWidth, 40.0f);
+    return CGRectMake(15, 0, 240, 60.0f);
 }
 - (CGRect)pageController:(WMPageController *)pageController preferredFrameForContentView:(WMScrollView *)contentView {
     CGFloat maxY = CGRectGetMaxY([self pageController:pageController preferredFrameForMenuView:pageController.menuView]);
@@ -180,7 +180,7 @@
 - (GKPageScrollView *)pageScrollView {
     if (!_pageScrollView) {
         _pageScrollView = [[GKPageScrollView alloc] initWithDelegate:self];
-        _pageScrollView.mainTableView.backgroundColor = [UIColor yellowColor];
+        _pageScrollView.mainTableView.backgroundColor = [UIColor whiteColor];
     }
     return _pageScrollView;
 }
@@ -200,17 +200,17 @@
         _pageVC.scrollDelegate = self;
         
         // 菜单属性
-        _pageVC.menuItemWidth = kScreenSizeWidth / 4.0f - 20;
+        _pageVC.menuItemWidth = 60;
         _pageVC.menuViewStyle = WMMenuViewStyleLine;
         
-        _pageVC.titleSizeNormal     = 16.0f;
-        _pageVC.titleSizeSelected   = 16.0f;
-        _pageVC.titleColorNormal    = [UIColor grayColor];
-        _pageVC.titleColorSelected  = [UIColor blackColor];
+        _pageVC.titleSizeNormal     = 15.0f;
+        _pageVC.titleSizeSelected   = 24.0f;
+        _pageVC.titleColorNormal    = kMain_TextColor;
+        _pageVC.titleColorSelected  = kMain_TextColor;
         
         // 进度条属性
         _pageVC.progressColor               = kMainColor;
-        _pageVC.progressWidth               = 30.0f;
+        _pageVC.progressWidth               = 15.0f;
         _pageVC.progressHeight              = 3.0f;
         _pageVC.progressViewBottomSpace     = 2.0f;
         _pageVC.progressViewCornerRadius    = _pageVC.progressHeight / 2;
@@ -233,7 +233,7 @@
 
 - (NSArray *)titles {
     if (!_titles) {
-        _titles = @[@"主页", @"微博", @"视频", @"故事"];
+        _titles = @[@"资料", @"动态", @"图片", @"视频"];
     }
     return _titles;
 }

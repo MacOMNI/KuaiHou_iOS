@@ -11,18 +11,30 @@
 NS_ASSUME_NONNULL_BEGIN
 // kScreenSizeWidth * 385.0f / 704.0f
 
-#define kWBHeaderHeight kScreenSizeWidth * 385.0f / 704.0f
+#define kWBHeaderHeight (kScreenSizeWidth + 200)
 
 @interface ChangeInfoHeadView : BaseView
 
 @property (nonatomic, strong) UIImageView   *bgImgView;
-
-@property (nonatomic, strong) UIView        *coverView;
-@property (nonatomic, strong) UIImageView   *iconImgView;
 @property (nonatomic, strong) UILabel       *nameLabel;
-
 @property (nonatomic, assign) CGRect        bgImgFrame;
 @property (nonatomic, assign) CGFloat       bgImgH;
+@property (nonatomic, strong) UILabel       *ypLab;
+
+@property (nonatomic, strong) UIImageView *sexImageView;
+
+@property (nonatomic, strong) UILabel *ageLab;
+
+@property (nonatomic, strong) UIView *levelBgView;
+
+@property (nonatomic, strong) UILabel *levelLab;
+
+@property (nonatomic, strong) UILabel *titleLab;
+@property (nonatomic, strong) UILabel *lookNumLab;
+
+@property (nonatomic, strong) UIView *collectionView;
+
+@property (nonatomic, strong) UIView    *lineView;
 
 - (void)scrollViewDidScroll:(CGFloat)offsetY;
 

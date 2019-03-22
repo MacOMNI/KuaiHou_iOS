@@ -21,13 +21,13 @@
 - (void)viewDidAppear:(BOOL)animated {
     [super viewDidAppear:animated];
     
-    if (self.menuView) {
-        [self.menuView addSubview:self.lineView];
-        [self.lineView mas_makeConstraints:^(MASConstraintMaker *make) {
-            make.left.right.bottom.equalTo(self.menuView);
-            make.height.mas_equalTo(0.5f);
-        }];
-    }
+//    if (self.menuView) {
+//        [self.menuView addSubview:self.lineView];
+//        [self.lineView mas_makeConstraints:^(MASConstraintMaker *make) {
+//            make.left.right.bottom.equalTo(self.menuView);
+//            make.height.mas_equalTo(0.5f);
+//        }];
+//    }
 }
 
 #pragma mark - UIScrollViewDelegate
