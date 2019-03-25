@@ -29,6 +29,8 @@
 #import <JSONModel/JSONModel.h>
 #import <AvoidCrash/AvoidCrash.h>
 #import <TABAnimated/TABAnimated.h>
+#import <MLLabel/MLLabel.h>
+#import <MLLinkLabel.h>
 
 #import "UIColor+Hex.h"
 #import "UIViewController+Empty.h"

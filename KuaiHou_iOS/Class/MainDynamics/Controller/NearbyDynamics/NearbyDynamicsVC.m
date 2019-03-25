@@ -11,12 +11,14 @@
 #import "NearByDynamicsTextCell.h"
 #import "NearByDynamicsImageCell.h"
 #import "NearByDynamicsToolCell.h"
+#import "DynamicsDetailVC.h"
 
 
 static NSString * cellIdentifierIDHead = @"UserCireHeadCell";
 static NSString * cellIdentifierIDText = @"UserCircleTextCell";
 static NSString * cellIdentifierIDTool = @"UserCircleToolCell";
 static NSString * cellIdentifierIDMoreImage = @"UserCircleImageCell";
+
 
 
 @interface NearbyDynamicsVC ()
@@ -112,6 +114,10 @@ static NSString * cellIdentifierIDMoreImage = @"UserCircleImageCell";
     }
     
     return cell;
+}
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+    [self.navigationController pushViewController:[DynamicsDetailVC new] animated:YES];
 }
 
 

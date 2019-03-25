@@ -44,12 +44,17 @@
         NSDictionary *dict = imageArray[i];
         
         UIView *bgView = [[UIView alloc] initWithFrame:CGRectMake(15 + (50 + distance) * i, 213, 50, 70)];
-        bgView.tag = i;
+        bgView.tag = i + 100;
         bgView.userInteractionEnabled = YES;
         [self.contentView addSubview:bgView];
         
+        __weak UIView *weakView = bgView;
         [bgView setTapActionWithBlock:^{
 //            NSLog(@"%ld", bgView.tag);
+            
+            if (self.itemBlock) {
+                self.itemBlock((int)weakView.tag);
+            }
         }];
         
         UIImageView *imageview = [[UIImageView alloc] init];

@@ -8,6 +8,27 @@
 
 /* Begin PBXBuildFile section */
 		C3343E751DE353D40FC29AA8 /* Pods_KuaiHou_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F72C78518845A6C8D2F549AB /* Pods_KuaiHou_iOS.framework */; };
+		CE6B058E2248667800AD44D7 /* SafeCenterVC.m in Sources */ = {isa = PBXBuildFile; fileRef = CE6B058C2248667800AD44D7 /* SafeCenterVC.m */; };
+		CE6B058F2248667800AD44D7 /* SafeCenterVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE6B058D2248667800AD44D7 /* SafeCenterVC.xib */; };
+		CE6B0593224867FE00AD44D7 /* ShieldDynamicVC.m in Sources */ = {isa = PBXBuildFile; fileRef = CE6B0591224867FE00AD44D7 /* ShieldDynamicVC.m */; };
+		CE6B0594224867FE00AD44D7 /* ShieldDynamicVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE6B0592224867FE00AD44D7 /* ShieldDynamicVC.xib */; };
+		CE6B0598224869CB00AD44D7 /* VerifiedVC.m in Sources */ = {isa = PBXBuildFile; fileRef = CE6B0596224869CB00AD44D7 /* VerifiedVC.m */; };
+		CE6B0599224869CB00AD44D7 /* VerifiedVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE6B0597224869CB00AD44D7 /* VerifiedVC.xib */; };
+		CE6B059D22486BC900AD44D7 /* SafeCenterVCTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CE6B059B22486BC900AD44D7 /* SafeCenterVCTableViewCell.m */; };
+		CE6B059E22486BC900AD44D7 /* SafeCenterVCTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE6B059C22486BC900AD44D7 /* SafeCenterVCTableViewCell.xib */; };
+		CE6B05A22248789900AD44D7 /* WithdrawWordVC.m in Sources */ = {isa = PBXBuildFile; fileRef = CE6B05A02248789900AD44D7 /* WithdrawWordVC.m */; };
+		CE6B05A32248789900AD44D7 /* WithdrawWordVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE6B05A12248789900AD44D7 /* WithdrawWordVC.xib */; };
+		CE6B05A722487D5100AD44D7 /* AboutMeVC.m in Sources */ = {isa = PBXBuildFile; fileRef = CE6B05A522487D5100AD44D7 /* AboutMeVC.m */; };
+		CE6B05A822487D5100AD44D7 /* AboutMeVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE6B05A622487D5100AD44D7 /* AboutMeVC.xib */; };
+		CE6B05AC224884F300AD44D7 /* HelpVC.m in Sources */ = {isa = PBXBuildFile; fileRef = CE6B05AA224884F300AD44D7 /* HelpVC.m */; };
+		CE6B05AD224884F300AD44D7 /* HelpVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE6B05AB224884F300AD44D7 /* HelpVC.xib */; };
+		CE6B05B22248A2C500AD44D7 /* VoucherVC.m in Sources */ = {isa = PBXBuildFile; fileRef = CE6B05B02248A2C500AD44D7 /* VoucherVC.m */; };
+		CE6B05B32248A2C500AD44D7 /* VoucherVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE6B05B12248A2C500AD44D7 /* VoucherVC.xib */; };
+		CE6B05B82248AA3200AD44D7 /* DynamicsDetailVC.m in Sources */ = {isa = PBXBuildFile; fileRef = CE6B05B62248AA3200AD44D7 /* DynamicsDetailVC.m */; };
+		CE6B05B92248AA3200AD44D7 /* DynamicsDetailVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE6B05B72248AA3200AD44D7 /* DynamicsDetailVC.xib */; };
+		CE6B05BD2248B8BE00AD44D7 /* DIYSendToolbarView.m in Sources */ = {isa = PBXBuildFile; fileRef = CE6B05BC2248B8BE00AD44D7 /* DIYSendToolbarView.m */; };
+		CE6B05C22248EEF900AD44D7 /* DynamicsContentCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CE6B05C02248EEF900AD44D7 /* DynamicsContentCell.m */; };
+		CE6B05C32248EEF900AD44D7 /* DynamicsContentCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE6B05C12248EEF900AD44D7 /* DynamicsContentCell.xib */; };
 		CE9C4BF6223B4F9B00DE9DC1 /* icon_error_network.png in Resources */ = {isa = PBXBuildFile; fileRef = CE9C4BE8223B4F9B00DE9DC1 /* icon_error_network.png */; };
 		CE9C4BF7223B4F9B00DE9DC1 /* PLEmptyView.m in Sources */ = {isa = PBXBuildFile; fileRef = CE9C4BE9223B4F9B00DE9DC1 /* PLEmptyView.m */; };
 		CE9C4BF8223B4F9B00DE9DC1 /* icon_no_data.png in Resources */ = {isa = PBXBuildFile; fileRef = CE9C4BED223B4F9B00DE9DC1 /* icon_no_data.png */; };
@@ -110,6 +131,8 @@
 		CEE28F822243872F00C3D7E9 /* GKWBPageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CEE28F802243872F00C3D7E9 /* GKWBPageViewController.m */; };
 		CEE6E37C22420731006ED98F /* SendDynamicsVideoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CEE6E37A22420731006ED98F /* SendDynamicsVideoCell.m */; };
 		CEE6E37D22420731006ED98F /* SendDynamicsVideoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CEE6E37B22420731006ED98F /* SendDynamicsVideoCell.xib */; };
+		CEE9B4502244EA060004E4FA /* ChangePassWordVC.m in Sources */ = {isa = PBXBuildFile; fileRef = CEE9B44E2244EA060004E4FA /* ChangePassWordVC.m */; };
+		CEE9B4512244EA060004E4FA /* ChangePassWordVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = CEE9B44F2244EA060004E4FA /* ChangePassWordVC.xib */; };
 		CEFA9210223F535E0015F7EE /* AppDelegate+Config.m in Sources */ = {isa = PBXBuildFile; fileRef = CEFA920F223F535E0015F7EE /* AppDelegate+Config.m */; };
 		CEFA9213223F5AAA0015F7EE /* UILabel+BaseChangeDefaultFont.m in Sources */ = {isa = PBXBuildFile; fileRef = CEFA9212223F5AAA0015F7EE /* UILabel+BaseChangeDefaultFont.m */; };
 		CEFA9219223F5DC40015F7EE /* BaseTableBar.m in Sources */ = {isa = PBXBuildFile; fileRef = CEFA9217223F5DC40015F7EE /* BaseTableBar.m */; };
@@ -182,6 +205,38 @@
 /* Begin PBXFileReference section */
 		1C969EC6FE4B3B6CA38C6D17 /* Pods-KuaiHou_iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KuaiHou_iOS.debug.xcconfig"; path = "Target Support Files/Pods-KuaiHou_iOS/Pods-KuaiHou_iOS.debug.xcconfig"; sourceTree = "<group>"; };
 		9462F2C576846C42B4EADD4A /* Pods-KuaiHou_iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KuaiHou_iOS.release.xcconfig"; path = "Target Support Files/Pods-KuaiHou_iOS/Pods-KuaiHou_iOS.release.xcconfig"; sourceTree = "<group>"; };
+		CE6B058B2248667800AD44D7 /* SafeCenterVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SafeCenterVC.h; sourceTree = "<group>"; };
+		CE6B058C2248667800AD44D7 /* SafeCenterVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SafeCenterVC.m; sourceTree = "<group>"; };
+		CE6B058D2248667800AD44D7 /* SafeCenterVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SafeCenterVC.xib; sourceTree = "<group>"; };
+		CE6B0590224867FE00AD44D7 /* ShieldDynamicVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ShieldDynamicVC.h; sourceTree = "<group>"; };
+		CE6B0591224867FE00AD44D7 /* ShieldDynamicVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ShieldDynamicVC.m; sourceTree = "<group>"; };
+		CE6B0592224867FE00AD44D7 /* ShieldDynamicVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ShieldDynamicVC.xib; sourceTree = "<group>"; };
+		CE6B0595224869CB00AD44D7 /* VerifiedVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VerifiedVC.h; sourceTree = "<group>"; };
+		CE6B0596224869CB00AD44D7 /* VerifiedVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VerifiedVC.m; sourceTree = "<group>"; };
+		CE6B0597224869CB00AD44D7 /* VerifiedVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = VerifiedVC.xib; sourceTree = "<group>"; };
+		CE6B059A22486BC900AD44D7 /* SafeCenterVCTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SafeCenterVCTableViewCell.h; sourceTree = "<group>"; };
+		CE6B059B22486BC900AD44D7 /* SafeCenterVCTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SafeCenterVCTableViewCell.m; sourceTree = "<group>"; };
+		CE6B059C22486BC900AD44D7 /* SafeCenterVCTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SafeCenterVCTableViewCell.xib; sourceTree = "<group>"; };
+		CE6B059F2248789900AD44D7 /* WithdrawWordVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WithdrawWordVC.h; sourceTree = "<group>"; };
+		CE6B05A02248789900AD44D7 /* WithdrawWordVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WithdrawWordVC.m; sourceTree = "<group>"; };
+		CE6B05A12248789900AD44D7 /* WithdrawWordVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WithdrawWordVC.xib; sourceTree = "<group>"; };
+		CE6B05A422487D5100AD44D7 /* AboutMeVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AboutMeVC.h; sourceTree = "<group>"; };
+		CE6B05A522487D5100AD44D7 /* AboutMeVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AboutMeVC.m; sourceTree = "<group>"; };
+		CE6B05A622487D5100AD44D7 /* AboutMeVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AboutMeVC.xib; sourceTree = "<group>"; };
+		CE6B05A9224884F300AD44D7 /* HelpVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HelpVC.h; sourceTree = "<group>"; };
+		CE6B05AA224884F300AD44D7 /* HelpVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HelpVC.m; sourceTree = "<group>"; };
+		CE6B05AB224884F300AD44D7 /* HelpVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HelpVC.xib; sourceTree = "<group>"; };
+		CE6B05AF2248A2C500AD44D7 /* VoucherVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VoucherVC.h; sourceTree = "<group>"; };
+		CE6B05B02248A2C500AD44D7 /* VoucherVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VoucherVC.m; sourceTree = "<group>"; };
+		CE6B05B12248A2C500AD44D7 /* VoucherVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = VoucherVC.xib; sourceTree = "<group>"; };
+		CE6B05B52248AA3200AD44D7 /* DynamicsDetailVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DynamicsDetailVC.h; sourceTree = "<group>"; };
+		CE6B05B62248AA3200AD44D7 /* DynamicsDetailVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DynamicsDetailVC.m; sourceTree = "<group>"; };
+		CE6B05B72248AA3200AD44D7 /* DynamicsDetailVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DynamicsDetailVC.xib; sourceTree = "<group>"; };
+		CE6B05BB2248B8BE00AD44D7 /* DIYSendToolbarView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DIYSendToolbarView.h; sourceTree = "<group>"; };
+		CE6B05BC2248B8BE00AD44D7 /* DIYSendToolbarView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DIYSendToolbarView.m; sourceTree = "<group>"; };
+		CE6B05BF2248EEF900AD44D7 /* DynamicsContentCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DynamicsContentCell.h; sourceTree = "<group>"; };
+		CE6B05C02248EEF900AD44D7 /* DynamicsContentCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DynamicsContentCell.m; sourceTree = "<group>"; };
+		CE6B05C12248EEF900AD44D7 /* DynamicsContentCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DynamicsContentCell.xib; sourceTree = "<group>"; };
 		CE9C4BE8223B4F9B00DE9DC1 /* icon_error_network.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_error_network.png; sourceTree = "<group>"; };
 		CE9C4BE9223B4F9B00DE9DC1 /* PLEmptyView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PLEmptyView.m; sourceTree = "<group>"; };
 		CE9C4BEA223B4F9B00DE9DC1 /* PLEmptyConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PLEmptyConfig.h; sourceTree = "<group>"; };
@@ -380,6 +435,9 @@
 		CEE6E37922420731006ED98F /* SendDynamicsVideoCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SendDynamicsVideoCell.h; sourceTree = "<group>"; };
 		CEE6E37A22420731006ED98F /* SendDynamicsVideoCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SendDynamicsVideoCell.m; sourceTree = "<group>"; };
 		CEE6E37B22420731006ED98F /* SendDynamicsVideoCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SendDynamicsVideoCell.xib; sourceTree = "<group>"; };
+		CEE9B44D2244EA060004E4FA /* ChangePassWordVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ChangePassWordVC.h; sourceTree = "<group>"; };
+		CEE9B44E2244EA060004E4FA /* ChangePassWordVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ChangePassWordVC.m; sourceTree = "<group>"; };
+		CEE9B44F2244EA060004E4FA /* ChangePassWordVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChangePassWordVC.xib; sourceTree = "<group>"; };
 		CEFA920E223F535E0015F7EE /* AppDelegate+Config.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AppDelegate+Config.h"; sourceTree = "<group>"; };
 		CEFA920F223F535E0015F7EE /* AppDelegate+Config.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "AppDelegate+Config.m"; sourceTree = "<group>"; };
 		CEFA9211223F5AAA0015F7EE /* UILabel+BaseChangeDefaultFont.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UILabel+BaseChangeDefaultFont.h"; sourceTree = "<group>"; };
@@ -509,6 +567,45 @@
 				F72C78518845A6C8D2F549AB /* Pods_KuaiHou_iOS.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CE6B05AE2248A2B400AD44D7 /* Voucher */ = {
+			isa = PBXGroup;
+			children = (
+				CE6B05AF2248A2C500AD44D7 /* VoucherVC.h */,
+				CE6B05B02248A2C500AD44D7 /* VoucherVC.m */,
+				CE6B05B12248A2C500AD44D7 /* VoucherVC.xib */,
+			);
+			path = Voucher;
+			sourceTree = "<group>";
+		};
+		CE6B05B42248AA1A00AD44D7 /* DynamicsDetail */ = {
+			isa = PBXGroup;
+			children = (
+				CE6B05B52248AA3200AD44D7 /* DynamicsDetailVC.h */,
+				CE6B05B62248AA3200AD44D7 /* DynamicsDetailVC.m */,
+				CE6B05B72248AA3200AD44D7 /* DynamicsDetailVC.xib */,
+			);
+			path = DynamicsDetail;
+			sourceTree = "<group>";
+		};
+		CE6B05BA2248B78100AD44D7 /* DIYSendToolbar */ = {
+			isa = PBXGroup;
+			children = (
+				CE6B05BB2248B8BE00AD44D7 /* DIYSendToolbarView.h */,
+				CE6B05BC2248B8BE00AD44D7 /* DIYSendToolbarView.m */,
+			);
+			path = DIYSendToolbar;
+			sourceTree = "<group>";
+		};
+		CE6B05BE2248EEC900AD44D7 /* DynamicsDetail */ = {
+			isa = PBXGroup;
+			children = (
+				CE6B05BF2248EEF900AD44D7 /* DynamicsContentCell.h */,
+				CE6B05C02248EEF900AD44D7 /* DynamicsContentCell.m */,
+				CE6B05C12248EEF900AD44D7 /* DynamicsContentCell.xib */,
+			);
+			path = DynamicsDetail;
 			sourceTree = "<group>";
 		};
 		CE9C4BE7223B4F9B00DE9DC1 /* Empty */ = {
@@ -718,9 +815,28 @@
 		CEE28EA52243297000C3D7E9 /* Setting */ = {
 			isa = PBXGroup;
 			children = (
+				CEE9B44C2244E9380004E4FA /* ChangePassWord */,
 				CEE28EA7224329A900C3D7E9 /* MainSetVC.h */,
 				CEE28EA8224329A900C3D7E9 /* MainSetVC.m */,
 				CEE28EA9224329A900C3D7E9 /* MainSetVC.xib */,
+				CE6B058B2248667800AD44D7 /* SafeCenterVC.h */,
+				CE6B058C2248667800AD44D7 /* SafeCenterVC.m */,
+				CE6B058D2248667800AD44D7 /* SafeCenterVC.xib */,
+				CE6B0590224867FE00AD44D7 /* ShieldDynamicVC.h */,
+				CE6B0591224867FE00AD44D7 /* ShieldDynamicVC.m */,
+				CE6B0592224867FE00AD44D7 /* ShieldDynamicVC.xib */,
+				CE6B0595224869CB00AD44D7 /* VerifiedVC.h */,
+				CE6B0596224869CB00AD44D7 /* VerifiedVC.m */,
+				CE6B0597224869CB00AD44D7 /* VerifiedVC.xib */,
+				CE6B059F2248789900AD44D7 /* WithdrawWordVC.h */,
+				CE6B05A02248789900AD44D7 /* WithdrawWordVC.m */,
+				CE6B05A12248789900AD44D7 /* WithdrawWordVC.xib */,
+				CE6B05A422487D5100AD44D7 /* AboutMeVC.h */,
+				CE6B05A522487D5100AD44D7 /* AboutMeVC.m */,
+				CE6B05A622487D5100AD44D7 /* AboutMeVC.xib */,
+				CE6B05A9224884F300AD44D7 /* HelpVC.h */,
+				CE6B05AA224884F300AD44D7 /* HelpVC.m */,
+				CE6B05AB224884F300AD44D7 /* HelpVC.xib */,
 			);
 			path = Setting;
 			sourceTree = "<group>";
@@ -1029,6 +1145,16 @@
 			path = InfoDetail;
 			sourceTree = "<group>";
 		};
+		CEE9B44C2244E9380004E4FA /* ChangePassWord */ = {
+			isa = PBXGroup;
+			children = (
+				CEE9B44D2244EA060004E4FA /* ChangePassWordVC.h */,
+				CEE9B44E2244EA060004E4FA /* ChangePassWordVC.m */,
+				CEE9B44F2244EA060004E4FA /* ChangePassWordVC.xib */,
+			);
+			path = ChangePassWord;
+			sourceTree = "<group>";
+		};
 		CEFA9214223F5D1F0015F7EE /* Controller */ = {
 			isa = PBXGroup;
 			children = (
@@ -1130,6 +1256,7 @@
 				CEFA9261223F98EC0015F7EE /* NearbyDynamics */,
 				CEFA9262223F991A0015F7EE /* FavorableDynamics */,
 				CEFA9263223F99520015F7EE /* HeedDynamics */,
+				CE6B05B42248AA1A00AD44D7 /* DynamicsDetail */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -1137,6 +1264,8 @@
 		CEFA9222223F62720015F7EE /* View */ = {
 			isa = PBXGroup;
 			children = (
+				CE6B05BE2248EEC900AD44D7 /* DynamicsDetail */,
+				CE6B05BA2248B78100AD44D7 /* DIYSendToolbar */,
 				CEFA92D02241D14A0015F7EE /* SendDynamics */,
 				CEFA9277223FA2880015F7EE /* NearbyDynamics */,
 			);
@@ -1184,6 +1313,7 @@
 		CEFA9227223F627C0015F7EE /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				CE6B05AE2248A2B400AD44D7 /* Voucher */,
 				CEFA9241223F63E70015F7EE /* MainMineVC.h */,
 				CEFA9242223F63E70015F7EE /* MainMineVC.m */,
 				CEFA9243223F63E70015F7EE /* MainMineVC.xib */,
@@ -1204,6 +1334,9 @@
 				CEFA92C42240ED9C0015F7EE /* MainMineListCell.xib */,
 				CEE28F74224359F200C3D7E9 /* ChangeInfo */,
 				CEE28EAC22432E9600C3D7E9 /* Setting */,
+				CE6B059A22486BC900AD44D7 /* SafeCenterVCTableViewCell.h */,
+				CE6B059B22486BC900AD44D7 /* SafeCenterVCTableViewCell.m */,
+				CE6B059C22486BC900AD44D7 /* SafeCenterVCTableViewCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -1450,18 +1583,24 @@
 			buildActionMask = 2147483647;
 			files = (
 				CEE28EB62243344D00C3D7E9 /* MainSetBtnCell.xib in Resources */,
+				CE6B05B92248AA3200AD44D7 /* DynamicsDetailVC.xib in Resources */,
+				CE6B05A822487D5100AD44D7 /* AboutMeVC.xib in Resources */,
 				CE9C4BF6223B4F9B00DE9DC1 /* icon_error_network.png in Resources */,
 				CEFA92C62240ED9C0015F7EE /* MainMineListCell.xib in Resources */,
 				CEFA92C12240CB870015F7EE /* MainMineHeadCell.xib in Resources */,
+				CE6B05AD224884F300AD44D7 /* HelpVC.xib in Resources */,
 				CE9C4BF8223B4F9B00DE9DC1 /* icon_no_data.png in Resources */,
+				CEE9B4512244EA060004E4FA /* ChangePassWordVC.xib in Resources */,
 				CEFA92D52241D1970015F7EE /* SendDynamicsHeadView.xib in Resources */,
 				CEFA92A3224088500015F7EE /* FriendMessageVC.xib in Resources */,
 				CEFA92AD2240A01C0015F7EE /* FriendMessageCell.xib in Resources */,
 				CEE28F7D22436D0500C3D7E9 /* InfoDetailVC.xib in Resources */,
 				CEFA9231223F634D0015F7EE /* MainHomeVC.xib in Resources */,
 				CEFA92DA2241DDF40015F7EE /* SendDynamicsHeadCell.xib in Resources */,
+				CE6B05A32248789900AD44D7 /* WithdrawWordVC.xib in Resources */,
 				CEFA92CC2241C93D0015F7EE /* SendDynamicsVC.xib in Resources */,
 				CEFA929E2240883B0015F7EE /* NewMessageVC.xib in Resources */,
+				CE6B058F2248667800AD44D7 /* SafeCenterVC.xib in Resources */,
 				CECC0D26223A411F001CF0A2 /* LaunchScreen.storyboard in Resources */,
 				CEE28F6E2243571800C3D7E9 /* README.md in Resources */,
 				CEE28F73224357EA00C3D7E9 /* ChangeInfoVC.xib in Resources */,
@@ -1469,17 +1608,22 @@
 				CEE28F6B2243571800C3D7E9 /* GKNavigationBarViewController.bundle in Resources */,
 				CECC0D23223A411F001CF0A2 /* Assets.xcassets in Resources */,
 				CEE28F602243571800C3D7E9 /* LICENSE in Resources */,
+				CE6B05C32248EEF900AD44D7 /* DynamicsContentCell.xib in Resources */,
 				CEE6E37D22420731006ED98F /* SendDynamicsVideoCell.xib in Resources */,
+				CE6B0594224867FE00AD44D7 /* ShieldDynamicVC.xib in Resources */,
 				CEFA9271223F99BB0015F7EE /* FavorableDynamicsVC.xib in Resources */,
 				CEFA9284223FA6920015F7EE /* NearByDynamicsHeadCell.xib in Resources */,
 				CEE28EB122432EEE00C3D7E9 /* MainSetListCell.xib in Resources */,
+				CE6B059E22486BC900AD44D7 /* SafeCenterVCTableViewCell.xib in Resources */,
 				CEFA9276223F99CF0015F7EE /* HeedDynamicsVC.xib in Resources */,
 				CEE28F7F2243732E00C3D7E9 /* wb_bg.jpg in Resources */,
 				CEFA9245223F63E70015F7EE /* MainMineVC.xib in Resources */,
 				CEFA926C223F99A90015F7EE /* NearbyDynamicsVC.xib in Resources */,
+				CE6B05B32248A2C500AD44D7 /* VoucherVC.xib in Resources */,
 				CEFA92A8224091000015F7EE /* NewMessageCell.xib in Resources */,
 				CEE28EC72243375800C3D7E9 /* SWQRCode.bundle in Resources */,
 				CECC0D1E223A411D001CF0A2 /* Main.storyboard in Resources */,
+				CE6B0599224869CB00AD44D7 /* VerifiedVC.xib in Resources */,
 				CEFA928F223FAB430015F7EE /* NearByDynamicsToolCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1516,6 +1660,7 @@
 				"${BUILT_PRODUCTS_DIR}/IQKeyboardManager/IQKeyboardManager.framework",
 				"${BUILT_PRODUCTS_DIR}/JSONModel/JSONModel.framework",
 				"${BUILT_PRODUCTS_DIR}/MJRefresh/MJRefresh.framework",
+				"${BUILT_PRODUCTS_DIR}/MLLabel/MLLabel.framework",
 				"${BUILT_PRODUCTS_DIR}/Masonry/Masonry.framework",
 				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
 				"${BUILT_PRODUCTS_DIR}/SVProgressHUD/SVProgressHUD.framework",
@@ -1534,6 +1679,7 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IQKeyboardManager.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/JSONModel.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MJRefresh.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MLLabel.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Masonry.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SVProgressHUD.framework",
@@ -1588,7 +1734,9 @@
 				CEFA92CB2241C93D0015F7EE /* SendDynamicsVC.m in Sources */,
 				CEE28F3E224355E100C3D7E9 /* JXCategoryBaseCellModel.m in Sources */,
 				CEE28F37224355E100C3D7E9 /* JXCategoryNumberCellModel.m in Sources */,
+				CE6B058E2248667800AD44D7 /* SafeCenterVC.m in Sources */,
 				CEE28F642243571800C3D7E9 /* UINavigationController+GKCategory.m in Sources */,
+				CE6B0598224869CB00AD44D7 /* VerifiedVC.m in Sources */,
 				CE9C4C0D223B662600DE9DC1 /* BaseWebViewController.m in Sources */,
 				CEE28F822243872F00C3D7E9 /* GKWBPageViewController.m in Sources */,
 				CEFA9293223FB8870015F7EE /* CirclePhotosView.m in Sources */,
@@ -1596,6 +1744,8 @@
 				CEFA92B52240A6030015F7EE /* SCIndexViewConfiguration.m in Sources */,
 				CEFA9244223F63E70015F7EE /* MainMineVC.m in Sources */,
 				CEE28ECB2243385C00C3D7E9 /* AppDelegate+AvoidCrash.m in Sources */,
+				CEE9B4502244EA060004E4FA /* ChangePassWordVC.m in Sources */,
+				CE6B05B82248AA3200AD44D7 /* DynamicsDetailVC.m in Sources */,
 				CEFA92C02240CB870015F7EE /* MainMineHeadCell.m in Sources */,
 				CEFA9210223F535E0015F7EE /* AppDelegate+Config.m in Sources */,
 				CEE28F6C2243571800C3D7E9 /* GKNavigationBarViewController.m in Sources */,
@@ -1608,6 +1758,7 @@
 				CEE28F3B224355E100C3D7E9 /* UIColor+JXAdd.m in Sources */,
 				CE9C4BF7223B4F9B00DE9DC1 /* PLEmptyView.m in Sources */,
 				CEE28F24224355E100C3D7E9 /* JXCategoryIndicatorComponentView.m in Sources */,
+				CE6B05BD2248B8BE00AD44D7 /* DIYSendToolbarView.m in Sources */,
 				CE9C4C12223B6AB900DE9DC1 /* UIViewController+FLInsert.m in Sources */,
 				CEE28F672243571800C3D7E9 /* UIScrollView+GKCategory.m in Sources */,
 				CEE28F32224355E100C3D7E9 /* JXCategoryImageView.m in Sources */,
@@ -1619,6 +1770,7 @@
 				CEE28F26224355E100C3D7E9 /* JXCategoryIndicatorCellModel.m in Sources */,
 				CE9C4BF9223B4F9B00DE9DC1 /* PLEmptyConfig.m in Sources */,
 				CEFA92A2224088500015F7EE /* FriendMessageVC.m in Sources */,
+				CE6B05A722487D5100AD44D7 /* AboutMeVC.m in Sources */,
 				CEE28F25224355E100C3D7E9 /* JXCategoryIndicatorBackgroundView.m in Sources */,
 				CEFA92C52240ED9C0015F7EE /* MainMineListCell.m in Sources */,
 				CECC0D58223A525F001CF0A2 /* UIColor+Hex.m in Sources */,
@@ -1637,20 +1789,25 @@
 				CECC0D18223A411D001CF0A2 /* AppDelegate.m in Sources */,
 				CEFA9219223F5DC40015F7EE /* BaseTableBar.m in Sources */,
 				CECC0D69223A56B8001CF0A2 /* NSDictionary+Log.m in Sources */,
+				CE6B05C22248EEF900AD44D7 /* DynamicsContentCell.m in Sources */,
 				CEFA92D92241DDF40015F7EE /* SendDynamicsHeadCell.m in Sources */,
 				CEE28F692243571800C3D7E9 /* UIViewController+GKCategory.m in Sources */,
 				CEE28F35224355E100C3D7E9 /* JXCategoryNumberView.m in Sources */,
 				CEE28EC82243375800C3D7E9 /* SWScannerView.m in Sources */,
+				CE6B05B22248A2C500AD44D7 /* VoucherVC.m in Sources */,
 				CEE28F6D2243571800C3D7E9 /* GKNavigationBarConfigure.m in Sources */,
 				CEE28F2C224355E100C3D7E9 /* JXCategoryTitleImageView.m in Sources */,
 				CEE28EB022432EEE00C3D7E9 /* MainSetListCell.m in Sources */,
 				CEE28ED4224355DA00C3D7E9 /* GKPageTableView.m in Sources */,
+				CE6B05A22248789900AD44D7 /* WithdrawWordVC.m in Sources */,
 				CEE28F7C22436D0500C3D7E9 /* InfoDetailVC.m in Sources */,
 				CECC0D6B223A56B8001CF0A2 /* NSArray+Log.m in Sources */,
 				CEE28F31224355E100C3D7E9 /* JXCategoryTitleView.m in Sources */,
 				CEFA92B72240A6030015F7EE /* UITableView+SCIndexView.m in Sources */,
 				CEE28F3D224355E100C3D7E9 /* JXCategoryBaseCell.m in Sources */,
+				CE6B059D22486BC900AD44D7 /* SafeCenterVCTableViewCell.m in Sources */,
 				CEFA9235223F639D0015F7EE /* MainDynamicsVC.m in Sources */,
+				CE6B05AC224884F300AD44D7 /* HelpVC.m in Sources */,
 				CE9C4C06223B5ED800DE9DC1 /* UIImage+BundleImage.m in Sources */,
 				CEE28F29224355E100C3D7E9 /* JXCategoryDotCell.m in Sources */,
 				CE9C4C09223B650C00DE9DC1 /* BaseViewController.m in Sources */,
@@ -1666,6 +1823,7 @@
 				CECC0D29223A411F001CF0A2 /* main.m in Sources */,
 				CEE28EC52243375800C3D7E9 /* SWQRCodeManager.m in Sources */,
 				CEE28F34224355E100C3D7E9 /* JXCategoryImageCellModel.m in Sources */,
+				CE6B0593224867FE00AD44D7 /* ShieldDynamicVC.m in Sources */,
 				CECC0D5D223A5670001CF0A2 /* UIView+Tap.m in Sources */,
 				CEFA92B62240A6030015F7EE /* SCIndexView.m in Sources */,
 				CEE28F2D224355E100C3D7E9 /* JXCategoryTitleImageCell.m in Sources */,

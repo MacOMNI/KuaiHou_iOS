@@ -9,6 +9,10 @@
 #import "MainSetVC.h"
 #import "MainSetListCell.h"
 #import "MainSetBtnCell.h"
+#import "SafeCenterVC.h"
+#import "AboutMeVC.h"
+#import "HelpVC.h"
+
 
 @interface MainSetVC ()
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
@@ -87,6 +91,48 @@
     
     return nil;
     
+}
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+    switch (indexPath.section) {
+        case 0:{
+            if (indexPath.row == 0) { // 安全中心
+                [self.navigationController pushViewController:[SafeCenterVC new] animated:YES];
+            }else{ // 使用帮助
+                [self.navigationController pushViewController:[HelpVC new] animated:YES];
+            }
+        }
+            
+            break;
+        case 1:{
+            if (indexPath.row == 0) { // 屏蔽设置
+                
+            }else if(indexPath.row == 1){ // 屏蔽的号码
+                
+            }else{ // 屏蔽的动态
+                
+            }
+        }
+            
+            break;
+        case 2:{
+            
+        }
+            
+            break;
+        case 3:{
+            if (indexPath.row == 0) { // 清除聊天记录
+                
+            }else{ // 关于我们 
+                [self.navigationController pushViewController:[AboutMeVC new] animated:YES];
+            }
+        }
+            
+            break;
+            
+        default:
+            break;
+    }
 }
 
 

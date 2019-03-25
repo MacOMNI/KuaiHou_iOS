@@ -12,10 +12,12 @@
 #import "MainSetVC.h"
 #import "SWQRCode.h"
 #import "ChangeInfoVC.h"
+#import "VoucherVC.h"
 
 @interface MainMineVC ()
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
 @property (nonatomic, strong) NSArray *listArray;
+
 
 @end
 
@@ -48,7 +50,7 @@
     [self.tableView registerNib:[UINib nibWithNibName:NSStringFromClass([MainMineListCell class]) bundle:[NSBundle mainBundle]] forCellReuseIdentifier:NSStringFromClass([MainMineListCell class])];
     
     // @{@"image":@"mine_list4", @"title":@"认证"},@{@"image":@"mine_list3", @"title":@"道具"},
-    self.listArray = @[@{@"image":@"mine_list1", @"title":@"任务"},@{@"image":@"mine_list2", @"title":@"活动"},@{@"image":@"mine_list5", @"title":@"代理人"},@{@"image":@"mine_list6", @"title":@"经理人"}];
+    self.listArray = @[@{@"image":@"mine_list1", @"title":@"任务"},@{@"image":@"mine_list2", @"title":@"活动"},@{@"image":@"mine_list5", @"title":@"开店"},@{@"image":@"mine_list6", @"title":@"经理人"}];
 }
 
 #pragma mark - UITableViewDelegate & Datasource
@@ -110,6 +112,19 @@
                     break;
                 case 4:{ // 修改资料
                     [self.navigationController pushViewController:[ChangeInfoVC new] animated:YES];
+                }
+                    break;
+                case 100:{ // 钱包
+                }
+                    break;
+                case 101:{ // 订单
+                }
+                    break;
+                case 102:{ // 推广
+                }
+                    break;
+                case 103:{ // 代金券
+                    [self.navigationController pushViewController:[VoucherVC new] animated:YES];
                 }
                     break;
                 default:

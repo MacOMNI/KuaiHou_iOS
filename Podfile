@@ -24,8 +24,10 @@ target 'KuaiHou_iOS' do
   pod 'DZNEmptyDataSet'
   # 骨骼过度动画
   pod 'TABAnimated'
-  #
+  # 分段选择器
   pod 'WMPageController'
+  # 富文本labbel
+  pod 'MLLabel'
 
   use_frameworks!
 

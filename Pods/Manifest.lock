@@ -20,6 +20,7 @@ PODS:
   - JSONModel (1.8.0)
   - Masonry (1.1.0)
   - MJRefresh (3.1.15.7)
+  - MLLabel (1.10.5)
   - SDWebImage (4.4.5):
     - SDWebImage/Core (= 4.4.5)
   - SDWebImage/Core (4.4.5)
@@ -37,6 +38,7 @@ DEPENDENCIES:
   - JSONModel
   - Masonry
   - MJRefresh
+  - MLLabel
   - SDWebImage
   - SVProgressHUD
   - TABAnimated
@@ -53,6 +55,7 @@ SPEC REPOS:
     - JSONModel
     - Masonry
     - MJRefresh
+    - MLLabel
     - SDWebImage
     - SVProgressHUD
     - TABAnimated
@@ -68,6 +71,7 @@ SPEC CHECKSUMS:
   JSONModel: 02ab723958366a3fd27da57ea2af2113658762e9
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
   MJRefresh: 697f8ec75ebdbe9207767bb682cf0f51b0d8a41f
+  MLLabel: d76124055a2205e7f76878e62cd06ba925ba0c97
   SDWebImage: ecc03494e973b93b80213649d32175f8d2d17d4d
   SVProgressHUD: 1428aafac632c1f86f62aa4243ec12008d7a51d6
   TABAnimated: 50124ec704bedd48c868386a17f951ce14a18575
@@ -75,6 +79,6 @@ SPEC CHECKSUMS:
   WMPageController: 0c7624d2b48e4f1ab92371688cf6744ed701575d
   YYText: 5c461d709e24d55a182d1441c41dc639a18a4849
 
-PODFILE CHECKSUM: 431e6ffddebd8766e0de12b28ab7eec877730d9d
+PODFILE CHECKSUM: 9ad53110fe7283e994e21ffbed90374fc49add68
 
 COCOAPODS: 1.6.0
