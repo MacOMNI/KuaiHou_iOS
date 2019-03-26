@@ -31,6 +31,7 @@
 #import <TABAnimated/TABAnimated.h>
 #import <MLLabel/MLLabel.h>
 #import <MLLinkLabel.h>
+#import <WMPageController/WMPageController.h>
 
 #import "UIColor+Hex.h"
 #import "UIViewController+Empty.h"
@@ -48,6 +49,7 @@
 #import "GKNavigationBarViewController.h"
 #import "GKPageScrollView.h"
 #import "JXCategoryView.h"
+#import "WLButtonCountdownManager.h"
 
 
 #endif

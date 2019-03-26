@@ -90,18 +90,18 @@ static NSString * testStr = @"湖南沃趣娱乐传媒有限公司是一家专�
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section {
+    if (section == 1) {
+        return 35;
+    }
     return 0.0001;
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForFooterInSection:(NSInteger)section {
-    if (section == 0) {
-        return 35;
-    }
     return 0.001;
 }
 
-- (nullable UIView *)tableView:(UITableView *)tableView viewForFooterInSection:(NSInteger)section{
-    if (section == 0) {
+- (nullable UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section{
+    if (section == 1) {
         UIView *view = [[UIView alloc] init];
         view.backgroundColor = [UIColor whiteColor];
         UILabel *label = [UILabel new];
@@ -127,6 +127,11 @@ static NSString * testStr = @"湖南沃趣娱乐传媒有限公司是一家专�
         }];
         return view;
     }
+    return nil;
+}
+
+- (nullable UIView *)tableView:(UITableView *)tableView viewForFooterInSection:(NSInteger)section{
+    
     return nil;
     
 }

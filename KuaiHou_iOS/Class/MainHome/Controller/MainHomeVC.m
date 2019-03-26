@@ -18,11 +18,12 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
     
-    [APIManagerInstance POSTNetworkRequestUrlString:@"/modeng-platform/api/common/getUserProtocol.do" params:@{} success:^(BOOL isSuccess, id  _Nonnull responseObject) {
-        NSLog(@"%@", responseObject);
-    } fail:^{
-        
-    }];
+//    [APIManagerInstance POSTNetworkRequestUrlString:@"/modeng-platform/api/common/getUserProtocol.do" params:@{} success:^(BOOL isSuccess, id  _Nonnull responseObject) {
+//        NSLog(@"%@", responseObject);
+//    } fail:^{
+//        
+//    }];
+    
 }
 
 - (void)viewWillAppear:(BOOL)animated {

@@ -19,6 +19,8 @@ static NSString * cellIdentifierIDText = @"UserCircleTextCell";
 static NSString * cellIdentifierIDTool = @"UserCircleToolCell";
 static NSString * cellIdentifierIDMoreImage = @"UserCircleImageCell";
 
+static NSString * testStr = @"湖南沃趣娱乐传媒有限公司是一家专注互联网软件 开发和运营的企业。湖南沃趣娱乐传媒有限公司是一家专注互联网软件 开发和运营的企业。湖南沃趣娱乐传媒有限公司是一家专注互联网软件 开发和运营的企业。湖南沃趣娱乐传媒有限公司是一家专注互联网软件 开发和运营的企业。湖南沃趣娱乐传媒有限公司是一家专注互联网软件 开发和运营的企业。湖南沃趣娱乐传媒有限公司是一家专注互联网软件 开发和运营的企业。湖南沃趣娱乐传媒有限公司是一家专注互联网软件 开发和运营的企业。湖南沃趣娱乐传媒有限公司是一家专注互联网软件 开发和运营的企业。湖南沃趣娱乐传媒有限公司是一家专注互联网软件 开发和运营的企业。";
+
 
 
 @interface NearbyDynamicsVC ()
@@ -73,7 +75,7 @@ static NSString * cellIdentifierIDMoreImage = @"UserCircleImageCell";
     if (indexPath.row ==0) {
         return 79;
     }else if (indexPath.row == 1){
-        return [NearByDynamicsTextCell cellHeightWithContent:@"湖南沃趣娱乐传媒有限公司是一家专注互联网软件 开发和运营的企业。湖南沃趣娱乐传媒有限公司是一家专注互联网软件 开发和运营的企业。湖南沃趣娱乐传媒有限公司是一家专注互联网软件 开发和运营的企业。湖南沃趣娱乐传媒有限公司是一家专注互联网软件 开发和运营的企业。湖南沃趣娱乐传媒有限公司是一家专注互联网软件 开发和运营的企业。湖南沃趣娱乐传媒有限公司是一家专注互联网软件 开发和运营的企业。湖南沃趣娱乐传媒有限公司是一家专注互联网软件 开发和运营的企业。湖南沃趣娱乐传媒有限公司是一家专注互联网软件 开发和运营的企业。湖南沃趣娱乐传媒有限公司是一家专注互联网软件 开发和运营的企业。" isOpen:YES];
+        return [NearByDynamicsTextCell cellHeightWithContent:testStr isOpen:YES];
     }else if (indexPath.row == 2){
         return [NearByDynamicsImageCell cellHeightWithImageCount:(int)indexPath.section];
     }else if (indexPath.row == 3){
@@ -95,7 +97,7 @@ static NSString * cellIdentifierIDMoreImage = @"UserCircleImageCell";
         if (!cell) {
             cell = [[NearByDynamicsTextCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:cellIdentifierIDText];
         }
-        [(NearByDynamicsTextCell *)cell  setDataWithContent:@"湖南沃趣娱乐传媒有限公司是一家专注互联网软件 开发和运营的企业。湖南沃趣娱乐传媒有限公司是一家专注互联网软件 开发和运营的企业。湖南沃趣娱乐传媒有限公司是一家专注互联网软件 开发和运营的企业。湖南沃趣娱乐传媒有限公司是一家专注互联网软件 开发和运营的企业。湖南沃趣娱乐传媒有限公司是一家专注互联网软件 开发和运营的企业。湖南沃趣娱乐传媒有限公司是一家专注互联网软件 开发和运营的企业。湖南沃趣娱乐传媒有限公司是一家专注互联网软件 开发和运营的企业。湖南沃趣娱乐传媒有限公司是一家专注互联网软件 开发和运营的企业。湖南沃趣娱乐传媒有限公司是一家专注互联网软件 开发和运营的企业。" userId:@(111) isForwarding:NO isOpen:YES];
+        [(NearByDynamicsTextCell *)cell  setDataWithContent:testStr userId:@(111) isForwarding:NO isOpen:YES];
         ((NearByDynamicsTextCell*)cell).openBlock = ^() {
         };
         return cell;

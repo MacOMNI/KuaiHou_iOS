@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="MyDynamicsHeadCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Pkd-p0-DgG">
+                        <rect key="frame" x="15" y="14.5" width="15" height="15"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="15" id="Ofm-EY-xia"/>
+                            <constraint firstAttribute="height" constant="15" id="efB-2c-lWY"/>
+                        </constraints>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="昨天 09:56" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DFs-6X-0GB">
+                        <rect key="frame" x="40" y="16.5" width="62" height="11"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="11" id="T2V-tE-E0Y"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="0.84705882352941175" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uQ9-Ls-Hls">
+                        <rect key="frame" x="117" y="8.5" width="30" height="27"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <state key="normal" title="删除">
+                            <color key="titleColor" red="0.8862745098" green="0.26274509800000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </state>
+                        <connections>
+                            <action selector="delAction:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="dKD-P6-1AH"/>
+                        </connections>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="uQ9-Ls-Hls" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="1Es-DG-HIv"/>
+                    <constraint firstItem="Pkd-p0-DgG" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="6XU-Um-MQJ"/>
+                    <constraint firstItem="DFs-6X-0GB" firstAttribute="leading" secondItem="Pkd-p0-DgG" secondAttribute="trailing" constant="10" id="8do-uF-BDd"/>
+                    <constraint firstItem="DFs-6X-0GB" firstAttribute="centerY" secondItem="Pkd-p0-DgG" secondAttribute="centerY" id="JBu-Ra-1CF"/>
+                    <constraint firstItem="Pkd-p0-DgG" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="RW9-6g-xri"/>
+                    <constraint firstItem="uQ9-Ls-Hls" firstAttribute="leading" secondItem="DFs-6X-0GB" secondAttribute="trailing" constant="15" id="X8C-CU-rjK"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="delBtn" destination="uQ9-Ls-Hls" id="oDH-qQ-WDp"/>
+                <outlet property="iconView" destination="Pkd-p0-DgG" id="b4V-4Z-h7L"/>
+                <outlet property="timeLab" destination="DFs-6X-0GB" id="E8t-x8-KlU"/>
+            </connections>
+            <point key="canvasLocation" x="40" y="46.776611694152926"/>
+        </tableViewCell>
+    </objects>
+</document>

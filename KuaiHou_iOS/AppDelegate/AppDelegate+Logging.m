@@ -8,6 +8,7 @@
 
 #import "AppDelegate+Logging.h"
 #import "BaseTabBarController.h"
+#import "LogginVC.h"
 
 @implementation AppDelegate (Logging)
 

@@ -8,9 +8,12 @@
 
 #import "ChangeInfoVC.h"
 #import "ChangeInfoHeadView.h"
-#import "InfoDetailVC.h"
-#import <WMPageController/WMPageController.h>
 #import "GKWBPageViewController.h"
+
+#import "InfoDetailVC.h"
+#import "MyDynamicsVC.h"
+#import "MyPhotoVC.h"
+#import "MyVideoVC.h"
 
 @interface ChangeInfoVC () <GKPageScrollViewDelegate, WMPageControllerDataSource, WMPageControllerDelegate, GKWBPageViewControllDelegate>
 
@@ -26,6 +29,9 @@
 
 @property (nonatomic, strong) UIView                    *titleView;
 @property (nonatomic, strong) UILabel                   *titleLabel;
+@property (weak, nonatomic) IBOutlet UIView *savaBgView;
+@property (weak, nonatomic) IBOutlet NSLayoutConstraint *centerX;
+@property (weak, nonatomic) IBOutlet UILabel *savaTitle;
 
 @end
 
@@ -35,18 +41,16 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
     self.gk_navBarAlpha = 0.0f;
-    
     self.gk_statusBarStyle = UIStatusBarStyleLightContent;
-    
     self.gk_navTitleView = self.titleView;
-    
     [self.view addSubview:self.pageScrollView];
     [self.pageScrollView mas_makeConstraints:^(MASConstraintMaker *make) {
         make.edges.equalTo(self.view);
     }];
-    
     [self.pageScrollView reloadData];
     [self mainTableViewDidScroll:self.pageScrollView.mainTableView];
+    
+    [self.view bringSubviewToFront:self.savaBgView];
 }
 
 - (void)back {
@@ -55,6 +59,8 @@
 
 - (void)more {
     
+}
+- (IBAction)savaBtn:(id)sender {
 }
 
 
@@ -165,7 +171,23 @@
 #pragma mark - WMPageControllerDelegate
 - (void)pageController:(WMPageController *)pageController didEnterViewController:(__kindof UIViewController *)viewController withInfo:(NSDictionary *)info {
     
-    NSLog(@"加载数据");
+    int index = [info[@"index"] intValue];
+    
+    if (index == 0) {
+        self.savaBgView.hidden = NO;
+        self.centerX.constant = - 20;
+        self.savaTitle.text = @"保存";
+    }else if (index == 1){
+        self.savaBgView.hidden = NO;
+        self.centerX.constant = -40;
+        self.savaTitle.text = @"发布动态";
+    }else if (index == 2){
+        self.savaBgView.hidden = YES;
+    }else{
+        self.savaBgView.hidden = YES;
+    }
+    
+//    NSLog(@"加载数据%@", info);
 }
 
 #pragma mark - GKWBPageViewControllDelegate
@@ -243,11 +265,11 @@
     if (!_childVCs) {
         InfoDetailVC *homeVC = [InfoDetailVC new];
         
-        InfoDetailVC *wbVC = [InfoDetailVC new];
+        MyDynamicsVC *wbVC = [MyDynamicsVC new];
         
-        InfoDetailVC *videoVC = [InfoDetailVC new];
+        MyPhotoVC *videoVC = [MyPhotoVC new];
         
-        InfoDetailVC *storyVC = [InfoDetailVC new];
+        MyVideoVC *storyVC = [MyVideoVC new];
         
         _childVCs = @[homeVC, wbVC, videoVC, storyVC];
     }

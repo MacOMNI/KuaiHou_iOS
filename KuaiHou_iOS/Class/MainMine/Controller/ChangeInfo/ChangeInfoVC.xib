@@ -1,17 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
-        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ChangeInfoVC">
             <connections>
+                <outlet property="centerX" destination="eu9-nM-dgy" id="btd-Rf-Xum"/>
+                <outlet property="savaBgView" destination="bSL-H3-GpT" id="sMY-co-wFh"/>
+                <outlet property="savaTitle" destination="Dj6-8y-NEa" id="DOP-EL-KYv"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -19,7 +21,56 @@
         <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-            <viewLayoutGuide key="safeArea" id="Q5M-cg-NOt"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bSL-H3-GpT">
+                    <rect key="frame" x="0.0" y="602" width="375" height="40"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DQt-ge-kdt">
+                            <rect key="frame" x="37" y="0.0" width="301" height="40"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                            <state key="normal" image="change_sava"/>
+                            <connections>
+                                <action selector="savaBtn:" destination="-1" eventType="touchUpInside" id="mNB-tt-Hgw"/>
+                            </connections>
+                        </button>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="change_save_icon" translatesAutoresizingMaskIntoConstraints="NO" id="bfb-fg-YUN">
+                            <rect key="frame" x="151" y="8.5" width="33.5" height="23.5"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="33.5" id="1Jv-5D-Iag"/>
+                                <constraint firstAttribute="height" constant="23.5" id="moh-cQ-ypr"/>
+                            </constraints>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="保存" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dj6-8y-NEa">
+                            <rect key="frame" x="194.5" y="9.5" width="37" height="21"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="DQt-ge-kdt" secondAttribute="bottom" id="8W8-Am-V0j"/>
+                        <constraint firstAttribute="height" constant="40" id="E4z-bj-jvh"/>
+                        <constraint firstAttribute="trailing" secondItem="DQt-ge-kdt" secondAttribute="trailing" constant="37" id="EI9-7Y-zGC"/>
+                        <constraint firstItem="bfb-fg-YUN" firstAttribute="centerY" secondItem="bSL-H3-GpT" secondAttribute="centerY" id="PzF-i9-Fuh"/>
+                        <constraint firstItem="DQt-ge-kdt" firstAttribute="top" secondItem="bSL-H3-GpT" secondAttribute="top" id="SsD-uU-t7z"/>
+                        <constraint firstItem="DQt-ge-kdt" firstAttribute="leading" secondItem="bSL-H3-GpT" secondAttribute="leading" constant="37" id="dfn-1A-SVx"/>
+                        <constraint firstItem="bfb-fg-YUN" firstAttribute="centerX" secondItem="bSL-H3-GpT" secondAttribute="centerX" constant="-20" id="eu9-nM-dgy"/>
+                        <constraint firstItem="Dj6-8y-NEa" firstAttribute="centerY" secondItem="DQt-ge-kdt" secondAttribute="centerY" id="qB6-T7-OEE"/>
+                        <constraint firstItem="Dj6-8y-NEa" firstAttribute="leading" secondItem="bfb-fg-YUN" secondAttribute="trailing" constant="10" id="sKl-S9-P1O"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="bSL-H3-GpT" secondAttribute="bottom" constant="25" id="85l-ze-MQW"/>
+                <constraint firstItem="bSL-H3-GpT" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="bof-2m-h5j"/>
+                <constraint firstAttribute="trailing" secondItem="bSL-H3-GpT" secondAttribute="trailing" id="ywG-NJ-EvY"/>
+            </constraints>
+            <point key="canvasLocation" x="39.200000000000003" y="46.326836581709152"/>
         </view>
     </objects>
+    <resources>
+        <image name="change_sava" width="300" height="40"/>
+        <image name="change_save_icon" width="67" height="47"/>
+    </resources>
 </document>

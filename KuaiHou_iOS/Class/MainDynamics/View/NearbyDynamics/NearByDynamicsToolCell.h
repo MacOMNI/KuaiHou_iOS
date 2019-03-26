@@ -11,6 +11,10 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @interface NearByDynamicsToolCell : BaseCell
+@property (weak, nonatomic) IBOutlet NSLayoutConstraint *leftLayout;
+@property (weak, nonatomic) IBOutlet UIButton *contentNumBtn;
+@property (weak, nonatomic) IBOutlet UIButton *likeNumBtn;
+@property (weak, nonatomic) IBOutlet UIButton *moreBtn;
 
 @end
 

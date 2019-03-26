@@ -49,6 +49,12 @@
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="aW0-zy-SZf"/>
+            <connections>
+                <outlet property="contentNumBtn" destination="gQr-fl-bIP" id="GTD-D3-gq7"/>
+                <outlet property="leftLayout" destination="A07-DH-K9q" id="rCE-94-LCq"/>
+                <outlet property="likeNumBtn" destination="Hic-nn-N7g" id="1df-FS-wes"/>
+                <outlet property="moreBtn" destination="Ant-RW-6ZF" id="oTW-Dz-quN"/>
+            </connections>
         </tableViewCell>
     </objects>
     <resources>
