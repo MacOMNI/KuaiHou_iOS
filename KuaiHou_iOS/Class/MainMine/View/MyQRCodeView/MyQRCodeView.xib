@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="MyQRCodeView">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="450"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="TFu-TU-jaF">
+                    <rect key="frame" x="152.5" y="25" width="70" height="70"/>
+                    <color key="backgroundColor" red="0.8862745098" green="0.26274509800000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="70" id="iXk-wg-jyR"/>
+                        <constraint firstAttribute="height" constant="70" id="icU-w3-7Vy"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="35"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                    </userDefinedRuntimeAttributes>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="时光无声邀请你加入快逅" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Otm-KK-iyj" customClass="MLLinkLabel">
+                    <rect key="frame" x="103.5" y="115" width="168.5" height="15"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="15" id="KTm-Ak-rfJ"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="WDk-3A-X6I">
+                    <rect key="frame" x="100" y="167" width="175" height="175"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="175" id="Jg7-KN-ojP"/>
+                        <constraint firstAttribute="height" constant="175" id="jr9-mx-09d"/>
+                    </constraints>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aVN-6d-Bu1">
+                    <rect key="frame" x="55" y="377" width="70" height="30"/>
+                    <color key="backgroundColor" red="0.93333333333333335" green="0.93333333333333335" blue="0.93333333333333335" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="70" id="a6T-w8-pLu"/>
+                        <constraint firstAttribute="height" constant="30" id="osC-iW-QoD"/>
+                    </constraints>
+                    <state key="normal" title="保存">
+                        <color key="titleColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="15"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.borderWidth">
+                            <real key="value" value="0.5"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="color" keyPath="layer.borderUIColor">
+                            <color key="value" red="0.80000000000000004" green="0.80000000000000004" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="savaAction:" destination="iN0-l3-epB" eventType="touchUpInside" id="zjJ-Cx-zsd"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Urw-pT-HNj">
+                    <rect key="frame" x="250" y="377" width="70" height="30"/>
+                    <color key="backgroundColor" red="0.93333333333333335" green="0.93333333333333335" blue="0.93333333333333335" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="70" id="CrM-7b-PX2"/>
+                        <constraint firstAttribute="height" constant="30" id="cvz-1v-pT7"/>
+                    </constraints>
+                    <state key="normal" title="分享">
+                        <color key="titleColor" red="0.8862745098" green="0.26274509800000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="15"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                        <userDefinedRuntimeAttribute type="color" keyPath="layer.borderUIColor">
+                            <color key="value" red="0.80000000000000004" green="0.80000000000000004" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.borderWidth">
+                            <real key="value" value="0.5"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="shareAction:" destination="iN0-l3-epB" eventType="touchUpInside" id="gsi-J6-Rlt"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="TFu-TU-jaF" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="0Iq-3Q-2hg"/>
+                <constraint firstItem="WDk-3A-X6I" firstAttribute="top" secondItem="Otm-KK-iyj" secondAttribute="bottom" constant="37" id="0tH-Kp-mmM"/>
+                <constraint firstItem="aVN-6d-Bu1" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="55" id="75D-cD-Ln2"/>
+                <constraint firstAttribute="trailing" secondItem="Urw-pT-HNj" secondAttribute="trailing" constant="55" id="8WQ-QP-WXj"/>
+                <constraint firstItem="Urw-pT-HNj" firstAttribute="top" secondItem="WDk-3A-X6I" secondAttribute="bottom" constant="35" id="Cyr-QV-m3d"/>
+                <constraint firstItem="Otm-KK-iyj" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="W9i-bD-95H"/>
+                <constraint firstItem="WDk-3A-X6I" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="gFU-gw-W3Q"/>
+                <constraint firstItem="aVN-6d-Bu1" firstAttribute="top" secondItem="WDk-3A-X6I" secondAttribute="bottom" constant="35" id="sos-Po-dcq"/>
+                <constraint firstItem="TFu-TU-jaF" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="25" id="uZ2-MI-Ihj"/>
+                <constraint firstItem="Otm-KK-iyj" firstAttribute="top" secondItem="TFu-TU-jaF" secondAttribute="bottom" constant="20" id="yjE-qY-1Dv"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <userDefinedRuntimeAttributes>
+                <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                    <integer key="value" value="5"/>
+                </userDefinedRuntimeAttribute>
+                <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+            </userDefinedRuntimeAttributes>
+            <connections>
+                <outlet property="headImageView" destination="TFu-TU-jaF" id="EzX-av-9F5"/>
+                <outlet property="qrCodeImageView" destination="WDk-3A-X6I" id="E2c-7W-LUK"/>
+                <outlet property="titleLab" destination="Otm-KK-iyj" id="KDS-f5-KFz"/>
+            </connections>
+            <point key="canvasLocation" x="-46" y="51"/>
+        </view>
+    </objects>
+</document>

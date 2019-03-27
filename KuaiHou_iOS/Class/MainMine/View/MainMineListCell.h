@@ -13,6 +13,9 @@ NS_ASSUME_NONNULL_BEGIN
 @interface MainMineListCell : BaseCell
 @property (weak, nonatomic) IBOutlet UIImageView *headImageView;
 @property (weak, nonatomic) IBOutlet UILabel *titleLab;
+@property (weak, nonatomic) IBOutlet NSLayoutConstraint *imageH;
+@property (weak, nonatomic) IBOutlet NSLayoutConstraint *imageW;
+@property (weak, nonatomic) IBOutlet UIView *lineView;
 
 @end
 

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="CleanChatView">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="155"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="提示" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Oyk-fZ-xqX">
+                    <rect key="frame" x="170" y="25" width="35" height="15"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="15" id="Doa-G7-0Y6"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="是否清空所有聊天记录" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nGb-5V-sWB">
+                    <rect key="frame" x="15" y="70" width="345" height="20.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DgC-bs-je3">
+                    <rect key="frame" x="132.5" y="121" width="30" height="14"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="14" id="zcC-1g-3gG"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <state key="normal" title="取消">
+                        <color key="titleColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="cancleAction:" destination="iN0-l3-epB" eventType="touchUpInside" id="MIf-x0-fHG"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wLn-yt-hWm">
+                    <rect key="frame" x="222.5" y="121" width="30" height="14"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="14" id="PY3-lH-pkY"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <state key="normal" title="确定">
+                        <color key="titleColor" red="0.8862745098" green="0.26274509800000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="okerAction:" destination="iN0-l3-epB" eventType="touchUpInside" id="NCW-Em-LRc"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="nGb-5V-sWB" firstAttribute="top" secondItem="Oyk-fZ-xqX" secondAttribute="bottom" constant="30" id="52B-jT-D7a"/>
+                <constraint firstItem="DgC-bs-je3" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" constant="-40" id="6XQ-Yk-aWS"/>
+                <constraint firstItem="wLn-yt-hWm" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" constant="50" id="Jh2-bo-z86"/>
+                <constraint firstItem="Oyk-fZ-xqX" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="25" id="Qna-UF-39F"/>
+                <constraint firstAttribute="bottom" secondItem="DgC-bs-je3" secondAttribute="bottom" constant="20" id="gDj-op-2Oy"/>
+                <constraint firstItem="wLn-yt-hWm" firstAttribute="centerY" secondItem="DgC-bs-je3" secondAttribute="centerY" id="r3l-ah-IaR"/>
+                <constraint firstAttribute="trailing" secondItem="nGb-5V-sWB" secondAttribute="trailing" constant="15" id="sDJ-yS-yyr"/>
+                <constraint firstItem="Oyk-fZ-xqX" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="t31-Ok-0Eg"/>
+                <constraint firstItem="nGb-5V-sWB" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="15" id="trg-pv-R3R"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <userDefinedRuntimeAttributes>
+                <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                    <integer key="value" value="5"/>
+                </userDefinedRuntimeAttribute>
+                <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+            </userDefinedRuntimeAttributes>
+        </view>
+    </objects>
+</document>

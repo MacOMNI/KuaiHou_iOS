@@ -12,6 +12,8 @@
 #import "SafeCenterVC.h"
 #import "AboutMeVC.h"
 #import "HelpVC.h"
+#import "CleanChatView.h"
+#import "BlackUserView.h"
 
 
 @interface MainSetVC ()
@@ -106,7 +108,8 @@
             break;
         case 1:{
             if (indexPath.row == 0) { // 屏蔽设置
-                
+                BlackUserView *black = [[BlackUserView alloc] init];
+                [black showView];
             }else if(indexPath.row == 1){ // 屏蔽的号码
                 
             }else{ // 屏蔽的动态
@@ -122,7 +125,8 @@
             break;
         case 3:{
             if (indexPath.row == 0) { // 清除聊天记录
-                
+                CleanChatView *clean = [[CleanChatView alloc] init];
+                [clean showView];
             }else{ // 关于我们 
                 [self.navigationController pushViewController:[AboutMeVC new] animated:YES];
             }

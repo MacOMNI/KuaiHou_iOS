@@ -51,6 +51,9 @@
             </tableViewCellContentView>
             <connections>
                 <outlet property="headImageView" destination="mv6-NW-5DD" id="1Xa-Cv-5w3"/>
+                <outlet property="imageH" destination="58V-6C-Erj" id="BmU-u1-l7d"/>
+                <outlet property="imageW" destination="d0a-65-wtV" id="775-U6-MUZ"/>
+                <outlet property="lineView" destination="iWA-7s-jXi" id="tK4-42-gcK"/>
                 <outlet property="titleLab" destination="D2T-bq-NgU" id="l0F-Jp-1Lg"/>
             </connections>
             <point key="canvasLocation" x="-3.2000000000000002" y="154.72263868065968"/>

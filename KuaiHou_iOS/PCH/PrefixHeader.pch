@@ -41,10 +41,12 @@
 #import "UIImage+BundleImage.h"
 #import "UIViewController+FLInsert.h"
 #import "UILabel+BaseChangeDefaultFont.h"
+#import "CALayer+XibConfiguration.h"
 
 #import "BaseViewController.h"
 #import "BaseCell.h"
 #import "NetWorkManager.h"
+#import "BaseTipView.h"
 
 #import "GKNavigationBarViewController.h"
 #import "GKPageScrollView.h"

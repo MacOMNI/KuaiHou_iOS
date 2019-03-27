@@ -13,6 +13,10 @@
 #import "SWQRCode.h"
 #import "ChangeInfoVC.h"
 #import "VoucherVC.h"
+#import "ActivityVC.h"
+#import "OpenStoreVC.h"
+#import "ManagerVC.h"
+#import "MyQRCodeView.h"
 
 @interface MainMineVC ()
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
@@ -107,7 +111,8 @@
                 }
                     break;
                 case 3:{ // 二维码
-                    
+                    MyQRCodeView *view = [[MyQRCodeView alloc] init];
+                    [view showView];
                 }
                     break;
                 case 4:{ // 修改资料
@@ -139,6 +144,21 @@
     cell.headImageView.image = [UIImage loadImageWithName:dict[@"image"]];
     
     return cell;
+}
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+    if (indexPath.section == 1) {
+        if (indexPath.row == 0) { // 任务
+            
+        }else if (indexPath.row == 1){ // 活动
+            [self.navigationController pushViewController:[ActivityVC new] animated:YES];
+        }else if (indexPath.row == 2){ // 开店
+            [self.navigationController pushViewController:[OpenStoreVC new] animated:YES];
+        }else{ // 经理人
+            [self.navigationController pushViewController:[ManagerVC new] animated:YES];
+        }
+    }
+    
 }
 
 

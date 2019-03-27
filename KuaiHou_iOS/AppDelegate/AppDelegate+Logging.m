@@ -9,6 +9,7 @@
 #import "AppDelegate+Logging.h"
 #import "BaseTabBarController.h"
 #import "LogginVC.h"
+#import "BaseNavigationController.h"
 
 @implementation AppDelegate (Logging)
 
@@ -32,7 +33,7 @@
 //        [[NSNotificationCenter defaultCenter] postNotificationName:KAPPNOTIFICATION_LOGINCHANGE object:@NO];
 //    }
     
-    [[NSNotificationCenter defaultCenter] postNotificationName:KAPPNOTIFICATION_LOGINCHANGE object:@YES];
+    [[NSNotificationCenter defaultCenter] postNotificationName:KAPPNOTIFICATION_LOGINCHANGE object:@NO];
 }
 
 #pragma mark 登录状态发生改变
@@ -51,6 +52,9 @@
         if (loginSuccess) {
             self.window.rootViewController = [[BaseTabBarController alloc] init];
         }else{
+            LogginVC *loggin = [LogginVC new];
+            BaseNavigationController *nav = [[BaseNavigationController alloc] initWithRootViewController:loggin];
+            self.window.rootViewController = nav;
         }
 //    }else{
 //    }

@@ -222,6 +222,8 @@
  */
 - (void)sw_handleWithValue:(NSString *)value {
     NSLog(@"sw_handleWithValue === %@", value);
+    
+//    [self resumeScanning];
 }
 
 /**

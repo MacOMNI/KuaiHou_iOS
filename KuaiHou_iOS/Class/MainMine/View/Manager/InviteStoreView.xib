@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="InviteStoreView">
+            <rect key="frame" x="0.0" y="0.0" width="325" height="275"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="邀请驻店" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="D2g-yp-KNk">
+                    <rect key="frame" x="132" y="25" width="61.5" height="14"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="14" id="isB-AU-8fZ"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="请输入对方YP号" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="rTv-2U-548">
+                    <rect key="frame" x="37" y="77" width="251" height="44"/>
+                    <color key="backgroundColor" red="0.80000000000000004" green="0.80000000000000004" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="aaa-Eg-LRe"/>
+                    </constraints>
+                    <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="22"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                    </userDefinedRuntimeAttributes>
+                </textField>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="提示：" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cPa-8U-YXi">
+                    <rect key="frame" x="45" y="141" width="37" height="14.5"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="37" id="ujM-if-qaJ"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <color key="textColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pyb-L2-wBG">
+                    <rect key="frame" x="82" y="141" width="198" height="43"/>
+                    <string key="text">邀请成功后，对方将在你的网店“可能邂逅的人”中显示
+                        </string>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <color key="textColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fzR-Lm-OQk">
+                    <rect key="frame" x="97.5" y="204" width="30" height="14"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="14" id="XuM-dp-AiY"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <state key="normal" title="取消">
+                        <color key="titleColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="cancleAction:" destination="iN0-l3-epB" eventType="touchUpInside" id="HQf-bC-Fkf"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TZo-v4-hDn">
+                    <rect key="frame" x="197.5" y="204" width="30" height="14"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="14" id="Swt-hB-fJh"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <state key="normal" title="确定">
+                        <color key="titleColor" red="0.8862745098" green="0.26274509800000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="commitAction:" destination="iN0-l3-epB" eventType="touchUpInside" id="u29-hd-ujq"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="rTv-2U-548" secondAttribute="trailing" constant="37" id="1Ca-DK-CFs"/>
+                <constraint firstItem="fzR-Lm-OQk" firstAttribute="centerX" secondItem="vUN-kp-3ea" secondAttribute="centerX" constant="-50" id="1Wl-mD-ssm"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="fzR-Lm-OQk" secondAttribute="bottom" constant="57" id="5EN-rA-0cE"/>
+                <constraint firstItem="rTv-2U-548" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="37" id="AMz-9x-gVm"/>
+                <constraint firstItem="cPa-8U-YXi" firstAttribute="top" secondItem="rTv-2U-548" secondAttribute="bottom" constant="20" id="IiJ-Ym-WFP"/>
+                <constraint firstItem="D2g-yp-KNk" firstAttribute="centerX" secondItem="vUN-kp-3ea" secondAttribute="centerX" id="LHu-oB-zWW"/>
+                <constraint firstItem="TZo-v4-hDn" firstAttribute="centerX" secondItem="vUN-kp-3ea" secondAttribute="centerX" constant="50" id="RPd-TN-YBz"/>
+                <constraint firstItem="Pyb-L2-wBG" firstAttribute="top" secondItem="cPa-8U-YXi" secondAttribute="top" id="SOX-tJ-iwm"/>
+                <constraint firstItem="Pyb-L2-wBG" firstAttribute="leading" secondItem="cPa-8U-YXi" secondAttribute="trailing" id="UNW-Pd-zqp"/>
+                <constraint firstItem="D2g-yp-KNk" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="25" id="YxM-f5-lGq"/>
+                <constraint firstItem="cPa-8U-YXi" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="45" id="kSZ-z4-Bpr"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="Pyb-L2-wBG" secondAttribute="trailing" constant="45" id="mO3-SI-kNR"/>
+                <constraint firstItem="TZo-v4-hDn" firstAttribute="centerY" secondItem="fzR-Lm-OQk" secondAttribute="centerY" id="nJO-eJ-qBR"/>
+                <constraint firstItem="rTv-2U-548" firstAttribute="top" secondItem="D2g-yp-KNk" secondAttribute="bottom" constant="38" id="qsT-Rr-hiF"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <userDefinedRuntimeAttributes>
+                <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                    <integer key="value" value="5"/>
+                </userDefinedRuntimeAttribute>
+                <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+            </userDefinedRuntimeAttributes>
+            <connections>
+                <outlet property="textField" destination="rTv-2U-548" id="JC5-Q0-KVJ"/>
+            </connections>
+            <point key="canvasLocation" x="-26" y="136"/>
+        </view>
+    </objects>
+</document>
