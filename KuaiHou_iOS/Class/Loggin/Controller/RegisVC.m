@@ -7,6 +7,7 @@
 //
 
 #import "RegisVC.h"
+#import "GetCodeVC.h"
 
 @interface RegisVC ()
 @property (weak, nonatomic) IBOutlet UIImageView *accLogginImageView;
@@ -43,6 +44,9 @@
     [super viewWillDisappear:animated];
     
     [self.navigationController setNavigationBarHidden:NO animated:animated];
+}
+- (IBAction)getCodeAction:(UIButton *)sender {
+    [self.navigationController pushViewController:[GetCodeVC new] animated:YES];
 }
 
 /*

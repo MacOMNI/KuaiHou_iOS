@@ -52,6 +52,16 @@
 		CEACEAFE224B7F0300A2AE2D /* LogginCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CEACEAFC224B7F0300A2AE2D /* LogginCell.xib */; };
 		CEACEB02224B8B7900A2AE2D /* RegisVC.m in Sources */ = {isa = PBXBuildFile; fileRef = CEACEB00224B8B7800A2AE2D /* RegisVC.m */; };
 		CEACEB03224B8B7900A2AE2D /* RegisVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = CEACEB01224B8B7800A2AE2D /* RegisVC.xib */; };
+		CEACEB07224B949700A2AE2D /* ForgetWordVC.m in Sources */ = {isa = PBXBuildFile; fileRef = CEACEB05224B949700A2AE2D /* ForgetWordVC.m */; };
+		CEACEB08224B949700A2AE2D /* ForgetWordVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = CEACEB06224B949700A2AE2D /* ForgetWordVC.xib */; };
+		CEACEB0C224B9CD700A2AE2D /* BindPhoneVC.m in Sources */ = {isa = PBXBuildFile; fileRef = CEACEB0A224B9CD700A2AE2D /* BindPhoneVC.m */; };
+		CEACEB0D224B9CD700A2AE2D /* BindPhoneVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = CEACEB0B224B9CD700A2AE2D /* BindPhoneVC.xib */; };
+		CEACEB11224B9EC600A2AE2D /* SetPassWordVC.m in Sources */ = {isa = PBXBuildFile; fileRef = CEACEB0F224B9EC600A2AE2D /* SetPassWordVC.m */; };
+		CEACEB12224B9EC600A2AE2D /* SetPassWordVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = CEACEB10224B9EC600A2AE2D /* SetPassWordVC.xib */; };
+		CEACEB16224BA19000A2AE2D /* GetCodeVC.m in Sources */ = {isa = PBXBuildFile; fileRef = CEACEB14224BA19000A2AE2D /* GetCodeVC.m */; };
+		CEACEB17224BA19000A2AE2D /* GetCodeVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = CEACEB15224BA19000A2AE2D /* GetCodeVC.xib */; };
+		CEACEB1D224BA65D00A2AE2D /* WGDigitView.m in Sources */ = {isa = PBXBuildFile; fileRef = CEACEB19224BA65C00A2AE2D /* WGDigitView.m */; };
+		CEACEB1E224BA65D00A2AE2D /* WGDigitField.m in Sources */ = {isa = PBXBuildFile; fileRef = CEACEB1B224BA65D00A2AE2D /* WGDigitField.m */; };
 		CECC0D18223A411D001CF0A2 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CECC0D17223A411D001CF0A2 /* AppDelegate.m */; };
 		CECC0D1E223A411D001CF0A2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CECC0D1C223A411D001CF0A2 /* Main.storyboard */; };
 		CECC0D21223A411D001CF0A2 /* KuaiHou_iOS.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = CECC0D1F223A411D001CF0A2 /* KuaiHou_iOS.xcdatamodeld */; };
@@ -336,6 +346,22 @@
 		CEACEAFF224B8B7800A2AE2D /* RegisVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RegisVC.h; sourceTree = "<group>"; };
 		CEACEB00224B8B7800A2AE2D /* RegisVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RegisVC.m; sourceTree = "<group>"; };
 		CEACEB01224B8B7800A2AE2D /* RegisVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RegisVC.xib; sourceTree = "<group>"; };
+		CEACEB04224B949700A2AE2D /* ForgetWordVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ForgetWordVC.h; sourceTree = "<group>"; };
+		CEACEB05224B949700A2AE2D /* ForgetWordVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ForgetWordVC.m; sourceTree = "<group>"; };
+		CEACEB06224B949700A2AE2D /* ForgetWordVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ForgetWordVC.xib; sourceTree = "<group>"; };
+		CEACEB09224B9CD700A2AE2D /* BindPhoneVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BindPhoneVC.h; sourceTree = "<group>"; };
+		CEACEB0A224B9CD700A2AE2D /* BindPhoneVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BindPhoneVC.m; sourceTree = "<group>"; };
+		CEACEB0B224B9CD700A2AE2D /* BindPhoneVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BindPhoneVC.xib; sourceTree = "<group>"; };
+		CEACEB0E224B9EC600A2AE2D /* SetPassWordVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SetPassWordVC.h; sourceTree = "<group>"; };
+		CEACEB0F224B9EC600A2AE2D /* SetPassWordVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SetPassWordVC.m; sourceTree = "<group>"; };
+		CEACEB10224B9EC600A2AE2D /* SetPassWordVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SetPassWordVC.xib; sourceTree = "<group>"; };
+		CEACEB13224BA19000A2AE2D /* GetCodeVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GetCodeVC.h; sourceTree = "<group>"; };
+		CEACEB14224BA19000A2AE2D /* GetCodeVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GetCodeVC.m; sourceTree = "<group>"; };
+		CEACEB15224BA19000A2AE2D /* GetCodeVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GetCodeVC.xib; sourceTree = "<group>"; };
+		CEACEB19224BA65C00A2AE2D /* WGDigitView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WGDigitView.m; sourceTree = "<group>"; };
+		CEACEB1A224BA65D00A2AE2D /* WGDigitField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WGDigitField.h; sourceTree = "<group>"; };
+		CEACEB1B224BA65D00A2AE2D /* WGDigitField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WGDigitField.m; sourceTree = "<group>"; };
+		CEACEB1C224BA65D00A2AE2D /* WGDigitView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WGDigitView.h; sourceTree = "<group>"; };
 		CECC0D13223A411D001CF0A2 /* KuaiHou_iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KuaiHou_iOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CECC0D16223A411D001CF0A2 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		CECC0D17223A411D001CF0A2 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -782,6 +808,17 @@
 			path = BlackUserView;
 			sourceTree = "<group>";
 		};
+		CEACEB18224BA63F00A2AE2D /* WGDigitField */ = {
+			isa = PBXGroup;
+			children = (
+				CEACEB1A224BA65D00A2AE2D /* WGDigitField.h */,
+				CEACEB1B224BA65D00A2AE2D /* WGDigitField.m */,
+				CEACEB1C224BA65D00A2AE2D /* WGDigitView.h */,
+				CEACEB19224BA65C00A2AE2D /* WGDigitView.m */,
+			);
+			path = WGDigitField;
+			sourceTree = "<group>";
+		};
 		CECC0D0A223A411D001CF0A2 = {
 			isa = PBXGroup;
 			children = (
@@ -892,6 +929,7 @@
 		CECC0D4F223A4615001CF0A2 /* ThirdLib */ = {
 			isa = PBXGroup;
 			children = (
+				CEACEB18224BA63F00A2AE2D /* WGDigitField */,
 				CECEEEB32249C05E0068F267 /* WLButtonCountdownManager */,
 				CEE28ECD2243558200C3D7E9 /* GKPageScrollView */,
 				CEE28EB72243375800C3D7E9 /* SWQRCode */,
@@ -1060,6 +1098,18 @@
 				CEACEAFF224B8B7800A2AE2D /* RegisVC.h */,
 				CEACEB00224B8B7800A2AE2D /* RegisVC.m */,
 				CEACEB01224B8B7800A2AE2D /* RegisVC.xib */,
+				CEACEB04224B949700A2AE2D /* ForgetWordVC.h */,
+				CEACEB05224B949700A2AE2D /* ForgetWordVC.m */,
+				CEACEB06224B949700A2AE2D /* ForgetWordVC.xib */,
+				CEACEB09224B9CD700A2AE2D /* BindPhoneVC.h */,
+				CEACEB0A224B9CD700A2AE2D /* BindPhoneVC.m */,
+				CEACEB0B224B9CD700A2AE2D /* BindPhoneVC.xib */,
+				CEACEB0E224B9EC600A2AE2D /* SetPassWordVC.h */,
+				CEACEB0F224B9EC600A2AE2D /* SetPassWordVC.m */,
+				CEACEB10224B9EC600A2AE2D /* SetPassWordVC.xib */,
+				CEACEB13224BA19000A2AE2D /* GetCodeVC.h */,
+				CEACEB14224BA19000A2AE2D /* GetCodeVC.m */,
+				CEACEB15224BA19000A2AE2D /* GetCodeVC.xib */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -2038,6 +2088,7 @@
 				CECEEEF9224A41AB0068F267 /* ActivityVC.xib in Resources */,
 				CEFA929E2240883B0015F7EE /* NewMessageVC.xib in Resources */,
 				CEACEAFE224B7F0300A2AE2D /* LogginCell.xib in Resources */,
+				CEACEB17224BA19000A2AE2D /* GetCodeVC.xib in Resources */,
 				CE6B058F2248667800AD44D7 /* SafeCenterVC.xib in Resources */,
 				CECC0D26223A411F001CF0A2 /* LaunchScreen.storyboard in Resources */,
 				CEE28F6E2243571800C3D7E9 /* README.md in Resources */,
@@ -2046,6 +2097,8 @@
 				CEACEB03224B8B7900A2AE2D /* RegisVC.xib in Resources */,
 				CEE28F6B2243571800C3D7E9 /* GKNavigationBarViewController.bundle in Resources */,
 				CECC0D23223A411F001CF0A2 /* Assets.xcassets in Resources */,
+				CEACEB0D224B9CD700A2AE2D /* BindPhoneVC.xib in Resources */,
+				CEACEB08224B949700A2AE2D /* ForgetWordVC.xib in Resources */,
 				CEE28F602243571800C3D7E9 /* LICENSE in Resources */,
 				CECEEF2C224A4DD30068F267 /* StoreContentVC.xib in Resources */,
 				CECEEF0B224A47DF0068F267 /* ManagerVC.xib in Resources */,
@@ -2055,6 +2108,7 @@
 				CEE6E37D22420731006ED98F /* SendDynamicsVideoCell.xib in Resources */,
 				CE6B0594224867FE00AD44D7 /* ShieldDynamicVC.xib in Resources */,
 				CEFA9271223F99BB0015F7EE /* FavorableDynamicsVC.xib in Resources */,
+				CEACEB12224B9EC600A2AE2D /* SetPassWordVC.xib in Resources */,
 				CEFA9284223FA6920015F7EE /* NearByDynamicsHeadCell.xib in Resources */,
 				CEE28EB122432EEE00C3D7E9 /* MainSetListCell.xib in Resources */,
 				CE6B059E22486BC900AD44D7 /* SafeCenterVCTableViewCell.xib in Resources */,
@@ -2201,6 +2255,7 @@
 				CEFA92C02240CB870015F7EE /* MainMineHeadCell.m in Sources */,
 				CEFA9210223F535E0015F7EE /* AppDelegate+Config.m in Sources */,
 				CEE28F6C2243571800C3D7E9 /* GKNavigationBarViewController.m in Sources */,
+				CEACEB1E224BA65D00A2AE2D /* WGDigitField.m in Sources */,
 				CEFA9248223F6F450015F7EE /* AppDelegate+Logging.m in Sources */,
 				CE9C4BFD223B4F9B00DE9DC1 /* PLEmptyViewFactory.m in Sources */,
 				CEE28F39224355E100C3D7E9 /* JXCategoryFactory.m in Sources */,
@@ -2233,6 +2288,7 @@
 				CECC0D58223A525F001CF0A2 /* UIColor+Hex.m in Sources */,
 				CE9C4C00223B58F800DE9DC1 /* BaseNavigationController.m in Sources */,
 				CECEEEC6224A020C0068F267 /* MyDynamicsVC.m in Sources */,
+				CEACEB11224B9EC600A2AE2D /* SetPassWordVC.m in Sources */,
 				CEFA9260223F84750015F7EE /* FSPageContentView.m in Sources */,
 				CECEEEEC224A27F20068F267 /* LogginVC.m in Sources */,
 				CECC0D61223A569F001CF0A2 /* NSDictionary+Json.m in Sources */,
@@ -2270,6 +2326,8 @@
 				CEE28F3D224355E100C3D7E9 /* JXCategoryBaseCell.m in Sources */,
 				CE6B059D22486BC900AD44D7 /* SafeCenterVCTableViewCell.m in Sources */,
 				CEFA9235223F639D0015F7EE /* MainDynamicsVC.m in Sources */,
+				CEACEB07224B949700A2AE2D /* ForgetWordVC.m in Sources */,
+				CEACEB0C224B9CD700A2AE2D /* BindPhoneVC.m in Sources */,
 				CE6B05AC224884F300AD44D7 /* HelpVC.m in Sources */,
 				CE9C4C06223B5ED800DE9DC1 /* UIImage+BundleImage.m in Sources */,
 				CEE28F29224355E100C3D7E9 /* JXCategoryDotCell.m in Sources */,
@@ -2300,11 +2358,13 @@
 				CECEEED8224A0F660068F267 /* MyDynamicsImageCell.m in Sources */,
 				CECEEEFE224A43150068F267 /* ActivityCell.m in Sources */,
 				CEACEAF3224B5BF800A2AE2D /* BaseTipView.m in Sources */,
+				CEACEB1D224BA65D00A2AE2D /* WGDigitView.m in Sources */,
 				CEFA92AC2240A01C0015F7EE /* FriendMessageCell.m in Sources */,
 				CECC0D21223A411D001CF0A2 /* KuaiHou_iOS.xcdatamodeld in Sources */,
 				CEE28F632243571800C3D7E9 /* GKPopTransitionAnimation.m in Sources */,
 				CEE28F2A224355E100C3D7E9 /* JXCategoryDotView.m in Sources */,
 				CECEEED1224A09130068F267 /* MyDynamicsTextCell.m in Sources */,
+				CEACEB16224BA19000A2AE2D /* GetCodeVC.m in Sources */,
 				CECEEF53224B56EE0068F267 /* CleanChatView.m in Sources */,
 				CECC0D5E223A5670001CF0A2 /* UIView+LayoutMethods.m in Sources */,
 				CECEEF49224B17680068F267 /* CALayer+XibConfiguration.m in Sources */,

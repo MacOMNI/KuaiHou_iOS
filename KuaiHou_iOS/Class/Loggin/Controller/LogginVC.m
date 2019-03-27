@@ -9,6 +9,8 @@
 #import "LogginVC.h"
 #import "LogginCell.h"
 #import "RegisVC.h"
+#import "ForgetWordVC.h"
+#import "BindPhoneVC.h"
 
 @interface LogginVC ()
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
@@ -30,6 +32,8 @@
     [super viewWillAppear:animated];
     
     [self.navigationController setNavigationBarHidden:YES animated:animated];
+    
+    self.navigationController.navigationBar.translucent = YES;
 }
 
 - (void)viewWillDisappear:(BOOL)animated {
@@ -52,6 +56,21 @@
     [self.regisLab setTapActionWithBlock:^{
         [self.navigationController pushViewController:[RegisVC new] animated:YES];
     }];
+    
+    [self.weChatImageView setTapActionWithBlock:^{
+        [self.navigationController pushViewController:[BindPhoneVC new] animated:YES];
+    }];
+    
+    [self.weChatLab setTapActionWithBlock:^{
+        [self.navigationController pushViewController:[BindPhoneVC new] animated:YES];
+    }];
+    
+    UINavigationBar *navigationBar = self.navigationController.navigationBar;
+    // white.png图片自己下载个纯白色的色块，或者自己ps做一个
+    [navigationBar setBackgroundImage:[UIImage createImageWithColor:[UIColor whiteColor]]
+                       forBarPosition:UIBarPositionAny
+                           barMetrics:UIBarMetricsDefault];
+    [navigationBar setShadowImage:[UIImage new]];
 }
 
 
@@ -68,7 +87,7 @@
     LogginCell *cell = [tableView dequeueReusableCellWithIdentifier:NSStringFromClass([LogginCell class]) forIndexPath:indexPath];
     [cell setItemBlock:^(NSInteger tag) {
         if (tag == 101) { // 忘记密码
-            
+            [self.navigationController pushViewController:[ForgetWordVC new] animated:YES];
         }else{ // 登陆
             
         }

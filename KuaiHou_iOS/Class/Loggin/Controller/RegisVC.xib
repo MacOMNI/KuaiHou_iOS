@@ -23,12 +23,12 @@
             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="账号登陆" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WSy-av-4qK">
-                    <rect key="frame" x="37.5" y="83" width="69.5" height="22.5"/>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="手机号登陆注册" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WSy-av-4qK">
+                    <rect key="frame" x="37.5" y="83" width="170.5" height="22.5"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="22.5" id="I8W-Dg-Lbp"/>
                     </constraints>
-                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="24"/>
                     <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     <nil key="highlightedColor"/>
                 </label>
@@ -94,6 +94,9 @@
                             <color key="value" red="0.80000000000000004" green="0.80000000000000004" blue="0.80000000000000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         </userDefinedRuntimeAttribute>
                     </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="getCodeAction:" destination="-1" eventType="touchUpInside" id="wbs-CU-5bl"/>
+                    </connections>
                 </button>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fCi-KD-o7V">
                     <rect key="frame" x="0.0" y="537" width="375" height="130"/>
@@ -191,7 +194,7 @@
                 <constraint firstAttribute="trailing" secondItem="N8O-8L-wEB" secondAttribute="trailing" constant="37.5" id="wpK-Hg-1x0"/>
                 <constraint firstItem="fCi-KD-o7V" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="zyR-OG-TQe"/>
             </constraints>
-            <point key="canvasLocation" x="16.800000000000001" y="47.226386806596707"/>
+            <point key="canvasLocation" x="361" y="-15"/>
         </view>
     </objects>
     <resources>
