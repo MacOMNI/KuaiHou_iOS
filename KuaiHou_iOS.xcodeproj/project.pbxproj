@@ -14,6 +14,16 @@
 		CE5A6430224C642300891AC9 /* SelPhotoVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE5A642E224C642300891AC9 /* SelPhotoVC.xib */; };
 		CE5A6434224C64E800891AC9 /* SelPhotoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CE5A6432224C64E800891AC9 /* SelPhotoCell.m */; };
 		CE5A6435224C64E800891AC9 /* SelPhotoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE5A6433224C64E800891AC9 /* SelPhotoCell.xib */; };
+		CE5A6439224C81FB00891AC9 /* OpenStoreHeadView.m in Sources */ = {isa = PBXBuildFile; fileRef = CE5A6438224C81FB00891AC9 /* OpenStoreHeadView.m */; };
+		CE5A643B224C820400891AC9 /* OpenStoreHeadView.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE5A643A224C820400891AC9 /* OpenStoreHeadView.xib */; };
+		CE5A643F224C9F9900891AC9 /* OpenStoreListCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CE5A643D224C9F9900891AC9 /* OpenStoreListCell.m */; };
+		CE5A6440224C9F9900891AC9 /* OpenStoreListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE5A643E224C9F9900891AC9 /* OpenStoreListCell.xib */; };
+		CE5A6444224CA06700891AC9 /* OpenStoreItemCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CE5A6442224CA06700891AC9 /* OpenStoreItemCell.m */; };
+		CE5A6445224CA06700891AC9 /* OpenStoreItemCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE5A6443224CA06700891AC9 /* OpenStoreItemCell.xib */; };
+		CE5A6449224CA46400891AC9 /* OpenStoreTextViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CE5A6447224CA46400891AC9 /* OpenStoreTextViewCell.m */; };
+		CE5A644A224CA46400891AC9 /* OpenStoreTextViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE5A6448224CA46400891AC9 /* OpenStoreTextViewCell.xib */; };
+		CE5A644E224CBCA400891AC9 /* OpenStoreTipCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CE5A644C224CBCA400891AC9 /* OpenStoreTipCell.m */; };
+		CE5A644F224CBCA400891AC9 /* OpenStoreTipCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE5A644D224CBCA400891AC9 /* OpenStoreTipCell.xib */; };
 		CE6B058E2248667800AD44D7 /* SafeCenterVC.m in Sources */ = {isa = PBXBuildFile; fileRef = CE6B058C2248667800AD44D7 /* SafeCenterVC.m */; };
 		CE6B058F2248667800AD44D7 /* SafeCenterVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE6B058D2248667800AD44D7 /* SafeCenterVC.xib */; };
 		CE6B0593224867FE00AD44D7 /* ShieldDynamicVC.m in Sources */ = {isa = PBXBuildFile; fileRef = CE6B0591224867FE00AD44D7 /* ShieldDynamicVC.m */; };
@@ -286,6 +296,21 @@
 		CE5A6431224C64E800891AC9 /* SelPhotoCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SelPhotoCell.h; sourceTree = "<group>"; };
 		CE5A6432224C64E800891AC9 /* SelPhotoCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SelPhotoCell.m; sourceTree = "<group>"; };
 		CE5A6433224C64E800891AC9 /* SelPhotoCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SelPhotoCell.xib; sourceTree = "<group>"; };
+		CE5A6437224C81FB00891AC9 /* OpenStoreHeadView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OpenStoreHeadView.h; sourceTree = "<group>"; };
+		CE5A6438224C81FB00891AC9 /* OpenStoreHeadView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OpenStoreHeadView.m; sourceTree = "<group>"; };
+		CE5A643A224C820400891AC9 /* OpenStoreHeadView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OpenStoreHeadView.xib; sourceTree = "<group>"; };
+		CE5A643C224C9F9900891AC9 /* OpenStoreListCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OpenStoreListCell.h; sourceTree = "<group>"; };
+		CE5A643D224C9F9900891AC9 /* OpenStoreListCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OpenStoreListCell.m; sourceTree = "<group>"; };
+		CE5A643E224C9F9900891AC9 /* OpenStoreListCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OpenStoreListCell.xib; sourceTree = "<group>"; };
+		CE5A6441224CA06700891AC9 /* OpenStoreItemCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OpenStoreItemCell.h; sourceTree = "<group>"; };
+		CE5A6442224CA06700891AC9 /* OpenStoreItemCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OpenStoreItemCell.m; sourceTree = "<group>"; };
+		CE5A6443224CA06700891AC9 /* OpenStoreItemCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OpenStoreItemCell.xib; sourceTree = "<group>"; };
+		CE5A6446224CA46400891AC9 /* OpenStoreTextViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OpenStoreTextViewCell.h; sourceTree = "<group>"; };
+		CE5A6447224CA46400891AC9 /* OpenStoreTextViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OpenStoreTextViewCell.m; sourceTree = "<group>"; };
+		CE5A6448224CA46400891AC9 /* OpenStoreTextViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OpenStoreTextViewCell.xib; sourceTree = "<group>"; };
+		CE5A644B224CBCA400891AC9 /* OpenStoreTipCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OpenStoreTipCell.h; sourceTree = "<group>"; };
+		CE5A644C224CBCA400891AC9 /* OpenStoreTipCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OpenStoreTipCell.m; sourceTree = "<group>"; };
+		CE5A644D224CBCA400891AC9 /* OpenStoreTipCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OpenStoreTipCell.xib; sourceTree = "<group>"; };
 		CE6B058B2248667800AD44D7 /* SafeCenterVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SafeCenterVC.h; sourceTree = "<group>"; };
 		CE6B058C2248667800AD44D7 /* SafeCenterVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SafeCenterVC.m; sourceTree = "<group>"; };
 		CE6B058D2248667800AD44D7 /* SafeCenterVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SafeCenterVC.xib; sourceTree = "<group>"; };
@@ -751,6 +776,28 @@
 				F72C78518845A6C8D2F549AB /* Pods_KuaiHou_iOS.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CE5A6436224C81C200891AC9 /* OpenStore */ = {
+			isa = PBXGroup;
+			children = (
+				CE5A6437224C81FB00891AC9 /* OpenStoreHeadView.h */,
+				CE5A6438224C81FB00891AC9 /* OpenStoreHeadView.m */,
+				CE5A643A224C820400891AC9 /* OpenStoreHeadView.xib */,
+				CE5A643C224C9F9900891AC9 /* OpenStoreListCell.h */,
+				CE5A643D224C9F9900891AC9 /* OpenStoreListCell.m */,
+				CE5A643E224C9F9900891AC9 /* OpenStoreListCell.xib */,
+				CE5A6441224CA06700891AC9 /* OpenStoreItemCell.h */,
+				CE5A6442224CA06700891AC9 /* OpenStoreItemCell.m */,
+				CE5A6443224CA06700891AC9 /* OpenStoreItemCell.xib */,
+				CE5A6446224CA46400891AC9 /* OpenStoreTextViewCell.h */,
+				CE5A6447224CA46400891AC9 /* OpenStoreTextViewCell.m */,
+				CE5A6448224CA46400891AC9 /* OpenStoreTextViewCell.xib */,
+				CE5A644B224CBCA400891AC9 /* OpenStoreTipCell.h */,
+				CE5A644C224CBCA400891AC9 /* OpenStoreTipCell.m */,
+				CE5A644D224CBCA400891AC9 /* OpenStoreTipCell.xib */,
+			);
+			path = OpenStore;
 			sourceTree = "<group>";
 		};
 		CE6B05AE2248A2B400AD44D7 /* Voucher */ = {
@@ -1819,13 +1866,14 @@
 		CEFA9228223F627E0015F7EE /* View */ = {
 			isa = PBXGroup;
 			children = (
-				CEACEAF4224B5E5C00A2AE2D /* BlackUserView */,
 				CEFA92BD2240CB870015F7EE /* MainMineHeadCell.h */,
 				CEFA92BE2240CB870015F7EE /* MainMineHeadCell.m */,
 				CEFA92BF2240CB870015F7EE /* MainMineHeadCell.xib */,
 				CEFA92C22240ED9C0015F7EE /* MainMineListCell.h */,
 				CEFA92C32240ED9C0015F7EE /* MainMineListCell.m */,
 				CEFA92C42240ED9C0015F7EE /* MainMineListCell.xib */,
+				CE5A6436224C81C200891AC9 /* OpenStore */,
+				CEACEAF4224B5E5C00A2AE2D /* BlackUserView */,
 				CECEEF50224B56AC0068F267 /* CleanChatView */,
 				CECEEF4A224B24560068F267 /* MyQRCodeView */,
 				CECEEEFA224A43010068F267 /* Activity */,
@@ -2081,6 +2129,7 @@
 				CECEEF4F224B24810068F267 /* MyQRCodeView.xib in Resources */,
 				CECEEF36224A4DF80068F267 /* ManagerOrdersVC.xib in Resources */,
 				CECEEF41224B09620068F267 /* ManagerUserCell.xib in Resources */,
+				CE5A644A224CA46400891AC9 /* OpenStoreTextViewCell.xib in Resources */,
 				CEE28EB62243344D00C3D7E9 /* MainSetBtnCell.xib in Resources */,
 				CE6B05B92248AA3200AD44D7 /* DynamicsDetailVC.xib in Resources */,
 				CE6B05A822487D5100AD44D7 /* AboutMeVC.xib in Resources */,
@@ -2096,6 +2145,7 @@
 				CE9C4BF8223B4F9B00DE9DC1 /* icon_no_data.png in Resources */,
 				CEE9B4512244EA060004E4FA /* ChangePassWordVC.xib in Resources */,
 				CECEEECD224A041C0068F267 /* MyDynamicsHeadCell.xib in Resources */,
+				CE5A643B224C820400891AC9 /* OpenStoreHeadView.xib in Resources */,
 				CECEEEC7224A020C0068F267 /* MyDynamicsVC.xib in Resources */,
 				CECEEF55224B56FF0068F267 /* CleanChatView.xib in Resources */,
 				CECEEF18224A4D290068F267 /* ManagerUserVC.xib in Resources */,
@@ -2127,6 +2177,8 @@
 				CEACEB08224B949700A2AE2D /* ForgetWordVC.xib in Resources */,
 				CEE28F602243571800C3D7E9 /* LICENSE in Resources */,
 				CECEEF2C224A4DD30068F267 /* StoreContentVC.xib in Resources */,
+				CE5A6445224CA06700891AC9 /* OpenStoreItemCell.xib in Resources */,
+				CE5A6440224C9F9900891AC9 /* OpenStoreListCell.xib in Resources */,
 				CECEEF0B224A47DF0068F267 /* ManagerVC.xib in Resources */,
 				CE6B05C32248EEF900AD44D7 /* DynamicsContentCell.xib in Resources */,
 				CECEEEF3224A2CF30068F267 /* TaskVC.xib in Resources */,
@@ -2139,6 +2191,7 @@
 				CEE28EB122432EEE00C3D7E9 /* MainSetListCell.xib in Resources */,
 				CE5A6435224C64E800891AC9 /* SelPhotoCell.xib in Resources */,
 				CE6B059E22486BC900AD44D7 /* SafeCenterVCTableViewCell.xib in Resources */,
+				CE5A644F224CBCA400891AC9 /* OpenStoreTipCell.xib in Resources */,
 				CECEEF27224A4DC30068F267 /* ManagementStoreVC.xib in Resources */,
 				CEFA9276223F99CF0015F7EE /* HeedDynamicsVC.xib in Resources */,
 				CEE28F7F2243732E00C3D7E9 /* wb_bg.jpg in Resources */,
@@ -2319,6 +2372,7 @@
 				CEACEB11224B9EC600A2AE2D /* SetPassWordVC.m in Sources */,
 				CEFA9260223F84750015F7EE /* FSPageContentView.m in Sources */,
 				CECEEEEC224A27F20068F267 /* LogginVC.m in Sources */,
+				CE5A6449224CA46400891AC9 /* OpenStoreTextViewCell.m in Sources */,
 				CECC0D61223A569F001CF0A2 /* NSDictionary+Json.m in Sources */,
 				CEFA926B223F99A90015F7EE /* NearbyDynamicsVC.m in Sources */,
 				CEFA923A223F63B10015F7EE /* MainMessageVC.m in Sources */,
@@ -2339,6 +2393,7 @@
 				CEE28F35224355E100C3D7E9 /* JXCategoryNumberView.m in Sources */,
 				CECEEEE3224A1F4E0068F267 /* MyVideoVC.m in Sources */,
 				CEE28EC82243375800C3D7E9 /* SWScannerView.m in Sources */,
+				CE5A6444224CA06700891AC9 /* OpenStoreItemCell.m in Sources */,
 				CE6B05B22248A2C500AD44D7 /* VoucherVC.m in Sources */,
 				CEE28F6D2243571800C3D7E9 /* GKNavigationBarConfigure.m in Sources */,
 				CEE28F2C224355E100C3D7E9 /* JXCategoryTitleImageView.m in Sources */,
@@ -2369,12 +2424,15 @@
 				CEE28F612243571800C3D7E9 /* GKPushTransitionAnimation.m in Sources */,
 				CEE28F3C224355E100C3D7E9 /* JXCategoryBaseView.m in Sources */,
 				CEFA92D32241D16A0015F7EE /* SendDynamicsHeadView.m in Sources */,
+				CE5A643F224C9F9900891AC9 /* OpenStoreListCell.m in Sources */,
 				CEE28F652243571800C3D7E9 /* UIViewController+GKRotation.m in Sources */,
 				CE9C4BFC223B4F9B00DE9DC1 /* NSString+Size.m in Sources */,
 				CECEEF0A224A47DF0068F267 /* ManagerVC.m in Sources */,
 				CE9C4BFB223B4F9B00DE9DC1 /* UIViewController+Empty.m in Sources */,
 				CECC0D29223A411F001CF0A2 /* main.m in Sources */,
+				CE5A644E224CBCA400891AC9 /* OpenStoreTipCell.m in Sources */,
 				CECEEF35224A4DF80068F267 /* ManagerOrdersVC.m in Sources */,
+				CE5A6439224C81FB00891AC9 /* OpenStoreHeadView.m in Sources */,
 				CEE28EC52243375800C3D7E9 /* SWQRCodeManager.m in Sources */,
 				CECEEEBB2249D9560068F267 /* InfoDetaildNorCell.m in Sources */,
 				CEE28F34224355E100C3D7E9 /* JXCategoryImageCellModel.m in Sources */,

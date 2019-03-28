@@ -73,7 +73,7 @@
                 <outlet property="textView" destination="bfp-vt-9ed" id="XL9-BN-mpm"/>
                 <outlet property="wordNum" destination="XoD-iX-X5W" id="vZ4-d1-Odz"/>
             </connections>
-            <point key="canvasLocation" x="-63" y="45"/>
+            <point key="canvasLocation" x="-63.200000000000003" y="44.527736131934034"/>
         </view>
     </objects>
 </document>

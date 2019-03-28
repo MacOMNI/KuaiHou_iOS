@@ -89,7 +89,7 @@
         if (tag == 101) { // 忘记密码
             [self.navigationController pushViewController:[ForgetWordVC new] animated:YES];
         }else{ // 登陆
-            
+            [[NSNotificationCenter defaultCenter] postNotificationName:KAPPNOTIFICATION_LOGINCHANGE object:@YES];
         }
     }];
     return cell;

@@ -11,6 +11,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="OpenStoreVC">
             <connections>
+                <outlet property="tableView" destination="PGu-ek-YS7" id="oWt-3q-A3F"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -18,7 +19,23 @@
         <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="grouped" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="PGu-ek-YS7">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="gHe-Ag-CA7"/>
+                        <outlet property="delegate" destination="-1" id="Tp3-ls-oBm"/>
+                    </connections>
+                </tableView>
+            </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="PGu-ek-YS7" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="7Mm-fR-SrK"/>
+                <constraint firstItem="PGu-ek-YS7" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="Nci-bU-QbD"/>
+                <constraint firstAttribute="bottom" secondItem="PGu-ek-YS7" secondAttribute="bottom" id="UAr-k7-KAd"/>
+                <constraint firstAttribute="trailing" secondItem="PGu-ek-YS7" secondAttribute="trailing" id="v1K-3q-I77"/>
+            </constraints>
         </view>
     </objects>
 </document>

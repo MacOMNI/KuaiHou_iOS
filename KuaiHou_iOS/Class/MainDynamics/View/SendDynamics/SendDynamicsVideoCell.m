@@ -14,14 +14,14 @@
     [super awakeFromNib];
     // Initialization code
     
-    self.delBtn = [[UIButton alloc] init];
+    self.delBtn = [UIButton buttonWithType:(UIButtonTypeCustom)];
     [self.delBtn setImage:[UIImage loadImageWithName:@"dynamics_delphoto"] forState:(UIControlStateNormal)];
     [self.delBtn addTarget:self action:@selector(delAction) forControlEvents:(UIControlEventTouchUpInside)];
     [self.contentView addSubview:self.delBtn];
     
     [self.delBtn mas_makeConstraints:^(MASConstraintMaker *make) {
         make.top.equalTo(self.videoImageView.mas_top).offset(5);
-        make.right.equalTo(self.videoImageView.mas_right).offset(5);
+        make.right.equalTo(self.videoImageView.mas_right).offset(-5);
         make.size.mas_equalTo(CGSizeMake(20, 20));
     }];
 }

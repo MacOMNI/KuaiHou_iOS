@@ -38,7 +38,7 @@
                         <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="05d-IF-cAh">
+                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sex_woman" translatesAutoresizingMaskIntoConstraints="NO" id="05d-IF-cAh">
                         <rect key="frame" x="130" y="24" width="14" height="14"/>
                         <constraints>
                             <constraint firstAttribute="width" constant="14" id="0hH-HW-Vot"/>
@@ -51,10 +51,10 @@
                         <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WoI-SW-On5">
-                        <rect key="frame" x="266" y="17.5" width="39" height="27"/>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WoI-SW-On5">
+                        <rect key="frame" x="239" y="16" width="66" height="30"/>
                         <fontDescription key="fontDescription" type="system" pointSize="12"/>
-                        <state key="normal" title=" 0.3km">
+                        <state key="normal" title="   0.3km" image="base_location">
                             <color key="titleColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         </state>
                     </button>
@@ -89,4 +89,8 @@
             <point key="canvasLocation" x="129.59999999999999" y="140.32983508245877"/>
         </tableViewCell>
     </objects>
+    <resources>
+        <image name="base_location" width="21" height="30"/>
+        <image name="sex_woman" width="14" height="13.5"/>
+    </resources>
 </document>

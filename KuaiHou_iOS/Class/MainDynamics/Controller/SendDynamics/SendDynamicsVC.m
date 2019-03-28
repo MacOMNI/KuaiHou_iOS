@@ -69,7 +69,10 @@
 }
 -(void)setVideoPath:(NSString *)videoPath{
     _videoPath = videoPath;
-    self.selPhotoBtn.enabled = videoPath.length == 0;
+    MAIN(^{
+        self.selPhotoBtn.enabled = videoPath.length == 0;
+    });
+    
     [self.tableView reloadData];
 }
 
@@ -130,7 +133,7 @@
     SendDynamicsVideoCell *cell = [tableView dequeueReusableCellWithIdentifier:NSStringFromClass([SendDynamicsVideoCell class]) forIndexPath:indexPath];
     cell.videoImageView.image = [self getScreenShotImageFromVideoPath:_videoPath];
     [cell setDelBlock:^{
-        self->_videoPath = @"";
+        self.videoPath = nil;
     }];
     [cell setPlayBlock:^{
         
@@ -158,22 +161,42 @@
 
 -(void)pushTZImageVideoController{
     TZImagePickerController *imagePickerVC = [[TZImagePickerController alloc] initWithMaxImagesCount:1 columnNumber:4 delegate:self pushPhotoPickerVc:YES];
-    imagePickerVC.allowPickingVideo = YES;   // 不在内部显示视频
+    imagePickerVC.allowPickingVideo = YES;   // 在内部显示视频
     imagePickerVC.allowPickingImage = NO; // 能否选择照片
     imagePickerVC.allowTakeVideo = NO; // 能否拍视频
     imagePickerVC.allowTakePicture = NO; // 能否拍照
     imagePickerVC.showPhotoCannotSelectLayer = YES;
     
-    [imagePickerVC setDidFinishPickingVideoHandle:^(UIImage *coverImage, id asset) {
-        NSLog(@"选择了视频");
-//        [self getSelectVideoURl:asset];
-        AVURLAsset *urlAsset = (AVURLAsset *)asset;
-        NSURL *url = urlAsset.URL;
-        self->_videoPath = url.path;
-        
-    }];
-    
     [self presentViewController:imagePickerVC animated:YES completion:nil];
+}
+
+// 选择视频的回调
+-(void)imagePickerController:(TZImagePickerController *)picker
+       didFinishPickingVideo:(UIImage *)coverImage
+                sourceAssets:(PHAsset *)asset{
+    NSLog(@"选择了视频");
+    [self getSelectVideoURl:asset];
+}
+
+#pragma mark-获取选中的视频资源  选择视频完成后应该跳到编辑界面
+-(void)getSelectVideoURl:(id)asset{
+    PHAsset *phAsset = asset;
+    if (phAsset.mediaType == PHAssetMediaTypeVideo) {
+        PHVideoRequestOptions *options = [[PHVideoRequestOptions alloc] init];
+        options.version = PHImageRequestOptionsVersionCurrent;
+        options.networkAccessAllowed = true;
+        options.deliveryMode = PHVideoRequestOptionsDeliveryModeAutomatic;
+        PHImageManager *manager = [PHImageManager defaultManager];
+        [manager requestAVAssetForVideo:phAsset options:options resultHandler:^(AVAsset * _Nullable asset, AVAudioMix * _Nullable audioMix, NSDictionary * _Nullable info) {
+            AVURLAsset *urlAsset = (AVURLAsset *)asset;
+            
+            NSURL *url = urlAsset.URL;
+            NSLog(@"%@", url);
+            self.videoPath = url.path;
+            
+            
+        }];
+    }
 }
 
 #pragma mark 预览照片
@@ -205,11 +228,13 @@
         }
 
     }
-//    if (actionSheet.tag == 999) {
-//        if (buttonIndex == 2) {
-//            [self aliyunSDKVideo];
-//        }
-//    }
+    if (actionSheet.tag == 999) {
+        if (buttonIndex == 0) {
+            
+        }else if(buttonIndex == 1){
+            [self pushTZImageVideoController];
+        }
+    }
 }
 - (UIImage *)getScreenShotImageFromVideoPath:(NSString *)filePath{
     UIImage *shotImage;
@@ -241,15 +266,5 @@
     sheet.tag = 999;
     [sheet showInView:self.view];
 }
-
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 
 @end
