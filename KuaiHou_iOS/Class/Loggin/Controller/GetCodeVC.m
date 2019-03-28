@@ -8,6 +8,7 @@
 
 #import "GetCodeVC.h"
 #import "WGDigitField.h"
+#import "FillInTheInfoVC.h"
 
 
 @interface BackgroundWithBottomLine : UIView
@@ -41,6 +42,8 @@
 @interface GetCodeVC ()
 @property (weak, nonatomic) IBOutlet UILabel *tipLab;
 
+@property (nonatomic, strong) WGDigitField<WGDigitView<BackgroundWithBottomLine *> *> *field2;
+
 @end
 
 @implementation GetCodeVC
@@ -49,7 +52,7 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
     
-    WGDigitField<WGDigitView<BackgroundWithBottomLine *> *> *field2 = [[WGDigitField<WGDigitView<BackgroundWithBottomLine *> *> alloc] initWithDigitViewInitBlock:^WGDigitView<BackgroundWithBottomLine *> * (NSInteger index){
+    self.field2 = [[WGDigitField<WGDigitView<BackgroundWithBottomLine *> *> alloc] initWithDigitViewInitBlock:^WGDigitView<BackgroundWithBottomLine *> * (NSInteger index){
         BackgroundWithBottomLine *background2 = [BackgroundWithBottomLine create];
         
         return [[WGDigitView<BackgroundWithBottomLine *> alloc] initWithBackgroundView:background2 digitFont:[UIFont systemFontOfSize:25.f] digitColor:[UIColor blackColor]];
@@ -70,13 +73,32 @@
         NSLog(@"%@", text);
     }];
     
-    [self.view addSubview:field2];
+    [self.view addSubview:self.field2];
     
-    [field2 mas_makeConstraints:^(MASConstraintMaker *make) {
+    [self.field2 mas_makeConstraints:^(MASConstraintMaker *make) {
         make.leading.and.trailing.equalTo(@0);
         make.top.equalTo(self.tipLab.mas_bottom).with.offset(20);
         make.height.equalTo(@(45 + 2 * 17));
     }];
+    
+    UIButton *button = [UIButton buttonWithType:(UIButtonTypeCustom)];
+    button.titleLabel.font = kFont(18);
+    [button setTitleColor:kMain_TextColor forState:(UIControlStateNormal)];
+    [button setBackgroundColor:kMain_lineColor];
+    [MyTool fixCornerradius:button cornerRadius:22 Color:kMain_lineColor_C Width:0.5];
+    [button addTarget:self action:@selector(commitAction) forControlEvents:(UIControlEventTouchUpInside)];
+    [button setTitle:@"确定" forState:(UIControlStateNormal)];
+    [self.view addSubview:button];
+    
+    [button mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.left.equalTo(self.field2.mas_left).offset(37.5);
+        make.right.equalTo(self.field2.mas_right).offset(-37.5);
+        make.height.mas_offset(@44);
+        make.top.equalTo(self.field2.mas_bottom).offset(50);
+    }];
+}
+-(void)commitAction{
+    [self.navigationController pushViewController:[FillInTheInfoVC new] animated:YES];
 }
 
 /*

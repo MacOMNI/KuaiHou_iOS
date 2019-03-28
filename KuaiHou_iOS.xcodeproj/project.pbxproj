@@ -8,6 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		C3343E751DE353D40FC29AA8 /* Pods_KuaiHou_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F72C78518845A6C8D2F549AB /* Pods_KuaiHou_iOS.framework */; };
+		CE5A642A224C5CF600891AC9 /* FillInTheInfoVC.m in Sources */ = {isa = PBXBuildFile; fileRef = CE5A6428224C5CF600891AC9 /* FillInTheInfoVC.m */; };
+		CE5A642B224C5CF600891AC9 /* FillInTheInfoVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE5A6429224C5CF600891AC9 /* FillInTheInfoVC.xib */; };
+		CE5A642F224C642300891AC9 /* SelPhotoVC.m in Sources */ = {isa = PBXBuildFile; fileRef = CE5A642D224C642300891AC9 /* SelPhotoVC.m */; };
+		CE5A6430224C642300891AC9 /* SelPhotoVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE5A642E224C642300891AC9 /* SelPhotoVC.xib */; };
+		CE5A6434224C64E800891AC9 /* SelPhotoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CE5A6432224C64E800891AC9 /* SelPhotoCell.m */; };
+		CE5A6435224C64E800891AC9 /* SelPhotoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE5A6433224C64E800891AC9 /* SelPhotoCell.xib */; };
 		CE6B058E2248667800AD44D7 /* SafeCenterVC.m in Sources */ = {isa = PBXBuildFile; fileRef = CE6B058C2248667800AD44D7 /* SafeCenterVC.m */; };
 		CE6B058F2248667800AD44D7 /* SafeCenterVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE6B058D2248667800AD44D7 /* SafeCenterVC.xib */; };
 		CE6B0593224867FE00AD44D7 /* ShieldDynamicVC.m in Sources */ = {isa = PBXBuildFile; fileRef = CE6B0591224867FE00AD44D7 /* ShieldDynamicVC.m */; };
@@ -271,6 +277,15 @@
 /* Begin PBXFileReference section */
 		1C969EC6FE4B3B6CA38C6D17 /* Pods-KuaiHou_iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KuaiHou_iOS.debug.xcconfig"; path = "Target Support Files/Pods-KuaiHou_iOS/Pods-KuaiHou_iOS.debug.xcconfig"; sourceTree = "<group>"; };
 		9462F2C576846C42B4EADD4A /* Pods-KuaiHou_iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KuaiHou_iOS.release.xcconfig"; path = "Target Support Files/Pods-KuaiHou_iOS/Pods-KuaiHou_iOS.release.xcconfig"; sourceTree = "<group>"; };
+		CE5A6427224C5CF600891AC9 /* FillInTheInfoVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FillInTheInfoVC.h; sourceTree = "<group>"; };
+		CE5A6428224C5CF600891AC9 /* FillInTheInfoVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FillInTheInfoVC.m; sourceTree = "<group>"; };
+		CE5A6429224C5CF600891AC9 /* FillInTheInfoVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FillInTheInfoVC.xib; sourceTree = "<group>"; };
+		CE5A642C224C642300891AC9 /* SelPhotoVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SelPhotoVC.h; sourceTree = "<group>"; };
+		CE5A642D224C642300891AC9 /* SelPhotoVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SelPhotoVC.m; sourceTree = "<group>"; };
+		CE5A642E224C642300891AC9 /* SelPhotoVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SelPhotoVC.xib; sourceTree = "<group>"; };
+		CE5A6431224C64E800891AC9 /* SelPhotoCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SelPhotoCell.h; sourceTree = "<group>"; };
+		CE5A6432224C64E800891AC9 /* SelPhotoCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SelPhotoCell.m; sourceTree = "<group>"; };
+		CE5A6433224C64E800891AC9 /* SelPhotoCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SelPhotoCell.xib; sourceTree = "<group>"; };
 		CE6B058B2248667800AD44D7 /* SafeCenterVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SafeCenterVC.h; sourceTree = "<group>"; };
 		CE6B058C2248667800AD44D7 /* SafeCenterVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SafeCenterVC.m; sourceTree = "<group>"; };
 		CE6B058D2248667800AD44D7 /* SafeCenterVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SafeCenterVC.xib; sourceTree = "<group>"; };
@@ -1078,6 +1093,9 @@
 				CEACEAFA224B7F0300A2AE2D /* LogginCell.h */,
 				CEACEAFB224B7F0300A2AE2D /* LogginCell.m */,
 				CEACEAFC224B7F0300A2AE2D /* LogginCell.xib */,
+				CE5A6431224C64E800891AC9 /* SelPhotoCell.h */,
+				CE5A6432224C64E800891AC9 /* SelPhotoCell.m */,
+				CE5A6433224C64E800891AC9 /* SelPhotoCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -1110,6 +1128,12 @@
 				CEACEB13224BA19000A2AE2D /* GetCodeVC.h */,
 				CEACEB14224BA19000A2AE2D /* GetCodeVC.m */,
 				CEACEB15224BA19000A2AE2D /* GetCodeVC.xib */,
+				CE5A6427224C5CF600891AC9 /* FillInTheInfoVC.h */,
+				CE5A6428224C5CF600891AC9 /* FillInTheInfoVC.m */,
+				CE5A6429224C5CF600891AC9 /* FillInTheInfoVC.xib */,
+				CE5A642C224C642300891AC9 /* SelPhotoVC.h */,
+				CE5A642D224C642300891AC9 /* SelPhotoVC.m */,
+				CE5A642E224C642300891AC9 /* SelPhotoVC.xib */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -2081,6 +2105,7 @@
 				CEFA92AD2240A01C0015F7EE /* FriendMessageCell.xib in Resources */,
 				CEE28F7D22436D0500C3D7E9 /* InfoDetailVC.xib in Resources */,
 				CEFA9231223F634D0015F7EE /* MainHomeVC.xib in Resources */,
+				CE5A642B224C5CF600891AC9 /* FillInTheInfoVC.xib in Resources */,
 				CECEEF46224B131C0068F267 /* InviteStoreView.xib in Resources */,
 				CEFA92DA2241DDF40015F7EE /* SendDynamicsHeadCell.xib in Resources */,
 				CE6B05A32248789900AD44D7 /* WithdrawWordVC.xib in Resources */,
@@ -2093,6 +2118,7 @@
 				CECC0D26223A411F001CF0A2 /* LaunchScreen.storyboard in Resources */,
 				CEE28F6E2243571800C3D7E9 /* README.md in Resources */,
 				CEE28F73224357EA00C3D7E9 /* ChangeInfoVC.xib in Resources */,
+				CE5A6430224C642300891AC9 /* SelPhotoVC.xib in Resources */,
 				CEE28EAB224329A900C3D7E9 /* MainSetVC.xib in Resources */,
 				CEACEB03224B8B7900A2AE2D /* RegisVC.xib in Resources */,
 				CEE28F6B2243571800C3D7E9 /* GKNavigationBarViewController.bundle in Resources */,
@@ -2111,6 +2137,7 @@
 				CEACEB12224B9EC600A2AE2D /* SetPassWordVC.xib in Resources */,
 				CEFA9284223FA6920015F7EE /* NearByDynamicsHeadCell.xib in Resources */,
 				CEE28EB122432EEE00C3D7E9 /* MainSetListCell.xib in Resources */,
+				CE5A6435224C64E800891AC9 /* SelPhotoCell.xib in Resources */,
 				CE6B059E22486BC900AD44D7 /* SafeCenterVCTableViewCell.xib in Resources */,
 				CECEEF27224A4DC30068F267 /* ManagementStoreVC.xib in Resources */,
 				CEFA9276223F99CF0015F7EE /* HeedDynamicsVC.xib in Resources */,
@@ -2288,6 +2315,7 @@
 				CECC0D58223A525F001CF0A2 /* UIColor+Hex.m in Sources */,
 				CE9C4C00223B58F800DE9DC1 /* BaseNavigationController.m in Sources */,
 				CECEEEC6224A020C0068F267 /* MyDynamicsVC.m in Sources */,
+				CE5A642F224C642300891AC9 /* SelPhotoVC.m in Sources */,
 				CEACEB11224B9EC600A2AE2D /* SetPassWordVC.m in Sources */,
 				CEFA9260223F84750015F7EE /* FSPageContentView.m in Sources */,
 				CECEEEEC224A27F20068F267 /* LogginVC.m in Sources */,
@@ -2317,6 +2345,7 @@
 				CECEEF17224A4D290068F267 /* ManagerUserVC.m in Sources */,
 				CEE28EB022432EEE00C3D7E9 /* MainSetListCell.m in Sources */,
 				CEE28ED4224355DA00C3D7E9 /* GKPageTableView.m in Sources */,
+				CE5A6434224C64E800891AC9 /* SelPhotoCell.m in Sources */,
 				CEE28F7C22436D0500C3D7E9 /* InfoDetailVC.m in Sources */,
 				CEACEAF7224B5E9000A2AE2D /* BlackUserView.m in Sources */,
 				CECC0D6B223A56B8001CF0A2 /* NSArray+Log.m in Sources */,
@@ -2325,6 +2354,7 @@
 				CEFA92B72240A6030015F7EE /* UITableView+SCIndexView.m in Sources */,
 				CEE28F3D224355E100C3D7E9 /* JXCategoryBaseCell.m in Sources */,
 				CE6B059D22486BC900AD44D7 /* SafeCenterVCTableViewCell.m in Sources */,
+				CE5A642A224C5CF600891AC9 /* FillInTheInfoVC.m in Sources */,
 				CEFA9235223F639D0015F7EE /* MainDynamicsVC.m in Sources */,
 				CEACEB07224B949700A2AE2D /* ForgetWordVC.m in Sources */,
 				CEACEB0C224B9CD700A2AE2D /* BindPhoneVC.m in Sources */,
