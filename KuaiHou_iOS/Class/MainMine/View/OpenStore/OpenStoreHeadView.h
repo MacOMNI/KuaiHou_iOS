@@ -13,6 +13,7 @@ NS_ASSUME_NONNULL_BEGIN
 @interface OpenStoreHeadView : BaseView
 
 typedef void (^blockHeight)(CGFloat height);
+@property (weak, nonatomic) IBOutlet UILabel *titleLab;
 
 @property (weak, nonatomic) IBOutlet NSLayoutConstraint *collectionViewH;
 

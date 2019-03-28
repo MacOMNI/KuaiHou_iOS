@@ -14,6 +14,7 @@
 #import "OpenStoreHeadView.h"
 #import "OpenStoreTipCell.h"
 
+
 @interface OpenStoreVC () <TZImagePickerControllerDelegate,UIActionSheetDelegate>
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
 

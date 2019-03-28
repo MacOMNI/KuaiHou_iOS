@@ -13,6 +13,7 @@ NS_ASSUME_NONNULL_BEGIN
 @interface OpenStoreListCell : BaseCell
 @property (weak, nonatomic) IBOutlet UILabel *titleLab;
 @property (weak, nonatomic) IBOutlet UITextField *textField;
+@property (weak, nonatomic) IBOutlet UIView *lineView;
 
 @property (nonatomic, copy) void (^valueChangeBlock)(UITextField *textField);
 

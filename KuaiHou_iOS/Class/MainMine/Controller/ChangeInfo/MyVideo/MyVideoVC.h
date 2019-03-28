@@ -8,6 +8,10 @@
 
 #import "BaseViewController.h"
 
+#import "GKNavigationBarViewController.h"
+#import "GKPageScrollView.h"
+#import "JXCategoryView.h"
+
 NS_ASSUME_NONNULL_BEGIN
 
 @interface MyVideoVC : BaseViewController<GKPageListViewDelegate>

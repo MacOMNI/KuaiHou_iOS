@@ -7,8 +7,13 @@
 //
 
 #import "MainHomeVC.h"
+#import "JLDoubleSlider.h"
 
 @interface MainHomeVC ()<UINavigationControllerDelegate>
+
+{
+    JLDoubleSlider *_slider;
+}
 
 @end
 
@@ -23,6 +28,7 @@
 //    } fail:^{
 //        
 //    }];
+    
     
 }
 

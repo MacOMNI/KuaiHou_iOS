@@ -215,6 +215,12 @@
 		CEE6E37D22420731006ED98F /* SendDynamicsVideoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CEE6E37B22420731006ED98F /* SendDynamicsVideoCell.xib */; };
 		CEE9B4502244EA060004E4FA /* ChangePassWordVC.m in Sources */ = {isa = PBXBuildFile; fileRef = CEE9B44E2244EA060004E4FA /* ChangePassWordVC.m */; };
 		CEE9B4512244EA060004E4FA /* ChangePassWordVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = CEE9B44F2244EA060004E4FA /* ChangePassWordVC.xib */; };
+		CEF2B360224CCA4300687E5B /* StoreContentTextCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CEF2B35E224CCA4300687E5B /* StoreContentTextCell.m */; };
+		CEF2B361224CCA4300687E5B /* StoreContentTextCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CEF2B35F224CCA4300687E5B /* StoreContentTextCell.xib */; };
+		CEF2B367224CE06A00687E5B /* JLDoubleSlider.m in Sources */ = {isa = PBXBuildFile; fileRef = CEF2B364224CE06900687E5B /* JLDoubleSlider.m */; };
+		CEF2B368224CE06A00687E5B /* UIView+Dimension.m in Sources */ = {isa = PBXBuildFile; fileRef = CEF2B365224CE06A00687E5B /* UIView+Dimension.m */; };
+		CEF2B36D224CE21100687E5B /* ReleaseEventSliderCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CEF2B36B224CE21100687E5B /* ReleaseEventSliderCell.m */; };
+		CEF2B36E224CE21100687E5B /* ReleaseEventSliderCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CEF2B36C224CE21100687E5B /* ReleaseEventSliderCell.xib */; };
 		CEFA9210223F535E0015F7EE /* AppDelegate+Config.m in Sources */ = {isa = PBXBuildFile; fileRef = CEFA920F223F535E0015F7EE /* AppDelegate+Config.m */; };
 		CEFA9213223F5AAA0015F7EE /* UILabel+BaseChangeDefaultFont.m in Sources */ = {isa = PBXBuildFile; fileRef = CEFA9212223F5AAA0015F7EE /* UILabel+BaseChangeDefaultFont.m */; };
 		CEFA9219223F5DC40015F7EE /* BaseTableBar.m in Sources */ = {isa = PBXBuildFile; fileRef = CEFA9217223F5DC40015F7EE /* BaseTableBar.m */; };
@@ -647,6 +653,16 @@
 		CEE9B44D2244EA060004E4FA /* ChangePassWordVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ChangePassWordVC.h; sourceTree = "<group>"; };
 		CEE9B44E2244EA060004E4FA /* ChangePassWordVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ChangePassWordVC.m; sourceTree = "<group>"; };
 		CEE9B44F2244EA060004E4FA /* ChangePassWordVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChangePassWordVC.xib; sourceTree = "<group>"; };
+		CEF2B35D224CCA4300687E5B /* StoreContentTextCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StoreContentTextCell.h; sourceTree = "<group>"; };
+		CEF2B35E224CCA4300687E5B /* StoreContentTextCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StoreContentTextCell.m; sourceTree = "<group>"; };
+		CEF2B35F224CCA4300687E5B /* StoreContentTextCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StoreContentTextCell.xib; sourceTree = "<group>"; };
+		CEF2B363224CE06900687E5B /* JLDoubleSlider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JLDoubleSlider.h; sourceTree = "<group>"; };
+		CEF2B364224CE06900687E5B /* JLDoubleSlider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JLDoubleSlider.m; sourceTree = "<group>"; };
+		CEF2B365224CE06A00687E5B /* UIView+Dimension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Dimension.m"; sourceTree = "<group>"; };
+		CEF2B366224CE06A00687E5B /* UIView+Dimension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Dimension.h"; sourceTree = "<group>"; };
+		CEF2B36A224CE21100687E5B /* ReleaseEventSliderCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ReleaseEventSliderCell.h; sourceTree = "<group>"; };
+		CEF2B36B224CE21100687E5B /* ReleaseEventSliderCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ReleaseEventSliderCell.m; sourceTree = "<group>"; };
+		CEF2B36C224CE21100687E5B /* ReleaseEventSliderCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ReleaseEventSliderCell.xib; sourceTree = "<group>"; };
 		CEFA920E223F535E0015F7EE /* AppDelegate+Config.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AppDelegate+Config.h"; sourceTree = "<group>"; };
 		CEFA920F223F535E0015F7EE /* AppDelegate+Config.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "AppDelegate+Config.m"; sourceTree = "<group>"; };
 		CEFA9211223F5AAA0015F7EE /* UILabel+BaseChangeDefaultFont.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UILabel+BaseChangeDefaultFont.h"; sourceTree = "<group>"; };
@@ -991,6 +1007,7 @@
 		CECC0D4F223A4615001CF0A2 /* ThirdLib */ = {
 			isa = PBXGroup;
 			children = (
+				CEF2B362224CE05900687E5B /* JLDoubleSlider */,
 				CEACEB18224BA63F00A2AE2D /* WGDigitField */,
 				CECEEEB32249C05E0068F267 /* WLButtonCountdownManager */,
 				CEE28ECD2243558200C3D7E9 /* GKPageScrollView */,
@@ -1689,6 +1706,37 @@
 			path = ChangePassWord;
 			sourceTree = "<group>";
 		};
+		CEF2B35C224CC9EB00687E5B /* StoreContent */ = {
+			isa = PBXGroup;
+			children = (
+				CEF2B35D224CCA4300687E5B /* StoreContentTextCell.h */,
+				CEF2B35E224CCA4300687E5B /* StoreContentTextCell.m */,
+				CEF2B35F224CCA4300687E5B /* StoreContentTextCell.xib */,
+			);
+			path = StoreContent;
+			sourceTree = "<group>";
+		};
+		CEF2B362224CE05900687E5B /* JLDoubleSlider */ = {
+			isa = PBXGroup;
+			children = (
+				CEF2B363224CE06900687E5B /* JLDoubleSlider.h */,
+				CEF2B364224CE06900687E5B /* JLDoubleSlider.m */,
+				CEF2B366224CE06A00687E5B /* UIView+Dimension.h */,
+				CEF2B365224CE06A00687E5B /* UIView+Dimension.m */,
+			);
+			path = JLDoubleSlider;
+			sourceTree = "<group>";
+		};
+		CEF2B369224CE1C900687E5B /* ReleaseEvent */ = {
+			isa = PBXGroup;
+			children = (
+				CEF2B36A224CE21100687E5B /* ReleaseEventSliderCell.h */,
+				CEF2B36B224CE21100687E5B /* ReleaseEventSliderCell.m */,
+				CEF2B36C224CE21100687E5B /* ReleaseEventSliderCell.xib */,
+			);
+			path = ReleaseEvent;
+			sourceTree = "<group>";
+		};
 		CEFA9214223F5D1F0015F7EE /* Controller */ = {
 			isa = PBXGroup;
 			children = (
@@ -1872,6 +1920,8 @@
 				CEFA92C22240ED9C0015F7EE /* MainMineListCell.h */,
 				CEFA92C32240ED9C0015F7EE /* MainMineListCell.m */,
 				CEFA92C42240ED9C0015F7EE /* MainMineListCell.xib */,
+				CEF2B369224CE1C900687E5B /* ReleaseEvent */,
+				CEF2B35C224CC9EB00687E5B /* StoreContent */,
 				CE5A6436224C81C200891AC9 /* OpenStore */,
 				CEACEAF4224B5E5C00A2AE2D /* BlackUserView */,
 				CECEEF50224B56AC0068F267 /* CleanChatView */,
@@ -2153,7 +2203,9 @@
 				CEFA92D52241D1970015F7EE /* SendDynamicsHeadView.xib in Resources */,
 				CEFA92A3224088500015F7EE /* FriendMessageVC.xib in Resources */,
 				CEFA92AD2240A01C0015F7EE /* FriendMessageCell.xib in Resources */,
+				CEF2B361224CCA4300687E5B /* StoreContentTextCell.xib in Resources */,
 				CEE28F7D22436D0500C3D7E9 /* InfoDetailVC.xib in Resources */,
+				CEF2B36E224CE21100687E5B /* ReleaseEventSliderCell.xib in Resources */,
 				CEFA9231223F634D0015F7EE /* MainHomeVC.xib in Resources */,
 				CE5A642B224C5CF600891AC9 /* FillInTheInfoVC.xib in Resources */,
 				CECEEF46224B131C0068F267 /* InviteStoreView.xib in Resources */,
@@ -2310,6 +2362,8 @@
 				CEFA92A7224091000015F7EE /* NewMessageCell.m in Sources */,
 				CEE28F2F224355E100C3D7E9 /* JXCategoryTitleCellModel.m in Sources */,
 				CECEEF3A224A4E040068F267 /* UnpaidOrdersVC.m in Sources */,
+				CEF2B368224CE06A00687E5B /* UIView+Dimension.m in Sources */,
+				CEF2B36D224CE21100687E5B /* ReleaseEventSliderCell.m in Sources */,
 				CEFA9287223FAB190015F7EE /* NearByDynamicsTextCell.m in Sources */,
 				CEE28F622243571800C3D7E9 /* GKDelegateHandler.m in Sources */,
 				CEFA928E223FAB430015F7EE /* NearByDynamicsToolCell.m in Sources */,
@@ -2341,6 +2395,7 @@
 				CEE28F39224355E100C3D7E9 /* JXCategoryFactory.m in Sources */,
 				CEE28F28224355E100C3D7E9 /* JXCategoryIndicatorView.m in Sources */,
 				CEE28F7722435A1900C3D7E9 /* ChangeInfoHeadView.m in Sources */,
+				CEF2B360224CCA4300687E5B /* StoreContentTextCell.m in Sources */,
 				CEFA9275223F99CF0015F7EE /* HeedDynamicsVC.m in Sources */,
 				CEE28F3B224355E100C3D7E9 /* UIColor+JXAdd.m in Sources */,
 				CE9C4BF7223B4F9B00DE9DC1 /* PLEmptyView.m in Sources */,
@@ -2443,6 +2498,7 @@
 				CEE28F27224355E100C3D7E9 /* JXCategoryIndicatorCell.m in Sources */,
 				CEE28F2E224355E100C3D7E9 /* JXCategoryTitleImageCellModel.m in Sources */,
 				CEFA927A223FA59A0015F7EE /* BaseCell.m in Sources */,
+				CEF2B367224CE06A00687E5B /* JLDoubleSlider.m in Sources */,
 				CECEEED8224A0F660068F267 /* MyDynamicsImageCell.m in Sources */,
 				CECEEEFE224A43150068F267 /* ActivityCell.m in Sources */,
 				CEACEAF3224B5BF800A2AE2D /* BaseTipView.m in Sources */,

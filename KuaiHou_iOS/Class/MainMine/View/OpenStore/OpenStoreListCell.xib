@@ -51,6 +51,7 @@
                 </constraints>
             </tableViewCellContentView>
             <connections>
+                <outlet property="lineView" destination="FDI-BN-KlD" id="uWD-lY-kPJ"/>
                 <outlet property="textField" destination="Vz5-2k-cwc" id="17Z-N3-zJJ"/>
                 <outlet property="titleLab" destination="jRP-Ib-Dn5" id="99T-EL-IYc"/>
             </connections>

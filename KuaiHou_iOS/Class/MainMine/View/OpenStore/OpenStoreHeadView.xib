@@ -16,11 +16,11 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="请上传网店环境照片" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bcn-pS-scL">
-                    <rect key="frame" x="15" y="15" width="156" height="15"/>
+                    <rect key="frame" x="15" y="15" width="138" height="15"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="15" id="Br9-LW-0GC"/>
                     </constraints>
-                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
                     <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
                     <nil key="highlightedColor"/>
                 </label>
@@ -49,6 +49,7 @@
             <connections>
                 <outlet property="collectionView" destination="Qdw-Xp-Xup" id="DB1-LW-5LS"/>
                 <outlet property="collectionViewH" destination="oTm-ch-xKr" id="3sz-mm-BGt"/>
+                <outlet property="titleLab" destination="bcn-pS-scL" id="ILn-WS-9qb"/>
             </connections>
         </view>
     </objects>

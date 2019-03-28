@@ -8,6 +8,7 @@
 
 #import "WithdrawWordVC.h"
 
+
 @interface WithdrawWordVC ()
 @property (weak, nonatomic) IBOutlet UIButton *commitBtn;
 @property (weak, nonatomic) IBOutlet UIButton *codeBtn;
