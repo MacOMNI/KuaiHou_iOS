@@ -22,5 +22,10 @@
 
     // Configure the view for the selected state
 }
+- (IBAction)itemAction:(UIButton *)sender {
+    if (self.itemBlock) {
+        self.itemBlock();
+    }
+}
 
 @end

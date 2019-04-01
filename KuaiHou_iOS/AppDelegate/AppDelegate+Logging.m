@@ -25,15 +25,9 @@
                                              selector:@selector(loginStateChange:)
                                                  name:KAPPNOTIFICATION_LOGINCHANGE
                                                object:nil];
-//    BOOL isAutoLogin = kUserInManagerSharedManager.isLogin;
-//    if (isAutoLogin){
-//        BOOL isUserId =  ![MyTool isBlankString:[kUserInManagerSharedManager.userId stringValue]];
-//        [[NSNotificationCenter defaultCenter] postNotificationName:KAPPNOTIFICATION_LOGINCHANGE object:@(isUserId)];
-//    }else{
-//        [[NSNotificationCenter defaultCenter] postNotificationName:KAPPNOTIFICATION_LOGINCHANGE object:@NO];
-//    }
+    BOOL isAutoLogin = kUserInfoSharedManager.isLogin;
     
-    [[NSNotificationCenter defaultCenter] postNotificationName:KAPPNOTIFICATION_LOGINCHANGE object:@NO];
+    [[NSNotificationCenter defaultCenter] postNotificationName:KAPPNOTIFICATION_LOGINCHANGE object:@(isAutoLogin)];
 }
 
 #pragma mark 登录状态发生改变
@@ -48,7 +42,7 @@
         // 是否是登录成功的通知
         BOOL loginSuccess = [notification.object boolValue];
         // 保存登录状态
-//        [kUserInManagerSharedManager setLoginFlagWithIsLogin:loginSuccess];
+        [kUserInfoSharedManager setLoginFlagWithIsLogin:loginSuccess];
         if (loginSuccess) {
             self.window.rootViewController = [[BaseTabBarController alloc] init];
         }else{

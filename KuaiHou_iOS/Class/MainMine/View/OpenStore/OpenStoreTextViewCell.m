@@ -23,6 +23,7 @@
     self.textView.xx_placeholderColor = kMain_TextColor_9;
     self.textView.xx_placeholderFont = kFont(12);
     self.textView.delegate = self;
+    self.maxWordNum = 100;
     
 }
 
@@ -34,18 +35,21 @@
     }
     NSUInteger count = textView.text.length;
     
-    if (count>=100) {
-        self.wordNum.text = @"100/100";
-        textView.text = [textView.text substringToIndex:100];
+    if (count>=_maxWordNum) {
+        self.wordNum.text = [NSString stringWithFormat:@"%ld/%ld",_maxWordNum, _maxWordNum];
+        textView.text = [textView.text substringToIndex:_maxWordNum];
     }else{
-        self.wordNum.text = [NSString stringWithFormat:@"%ld/200", (unsigned long)count];
+        self.wordNum.text = [NSString stringWithFormat:@"%ld/%ld", (unsigned long)count, _maxWordNum];
     }
     
     if (self.changeTextField) {
         self.changeTextField(textView);
     }
+}
 
-
+-(void)setMaxWordNum:(NSInteger)maxWordNum{
+    _maxWordNum = maxWordNum;
+    self.wordNum.text = [NSString stringWithFormat:@"0/%ld", _maxWordNum];
 }
 
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated {

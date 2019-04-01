@@ -13,6 +13,7 @@
 #import "OpenStoreTextViewCell.h"
 #import "OpenStoreHeadView.h"
 #import "OpenStoreTipCell.h"
+#import "MainSetBtnCell.h"
 
 
 @interface OpenStoreVC () <TZImagePickerControllerDelegate,UIActionSheetDelegate>
@@ -68,6 +69,8 @@
     [self.tableView registerNib:[UINib nibWithNibName:NSStringFromClass([OpenStoreTextViewCell class]) bundle:[NSBundle mainBundle]] forCellReuseIdentifier:NSStringFromClass([OpenStoreTextViewCell class])];
     
     [self.tableView registerNib:[UINib nibWithNibName:NSStringFromClass([OpenStoreTipCell class]) bundle:[NSBundle mainBundle]] forCellReuseIdentifier:NSStringFromClass([OpenStoreTipCell class])];
+    
+    [self.tableView registerNib:[UINib nibWithNibName:NSStringFromClass([MainSetBtnCell class]) bundle:[NSBundle mainBundle]] forCellReuseIdentifier:NSStringFromClass([MainSetBtnCell class])];
     
     [self setHeadView];
 }
@@ -127,7 +130,7 @@
     if (section == 0) {
         return self.titleArray.count;
     }
-    return 1;
+    return 2;
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section {
@@ -154,8 +157,13 @@
         }
         return 44;
     }
-    
-    return 152.5;
+    if (indexPath.section == 1) {
+        if (indexPath.row == 0) {
+            return 85;
+        }
+        return 67;
+    }
+    return 0;
 }
 
 - (UITableViewCell*)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
@@ -196,9 +204,21 @@
             return cell;
         }
     }
-    OpenStoreTipCell *cell = [tableView dequeueReusableCellWithIdentifier:NSStringFromClass([OpenStoreTipCell class]) forIndexPath:indexPath];
-    
-    return cell;
+    if (indexPath.section == 1) {
+        if (indexPath.row == 0) {
+            OpenStoreTipCell *cell = [tableView dequeueReusableCellWithIdentifier:NSStringFromClass([OpenStoreTipCell class]) forIndexPath:indexPath];
+            cell.titleLab.text = @"温馨提示：";
+            return cell;
+        }
+        else{
+            MainSetBtnCell *cell = [tableView dequeueReusableCellWithIdentifier:NSStringFromClass([MainSetBtnCell class]) forIndexPath:indexPath];
+            
+            [cell.itemBtn setTitle:@"提交审核" forState:(UIControlStateNormal)];
+            
+            return cell;
+        }
+    }
+    return nil;
 }
 
 #pragma mark 选择照片

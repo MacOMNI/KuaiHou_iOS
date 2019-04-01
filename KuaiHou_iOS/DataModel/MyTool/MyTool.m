@@ -176,6 +176,15 @@
     if ([MyTool isBlankString:urlStr]) {
         return;
     }
+    if ([MyTool isBlankString:imageName]) {
+        [imageView sd_setImageWithURL:[NSURL URLWithString:urlStr] completed:^(UIImage * _Nullable image, NSError * _Nullable error, SDImageCacheType cacheType, NSURL * _Nullable imageURL) {
+            if (error) {
+                NSLog(@"错误信息:%@",error);
+            }
+        }];
+    }else{
+        [imageView sd_setImageWithURL:[NSURL URLWithString:urlStr] placeholderImage:[UIImage loadImageWithName:imageName]];
+    }
 }
 
 +(void)fixCornerradius:(UIView *)view

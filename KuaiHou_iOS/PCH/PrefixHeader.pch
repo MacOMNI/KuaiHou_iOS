@@ -47,6 +47,8 @@
 #import "BaseCell.h"
 #import "NetWorkManager.h"
 #import "BaseTipView.h"
+#import "XXTextView.h"
+#import "UserInfoManager.h"
 
 #import "GKNavigationBarViewController.h"
 #import "GKPageScrollView.h"

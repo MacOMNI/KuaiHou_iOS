@@ -24,7 +24,7 @@
                         <color key="textColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="温馨提示：" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NSZ-hF-01g">
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="提示：" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NSZ-hF-01g">
                         <rect key="frame" x="30" y="15" width="61.5" height="14.5"/>
                         <constraints>
                             <constraint firstAttribute="width" constant="61.5" id="dom-Z9-j2h"/>
@@ -33,41 +33,21 @@
                         <color key="textColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gen-AO-DNg">
-                        <rect key="frame" x="37.5" y="97.5" width="245" height="40"/>
-                        <color key="backgroundColor" red="0.93333333330000001" green="0.93333333330000001" blue="0.93333333330000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <constraints>
-                            <constraint firstAttribute="height" constant="40" id="aDJ-gQ-nVX"/>
-                        </constraints>
-                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
-                        <state key="normal" title="提交审核">
-                            <color key="titleColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        </state>
-                        <userDefinedRuntimeAttributes>
-                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                <integer key="value" value="20"/>
-                            </userDefinedRuntimeAttribute>
-                            <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
-                            <userDefinedRuntimeAttribute type="number" keyPath="layer.borderWidth">
-                                <real key="value" value="0.5"/>
-                            </userDefinedRuntimeAttribute>
-                            <userDefinedRuntimeAttribute type="color" keyPath="layer.borderUIColor">
-                                <color key="value" red="0.80000000000000004" green="0.80000000000000004" blue="0.80000000000000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                            </userDefinedRuntimeAttribute>
-                        </userDefinedRuntimeAttributes>
-                    </button>
                 </subviews>
                 <constraints>
-                    <constraint firstItem="Gen-AO-DNg" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="37.5" id="A5K-OR-Q2L"/>
                     <constraint firstItem="NSZ-hF-01g" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="30" id="Ds1-rb-zXf"/>
                     <constraint firstAttribute="trailingMargin" secondItem="puy-GF-KAW" secondAttribute="trailing" constant="30" id="H6c-Vk-bEO"/>
-                    <constraint firstAttribute="trailing" secondItem="Gen-AO-DNg" secondAttribute="trailing" constant="37.5" id="bPj-fB-3i2"/>
                     <constraint firstItem="puy-GF-KAW" firstAttribute="top" secondItem="NSZ-hF-01g" secondAttribute="top" id="cR4-ae-7gH"/>
                     <constraint firstItem="puy-GF-KAW" firstAttribute="leading" secondItem="NSZ-hF-01g" secondAttribute="trailing" id="gZL-6u-8Ra"/>
-                    <constraint firstItem="Gen-AO-DNg" firstAttribute="top" secondItem="puy-GF-KAW" secondAttribute="bottom" constant="25" id="n2N-e4-OFV"/>
                     <constraint firstItem="NSZ-hF-01g" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="15" id="xXf-rt-Z9H"/>
                 </constraints>
             </tableViewCellContentView>
+            <connections>
+                <outlet property="leftLayout" destination="Ds1-rb-zXf" id="lxo-HP-bq5"/>
+                <outlet property="tipLab" destination="puy-GF-KAW" id="IUE-ja-eeP"/>
+                <outlet property="titleLab" destination="NSZ-hF-01g" id="PTI-CJ-3G8"/>
+                <outlet property="titleLabW" destination="dom-Z9-j2h" id="hbz-Kh-e77"/>
+            </connections>
         </tableViewCell>
     </objects>
 </document>

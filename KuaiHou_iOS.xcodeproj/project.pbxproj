@@ -8,6 +8,33 @@
 
 /* Begin PBXBuildFile section */
 		C3343E751DE353D40FC29AA8 /* Pods_KuaiHou_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F72C78518845A6C8D2F549AB /* Pods_KuaiHou_iOS.framework */; };
+		CE28A7572251AA7100B62032 /* ManagementStoreConfigCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CE28A7552251AA7100B62032 /* ManagementStoreConfigCell.m */; };
+		CE28A7582251AA7100B62032 /* ManagementStoreConfigCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE28A7562251AA7100B62032 /* ManagementStoreConfigCell.xib */; };
+		CE28A75C2251B93200B62032 /* ManagementStoreConfigTitleCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CE28A75A2251B93200B62032 /* ManagementStoreConfigTitleCell.m */; };
+		CE28A75D2251B93200B62032 /* ManagementStoreConfigTitleCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE28A75B2251B93200B62032 /* ManagementStoreConfigTitleCell.xib */; };
+		CE28A7612251C66C00B62032 /* ManagementStoreTextViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CE28A75F2251C66C00B62032 /* ManagementStoreTextViewCell.m */; };
+		CE28A7622251C66C00B62032 /* ManagementStoreTextViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE28A7602251C66C00B62032 /* ManagementStoreTextViewCell.xib */; };
+		CE28A7662251D96000B62032 /* ManagementStoreChangeTimeCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CE28A7642251D96000B62032 /* ManagementStoreChangeTimeCell.m */; };
+		CE28A7672251D96000B62032 /* ManagementStoreChangeTimeCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE28A7652251D96000B62032 /* ManagementStoreChangeTimeCell.xib */; };
+		CE28A76B2251E3D200B62032 /* StoreSingleProductVC.m in Sources */ = {isa = PBXBuildFile; fileRef = CE28A7692251E3D200B62032 /* StoreSingleProductVC.m */; };
+		CE28A76C2251E3D200B62032 /* StoreSingleProductVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE28A76A2251E3D200B62032 /* StoreSingleProductVC.xib */; };
+		CE28A7712251E63D00B62032 /* StoreSingleProductAddPhotoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CE28A76F2251E63D00B62032 /* StoreSingleProductAddPhotoCell.m */; };
+		CE28A7722251E63D00B62032 /* StoreSingleProductAddPhotoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE28A7702251E63D00B62032 /* StoreSingleProductAddPhotoCell.xib */; };
+		CE28A7792251EB3100B62032 /* NSFileManager+Paths.m in Sources */ = {isa = PBXBuildFile; fileRef = CE28A7752251EB3100B62032 /* NSFileManager+Paths.m */; };
+		CE28A77A2251EB3100B62032 /* FileCacheManager.m in Sources */ = {isa = PBXBuildFile; fileRef = CE28A7772251EB3100B62032 /* FileCacheManager.m */; };
+		CE28A77D2251EB9100B62032 /* UserInfoManager.m in Sources */ = {isa = PBXBuildFile; fileRef = CE28A77C2251EB9100B62032 /* UserInfoManager.m */; };
+		CE28A7812251EEFC00B62032 /* StoreSingleProductUnitCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CE28A77F2251EEFC00B62032 /* StoreSingleProductUnitCell.m */; };
+		CE28A7822251EEFC00B62032 /* StoreSingleProductUnitCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE28A7802251EEFC00B62032 /* StoreSingleProductUnitCell.xib */; };
+		CE28A78B2252019600B62032 /* StorePackageVC.m in Sources */ = {isa = PBXBuildFile; fileRef = CE28A7892252019600B62032 /* StorePackageVC.m */; };
+		CE28A78C2252019600B62032 /* StorePackageVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE28A78A2252019600B62032 /* StorePackageVC.xib */; };
+		CE28A7902252099200B62032 /* StoreBoxTypeVC.m in Sources */ = {isa = PBXBuildFile; fileRef = CE28A78E2252099200B62032 /* StoreBoxTypeVC.m */; };
+		CE28A7912252099200B62032 /* StoreBoxTypeVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE28A78F2252099200B62032 /* StoreBoxTypeVC.xib */; };
+		CE28A795225214CB00B62032 /* LiquorImageVC.m in Sources */ = {isa = PBXBuildFile; fileRef = CE28A793225214CB00B62032 /* LiquorImageVC.m */; };
+		CE28A796225214CB00B62032 /* LiquorImageVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE28A794225214CB00B62032 /* LiquorImageVC.xib */; };
+		CE28A79A22522F5500B62032 /* LiquorImageDataVC.m in Sources */ = {isa = PBXBuildFile; fileRef = CE28A79822522F5500B62032 /* LiquorImageDataVC.m */; };
+		CE28A79B22522F5500B62032 /* LiquorImageDataVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE28A79922522F5500B62032 /* LiquorImageDataVC.xib */; };
+		CE28A79F2252333100B62032 /* SendActivityViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE28A79D2252333100B62032 /* SendActivityViewController.m */; };
+		CE28A7A02252333100B62032 /* SendActivityViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE28A79E2252333100B62032 /* SendActivityViewController.xib */; };
 		CE5A642A224C5CF600891AC9 /* FillInTheInfoVC.m in Sources */ = {isa = PBXBuildFile; fileRef = CE5A6428224C5CF600891AC9 /* FillInTheInfoVC.m */; };
 		CE5A642B224C5CF600891AC9 /* FillInTheInfoVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE5A6429224C5CF600891AC9 /* FillInTheInfoVC.xib */; };
 		CE5A642F224C642300891AC9 /* SelPhotoVC.m in Sources */ = {isa = PBXBuildFile; fileRef = CE5A642D224C642300891AC9 /* SelPhotoVC.m */; };
@@ -211,6 +238,14 @@
 		CEE28F7D22436D0500C3D7E9 /* InfoDetailVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = CEE28F7B22436D0500C3D7E9 /* InfoDetailVC.xib */; };
 		CEE28F7F2243732E00C3D7E9 /* wb_bg.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CEE28F7E2243732E00C3D7E9 /* wb_bg.jpg */; };
 		CEE28F822243872F00C3D7E9 /* GKWBPageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CEE28F802243872F00C3D7E9 /* GKWBPageViewController.m */; };
+		CEE3F661224DAFF000151BE7 /* UnpaidOrdersListCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CEE3F65F224DAFF000151BE7 /* UnpaidOrdersListCell.m */; };
+		CEE3F662224DAFF000151BE7 /* UnpaidOrdersListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CEE3F660224DAFF000151BE7 /* UnpaidOrdersListCell.xib */; };
+		CEE3F667224DE75300151BE7 /* ManagementStoreActivityCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CEE3F665224DE75300151BE7 /* ManagementStoreActivityCell.m */; };
+		CEE3F668224DE75300151BE7 /* ManagementStoreActivityCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CEE3F666224DE75300151BE7 /* ManagementStoreActivityCell.xib */; };
+		CEE3F66D224DEC5E00151BE7 /* ManagementStoreAddCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CEE3F66B224DEC5E00151BE7 /* ManagementStoreAddCell.m */; };
+		CEE3F66E224DEC5E00151BE7 /* ManagementStoreAddCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CEE3F66C224DEC5E00151BE7 /* ManagementStoreAddCell.xib */; };
+		CEE3F672224DF12200151BE7 /* ManagementStoreBoxTypeCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CEE3F670224DF12200151BE7 /* ManagementStoreBoxTypeCell.m */; };
+		CEE3F673224DF12200151BE7 /* ManagementStoreBoxTypeCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CEE3F671224DF12200151BE7 /* ManagementStoreBoxTypeCell.xib */; };
 		CEE6E37C22420731006ED98F /* SendDynamicsVideoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CEE6E37A22420731006ED98F /* SendDynamicsVideoCell.m */; };
 		CEE6E37D22420731006ED98F /* SendDynamicsVideoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CEE6E37B22420731006ED98F /* SendDynamicsVideoCell.xib */; };
 		CEE9B4502244EA060004E4FA /* ChangePassWordVC.m in Sources */ = {isa = PBXBuildFile; fileRef = CEE9B44E2244EA060004E4FA /* ChangePassWordVC.m */; };
@@ -293,6 +328,48 @@
 /* Begin PBXFileReference section */
 		1C969EC6FE4B3B6CA38C6D17 /* Pods-KuaiHou_iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KuaiHou_iOS.debug.xcconfig"; path = "Target Support Files/Pods-KuaiHou_iOS/Pods-KuaiHou_iOS.debug.xcconfig"; sourceTree = "<group>"; };
 		9462F2C576846C42B4EADD4A /* Pods-KuaiHou_iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KuaiHou_iOS.release.xcconfig"; path = "Target Support Files/Pods-KuaiHou_iOS/Pods-KuaiHou_iOS.release.xcconfig"; sourceTree = "<group>"; };
+		CE28A7542251AA7100B62032 /* ManagementStoreConfigCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ManagementStoreConfigCell.h; sourceTree = "<group>"; };
+		CE28A7552251AA7100B62032 /* ManagementStoreConfigCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ManagementStoreConfigCell.m; sourceTree = "<group>"; };
+		CE28A7562251AA7100B62032 /* ManagementStoreConfigCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ManagementStoreConfigCell.xib; sourceTree = "<group>"; };
+		CE28A7592251B93200B62032 /* ManagementStoreConfigTitleCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ManagementStoreConfigTitleCell.h; sourceTree = "<group>"; };
+		CE28A75A2251B93200B62032 /* ManagementStoreConfigTitleCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ManagementStoreConfigTitleCell.m; sourceTree = "<group>"; };
+		CE28A75B2251B93200B62032 /* ManagementStoreConfigTitleCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ManagementStoreConfigTitleCell.xib; sourceTree = "<group>"; };
+		CE28A75E2251C66C00B62032 /* ManagementStoreTextViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ManagementStoreTextViewCell.h; sourceTree = "<group>"; };
+		CE28A75F2251C66C00B62032 /* ManagementStoreTextViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ManagementStoreTextViewCell.m; sourceTree = "<group>"; };
+		CE28A7602251C66C00B62032 /* ManagementStoreTextViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ManagementStoreTextViewCell.xib; sourceTree = "<group>"; };
+		CE28A7632251D96000B62032 /* ManagementStoreChangeTimeCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ManagementStoreChangeTimeCell.h; sourceTree = "<group>"; };
+		CE28A7642251D96000B62032 /* ManagementStoreChangeTimeCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ManagementStoreChangeTimeCell.m; sourceTree = "<group>"; };
+		CE28A7652251D96000B62032 /* ManagementStoreChangeTimeCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ManagementStoreChangeTimeCell.xib; sourceTree = "<group>"; };
+		CE28A7682251E3D200B62032 /* StoreSingleProductVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StoreSingleProductVC.h; sourceTree = "<group>"; };
+		CE28A7692251E3D200B62032 /* StoreSingleProductVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StoreSingleProductVC.m; sourceTree = "<group>"; };
+		CE28A76A2251E3D200B62032 /* StoreSingleProductVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StoreSingleProductVC.xib; sourceTree = "<group>"; };
+		CE28A76E2251E63D00B62032 /* StoreSingleProductAddPhotoCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StoreSingleProductAddPhotoCell.h; sourceTree = "<group>"; };
+		CE28A76F2251E63D00B62032 /* StoreSingleProductAddPhotoCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StoreSingleProductAddPhotoCell.m; sourceTree = "<group>"; };
+		CE28A7702251E63D00B62032 /* StoreSingleProductAddPhotoCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StoreSingleProductAddPhotoCell.xib; sourceTree = "<group>"; };
+		CE28A7752251EB3100B62032 /* NSFileManager+Paths.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSFileManager+Paths.m"; sourceTree = "<group>"; };
+		CE28A7762251EB3100B62032 /* FileCacheManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FileCacheManager.h; sourceTree = "<group>"; };
+		CE28A7772251EB3100B62032 /* FileCacheManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FileCacheManager.m; sourceTree = "<group>"; };
+		CE28A7782251EB3100B62032 /* NSFileManager+Paths.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSFileManager+Paths.h"; sourceTree = "<group>"; };
+		CE28A77B2251EB9100B62032 /* UserInfoManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UserInfoManager.h; sourceTree = "<group>"; };
+		CE28A77C2251EB9100B62032 /* UserInfoManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UserInfoManager.m; sourceTree = "<group>"; };
+		CE28A77E2251EEFC00B62032 /* StoreSingleProductUnitCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StoreSingleProductUnitCell.h; sourceTree = "<group>"; };
+		CE28A77F2251EEFC00B62032 /* StoreSingleProductUnitCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StoreSingleProductUnitCell.m; sourceTree = "<group>"; };
+		CE28A7802251EEFC00B62032 /* StoreSingleProductUnitCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StoreSingleProductUnitCell.xib; sourceTree = "<group>"; };
+		CE28A7882252019600B62032 /* StorePackageVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StorePackageVC.h; sourceTree = "<group>"; };
+		CE28A7892252019600B62032 /* StorePackageVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StorePackageVC.m; sourceTree = "<group>"; };
+		CE28A78A2252019600B62032 /* StorePackageVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StorePackageVC.xib; sourceTree = "<group>"; };
+		CE28A78D2252099200B62032 /* StoreBoxTypeVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StoreBoxTypeVC.h; sourceTree = "<group>"; };
+		CE28A78E2252099200B62032 /* StoreBoxTypeVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StoreBoxTypeVC.m; sourceTree = "<group>"; };
+		CE28A78F2252099200B62032 /* StoreBoxTypeVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StoreBoxTypeVC.xib; sourceTree = "<group>"; };
+		CE28A792225214CB00B62032 /* LiquorImageVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LiquorImageVC.h; sourceTree = "<group>"; };
+		CE28A793225214CB00B62032 /* LiquorImageVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LiquorImageVC.m; sourceTree = "<group>"; };
+		CE28A794225214CB00B62032 /* LiquorImageVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LiquorImageVC.xib; sourceTree = "<group>"; };
+		CE28A79722522F5500B62032 /* LiquorImageDataVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LiquorImageDataVC.h; sourceTree = "<group>"; };
+		CE28A79822522F5500B62032 /* LiquorImageDataVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LiquorImageDataVC.m; sourceTree = "<group>"; };
+		CE28A79922522F5500B62032 /* LiquorImageDataVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LiquorImageDataVC.xib; sourceTree = "<group>"; };
+		CE28A79C2252333100B62032 /* SendActivityViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SendActivityViewController.h; sourceTree = "<group>"; };
+		CE28A79D2252333100B62032 /* SendActivityViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SendActivityViewController.m; sourceTree = "<group>"; };
+		CE28A79E2252333100B62032 /* SendActivityViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SendActivityViewController.xib; sourceTree = "<group>"; };
 		CE5A6427224C5CF600891AC9 /* FillInTheInfoVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FillInTheInfoVC.h; sourceTree = "<group>"; };
 		CE5A6428224C5CF600891AC9 /* FillInTheInfoVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FillInTheInfoVC.m; sourceTree = "<group>"; };
 		CE5A6429224C5CF600891AC9 /* FillInTheInfoVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FillInTheInfoVC.xib; sourceTree = "<group>"; };
@@ -647,6 +724,18 @@
 		CEE28F7E2243732E00C3D7E9 /* wb_bg.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = wb_bg.jpg; sourceTree = "<group>"; };
 		CEE28F802243872F00C3D7E9 /* GKWBPageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GKWBPageViewController.m; sourceTree = "<group>"; };
 		CEE28F812243872F00C3D7E9 /* GKWBPageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GKWBPageViewController.h; sourceTree = "<group>"; };
+		CEE3F65E224DAFF000151BE7 /* UnpaidOrdersListCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UnpaidOrdersListCell.h; sourceTree = "<group>"; };
+		CEE3F65F224DAFF000151BE7 /* UnpaidOrdersListCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UnpaidOrdersListCell.m; sourceTree = "<group>"; };
+		CEE3F660224DAFF000151BE7 /* UnpaidOrdersListCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UnpaidOrdersListCell.xib; sourceTree = "<group>"; };
+		CEE3F664224DE75300151BE7 /* ManagementStoreActivityCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ManagementStoreActivityCell.h; sourceTree = "<group>"; };
+		CEE3F665224DE75300151BE7 /* ManagementStoreActivityCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ManagementStoreActivityCell.m; sourceTree = "<group>"; };
+		CEE3F666224DE75300151BE7 /* ManagementStoreActivityCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ManagementStoreActivityCell.xib; sourceTree = "<group>"; };
+		CEE3F66A224DEC5E00151BE7 /* ManagementStoreAddCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ManagementStoreAddCell.h; sourceTree = "<group>"; };
+		CEE3F66B224DEC5E00151BE7 /* ManagementStoreAddCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ManagementStoreAddCell.m; sourceTree = "<group>"; };
+		CEE3F66C224DEC5E00151BE7 /* ManagementStoreAddCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ManagementStoreAddCell.xib; sourceTree = "<group>"; };
+		CEE3F66F224DF12200151BE7 /* ManagementStoreBoxTypeCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ManagementStoreBoxTypeCell.h; sourceTree = "<group>"; };
+		CEE3F670224DF12200151BE7 /* ManagementStoreBoxTypeCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ManagementStoreBoxTypeCell.m; sourceTree = "<group>"; };
+		CEE3F671224DF12200151BE7 /* ManagementStoreBoxTypeCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ManagementStoreBoxTypeCell.xib; sourceTree = "<group>"; };
 		CEE6E37922420731006ED98F /* SendDynamicsVideoCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SendDynamicsVideoCell.h; sourceTree = "<group>"; };
 		CEE6E37A22420731006ED98F /* SendDynamicsVideoCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SendDynamicsVideoCell.m; sourceTree = "<group>"; };
 		CEE6E37B22420731006ED98F /* SendDynamicsVideoCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SendDynamicsVideoCell.xib; sourceTree = "<group>"; };
@@ -792,6 +881,41 @@
 				F72C78518845A6C8D2F549AB /* Pods_KuaiHou_iOS.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CE28A76D2251E58300B62032 /* StoreSingleProduct */ = {
+			isa = PBXGroup;
+			children = (
+				CE28A76E2251E63D00B62032 /* StoreSingleProductAddPhotoCell.h */,
+				CE28A76F2251E63D00B62032 /* StoreSingleProductAddPhotoCell.m */,
+				CE28A7702251E63D00B62032 /* StoreSingleProductAddPhotoCell.xib */,
+				CE28A77E2251EEFC00B62032 /* StoreSingleProductUnitCell.h */,
+				CE28A77F2251EEFC00B62032 /* StoreSingleProductUnitCell.m */,
+				CE28A7802251EEFC00B62032 /* StoreSingleProductUnitCell.xib */,
+			);
+			path = StoreSingleProduct;
+			sourceTree = "<group>";
+		};
+		CE28A7732251EB0600B62032 /* MyTool */ = {
+			isa = PBXGroup;
+			children = (
+				CECC0D6C223A5849001CF0A2 /* MyTool.h */,
+				CECC0D6D223A5849001CF0A2 /* MyTool.m */,
+			);
+			path = MyTool;
+			sourceTree = "<group>";
+		};
+		CE28A7742251EB0F00B62032 /* UserInfo */ = {
+			isa = PBXGroup;
+			children = (
+				CE28A7762251EB3100B62032 /* FileCacheManager.h */,
+				CE28A7772251EB3100B62032 /* FileCacheManager.m */,
+				CE28A7782251EB3100B62032 /* NSFileManager+Paths.h */,
+				CE28A7752251EB3100B62032 /* NSFileManager+Paths.m */,
+				CE28A77B2251EB9100B62032 /* UserInfoManager.h */,
+				CE28A77C2251EB9100B62032 /* UserInfoManager.m */,
+			);
+			path = UserInfo;
 			sourceTree = "<group>";
 		};
 		CE5A6436224C81C200891AC9 /* OpenStore */ = {
@@ -998,8 +1122,8 @@
 		CECC0D4E223A45D9001CF0A2 /* DataModel */ = {
 			isa = PBXGroup;
 			children = (
-				CECC0D6C223A5849001CF0A2 /* MyTool.h */,
-				CECC0D6D223A5849001CF0A2 /* MyTool.m */,
+				CE28A7732251EB0600B62032 /* MyTool */,
+				CE28A7742251EB0F00B62032 /* UserInfo */,
 			);
 			path = DataModel;
 			sourceTree = "<group>";
@@ -1304,6 +1428,24 @@
 				CECEEF23224A4DC30068F267 /* ManagementStoreVC.h */,
 				CECEEF24224A4DC30068F267 /* ManagementStoreVC.m */,
 				CECEEF25224A4DC30068F267 /* ManagementStoreVC.xib */,
+				CE28A7682251E3D200B62032 /* StoreSingleProductVC.h */,
+				CE28A7692251E3D200B62032 /* StoreSingleProductVC.m */,
+				CE28A76A2251E3D200B62032 /* StoreSingleProductVC.xib */,
+				CE28A7882252019600B62032 /* StorePackageVC.h */,
+				CE28A7892252019600B62032 /* StorePackageVC.m */,
+				CE28A78A2252019600B62032 /* StorePackageVC.xib */,
+				CE28A78D2252099200B62032 /* StoreBoxTypeVC.h */,
+				CE28A78E2252099200B62032 /* StoreBoxTypeVC.m */,
+				CE28A78F2252099200B62032 /* StoreBoxTypeVC.xib */,
+				CE28A792225214CB00B62032 /* LiquorImageVC.h */,
+				CE28A793225214CB00B62032 /* LiquorImageVC.m */,
+				CE28A794225214CB00B62032 /* LiquorImageVC.xib */,
+				CE28A79722522F5500B62032 /* LiquorImageDataVC.h */,
+				CE28A79822522F5500B62032 /* LiquorImageDataVC.m */,
+				CE28A79922522F5500B62032 /* LiquorImageDataVC.xib */,
+				CE28A79C2252333100B62032 /* SendActivityViewController.h */,
+				CE28A79D2252333100B62032 /* SendActivityViewController.m */,
+				CE28A79E2252333100B62032 /* SendActivityViewController.xib */,
 			);
 			path = ManagementStore;
 			sourceTree = "<group>";
@@ -1696,6 +1838,45 @@
 			path = InfoDetail;
 			sourceTree = "<group>";
 		};
+		CEE3F65D224DAFC600151BE7 /* UnpaidOrders */ = {
+			isa = PBXGroup;
+			children = (
+				CEE3F65E224DAFF000151BE7 /* UnpaidOrdersListCell.h */,
+				CEE3F65F224DAFF000151BE7 /* UnpaidOrdersListCell.m */,
+				CEE3F660224DAFF000151BE7 /* UnpaidOrdersListCell.xib */,
+			);
+			path = UnpaidOrders;
+			sourceTree = "<group>";
+		};
+		CEE3F663224DE71A00151BE7 /* ManagementStore */ = {
+			isa = PBXGroup;
+			children = (
+				CEE3F664224DE75300151BE7 /* ManagementStoreActivityCell.h */,
+				CEE3F665224DE75300151BE7 /* ManagementStoreActivityCell.m */,
+				CEE3F666224DE75300151BE7 /* ManagementStoreActivityCell.xib */,
+				CEE3F66A224DEC5E00151BE7 /* ManagementStoreAddCell.h */,
+				CEE3F66B224DEC5E00151BE7 /* ManagementStoreAddCell.m */,
+				CEE3F66C224DEC5E00151BE7 /* ManagementStoreAddCell.xib */,
+				CEE3F66F224DF12200151BE7 /* ManagementStoreBoxTypeCell.h */,
+				CEE3F670224DF12200151BE7 /* ManagementStoreBoxTypeCell.m */,
+				CEE3F671224DF12200151BE7 /* ManagementStoreBoxTypeCell.xib */,
+				CE28A7542251AA7100B62032 /* ManagementStoreConfigCell.h */,
+				CE28A7552251AA7100B62032 /* ManagementStoreConfigCell.m */,
+				CE28A7562251AA7100B62032 /* ManagementStoreConfigCell.xib */,
+				CE28A7592251B93200B62032 /* ManagementStoreConfigTitleCell.h */,
+				CE28A75A2251B93200B62032 /* ManagementStoreConfigTitleCell.m */,
+				CE28A75B2251B93200B62032 /* ManagementStoreConfigTitleCell.xib */,
+				CE28A75E2251C66C00B62032 /* ManagementStoreTextViewCell.h */,
+				CE28A75F2251C66C00B62032 /* ManagementStoreTextViewCell.m */,
+				CE28A7602251C66C00B62032 /* ManagementStoreTextViewCell.xib */,
+				CE28A7632251D96000B62032 /* ManagementStoreChangeTimeCell.h */,
+				CE28A7642251D96000B62032 /* ManagementStoreChangeTimeCell.m */,
+				CE28A7652251D96000B62032 /* ManagementStoreChangeTimeCell.xib */,
+				CE28A76D2251E58300B62032 /* StoreSingleProduct */,
+			);
+			path = ManagementStore;
+			sourceTree = "<group>";
+		};
 		CEE9B44C2244E9380004E4FA /* ChangePassWord */ = {
 			isa = PBXGroup;
 			children = (
@@ -1920,6 +2101,8 @@
 				CEFA92C22240ED9C0015F7EE /* MainMineListCell.h */,
 				CEFA92C32240ED9C0015F7EE /* MainMineListCell.m */,
 				CEFA92C42240ED9C0015F7EE /* MainMineListCell.xib */,
+				CEE3F663224DE71A00151BE7 /* ManagementStore */,
+				CEE3F65D224DAFC600151BE7 /* UnpaidOrders */,
 				CEF2B369224CE1C900687E5B /* ReleaseEvent */,
 				CEF2B35C224CC9EB00687E5B /* StoreContent */,
 				CE5A6436224C81C200891AC9 /* OpenStore */,
@@ -2185,16 +2368,22 @@
 				CE6B05A822487D5100AD44D7 /* AboutMeVC.xib in Resources */,
 				CECEEF31224A4DE90068F267 /* ReleaseEventVC.xib in Resources */,
 				CE9C4BF6223B4F9B00DE9DC1 /* icon_error_network.png in Resources */,
+				CE28A75D2251B93200B62032 /* ManagementStoreConfigTitleCell.xib in Resources */,
 				CECEEF05224A45CE0068F267 /* OpenStoreVC.xib in Resources */,
+				CEE3F66E224DEC5E00151BE7 /* ManagementStoreAddCell.xib in Resources */,
 				CEFA92C62240ED9C0015F7EE /* MainMineListCell.xib in Resources */,
+				CE28A78C2252019600B62032 /* StorePackageVC.xib in Resources */,
 				CECEEF3B224A4E040068F267 /* UnpaidOrdersVC.xib in Resources */,
 				CEACEAF9224B5E9800A2AE2D /* BlackUserView.xib in Resources */,
 				CECEEEBC2249D9560068F267 /* InfoDetaildNorCell.xib in Resources */,
 				CEFA92C12240CB870015F7EE /* MainMineHeadCell.xib in Resources */,
+				CE28A76C2251E3D200B62032 /* StoreSingleProductVC.xib in Resources */,
+				CEE3F673224DF12200151BE7 /* ManagementStoreBoxTypeCell.xib in Resources */,
 				CE6B05AD224884F300AD44D7 /* HelpVC.xib in Resources */,
 				CE9C4BF8223B4F9B00DE9DC1 /* icon_no_data.png in Resources */,
 				CEE9B4512244EA060004E4FA /* ChangePassWordVC.xib in Resources */,
 				CECEEECD224A041C0068F267 /* MyDynamicsHeadCell.xib in Resources */,
+				CE28A7822251EEFC00B62032 /* StoreSingleProductUnitCell.xib in Resources */,
 				CE5A643B224C820400891AC9 /* OpenStoreHeadView.xib in Resources */,
 				CECEEEC7224A020C0068F267 /* MyDynamicsVC.xib in Resources */,
 				CECEEF55224B56FF0068F267 /* CleanChatView.xib in Resources */,
@@ -2204,6 +2393,7 @@
 				CEFA92A3224088500015F7EE /* FriendMessageVC.xib in Resources */,
 				CEFA92AD2240A01C0015F7EE /* FriendMessageCell.xib in Resources */,
 				CEF2B361224CCA4300687E5B /* StoreContentTextCell.xib in Resources */,
+				CE28A7672251D96000B62032 /* ManagementStoreChangeTimeCell.xib in Resources */,
 				CEE28F7D22436D0500C3D7E9 /* InfoDetailVC.xib in Resources */,
 				CEF2B36E224CE21100687E5B /* ReleaseEventSliderCell.xib in Resources */,
 				CEFA9231223F634D0015F7EE /* MainHomeVC.xib in Resources */,
@@ -2227,9 +2417,14 @@
 				CECC0D23223A411F001CF0A2 /* Assets.xcassets in Resources */,
 				CEACEB0D224B9CD700A2AE2D /* BindPhoneVC.xib in Resources */,
 				CEACEB08224B949700A2AE2D /* ForgetWordVC.xib in Resources */,
+				CE28A796225214CB00B62032 /* LiquorImageVC.xib in Resources */,
+				CE28A79B22522F5500B62032 /* LiquorImageDataVC.xib in Resources */,
 				CEE28F602243571800C3D7E9 /* LICENSE in Resources */,
 				CECEEF2C224A4DD30068F267 /* StoreContentVC.xib in Resources */,
+				CE28A7622251C66C00B62032 /* ManagementStoreTextViewCell.xib in Resources */,
+				CE28A7582251AA7100B62032 /* ManagementStoreConfigCell.xib in Resources */,
 				CE5A6445224CA06700891AC9 /* OpenStoreItemCell.xib in Resources */,
+				CEE3F662224DAFF000151BE7 /* UnpaidOrdersListCell.xib in Resources */,
 				CE5A6440224C9F9900891AC9 /* OpenStoreListCell.xib in Resources */,
 				CECEEF0B224A47DF0068F267 /* ManagerVC.xib in Resources */,
 				CE6B05C32248EEF900AD44D7 /* DynamicsContentCell.xib in Resources */,
@@ -2237,7 +2432,9 @@
 				CECEEEC12249DA630068F267 /* InfoDetailIconCell.xib in Resources */,
 				CEE6E37D22420731006ED98F /* SendDynamicsVideoCell.xib in Resources */,
 				CE6B0594224867FE00AD44D7 /* ShieldDynamicVC.xib in Resources */,
+				CE28A7A02252333100B62032 /* SendActivityViewController.xib in Resources */,
 				CEFA9271223F99BB0015F7EE /* FavorableDynamicsVC.xib in Resources */,
+				CE28A7722251E63D00B62032 /* StoreSingleProductAddPhotoCell.xib in Resources */,
 				CEACEB12224B9EC600A2AE2D /* SetPassWordVC.xib in Resources */,
 				CEFA9284223FA6920015F7EE /* NearByDynamicsHeadCell.xib in Resources */,
 				CEE28EB122432EEE00C3D7E9 /* MainSetListCell.xib in Resources */,
@@ -2246,6 +2443,7 @@
 				CE5A644F224CBCA400891AC9 /* OpenStoreTipCell.xib in Resources */,
 				CECEEF27224A4DC30068F267 /* ManagementStoreVC.xib in Resources */,
 				CEFA9276223F99CF0015F7EE /* HeedDynamicsVC.xib in Resources */,
+				CEE3F668224DE75300151BE7 /* ManagementStoreActivityCell.xib in Resources */,
 				CEE28F7F2243732E00C3D7E9 /* wb_bg.jpg in Resources */,
 				CECEEEE4224A1F4E0068F267 /* MyVideoVC.xib in Resources */,
 				CECEEEDE224A17620068F267 /* MyPhotoVC.xib in Resources */,
@@ -2253,6 +2451,7 @@
 				CEFA926C223F99A90015F7EE /* NearbyDynamicsVC.xib in Resources */,
 				CE6B05B32248A2C500AD44D7 /* VoucherVC.xib in Resources */,
 				CEFA92A8224091000015F7EE /* NewMessageCell.xib in Resources */,
+				CE28A7912252099200B62032 /* StoreBoxTypeVC.xib in Resources */,
 				CECEEEFF224A43150068F267 /* ActivityCell.xib in Resources */,
 				CEE28EC72243375800C3D7E9 /* SWQRCode.bundle in Resources */,
 				CECC0D1E223A411D001CF0A2 /* Main.storyboard in Resources */,
@@ -2363,12 +2562,14 @@
 				CEE28F2F224355E100C3D7E9 /* JXCategoryTitleCellModel.m in Sources */,
 				CECEEF3A224A4E040068F267 /* UnpaidOrdersVC.m in Sources */,
 				CEF2B368224CE06A00687E5B /* UIView+Dimension.m in Sources */,
+				CE28A77A2251EB3100B62032 /* FileCacheManager.m in Sources */,
 				CEF2B36D224CE21100687E5B /* ReleaseEventSliderCell.m in Sources */,
 				CEFA9287223FAB190015F7EE /* NearByDynamicsTextCell.m in Sources */,
 				CEE28F622243571800C3D7E9 /* GKDelegateHandler.m in Sources */,
 				CEFA928E223FAB430015F7EE /* NearByDynamicsToolCell.m in Sources */,
 				CE9C4C03223B5B1600DE9DC1 /* BaseTabBarController.m in Sources */,
 				CEE28F72224357EA00C3D7E9 /* ChangeInfoVC.m in Sources */,
+				CE28A7812251EEFC00B62032 /* StoreSingleProductUnitCell.m in Sources */,
 				CEFA92CB2241C93D0015F7EE /* SendDynamicsVC.m in Sources */,
 				CECEEED5224A0DDE0068F267 /* MyDynamicsPhotosView.m in Sources */,
 				CEACEB02224B8B7900A2AE2D /* RegisVC.m in Sources */,
@@ -2397,10 +2598,12 @@
 				CEE28F7722435A1900C3D7E9 /* ChangeInfoHeadView.m in Sources */,
 				CEF2B360224CCA4300687E5B /* StoreContentTextCell.m in Sources */,
 				CEFA9275223F99CF0015F7EE /* HeedDynamicsVC.m in Sources */,
+				CE28A7612251C66C00B62032 /* ManagementStoreTextViewCell.m in Sources */,
 				CEE28F3B224355E100C3D7E9 /* UIColor+JXAdd.m in Sources */,
 				CE9C4BF7223B4F9B00DE9DC1 /* PLEmptyView.m in Sources */,
 				CECEEEB62249C05E0068F267 /* WLButtonCountdownManager.m in Sources */,
 				CEE28F24224355E100C3D7E9 /* JXCategoryIndicatorComponentView.m in Sources */,
+				CE28A7662251D96000B62032 /* ManagementStoreChangeTimeCell.m in Sources */,
 				CE6B05BD2248B8BE00AD44D7 /* DIYSendToolbarView.m in Sources */,
 				CECEEEC02249DA630068F267 /* InfoDetailIconCell.m in Sources */,
 				CE9C4C12223B6AB900DE9DC1 /* UIViewController+FLInsert.m in Sources */,
@@ -2409,7 +2612,9 @@
 				CEE28F32224355E100C3D7E9 /* JXCategoryImageView.m in Sources */,
 				CEE28F38224355E100C3D7E9 /* JXCategoryListVCContainerView.m in Sources */,
 				CEFA9297224081360015F7EE /* XXTextView.m in Sources */,
+				CE28A7572251AA7100B62032 /* ManagementStoreConfigCell.m in Sources */,
 				CECEEF2B224A4DD30068F267 /* StoreContentVC.m in Sources */,
+				CE28A795225214CB00B62032 /* LiquorImageVC.m in Sources */,
 				CEE28F3A224355E100C3D7E9 /* JXCategoryCollectionView.m in Sources */,
 				CECC0D6A223A56B8001CF0A2 /* NSString+unicode.m in Sources */,
 				CEE28EB52243344D00C3D7E9 /* MainSetBtnCell.m in Sources */,
@@ -2421,6 +2626,7 @@
 				CEE28F25224355E100C3D7E9 /* JXCategoryIndicatorBackgroundView.m in Sources */,
 				CEFA92C52240ED9C0015F7EE /* MainMineListCell.m in Sources */,
 				CECC0D58223A525F001CF0A2 /* UIColor+Hex.m in Sources */,
+				CEE3F66D224DEC5E00151BE7 /* ManagementStoreAddCell.m in Sources */,
 				CE9C4C00223B58F800DE9DC1 /* BaseNavigationController.m in Sources */,
 				CECEEEC6224A020C0068F267 /* MyDynamicsVC.m in Sources */,
 				CE5A642F224C642300891AC9 /* SelPhotoVC.m in Sources */,
@@ -2433,6 +2639,7 @@
 				CEFA923A223F63B10015F7EE /* MainMessageVC.m in Sources */,
 				CEE28F36224355E100C3D7E9 /* JXCategoryNumberCell.m in Sources */,
 				CEACEAFD224B7F0300A2AE2D /* LogginCell.m in Sources */,
+				CE28A79F2252333100B62032 /* SendActivityViewController.m in Sources */,
 				CEE28F30224355E100C3D7E9 /* JXCategoryTitleCell.m in Sources */,
 				CEE28F6A2243571800C3D7E9 /* GKNavigationBar.m in Sources */,
 				CEE28F662243571800C3D7E9 /* UIBarButtonItem+GKCategory.m in Sources */,
@@ -2442,6 +2649,7 @@
 				CECC0D18223A411D001CF0A2 /* AppDelegate.m in Sources */,
 				CEFA9219223F5DC40015F7EE /* BaseTableBar.m in Sources */,
 				CECC0D69223A56B8001CF0A2 /* NSDictionary+Log.m in Sources */,
+				CE28A7792251EB3100B62032 /* NSFileManager+Paths.m in Sources */,
 				CE6B05C22248EEF900AD44D7 /* DynamicsContentCell.m in Sources */,
 				CEFA92D92241DDF40015F7EE /* SendDynamicsHeadCell.m in Sources */,
 				CEE28F692243571800C3D7E9 /* UIViewController+GKCategory.m in Sources */,
@@ -2452,10 +2660,12 @@
 				CE6B05B22248A2C500AD44D7 /* VoucherVC.m in Sources */,
 				CEE28F6D2243571800C3D7E9 /* GKNavigationBarConfigure.m in Sources */,
 				CEE28F2C224355E100C3D7E9 /* JXCategoryTitleImageView.m in Sources */,
+				CE28A75C2251B93200B62032 /* ManagementStoreConfigTitleCell.m in Sources */,
 				CECEEF17224A4D290068F267 /* ManagerUserVC.m in Sources */,
 				CEE28EB022432EEE00C3D7E9 /* MainSetListCell.m in Sources */,
 				CEE28ED4224355DA00C3D7E9 /* GKPageTableView.m in Sources */,
 				CE5A6434224C64E800891AC9 /* SelPhotoCell.m in Sources */,
+				CEE3F661224DAFF000151BE7 /* UnpaidOrdersListCell.m in Sources */,
 				CEE28F7C22436D0500C3D7E9 /* InfoDetailVC.m in Sources */,
 				CEACEAF7224B5E9000A2AE2D /* BlackUserView.m in Sources */,
 				CECC0D6B223A56B8001CF0A2 /* NSArray+Log.m in Sources */,
@@ -2465,6 +2675,7 @@
 				CEE28F3D224355E100C3D7E9 /* JXCategoryBaseCell.m in Sources */,
 				CE6B059D22486BC900AD44D7 /* SafeCenterVCTableViewCell.m in Sources */,
 				CE5A642A224C5CF600891AC9 /* FillInTheInfoVC.m in Sources */,
+				CE28A76B2251E3D200B62032 /* StoreSingleProductVC.m in Sources */,
 				CEFA9235223F639D0015F7EE /* MainDynamicsVC.m in Sources */,
 				CEACEB07224B949700A2AE2D /* ForgetWordVC.m in Sources */,
 				CEACEB0C224B9CD700A2AE2D /* BindPhoneVC.m in Sources */,
@@ -2475,6 +2686,8 @@
 				CE9C4BFA223B4F9B00DE9DC1 /* PLScrollViewEmptyView.m in Sources */,
 				CECEEF04224A45CE0068F267 /* OpenStoreVC.m in Sources */,
 				CEFA925F223F84750015F7EE /* FSSegmentTitleView.m in Sources */,
+				CEE3F672224DF12200151BE7 /* ManagementStoreBoxTypeCell.m in Sources */,
+				CE28A7712251E63D00B62032 /* StoreSingleProductAddPhotoCell.m in Sources */,
 				CEE28F20224355E100C3D7E9 /* JXCategoryIndicatorLineView.m in Sources */,
 				CEE28F612243571800C3D7E9 /* GKPushTransitionAnimation.m in Sources */,
 				CEE28F3C224355E100C3D7E9 /* JXCategoryBaseView.m in Sources */,
@@ -2494,9 +2707,11 @@
 				CE6B0593224867FE00AD44D7 /* ShieldDynamicVC.m in Sources */,
 				CECC0D5D223A5670001CF0A2 /* UIView+Tap.m in Sources */,
 				CEFA92B62240A6030015F7EE /* SCIndexView.m in Sources */,
+				CE28A77D2251EB9100B62032 /* UserInfoManager.m in Sources */,
 				CEE28F2D224355E100C3D7E9 /* JXCategoryTitleImageCell.m in Sources */,
 				CEE28F27224355E100C3D7E9 /* JXCategoryIndicatorCell.m in Sources */,
 				CEE28F2E224355E100C3D7E9 /* JXCategoryTitleImageCellModel.m in Sources */,
+				CEE3F667224DE75300151BE7 /* ManagementStoreActivityCell.m in Sources */,
 				CEFA927A223FA59A0015F7EE /* BaseCell.m in Sources */,
 				CEF2B367224CE06A00687E5B /* JLDoubleSlider.m in Sources */,
 				CECEEED8224A0F660068F267 /* MyDynamicsImageCell.m in Sources */,
@@ -2511,6 +2726,7 @@
 				CEACEB16224BA19000A2AE2D /* GetCodeVC.m in Sources */,
 				CECEEF53224B56EE0068F267 /* CleanChatView.m in Sources */,
 				CECC0D5E223A5670001CF0A2 /* UIView+LayoutMethods.m in Sources */,
+				CE28A7902252099200B62032 /* StoreBoxTypeVC.m in Sources */,
 				CECEEF49224B17680068F267 /* CALayer+XibConfiguration.m in Sources */,
 				CEFA9270223F99BB0015F7EE /* FavorableDynamicsVC.m in Sources */,
 				CEE28F22224355E100C3D7E9 /* JXCategoryIndicatorImageView.m in Sources */,
@@ -2522,6 +2738,7 @@
 				CECEEF44224B12E10068F267 /* InviteStoreView.m in Sources */,
 				CECEEECC224A041C0068F267 /* MyDynamicsHeadCell.m in Sources */,
 				CEE6E37C22420731006ED98F /* SendDynamicsVideoCell.m in Sources */,
+				CE28A79A22522F5500B62032 /* LiquorImageDataVC.m in Sources */,
 				CEE28EC62243375800C3D7E9 /* SWQRCodeViewController.m in Sources */,
 				CEE28EC42243375800C3D7E9 /* SWQRCodeConfig.m in Sources */,
 				CEE28EAA224329A900C3D7E9 /* MainSetVC.m in Sources */,
@@ -2530,6 +2747,7 @@
 				CEE28F682243571800C3D7E9 /* UINavigationItem+GKCategory.m in Sources */,
 				CECC0D6E223A5849001CF0A2 /* MyTool.m in Sources */,
 				CEE28ED3224355DA00C3D7E9 /* GKPageScrollView.m in Sources */,
+				CE28A78B2252019600B62032 /* StorePackageVC.m in Sources */,
 				CECEEEDD224A17620068F267 /* MyPhotoVC.m in Sources */,
 				CE9C4C15223B740D00DE9DC1 /* NetWorkManager.m in Sources */,
 			);

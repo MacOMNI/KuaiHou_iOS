@@ -83,6 +83,9 @@
     if (indexPath.section == 4) {
         MainSetBtnCell *cell = [tableView dequeueReusableCellWithIdentifier:NSStringFromClass([MainSetBtnCell class]) forIndexPath:indexPath];
         [cell.itemBtn setTitle:array[indexPath.row] forState:(UIControlStateNormal)];
+        [cell setItemBlock:^{ // 退出登陆
+            [kUserInfoSharedManager didLoginOut];
+        }];
         return cell;
     }else{
         MainSetListCell *cell = [tableView dequeueReusableCellWithIdentifier:NSStringFromClass([MainSetListCell class]) forIndexPath:indexPath];

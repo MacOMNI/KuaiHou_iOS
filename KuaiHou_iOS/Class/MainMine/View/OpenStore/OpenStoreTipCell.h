@@ -11,6 +11,11 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @interface OpenStoreTipCell : BaseCell
+@property (weak, nonatomic) IBOutlet NSLayoutConstraint *leftLayout;
+@property (weak, nonatomic) IBOutlet UILabel *tipLab;
+@property (weak, nonatomic) IBOutlet UILabel *titleLab;
+@property (weak, nonatomic) IBOutlet UIButton *commitBtn;
+@property (weak, nonatomic) IBOutlet NSLayoutConstraint *titleLabW;
 
 @end
 

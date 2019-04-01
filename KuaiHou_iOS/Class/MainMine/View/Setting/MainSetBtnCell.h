@@ -13,6 +13,8 @@ NS_ASSUME_NONNULL_BEGIN
 @interface MainSetBtnCell : BaseCell
 @property (weak, nonatomic) IBOutlet UIButton *itemBtn;
 
+@property (nonatomic, copy) void(^itemBlock)(void);
+
 @end
 
 NS_ASSUME_NONNULL_END

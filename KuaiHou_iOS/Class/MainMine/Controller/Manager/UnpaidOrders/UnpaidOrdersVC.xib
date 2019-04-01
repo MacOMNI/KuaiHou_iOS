@@ -11,7 +11,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="UnpaidOrdersVC">
             <connections>
-                <outlet property="tableView" destination="1Fs-lv-U0O" id="4bU-Lq-kSZ"/>
+                <outlet property="tableView" destination="C0p-KF-NPj" id="BJN-D5-pfz"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -20,46 +20,23 @@
             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="1Fs-lv-U0O">
-                    <rect key="frame" x="0.0" y="0.0" width="375" height="369"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="C0p-KF-NPj">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <connections>
-                        <outlet property="dataSource" destination="-1" id="QKr-Qm-F6B"/>
-                        <outlet property="delegate" destination="-1" id="5Qv-9H-xrv"/>
+                        <outlet property="dataSource" destination="-1" id="Cf4-z4-hSX"/>
+                        <outlet property="delegate" destination="-1" id="ARL-Z3-5Kq"/>
                     </connections>
                 </tableView>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iNZ-be-RNp">
-                    <rect key="frame" x="37" y="602" width="301" height="40"/>
-                    <color key="backgroundColor" red="0.93333333330000001" green="0.93333333330000001" blue="0.93333333330000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                    <constraints>
-                        <constraint firstAttribute="height" constant="40" id="oAE-Hg-Ydh"/>
-                    </constraints>
-                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
-                    <state key="normal" title="确认支付">
-                        <color key="titleColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                    </state>
-                    <userDefinedRuntimeAttributes>
-                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                            <integer key="value" value="20"/>
-                        </userDefinedRuntimeAttribute>
-                        <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
-                        <userDefinedRuntimeAttribute type="number" keyPath="layer.borderWidth">
-                            <real key="value" value="0.5"/>
-                        </userDefinedRuntimeAttribute>
-                        <userDefinedRuntimeAttribute type="color" keyPath="layer.borderUIColor">
-                            <color key="value" red="0.80000000000000004" green="0.80000000000000004" blue="0.80000000000000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        </userDefinedRuntimeAttribute>
-                    </userDefinedRuntimeAttributes>
-                </button>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
-                <constraint firstAttribute="trailing" secondItem="iNZ-be-RNp" secondAttribute="trailing" constant="37" id="hNl-nI-qvQ"/>
-                <constraint firstItem="iNZ-be-RNp" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="37" id="xAF-EF-gpv"/>
-                <constraint firstAttribute="bottom" secondItem="iNZ-be-RNp" secondAttribute="bottom" constant="25" id="xHQ-Bx-A0x"/>
+                <constraint firstAttribute="bottom" secondItem="C0p-KF-NPj" secondAttribute="bottom" id="Rhl-1y-mLV"/>
+                <constraint firstAttribute="trailing" secondItem="C0p-KF-NPj" secondAttribute="trailing" id="eAU-Z7-hFl"/>
+                <constraint firstItem="C0p-KF-NPj" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="fTn-hn-fRp"/>
+                <constraint firstItem="C0p-KF-NPj" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="zQB-ZR-8Or"/>
             </constraints>
-            <point key="canvasLocation" x="-31" y="-510"/>
+            <point key="canvasLocation" x="-329" y="-567"/>
         </view>
     </objects>
 </document>

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="ManagementStoreBoxTypeCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="包厢/卡台类型" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5c5-up-24U">
+                        <rect key="frame" x="15" y="16.5" width="72.5" height="12"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="12" id="tAM-xl-Pb4"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="可容纳人数" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SZb-uo-o3g">
+                        <rect key="frame" x="87.5" y="16.5" width="72.5" height="12"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="最低消费" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YTs-UZ-3B7">
+                        <rect key="frame" x="232.5" y="16.5" width="72.5" height="12"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="包厢费" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="its-Tt-nuC">
+                        <rect key="frame" x="160" y="16.5" width="72.5" height="12"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="SZb-uo-o3g" firstAttribute="width" secondItem="5c5-up-24U" secondAttribute="width" id="1u4-oH-NxZ"/>
+                    <constraint firstItem="YTs-UZ-3B7" firstAttribute="width" secondItem="its-Tt-nuC" secondAttribute="width" id="39W-g4-nzI"/>
+                    <constraint firstItem="SZb-uo-o3g" firstAttribute="leading" secondItem="5c5-up-24U" secondAttribute="trailing" id="3mD-le-hFw"/>
+                    <constraint firstItem="its-Tt-nuC" firstAttribute="firstBaseline" secondItem="SZb-uo-o3g" secondAttribute="firstBaseline" id="6Mo-ea-ZrQ"/>
+                    <constraint firstItem="YTs-UZ-3B7" firstAttribute="leading" secondItem="its-Tt-nuC" secondAttribute="trailing" id="9LY-7s-eYf"/>
+                    <constraint firstItem="YTs-UZ-3B7" firstAttribute="centerY" secondItem="its-Tt-nuC" secondAttribute="centerY" id="DQ3-Oe-JRU"/>
+                    <constraint firstAttribute="trailing" secondItem="YTs-UZ-3B7" secondAttribute="trailing" constant="15" id="GhX-aM-Xvo"/>
+                    <constraint firstItem="5c5-up-24U" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="IRO-1Q-5nd"/>
+                    <constraint firstItem="SZb-uo-o3g" firstAttribute="height" secondItem="5c5-up-24U" secondAttribute="height" id="Owb-iX-WsV"/>
+                    <constraint firstItem="its-Tt-nuC" firstAttribute="leading" secondItem="SZb-uo-o3g" secondAttribute="trailing" id="YNM-Db-yT6"/>
+                    <constraint firstItem="its-Tt-nuC" firstAttribute="width" secondItem="SZb-uo-o3g" secondAttribute="width" id="aWA-AD-1sC"/>
+                    <constraint firstItem="its-Tt-nuC" firstAttribute="firstBaseline" secondItem="YTs-UZ-3B7" secondAttribute="firstBaseline" id="fZI-7F-m28"/>
+                    <constraint firstItem="SZb-uo-o3g" firstAttribute="centerY" secondItem="5c5-up-24U" secondAttribute="centerY" id="ffL-fH-Ml4"/>
+                    <constraint firstItem="its-Tt-nuC" firstAttribute="leading" secondItem="SZb-uo-o3g" secondAttribute="trailing" id="isp-Uy-oLh"/>
+                    <constraint firstItem="its-Tt-nuC" firstAttribute="centerY" secondItem="SZb-uo-o3g" secondAttribute="centerY" id="nS6-K8-iL4"/>
+                    <constraint firstAttribute="bottom" secondItem="5c5-up-24U" secondAttribute="bottom" constant="15" id="qoP-uK-Fem"/>
+                    <constraint firstItem="YTs-UZ-3B7" firstAttribute="height" secondItem="its-Tt-nuC" secondAttribute="height" id="tZJ-85-opB"/>
+                    <constraint firstItem="its-Tt-nuC" firstAttribute="height" secondItem="SZb-uo-o3g" secondAttribute="height" id="zBW-82-ge9"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="boxMoneyLab" destination="its-Tt-nuC" id="5gu-yI-bHf"/>
+                <outlet property="minMoneyLab" destination="YTs-UZ-3B7" id="qpX-yR-V1O"/>
+                <outlet property="numLab" destination="SZb-uo-o3g" id="whZ-vH-RB2"/>
+                <outlet property="typeLab" destination="5c5-up-24U" id="lYc-BK-7fe"/>
+            </connections>
+            <point key="canvasLocation" x="41.600000000000001" y="46.776611694152926"/>
+        </tableViewCell>
+    </objects>
+</document>
