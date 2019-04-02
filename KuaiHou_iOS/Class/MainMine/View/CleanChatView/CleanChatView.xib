@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
@@ -25,7 +25,7 @@
                     <nil key="highlightedColor"/>
                 </label>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="是否清空所有聊天记录" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nGb-5V-sWB">
-                    <rect key="frame" x="15" y="70" width="345" height="20.5"/>
+                    <rect key="frame" x="15" y="67.5" width="345" height="20.5"/>
                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                     <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
                     <nil key="highlightedColor"/>
@@ -44,7 +44,7 @@
                     </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wLn-yt-hWm">
-                    <rect key="frame" x="222.5" y="121" width="30" height="14"/>
+                    <rect key="frame" x="212.5" y="121" width="30" height="14"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="14" id="PY3-lH-pkY"/>
                     </constraints>
@@ -59,15 +59,16 @@
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
-                <constraint firstItem="nGb-5V-sWB" firstAttribute="top" secondItem="Oyk-fZ-xqX" secondAttribute="bottom" constant="30" id="52B-jT-D7a"/>
                 <constraint firstItem="DgC-bs-je3" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" constant="-40" id="6XQ-Yk-aWS"/>
-                <constraint firstItem="wLn-yt-hWm" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" constant="50" id="Jh2-bo-z86"/>
+                <constraint firstItem="wLn-yt-hWm" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" constant="40" id="Jh2-bo-z86"/>
+                <constraint firstAttribute="trailing" secondItem="nGb-5V-sWB" secondAttribute="trailing" constant="15" id="Mek-kd-dKE"/>
                 <constraint firstItem="Oyk-fZ-xqX" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="25" id="Qna-UF-39F"/>
+                <constraint firstItem="nGb-5V-sWB" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="15" id="aky-HO-L03"/>
+                <constraint firstItem="nGb-5V-sWB" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="fNk-IO-Dj7"/>
                 <constraint firstAttribute="bottom" secondItem="DgC-bs-je3" secondAttribute="bottom" constant="20" id="gDj-op-2Oy"/>
+                <constraint firstItem="nGb-5V-sWB" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="nWn-lU-eG6"/>
                 <constraint firstItem="wLn-yt-hWm" firstAttribute="centerY" secondItem="DgC-bs-je3" secondAttribute="centerY" id="r3l-ah-IaR"/>
-                <constraint firstAttribute="trailing" secondItem="nGb-5V-sWB" secondAttribute="trailing" constant="15" id="sDJ-yS-yyr"/>
                 <constraint firstItem="Oyk-fZ-xqX" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="t31-Ok-0Eg"/>
-                <constraint firstItem="nGb-5V-sWB" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="15" id="trg-pv-R3R"/>
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <userDefinedRuntimeAttributes>
@@ -76,6 +77,12 @@
                 </userDefinedRuntimeAttribute>
                 <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
             </userDefinedRuntimeAttributes>
+            <connections>
+                <outlet property="cancleBtn" destination="DgC-bs-je3" id="GfE-VW-ElU"/>
+                <outlet property="commitBtn" destination="wLn-yt-hWm" id="xBv-sB-Bkj"/>
+                <outlet property="tipLab" destination="nGb-5V-sWB" id="R2w-PP-1xj"/>
+                <outlet property="titleLab" destination="Oyk-fZ-xqX" id="T2H-7M-uO3"/>
+            </connections>
         </view>
     </objects>
 </document>

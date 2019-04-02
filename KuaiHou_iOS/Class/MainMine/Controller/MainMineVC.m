@@ -17,6 +17,7 @@
 #import "OpenStoreVC.h"
 #import "ManagerVC.h"
 #import "MyQRCodeView.h"
+#import "MyOrderVC.h"
 
 @interface MainMineVC ()
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
@@ -123,6 +124,7 @@
                 }
                     break;
                 case 101:{ // 订单
+                    [self.navigationController pushViewController:[MyOrderVC new] animated:YES];
                 }
                     break;
                 case 102:{ // 推广

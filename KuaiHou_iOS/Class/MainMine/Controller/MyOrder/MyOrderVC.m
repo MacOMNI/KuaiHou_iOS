@@ -1,30 +1,26 @@
 //
-//  LiquorImageVC.m
+//  MyOrderVC.m
 //  KuaiHou_iOS
 //
 //  Created by user on 2019/4/1.
 //  Copyright © 2019 郭子豪. All rights reserved.
 //
 
-#import "LiquorImageVC.h"
-#import "StoreBoxTypeVC.h"
-#import "LiquorImageDataVC.h"
+#import "MyOrderVC.h"
+#import "MyProcessingOrderVC.h"
 
+@interface MyOrderVC ()
 
-@interface LiquorImageVC ()
-
-@property(nonatomic,strong) WMPageController *pageVC;
 @property (nonatomic, strong) NSArray                   *childVCs;
 @property (nonatomic, strong) NSArray                   *titleList;
 
 @end
 
-@implementation LiquorImageVC
-
+@implementation MyOrderVC
 
 -(instancetype)init{
     if (self = [super init]) {
-        self.menuItemWidth = 60;
+        self.menuItemWidth = 80;
         self.menuViewStyle = WMMenuViewStyleLine;
         self.titleSizeNormal     = 15.0f;
         self.titleSizeSelected   = 24.0f;
@@ -48,22 +44,24 @@
     // Do any additional setup after loading the view from its nib.
     [self fixUI];
 }
-
 -(void)fixUI{
     self.title = @"酒水图片";
 }
 
 - (NSArray *)childVCs {
     if (!_childVCs) {
-        LiquorImageDataVC *homeVC = [LiquorImageDataVC new];
-        _childVCs = @[homeVC, homeVC, homeVC, homeVC, homeVC, homeVC, homeVC];
+        MyProcessingOrderVC *type1 = [MyProcessingOrderVC new];
+        type1.type = 0;
+        MyProcessingOrderVC *type2 = [MyProcessingOrderVC new];
+        type2.type = 1;
+        _childVCs = @[type1, type2];
     }
     return _childVCs;
 }
 
 - (NSArray *)titleList {
     if (!_titleList) {
-        _titleList = @[@"啤酒", @"洋酒", @"红酒", @"鸡尾酒", @"软饮", @"小吃", @"其他"];
+        _titleList = @[@"进行中", @"已完成"];
     }
     return _titleList;
 }
@@ -89,7 +87,6 @@
 - (void)pageController:(WMPageController *)pageController didEnterViewController:(__kindof UIViewController *)viewController withInfo:(NSDictionary *)info {
     
 }
-
 
 /*
 #pragma mark - Navigation

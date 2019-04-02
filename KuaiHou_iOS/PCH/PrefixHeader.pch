@@ -49,6 +49,7 @@
 #import "BaseTipView.h"
 #import "XXTextView.h"
 #import "UserInfoManager.h"
+#import "GZHRatingView.h"
 
 #import "GKNavigationBarViewController.h"
 #import "GKPageScrollView.h"

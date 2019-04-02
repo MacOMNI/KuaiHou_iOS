@@ -10,7 +10,6 @@
 
 @interface CleanChatView ()
 
-@property (nonatomic, strong) UIView *maskView;
 
 @end
 
@@ -34,6 +33,9 @@
     [self hiddenView];
 }
 - (IBAction)okerAction:(id)sender {
+    if (self.commitBlock) {
+        self.commitBlock();
+    }
     [self hiddenView];
 }
 
