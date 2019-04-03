@@ -85,7 +85,7 @@
     button.titleLabel.font = kFont(18);
     [button setTitleColor:kMain_TextColor forState:(UIControlStateNormal)];
     [button setBackgroundColor:kMain_lineColor];
-    [MyTool fixCornerradius:button cornerRadius:22 Color:kMain_lineColor_C Width:0.5];
+    [MyTool fixCornerradius:button cornerRadius:22 Color:kMain_lineColor_C Width:1];
     [button addTarget:self action:@selector(commitAction) forControlEvents:(UIControlEventTouchUpInside)];
     [button setTitle:@"确定" forState:(UIControlStateNormal)];
     [self.view addSubview:button];

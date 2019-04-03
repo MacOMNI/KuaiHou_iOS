@@ -175,6 +175,8 @@
 		CECEEF4F224B24810068F267 /* MyQRCodeView.xib in Resources */ = {isa = PBXBuildFile; fileRef = CECEEF4E224B24810068F267 /* MyQRCodeView.xib */; };
 		CECEEF53224B56EE0068F267 /* CleanChatView.m in Sources */ = {isa = PBXBuildFile; fileRef = CECEEF52224B56EE0068F267 /* CleanChatView.m */; };
 		CECEEF55224B56FF0068F267 /* CleanChatView.xib in Resources */ = {isa = PBXBuildFile; fileRef = CECEEF54224B56FF0068F267 /* CleanChatView.xib */; };
+		CED7ECBB225390E900E0BFF3 /* MyOrderDetailItemCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CED7ECB9225390E900E0BFF3 /* MyOrderDetailItemCell.m */; };
+		CED7ECBC225390E900E0BFF3 /* MyOrderDetailItemCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CED7ECBA225390E900E0BFF3 /* MyOrderDetailItemCell.xib */; };
 		CEE28EAA224329A900C3D7E9 /* MainSetVC.m in Sources */ = {isa = PBXBuildFile; fileRef = CEE28EA8224329A900C3D7E9 /* MainSetVC.m */; };
 		CEE28EAB224329A900C3D7E9 /* MainSetVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = CEE28EA9224329A900C3D7E9 /* MainSetVC.xib */; };
 		CEE28EB022432EEE00C3D7E9 /* MainSetListCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CEE28EAE22432EEE00C3D7E9 /* MainSetListCell.m */; };
@@ -270,6 +272,24 @@
 		CEF2B368224CE06A00687E5B /* UIView+Dimension.m in Sources */ = {isa = PBXBuildFile; fileRef = CEF2B365224CE06A00687E5B /* UIView+Dimension.m */; };
 		CEF2B36D224CE21100687E5B /* ReleaseEventSliderCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CEF2B36B224CE21100687E5B /* ReleaseEventSliderCell.m */; };
 		CEF2B36E224CE21100687E5B /* ReleaseEventSliderCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CEF2B36C224CE21100687E5B /* ReleaseEventSliderCell.xib */; };
+		CEF5DDB5225444970025F406 /* MyOrderDetailUserCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CEF5DDB3225444970025F406 /* MyOrderDetailUserCell.m */; };
+		CEF5DDB6225444970025F406 /* MyOrderDetailUserCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CEF5DDB4225444970025F406 /* MyOrderDetailUserCell.xib */; };
+		CEF5DDBA22544E3E0025F406 /* MyOrderDetailListCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CEF5DDB822544E3E0025F406 /* MyOrderDetailListCell.m */; };
+		CEF5DDBB22544E3E0025F406 /* MyOrderDetailListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CEF5DDB922544E3E0025F406 /* MyOrderDetailListCell.xib */; };
+		CEF5DDBF225453040025F406 /* MyOrderDetailPhotoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CEF5DDBD225453040025F406 /* MyOrderDetailPhotoCell.m */; };
+		CEF5DDC0225453040025F406 /* MyOrderDetailPhotoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CEF5DDBE225453040025F406 /* MyOrderDetailPhotoCell.xib */; };
+		CEF5DDC4225455E10025F406 /* PhotoListCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CEF5DDC2225455E10025F406 /* PhotoListCollectionViewCell.m */; };
+		CEF5DDC5225455E10025F406 /* PhotoListCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CEF5DDC3225455E10025F406 /* PhotoListCollectionViewCell.xib */; };
+		CEF5DDC922545D8B0025F406 /* ChecklistVC.m in Sources */ = {isa = PBXBuildFile; fileRef = CEF5DDC722545D8B0025F406 /* ChecklistVC.m */; };
+		CEF5DDCA22545D8B0025F406 /* ChecklistVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = CEF5DDC822545D8B0025F406 /* ChecklistVC.xib */; };
+		CEF5DDCE225480450025F406 /* BillObjectionVC.m in Sources */ = {isa = PBXBuildFile; fileRef = CEF5DDCC225480450025F406 /* BillObjectionVC.m */; };
+		CEF5DDCF225480450025F406 /* BillObjectionVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = CEF5DDCD225480450025F406 /* BillObjectionVC.xib */; };
+		CEF5DDD3225488730025F406 /* TheOrderActivityVC.m in Sources */ = {isa = PBXBuildFile; fileRef = CEF5DDD1225488730025F406 /* TheOrderActivityVC.m */; };
+		CEF5DDD4225488730025F406 /* TheOrderActivityVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = CEF5DDD2225488730025F406 /* TheOrderActivityVC.xib */; };
+		CEF5DDD822548AAE0025F406 /* OrderComplaintVC.m in Sources */ = {isa = PBXBuildFile; fileRef = CEF5DDD622548AAE0025F406 /* OrderComplaintVC.m */; };
+		CEF5DDD922548AAE0025F406 /* OrderComplaintVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = CEF5DDD722548AAE0025F406 /* OrderComplaintVC.xib */; };
+		CEF5DDDD22548B5E0025F406 /* OrderComplaintCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CEF5DDDB22548B5E0025F406 /* OrderComplaintCell.m */; };
+		CEF5DDDE22548B5E0025F406 /* OrderComplaintCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CEF5DDDC22548B5E0025F406 /* OrderComplaintCell.xib */; };
 		CEFA9210223F535E0015F7EE /* AppDelegate+Config.m in Sources */ = {isa = PBXBuildFile; fileRef = CEFA920F223F535E0015F7EE /* AppDelegate+Config.m */; };
 		CEFA9213223F5AAA0015F7EE /* UILabel+BaseChangeDefaultFont.m in Sources */ = {isa = PBXBuildFile; fileRef = CEFA9212223F5AAA0015F7EE /* UILabel+BaseChangeDefaultFont.m */; };
 		CEFA9219223F5DC40015F7EE /* BaseTableBar.m in Sources */ = {isa = PBXBuildFile; fileRef = CEFA9217223F5DC40015F7EE /* BaseTableBar.m */; };
@@ -615,6 +635,9 @@
 		CECEEF51224B56EE0068F267 /* CleanChatView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CleanChatView.h; sourceTree = "<group>"; };
 		CECEEF52224B56EE0068F267 /* CleanChatView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CleanChatView.m; sourceTree = "<group>"; };
 		CECEEF54224B56FF0068F267 /* CleanChatView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CleanChatView.xib; sourceTree = "<group>"; };
+		CED7ECB8225390E900E0BFF3 /* MyOrderDetailItemCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyOrderDetailItemCell.h; sourceTree = "<group>"; };
+		CED7ECB9225390E900E0BFF3 /* MyOrderDetailItemCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyOrderDetailItemCell.m; sourceTree = "<group>"; };
+		CED7ECBA225390E900E0BFF3 /* MyOrderDetailItemCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MyOrderDetailItemCell.xib; sourceTree = "<group>"; };
 		CEE28EA7224329A900C3D7E9 /* MainSetVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainSetVC.h; sourceTree = "<group>"; };
 		CEE28EA8224329A900C3D7E9 /* MainSetVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainSetVC.m; sourceTree = "<group>"; };
 		CEE28EA9224329A900C3D7E9 /* MainSetVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainSetVC.xib; sourceTree = "<group>"; };
@@ -787,6 +810,33 @@
 		CEF2B36A224CE21100687E5B /* ReleaseEventSliderCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ReleaseEventSliderCell.h; sourceTree = "<group>"; };
 		CEF2B36B224CE21100687E5B /* ReleaseEventSliderCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ReleaseEventSliderCell.m; sourceTree = "<group>"; };
 		CEF2B36C224CE21100687E5B /* ReleaseEventSliderCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ReleaseEventSliderCell.xib; sourceTree = "<group>"; };
+		CEF5DDB2225444970025F406 /* MyOrderDetailUserCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyOrderDetailUserCell.h; sourceTree = "<group>"; };
+		CEF5DDB3225444970025F406 /* MyOrderDetailUserCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyOrderDetailUserCell.m; sourceTree = "<group>"; };
+		CEF5DDB4225444970025F406 /* MyOrderDetailUserCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MyOrderDetailUserCell.xib; sourceTree = "<group>"; };
+		CEF5DDB722544E3E0025F406 /* MyOrderDetailListCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyOrderDetailListCell.h; sourceTree = "<group>"; };
+		CEF5DDB822544E3E0025F406 /* MyOrderDetailListCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyOrderDetailListCell.m; sourceTree = "<group>"; };
+		CEF5DDB922544E3E0025F406 /* MyOrderDetailListCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MyOrderDetailListCell.xib; sourceTree = "<group>"; };
+		CEF5DDBC225453040025F406 /* MyOrderDetailPhotoCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyOrderDetailPhotoCell.h; sourceTree = "<group>"; };
+		CEF5DDBD225453040025F406 /* MyOrderDetailPhotoCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyOrderDetailPhotoCell.m; sourceTree = "<group>"; };
+		CEF5DDBE225453040025F406 /* MyOrderDetailPhotoCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MyOrderDetailPhotoCell.xib; sourceTree = "<group>"; };
+		CEF5DDC1225455E10025F406 /* PhotoListCollectionViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PhotoListCollectionViewCell.h; sourceTree = "<group>"; };
+		CEF5DDC2225455E10025F406 /* PhotoListCollectionViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PhotoListCollectionViewCell.m; sourceTree = "<group>"; };
+		CEF5DDC3225455E10025F406 /* PhotoListCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PhotoListCollectionViewCell.xib; sourceTree = "<group>"; };
+		CEF5DDC622545D8B0025F406 /* ChecklistVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ChecklistVC.h; sourceTree = "<group>"; };
+		CEF5DDC722545D8B0025F406 /* ChecklistVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ChecklistVC.m; sourceTree = "<group>"; };
+		CEF5DDC822545D8B0025F406 /* ChecklistVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChecklistVC.xib; sourceTree = "<group>"; };
+		CEF5DDCB225480450025F406 /* BillObjectionVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BillObjectionVC.h; sourceTree = "<group>"; };
+		CEF5DDCC225480450025F406 /* BillObjectionVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BillObjectionVC.m; sourceTree = "<group>"; };
+		CEF5DDCD225480450025F406 /* BillObjectionVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BillObjectionVC.xib; sourceTree = "<group>"; };
+		CEF5DDD0225488730025F406 /* TheOrderActivityVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TheOrderActivityVC.h; sourceTree = "<group>"; };
+		CEF5DDD1225488730025F406 /* TheOrderActivityVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TheOrderActivityVC.m; sourceTree = "<group>"; };
+		CEF5DDD2225488730025F406 /* TheOrderActivityVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TheOrderActivityVC.xib; sourceTree = "<group>"; };
+		CEF5DDD522548AAE0025F406 /* OrderComplaintVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OrderComplaintVC.h; sourceTree = "<group>"; };
+		CEF5DDD622548AAE0025F406 /* OrderComplaintVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OrderComplaintVC.m; sourceTree = "<group>"; };
+		CEF5DDD722548AAE0025F406 /* OrderComplaintVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OrderComplaintVC.xib; sourceTree = "<group>"; };
+		CEF5DDDA22548B5E0025F406 /* OrderComplaintCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OrderComplaintCell.h; sourceTree = "<group>"; };
+		CEF5DDDB22548B5E0025F406 /* OrderComplaintCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OrderComplaintCell.m; sourceTree = "<group>"; };
+		CEF5DDDC22548B5E0025F406 /* OrderComplaintCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OrderComplaintCell.xib; sourceTree = "<group>"; };
 		CEFA920E223F535E0015F7EE /* AppDelegate+Config.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AppDelegate+Config.h"; sourceTree = "<group>"; };
 		CEFA920F223F535E0015F7EE /* AppDelegate+Config.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "AppDelegate+Config.m"; sourceTree = "<group>"; };
 		CEFA9211223F5AAA0015F7EE /* UILabel+BaseChangeDefaultFont.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UILabel+BaseChangeDefaultFont.h"; sourceTree = "<group>"; };
@@ -966,6 +1016,18 @@
 				CEE5FCFA225337040093D567 /* MyOrderDetailVC.h */,
 				CEE5FCFB225337040093D567 /* MyOrderDetailVC.m */,
 				CEE5FCFC225337040093D567 /* MyOrderDetailVC.xib */,
+				CEF5DDC622545D8B0025F406 /* ChecklistVC.h */,
+				CEF5DDC722545D8B0025F406 /* ChecklistVC.m */,
+				CEF5DDC822545D8B0025F406 /* ChecklistVC.xib */,
+				CEF5DDCB225480450025F406 /* BillObjectionVC.h */,
+				CEF5DDCC225480450025F406 /* BillObjectionVC.m */,
+				CEF5DDCD225480450025F406 /* BillObjectionVC.xib */,
+				CEF5DDD0225488730025F406 /* TheOrderActivityVC.h */,
+				CEF5DDD1225488730025F406 /* TheOrderActivityVC.m */,
+				CEF5DDD2225488730025F406 /* TheOrderActivityVC.xib */,
+				CEF5DDD522548AAE0025F406 /* OrderComplaintVC.h */,
+				CEF5DDD622548AAE0025F406 /* OrderComplaintVC.m */,
+				CEF5DDD722548AAE0025F406 /* OrderComplaintVC.xib */,
 			);
 			path = MyOrder;
 			sourceTree = "<group>";
@@ -979,6 +1041,24 @@
 				CEE5FCF5225312870093D567 /* StartContentView.h */,
 				CEE5FCF6225312870093D567 /* StartContentView.m */,
 				CEE5FCF8225312970093D567 /* StartContentView.xib */,
+				CED7ECB8225390E900E0BFF3 /* MyOrderDetailItemCell.h */,
+				CED7ECB9225390E900E0BFF3 /* MyOrderDetailItemCell.m */,
+				CED7ECBA225390E900E0BFF3 /* MyOrderDetailItemCell.xib */,
+				CEF5DDB2225444970025F406 /* MyOrderDetailUserCell.h */,
+				CEF5DDB3225444970025F406 /* MyOrderDetailUserCell.m */,
+				CEF5DDB4225444970025F406 /* MyOrderDetailUserCell.xib */,
+				CEF5DDB722544E3E0025F406 /* MyOrderDetailListCell.h */,
+				CEF5DDB822544E3E0025F406 /* MyOrderDetailListCell.m */,
+				CEF5DDB922544E3E0025F406 /* MyOrderDetailListCell.xib */,
+				CEF5DDBC225453040025F406 /* MyOrderDetailPhotoCell.h */,
+				CEF5DDBD225453040025F406 /* MyOrderDetailPhotoCell.m */,
+				CEF5DDBE225453040025F406 /* MyOrderDetailPhotoCell.xib */,
+				CEF5DDC1225455E10025F406 /* PhotoListCollectionViewCell.h */,
+				CEF5DDC2225455E10025F406 /* PhotoListCollectionViewCell.m */,
+				CEF5DDC3225455E10025F406 /* PhotoListCollectionViewCell.xib */,
+				CEF5DDDA22548B5E0025F406 /* OrderComplaintCell.h */,
+				CEF5DDDB22548B5E0025F406 /* OrderComplaintCell.m */,
+				CEF5DDDC22548B5E0025F406 /* OrderComplaintCell.xib */,
 			);
 			path = MyOrder;
 			sourceTree = "<group>";
@@ -2441,6 +2521,7 @@
 			files = (
 				CEE5FCFE225337040093D567 /* MyOrderDetailVC.xib in Resources */,
 				CECEEF4F224B24810068F267 /* MyQRCodeView.xib in Resources */,
+				CEF5DDD4225488730025F406 /* TheOrderActivityVC.xib in Resources */,
 				CECEEF36224A4DF80068F267 /* ManagerOrdersVC.xib in Resources */,
 				CECEEF41224B09620068F267 /* ManagerUserCell.xib in Resources */,
 				CE5A644A224CA46400891AC9 /* OpenStoreTextViewCell.xib in Resources */,
@@ -2454,11 +2535,13 @@
 				CEE3F66E224DEC5E00151BE7 /* ManagementStoreAddCell.xib in Resources */,
 				CEFA92C62240ED9C0015F7EE /* MainMineListCell.xib in Resources */,
 				CE28A78C2252019600B62032 /* StorePackageVC.xib in Resources */,
+				CEF5DDC5225455E10025F406 /* PhotoListCollectionViewCell.xib in Resources */,
 				CECEEF3B224A4E040068F267 /* UnpaidOrdersVC.xib in Resources */,
 				CEACEAF9224B5E9800A2AE2D /* BlackUserView.xib in Resources */,
 				CECEEEBC2249D9560068F267 /* InfoDetaildNorCell.xib in Resources */,
 				CEFA92C12240CB870015F7EE /* MainMineHeadCell.xib in Resources */,
 				CE28A76C2251E3D200B62032 /* StoreSingleProductVC.xib in Resources */,
+				CED7ECBC225390E900E0BFF3 /* MyOrderDetailItemCell.xib in Resources */,
 				CEE3F673224DF12200151BE7 /* ManagementStoreBoxTypeCell.xib in Resources */,
 				CE6B05AD224884F300AD44D7 /* HelpVC.xib in Resources */,
 				CE9C4BF8223B4F9B00DE9DC1 /* icon_no_data.png in Resources */,
@@ -2466,6 +2549,7 @@
 				CECEEECD224A041C0068F267 /* MyDynamicsHeadCell.xib in Resources */,
 				CE28A7822251EEFC00B62032 /* StoreSingleProductUnitCell.xib in Resources */,
 				CE5A643B224C820400891AC9 /* OpenStoreHeadView.xib in Resources */,
+				CEF5DDCF225480450025F406 /* BillObjectionVC.xib in Resources */,
 				CECEEEC7224A020C0068F267 /* MyDynamicsVC.xib in Resources */,
 				CECEEF55224B56FF0068F267 /* CleanChatView.xib in Resources */,
 				CECEEF18224A4D290068F267 /* ManagerUserVC.xib in Resources */,
@@ -2473,6 +2557,7 @@
 				CE28A7B122523BAA00B62032 /* MyProcessingOrderCell.xib in Resources */,
 				CEFA92D52241D1970015F7EE /* SendDynamicsHeadView.xib in Resources */,
 				CEFA92A3224088500015F7EE /* FriendMessageVC.xib in Resources */,
+				CEF5DDC0225453040025F406 /* MyOrderDetailPhotoCell.xib in Resources */,
 				CEFA92AD2240A01C0015F7EE /* FriendMessageCell.xib in Resources */,
 				CEF2B361224CCA4300687E5B /* StoreContentTextCell.xib in Resources */,
 				CE28A7AB225239FD00B62032 /* MyProcessingOrderVC.xib in Resources */,
@@ -2480,12 +2565,14 @@
 				CEE28F7D22436D0500C3D7E9 /* InfoDetailVC.xib in Resources */,
 				CEF2B36E224CE21100687E5B /* ReleaseEventSliderCell.xib in Resources */,
 				CEFA9231223F634D0015F7EE /* MainHomeVC.xib in Resources */,
+				CEF5DDB6225444970025F406 /* MyOrderDetailUserCell.xib in Resources */,
 				CE5A642B224C5CF600891AC9 /* FillInTheInfoVC.xib in Resources */,
 				CECEEF46224B131C0068F267 /* InviteStoreView.xib in Resources */,
 				CEFA92DA2241DDF40015F7EE /* SendDynamicsHeadCell.xib in Resources */,
 				CE6B05A32248789900AD44D7 /* WithdrawWordVC.xib in Resources */,
 				CEFA92CC2241C93D0015F7EE /* SendDynamicsVC.xib in Resources */,
 				CECEEEF9224A41AB0068F267 /* ActivityVC.xib in Resources */,
+				CEF5DDDE22548B5E0025F406 /* OrderComplaintCell.xib in Resources */,
 				CEFA929E2240883B0015F7EE /* NewMessageVC.xib in Resources */,
 				CEACEAFE224B7F0300A2AE2D /* LogginCell.xib in Resources */,
 				CEACEB17224BA19000A2AE2D /* GetCodeVC.xib in Resources */,
@@ -2509,9 +2596,11 @@
 				CEE3F662224DAFF000151BE7 /* UnpaidOrdersListCell.xib in Resources */,
 				CE5A6440224C9F9900891AC9 /* OpenStoreListCell.xib in Resources */,
 				CECEEF0B224A47DF0068F267 /* ManagerVC.xib in Resources */,
+				CEF5DDCA22545D8B0025F406 /* ChecklistVC.xib in Resources */,
 				CE6B05C32248EEF900AD44D7 /* DynamicsContentCell.xib in Resources */,
 				CEE5FCF222530F260093D567 /* starGray@3x.png in Resources */,
 				CECEEEF3224A2CF30068F267 /* TaskVC.xib in Resources */,
+				CEF5DDBB22544E3E0025F406 /* MyOrderDetailListCell.xib in Resources */,
 				CECEEEC12249DA630068F267 /* InfoDetailIconCell.xib in Resources */,
 				CEE6E37D22420731006ED98F /* SendDynamicsVideoCell.xib in Resources */,
 				CE6B0594224867FE00AD44D7 /* ShieldDynamicVC.xib in Resources */,
@@ -2522,6 +2611,7 @@
 				CE28A7722251E63D00B62032 /* StoreSingleProductAddPhotoCell.xib in Resources */,
 				CEACEB12224B9EC600A2AE2D /* SetPassWordVC.xib in Resources */,
 				CEFA9284223FA6920015F7EE /* NearByDynamicsHeadCell.xib in Resources */,
+				CEF5DDD922548AAE0025F406 /* OrderComplaintVC.xib in Resources */,
 				CEE28EB122432EEE00C3D7E9 /* MainSetListCell.xib in Resources */,
 				CE5A6435224C64E800891AC9 /* SelPhotoCell.xib in Resources */,
 				CE6B059E22486BC900AD44D7 /* SafeCenterVCTableViewCell.xib in Resources */,
@@ -2663,6 +2753,7 @@
 				CECEEED5224A0DDE0068F267 /* MyDynamicsPhotosView.m in Sources */,
 				CEACEB02224B8B7900A2AE2D /* RegisVC.m in Sources */,
 				CEE28F3E224355E100C3D7E9 /* JXCategoryBaseCellModel.m in Sources */,
+				CEF5DDD3225488730025F406 /* TheOrderActivityVC.m in Sources */,
 				CEE28F37224355E100C3D7E9 /* JXCategoryNumberCellModel.m in Sources */,
 				CE6B058E2248667800AD44D7 /* SafeCenterVC.m in Sources */,
 				CEE28F642243571800C3D7E9 /* UINavigationController+GKCategory.m in Sources */,
@@ -2716,6 +2807,7 @@
 				CEE28F25224355E100C3D7E9 /* JXCategoryIndicatorBackgroundView.m in Sources */,
 				CEFA92C52240ED9C0015F7EE /* MainMineListCell.m in Sources */,
 				CECC0D58223A525F001CF0A2 /* UIColor+Hex.m in Sources */,
+				CEF5DDBF225453040025F406 /* MyOrderDetailPhotoCell.m in Sources */,
 				CEE3F66D224DEC5E00151BE7 /* ManagementStoreAddCell.m in Sources */,
 				CE9C4C00223B58F800DE9DC1 /* BaseNavigationController.m in Sources */,
 				CECEEEC6224A020C0068F267 /* MyDynamicsVC.m in Sources */,
@@ -2728,6 +2820,7 @@
 				CEFA926B223F99A90015F7EE /* NearbyDynamicsVC.m in Sources */,
 				CEE5FCFD225337040093D567 /* MyOrderDetailVC.m in Sources */,
 				CEFA923A223F63B10015F7EE /* MainMessageVC.m in Sources */,
+				CEF5DDDD22548B5E0025F406 /* OrderComplaintCell.m in Sources */,
 				CEE28F36224355E100C3D7E9 /* JXCategoryNumberCell.m in Sources */,
 				CEACEAFD224B7F0300A2AE2D /* LogginCell.m in Sources */,
 				CE28A79F2252333100B62032 /* SendActivityViewController.m in Sources */,
@@ -2741,6 +2834,7 @@
 				CEFA9219223F5DC40015F7EE /* BaseTableBar.m in Sources */,
 				CECC0D69223A56B8001CF0A2 /* NSDictionary+Log.m in Sources */,
 				CE28A7792251EB3100B62032 /* NSFileManager+Paths.m in Sources */,
+				CEF5DDC4225455E10025F406 /* PhotoListCollectionViewCell.m in Sources */,
 				CE6B05C22248EEF900AD44D7 /* DynamicsContentCell.m in Sources */,
 				CEFA92D92241DDF40015F7EE /* SendDynamicsHeadCell.m in Sources */,
 				CEE28F692243571800C3D7E9 /* UIViewController+GKCategory.m in Sources */,
@@ -2752,6 +2846,7 @@
 				CEE28F6D2243571800C3D7E9 /* GKNavigationBarConfigure.m in Sources */,
 				CEE28F2C224355E100C3D7E9 /* JXCategoryTitleImageView.m in Sources */,
 				CE28A75C2251B93200B62032 /* ManagementStoreConfigTitleCell.m in Sources */,
+				CEF5DDCE225480450025F406 /* BillObjectionVC.m in Sources */,
 				CECEEF17224A4D290068F267 /* ManagerUserVC.m in Sources */,
 				CEE28EB022432EEE00C3D7E9 /* MainSetListCell.m in Sources */,
 				CEE28ED4224355DA00C3D7E9 /* GKPageTableView.m in Sources */,
@@ -2760,6 +2855,7 @@
 				CEE28F7C22436D0500C3D7E9 /* InfoDetailVC.m in Sources */,
 				CEACEAF7224B5E9000A2AE2D /* BlackUserView.m in Sources */,
 				CECC0D6B223A56B8001CF0A2 /* NSArray+Log.m in Sources */,
+				CEF5DDBA22544E3E0025F406 /* MyOrderDetailListCell.m in Sources */,
 				CEE28F31224355E100C3D7E9 /* JXCategoryTitleView.m in Sources */,
 				CE28A7AA225239FD00B62032 /* MyProcessingOrderVC.m in Sources */,
 				CECEEF40224B09620068F267 /* ManagerUserCell.m in Sources */,
@@ -2775,11 +2871,13 @@
 				CE9C4C06223B5ED800DE9DC1 /* UIImage+BundleImage.m in Sources */,
 				CEE28F29224355E100C3D7E9 /* JXCategoryDotCell.m in Sources */,
 				CE9C4C09223B650C00DE9DC1 /* BaseViewController.m in Sources */,
+				CED7ECBB225390E900E0BFF3 /* MyOrderDetailItemCell.m in Sources */,
 				CE9C4BFA223B4F9B00DE9DC1 /* PLScrollViewEmptyView.m in Sources */,
 				CECEEF04224A45CE0068F267 /* OpenStoreVC.m in Sources */,
 				CEFA925F223F84750015F7EE /* FSSegmentTitleView.m in Sources */,
 				CEE3F672224DF12200151BE7 /* ManagementStoreBoxTypeCell.m in Sources */,
 				CE28A7712251E63D00B62032 /* StoreSingleProductAddPhotoCell.m in Sources */,
+				CEF5DDD822548AAE0025F406 /* OrderComplaintVC.m in Sources */,
 				CEE28F20224355E100C3D7E9 /* JXCategoryIndicatorLineView.m in Sources */,
 				CEE28F612243571800C3D7E9 /* GKPushTransitionAnimation.m in Sources */,
 				CEE28F3C224355E100C3D7E9 /* JXCategoryBaseView.m in Sources */,
@@ -2806,6 +2904,7 @@
 				CEE28F2E224355E100C3D7E9 /* JXCategoryTitleImageCellModel.m in Sources */,
 				CEE3F667224DE75300151BE7 /* ManagementStoreActivityCell.m in Sources */,
 				CEFA927A223FA59A0015F7EE /* BaseCell.m in Sources */,
+				CEF5DDC922545D8B0025F406 /* ChecklistVC.m in Sources */,
 				CEF2B367224CE06A00687E5B /* JLDoubleSlider.m in Sources */,
 				CECEEED8224A0F660068F267 /* MyDynamicsImageCell.m in Sources */,
 				CECEEEFE224A43150068F267 /* ActivityCell.m in Sources */,
@@ -2828,6 +2927,7 @@
 				CECEEF26224A4DC30068F267 /* ManagementStoreVC.m in Sources */,
 				CEFA92CF2241CEB70015F7EE /* BaseView.m in Sources */,
 				CEFA9213223F5AAA0015F7EE /* UILabel+BaseChangeDefaultFont.m in Sources */,
+				CEF5DDB5225444970025F406 /* MyOrderDetailUserCell.m in Sources */,
 				CECEEF4D224B246F0068F267 /* MyQRCodeView.m in Sources */,
 				CECEEF44224B12E10068F267 /* InviteStoreView.m in Sources */,
 				CECEEECC224A041C0068F267 /* MyDynamicsHeadCell.m in Sources */,

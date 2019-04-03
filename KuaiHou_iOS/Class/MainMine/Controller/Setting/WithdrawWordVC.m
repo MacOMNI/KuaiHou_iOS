@@ -27,7 +27,7 @@ static NSString *getCode = @"WithdrawWordCode";
 
 -(void)fixUI{
     self.title = @"提现密码";
-    [MyTool fixCornerradius:self.commitBtn cornerRadius:20 Color:kMain_lineColor_C Width:0.5];
+    [MyTool fixCornerradius:self.commitBtn cornerRadius:20 Color:kMain_lineColor_C Width:1];
     [MyTool fixCornerradius:self.codeBtn cornerRadius:2.5 Color:kMainColor Width:0.5];
     
     // 判断倒计任务是否已经结束

@@ -1,27 +1,28 @@
 //
-//  ChangePassWordVC.m
+//  BillObjectionVC.m
 //  KuaiHou_iOS
 //
-//  Created by user on 2019/3/22.
+//  Created by user on 2019/4/3.
 //  Copyright © 2019 郭子豪. All rights reserved.
 //
 
-#import "ChangePassWordVC.h"
+#import "BillObjectionVC.h"
 
-@interface ChangePassWordVC ()
-@property (weak, nonatomic) IBOutlet UIButton *commitBtn;
+@interface BillObjectionVC ()
+@property (weak, nonatomic) IBOutlet XXTextView *textView;
 
 @end
 
-@implementation ChangePassWordVC
+@implementation BillObjectionVC
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
-    self.title = @"修改密码";
-    [MyTool fixCornerradius:self.commitBtn cornerRadius:20 Color:kMain_lineColor_C Width:1];
-}
-- (IBAction)commitAction:(id)sender {
+    self.title = @"账单异议";
+    self.textView.xx_placeholder = @"您对本次消费和服务存在不满意或对此消费账单有异议的地方， 请告诉我们，我们将在1个工作日内进行处理";
+    self.textView.xx_placeholderFont = kFont(12);
+    self.textView.xx_placeholderColor = kMain_TextColor_9;
+    
 }
 
 /*

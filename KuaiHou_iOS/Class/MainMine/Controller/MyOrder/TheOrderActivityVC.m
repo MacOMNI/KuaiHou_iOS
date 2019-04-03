@@ -1,28 +1,27 @@
 //
-//  ChangePassWordVC.m
+//  TheOrderActivityVC.m
 //  KuaiHou_iOS
 //
-//  Created by user on 2019/3/22.
+//  Created by user on 2019/4/3.
 //  Copyright © 2019 郭子豪. All rights reserved.
 //
 
-#import "ChangePassWordVC.h"
+#import "TheOrderActivityVC.h"
 
-@interface ChangePassWordVC ()
-@property (weak, nonatomic) IBOutlet UIButton *commitBtn;
+@interface TheOrderActivityVC ()<UICollectionViewDelegate, UICollectionViewDataSource>
+@property (weak, nonatomic) IBOutlet UICollectionView *collectionView;
 
 @end
 
-@implementation ChangePassWordVC
+@implementation TheOrderActivityVC
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
-    self.title = @"修改密码";
-    [MyTool fixCornerradius:self.commitBtn cornerRadius:20 Color:kMain_lineColor_C Width:1];
+    self.title = @"此单活动";
 }
-- (IBAction)commitAction:(id)sender {
-}
+
+
 
 /*
 #pragma mark - Navigation

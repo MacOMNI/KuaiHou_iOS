@@ -20,7 +20,7 @@
     // Do any additional setup after loading the view from its nib.
     self.title = @"实名认证";
     
-    [MyTool fixCornerradius:self.commitBtn cornerRadius:20 Color:kMain_lineColor_C Width:0.5];
+    [MyTool fixCornerradius:self.commitBtn cornerRadius:20 Color:kMain_lineColor_C Width:1];
 }
 - (IBAction)commitAction:(id)sender {
 }

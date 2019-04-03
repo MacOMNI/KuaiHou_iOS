@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="PhotoListCollectionViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="130" height="200"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="130" height="200"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rcO-DE-EAy">
+                        <rect key="frame" x="0.0" y="0.0" width="130" height="200"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="XDD-Qv-6uN">
+                                <rect key="frame" x="0.0" y="0.0" width="130" height="150"/>
+                                <color key="backgroundColor" red="0.8862745098" green="0.26274509800000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="tintColor" red="0.8862745098" green="0.26274509800000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="150" id="Bu0-TF-qWp"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="郭子豪" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DEn-nU-VQz">
+                                <rect key="frame" x="5" y="155" width="37" height="12"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="12" id="eqI-DL-HU1"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a1h-nH-e8Z">
+                                <rect key="frame" x="5" y="175" width="35" height="15"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <state key="normal" title="  27" image="sex_woman">
+                                    <color key="titleColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.93333333333333335" green="0.93333333333333335" blue="0.93333333333333335" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="XDD-Qv-6uN" firstAttribute="top" secondItem="rcO-DE-EAy" secondAttribute="top" id="0Vc-kh-FZs"/>
+                            <constraint firstItem="XDD-Qv-6uN" firstAttribute="leading" secondItem="rcO-DE-EAy" secondAttribute="leading" id="EF7-wp-F3q"/>
+                            <constraint firstItem="a1h-nH-e8Z" firstAttribute="leading" secondItem="rcO-DE-EAy" secondAttribute="leading" constant="5" id="NGq-I6-aoQ"/>
+                            <constraint firstItem="DEn-nU-VQz" firstAttribute="leading" secondItem="rcO-DE-EAy" secondAttribute="leading" constant="5" id="O8v-gV-9Pd"/>
+                            <constraint firstAttribute="trailing" secondItem="XDD-Qv-6uN" secondAttribute="trailing" id="kx7-K6-O7f"/>
+                            <constraint firstAttribute="bottom" secondItem="a1h-nH-e8Z" secondAttribute="bottom" constant="10" id="oSE-k8-GgF"/>
+                            <constraint firstItem="DEn-nU-VQz" firstAttribute="top" secondItem="XDD-Qv-6uN" secondAttribute="bottom" constant="5" id="sGq-vF-8x5"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                <integer key="value" value="5"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="rcO-DE-EAy" secondAttribute="trailing" id="8Pg-V0-NnN"/>
+                <constraint firstAttribute="bottom" secondItem="rcO-DE-EAy" secondAttribute="bottom" id="SFW-ex-Wet"/>
+                <constraint firstItem="rcO-DE-EAy" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="s7r-0H-KQ7"/>
+                <constraint firstItem="rcO-DE-EAy" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="uV8-jy-fvM"/>
+            </constraints>
+            <point key="canvasLocation" x="971.01449275362324" y="-74.330357142857139"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="sex_woman" width="14" height="13.5"/>
+    </resources>
+</document>

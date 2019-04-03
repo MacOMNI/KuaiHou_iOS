@@ -35,6 +35,7 @@
     
     UILabel *placeholderLabel = [[UILabel alloc] init];
     placeholderLabel.backgroundColor = [UIColor clearColor];
+    placeholderLabel.numberOfLines = 0;
     [self addSubview:_placeholderLabel = placeholderLabel];
     
     self.xx_placeholderColor = [UIColor lightGrayColor];
@@ -92,7 +93,7 @@
     CGRect frame = self.placeholderLabel.frame;
     frame.origin.y = self.textContainerInset.top;
     frame.origin.x = self.textContainerInset.left+6.0f;
-    frame.size.width = self.frame.size.width - self.textContainerInset.left*2.0;
+    frame.size.width = self.frame.size.width - self.textContainerInset.left*2.0 - 6;
     
     CGSize maxSize = CGSizeMake(frame.size.width, MAXFLOAT);
     frame.size.height = [self.xx_placeholder boundingRectWithSize:maxSize options:NSStringDrawingUsesFontLeading | NSStringDrawingUsesLineFragmentOrigin attributes:@{NSFontAttributeName : self.placeholderLabel.font} context:nil].size.height;

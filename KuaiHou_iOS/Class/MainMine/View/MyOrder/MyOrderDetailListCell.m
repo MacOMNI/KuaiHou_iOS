@@ -1,31 +1,24 @@
 //
-//  MainSetBtnCell.m
+//  MyOrderDetailListCell.m
 //  KuaiHou_iOS
 //
-//  Created by user on 2019/3/21.
+//  Created by user on 2019/4/3.
 //  Copyright © 2019 郭子豪. All rights reserved.
 //
 
-#import "MainSetBtnCell.h"
+#import "MyOrderDetailListCell.h"
 
-@implementation MainSetBtnCell
+@implementation MyOrderDetailListCell
 
 - (void)awakeFromNib {
     [super awakeFromNib];
     // Initialization code
-    [MyTool fixCornerradius:self.itemBtn cornerRadius:20 Color:kMain_lineColor_C Width:1];
-    
 }
 
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated {
     [super setSelected:selected animated:animated];
 
     // Configure the view for the selected state
-}
-- (IBAction)itemAction:(UIButton *)sender {
-    if (self.itemBlock) {
-        self.itemBlock();
-    }
 }
 
 @end

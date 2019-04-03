@@ -46,20 +46,34 @@
                         <constraint firstItem="Jyc-nB-hGb" firstAttribute="leading" secondItem="gJz-dP-oNw" secondAttribute="leading" id="rEk-do-RUv"/>
                     </constraints>
                 </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dhB-Wf-XP9">
+                    <rect key="frame" x="37" y="831" width="340" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="Enq-Iu-rAK"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                    <state key="normal" title="确认到店" backgroundImage="change_sava">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                </button>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
                 <constraint firstItem="gJz-dP-oNw" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="27k-Wx-KdQ"/>
+                <constraint firstAttribute="bottom" secondItem="dhB-Wf-XP9" secondAttribute="bottom" constant="25" id="3Mx-Uf-zc3"/>
                 <constraint firstAttribute="trailing" secondItem="gJz-dP-oNw" secondAttribute="trailing" id="3On-W4-wSc"/>
                 <constraint firstAttribute="bottom" secondItem="5uK-sX-W7H" secondAttribute="bottom" id="3ot-lw-tk2"/>
+                <constraint firstAttribute="trailing" secondItem="dhB-Wf-XP9" secondAttribute="trailing" constant="37" id="8l6-uM-Klz"/>
                 <constraint firstAttribute="trailing" secondItem="5uK-sX-W7H" secondAttribute="trailing" id="ByK-MY-R8z"/>
                 <constraint firstItem="5uK-sX-W7H" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="jak-vm-kNc"/>
                 <constraint firstItem="5uK-sX-W7H" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="oAs-Zi-jEW"/>
+                <constraint firstItem="dhB-Wf-XP9" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="37" id="p0D-gH-a4a"/>
                 <constraint firstItem="gJz-dP-oNw" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="vyy-tX-4Uu"/>
             </constraints>
         </view>
     </objects>
     <resources>
+        <image name="change_sava" width="300" height="40"/>
         <image name="wb_bg.jpg" width="1242" height="1240"/>
     </resources>
 </document>
