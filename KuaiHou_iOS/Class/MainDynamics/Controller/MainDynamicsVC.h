@@ -10,7 +10,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface MainDynamicsVC : BaseViewController
+@interface MainDynamicsVC : WMPageController
 
 @end
 

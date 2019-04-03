@@ -24,6 +24,29 @@
     [[UIApplication sharedApplication].keyWindow addSubview:_maskView];
     [[UIApplication sharedApplication].keyWindow addSubview:self];
     
+    if (self.animateType == BOTTOM_ANIMATE) {
+        [self BottomShow];
+    }else{
+        [self ZoomShow];
+    }
+    
+    
+}
+
+-(void)hiddenView{
+    if (self.animateType == BOTTOM_ANIMATE) {
+        [self BottomHidden];
+    }else{
+        [self ZoomHidden];
+    }
+}
+
+-(void)setAnimateType:(AnimateType)animateType{
+    _animateType = animateType;
+}
+
+
+-(void)ZoomShow{
     [UIView animateWithDuration:0.3
                      animations:^{
                          self.maskView.alpha = 0.4;
@@ -49,7 +72,7 @@
                      }];
 }
 
--(void)hiddenView{
+-(void)ZoomHidden{
     if (_maskView) {
         [UIView animateWithDuration:0.3
                          animations:^{
@@ -59,7 +82,38 @@
                              
                              [self removeFromSuperview];
                              [self.maskView removeFromSuperview];
-                             self.maskView = nil;
+                             self->_maskView = nil;
+                         }];
+    }
+}
+
+
+-(void)BottomShow{
+    [UIView animateWithDuration:0.3 animations:^{
+        self.maskView.alpha = 0.4;
+        CGRect newFrame = self.frame;
+        newFrame.origin.y = kScreenSizeHeight - self.frame.size.height - SafeAreaBottom;
+        self.frame = newFrame;
+        
+    } completion:^(BOOL finished) {
+        UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(hiddenView)];
+        [self.maskView addGestureRecognizer:tap];
+    }];
+}
+
+-(void)BottomHidden{
+    if (_maskView) {
+        [UIView animateWithDuration:0.3
+                         animations:^{
+                             CGRect newFrame = self.frame;
+                             newFrame.origin.y = kScreenSizeHeight;
+                             self.frame = newFrame;
+                         }
+                         completion:^(BOOL finished){
+                             
+                             [self removeFromSuperview];
+                             [self->_maskView removeFromSuperview];
+                             self->_maskView = nil;
                          }];
     }
 }

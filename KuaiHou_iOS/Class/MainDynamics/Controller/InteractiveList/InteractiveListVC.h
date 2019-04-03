@@ -1,8 +1,8 @@
 //
-//  MainMessageVC.h
+//  InteractiveListVC.h
 //  KuaiHou_iOS
 //
-//  Created by user on 2019/3/18.
+//  Created by user on 2019/4/3.
 //  Copyright © 2019 郭子豪. All rights reserved.
 //
 
@@ -10,7 +10,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface MainMessageVC : WMPageController
+@interface InteractiveListVC : BaseViewController
 
 @end
 

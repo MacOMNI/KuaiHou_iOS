@@ -7,22 +7,49 @@
 //
 
 #import "MainDynamicsVC.h"
-#import "FSScrollContentView.h"
 #import "NearbyDynamicsVC.h"
 #import "FavorableDynamicsVC.h"
 #import "HeedDynamicsVC.h"
 #import "SendDynamicsVC.h"
+#import "DIYFilterView.h"
+#import "InteractiveListVC.h"
 
-@interface MainDynamicsVC ()<FSPageContentViewDelegate,FSSegmentTitleViewDelegate>
+@interface MainDynamicsVC ()
 
-@property (nonatomic, strong) FSPageContentView *pageContentView;
-@property (nonatomic, strong) FSSegmentTitleView *titleView;
 
 @property (nonatomic, strong) UILabel *messageTipLab;
+
+@property (nonatomic, strong) NSArray                   *childVCs;
+@property (nonatomic, strong) NSArray                   *titleList;
+
+@property (nonatomic, strong) NearbyDynamicsVC *near;
+@property (nonatomic, strong) FavorableDynamicsVC *favorable;
+@property (nonatomic, strong) HeedDynamicsVC *heed;
 
 @end
 
 @implementation MainDynamicsVC
+
+-(instancetype)init{
+    if (self = [super init]) {
+        self.menuItemWidth = 60;
+        self.menuViewStyle = WMMenuViewStyleLine;
+        self.titleSizeNormal     = 15.0f;
+        self.titleSizeSelected   = 24.0f;
+        self.titleColorNormal    = kMain_TextColor;
+        self.titleColorSelected  = kMain_TextColor;
+        self.progressColor               = kMainColor;
+        self.progressWidth               = 15.0f;
+        self.progressHeight              = 3.0f;
+        self.progressViewBottomSpace     = 2.0f;
+        self.progressViewCornerRadius    = self.progressHeight / 2;
+        self.progressViewBottomSpace = 5;
+        self.menuViewLayoutMode = WMMenuViewLayoutModeLeft;
+        // 调皮效果
+        self.progressViewIsNaughty       = YES;
+    }
+    return self;
+}
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -33,17 +60,7 @@
 }
 
 -(void)fixUI{
-    NSArray *items = @[@"附近", @"特惠", @"关注"];
-    self.titleView = [[FSSegmentTitleView alloc]initWithFrame:CGRectMake(15, 25, 200, 40) titles:items delegate:self indicatorType:FSIndicatorTypeDIY];
-    self.titleView.indicatorExtension = 15;
-//    self.titleView.backgroundColor = [UIColor whiteColor];
-    self.titleView.indicatorColor = kMainColor;
-    self.titleView.titleNormalColor = kMain_TextColor;
-    self.titleView.titleSelectColor = kMain_TextColor;
-    self.titleView.titleFont= kFont(15);
-    self.titleView.titleSelectFont = kFont(24);
-    self.titleView.selectIndex = 0;
-    [self.view addSubview:self.titleView];
+    
     
     UIButton *filterBtn = [[UIButton alloc] init];
     [filterBtn setImage:[UIImage loadImageWithName:@"dynamics_filter"] forState:(UIControlStateNormal)];
@@ -52,15 +69,9 @@
     
     [filterBtn mas_makeConstraints:^(MASConstraintMaker *make) {
         make.right.mas_equalTo(@(-15));
-        make.centerY.mas_equalTo(self.titleView.mas_centerY);
+        make.centerY.mas_equalTo(self.menuView.mas_centerY);
     }];
     
-    self.pageContentView = [[FSPageContentView alloc] initWithFrame:CGRectMake(0, 70, kScreenSizeWidth, kScreenSizeHeight - 70 - SafeAreaTopHeight - SafeAreaBottom - 49) childVCs:@[[NearbyDynamicsVC new], [FavorableDynamicsVC new], [HeedDynamicsVC new]] parentVC:self delegate:self];
-    self.pageContentView.contentViewCanScroll = YES;//设置滑动属性
-    self.pageContentView.contentViewCurrentIndex = 0;
-    [self.view addSubview:self.pageContentView];
-    
-    self.view.backgroundColor = [UIColor whiteColor];
     
 }
 
@@ -100,30 +111,63 @@
     [MyTool fixCornerradius:btn cornerRadius:15 Color:kMain_lineColor_C Width:1.0];
     self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithCustomView:btn];
 }
-
-
-#pragma mark 选择器的delegate
-- (void)FSSegmentTitleView:(FSSegmentTitleView *)titleView startIndex:(NSInteger)startIndex endIndex:(NSInteger)endIndex
-{
-    self.pageContentView.contentViewCurrentIndex = endIndex;
-}
-
-- (void)FSContenViewDidEndDecelerating:(FSPageContentView *)contentView startIndex:(NSInteger)startIndex endIndex:(NSInteger)endIndex
-{
-    self.titleView.selectIndex = endIndex;
-}
-
 -(void)messageAction{
-    
+    [self.navigationController pushViewController:[InteractiveListVC new] animated:YES];
 }
 
 -(void)filterAction{
+    DIYFilterView *filter = [[DIYFilterView alloc] init];
+    [filter setCommitBlock:^(NSInteger tag) {
+        
+    }];
+    [filter showView];
+    
     
 }
 
 -(void)sendAction{
     SendDynamicsVC *send = [SendDynamicsVC new];
     [self.navigationController pushViewController:send animated:YES];
+}
+
+- (NSArray *)childVCs {
+    if (!_childVCs) {
+        self.near = [NearbyDynamicsVC new];
+        self.favorable = [FavorableDynamicsVC new];
+        self.heed = [HeedDynamicsVC new];
+        _childVCs = @[self.near, self.favorable, self.heed];
+    }
+    return _childVCs;
+}
+
+- (NSArray *)titleList {
+    if (!_titleList) {
+        _titleList = @[@"附近", @"特惠", @"关注"];
+    }
+    return _titleList;
+}
+
+
+#pragma mark - WMPageControllerDataSource
+- (NSInteger)numbersOfChildControllersInPageController:(WMPageController *)pageController {
+    return self.childVCs.count;
+}
+- (NSString *)pageController:(WMPageController *)pageController titleAtIndex:(NSInteger)index {
+    return self.titleList[index];
+}
+- (UIViewController *)pageController:(WMPageController *)pageController viewControllerAtIndex:(NSInteger)index {
+    return self.childVCs[index];
+}
+- (CGRect)pageController:(WMPageController *)pageController preferredFrameForMenuView:(WMMenuView *)menuView {
+    return CGRectMake(15, 15, 400, 50.0f);
+}
+- (CGRect)pageController:(WMPageController *)pageController preferredFrameForContentView:(WMScrollView *)contentView {
+    CGFloat menuViewHeight = [self pageController:pageController preferredFrameForMenuView:self.menuView].size.height;
+    return CGRectMake(0, menuViewHeight + 15, kScreenSizeWidth, kScreenSizeHeight - menuViewHeight - SafeAreaTopHeight-SafeAreaBottomHeight - 15);
+}
+#pragma mark - WMPageControllerDelegate
+- (void)pageController:(WMPageController *)pageController didEnterViewController:(__kindof UIViewController *)viewController withInfo:(NSDictionary *)info {
+    
 }
 
 

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="DIYReportView">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="275"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="1RH-sc-kG6">
+                    <rect key="frame" x="0.0" y="15" width="414" height="210"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="0nd-A5-Bms"/>
+                        <outlet property="delegate" destination="-1" id="4ZW-YX-YuX"/>
+                    </connections>
+                </tableView>
+                <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yNL-2y-czN">
+                    <rect key="frame" x="358" y="235" width="31" height="15"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="15" id="hgm-MF-3Sl"/>
+                    </constraints>
+                    <state key="normal" title="确定">
+                        <color key="titleColor" red="0.8862745098" green="0.26274509800000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="itemAction:" destination="iN0-l3-epB" eventType="touchUpInside" id="AnH-3e-hGg"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yTX-qA-nAC">
+                    <rect key="frame" x="302" y="235" width="31" height="15"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="15" id="qvq-gG-m26"/>
+                    </constraints>
+                    <state key="normal" title="取消">
+                        <color key="titleColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="itemAction:" destination="iN0-l3-epB" eventType="touchUpInside" id="jlx-5d-iTw"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="yNL-2y-czN" secondAttribute="bottom" constant="25" id="2ME-Vn-kCt"/>
+                <constraint firstItem="yTX-qA-nAC" firstAttribute="centerY" secondItem="yNL-2y-czN" secondAttribute="centerY" id="D6O-Mz-Nqe"/>
+                <constraint firstItem="yNL-2y-czN" firstAttribute="leading" secondItem="yTX-qA-nAC" secondAttribute="trailing" constant="25" id="NxB-xx-edB"/>
+                <constraint firstItem="yNL-2y-czN" firstAttribute="top" secondItem="1RH-sc-kG6" secondAttribute="bottom" constant="10" id="PJV-Fm-1So"/>
+                <constraint firstItem="1RH-sc-kG6" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="kDs-EZ-ec3"/>
+                <constraint firstAttribute="trailing" secondItem="1RH-sc-kG6" secondAttribute="trailing" id="nZn-R4-ugr"/>
+                <constraint firstItem="1RH-sc-kG6" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="15" id="nxB-OO-a9W"/>
+                <constraint firstAttribute="trailing" secondItem="yNL-2y-czN" secondAttribute="trailing" constant="25" id="twf-NQ-g9v"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <userDefinedRuntimeAttributes>
+                <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                    <integer key="value" value="5"/>
+                </userDefinedRuntimeAttribute>
+                <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+            </userDefinedRuntimeAttributes>
+            <connections>
+                <outlet property="tableView" destination="1RH-sc-kG6" id="iaC-qu-i95"/>
+            </connections>
+            <point key="canvasLocation" x="-207.24637681159422" y="45.870535714285715"/>
+        </view>
+    </objects>
+</document>

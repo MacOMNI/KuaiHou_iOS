@@ -16,6 +16,8 @@ NS_ASSUME_NONNULL_BEGIN
 @property (weak, nonatomic) IBOutlet UIButton *likeNumBtn;
 @property (weak, nonatomic) IBOutlet UIButton *moreBtn;
 
+@property (nonatomic, copy) void (^itmeBlock)(NSInteger tag);
+
 @end
 
 NS_ASSUME_NONNULL_END

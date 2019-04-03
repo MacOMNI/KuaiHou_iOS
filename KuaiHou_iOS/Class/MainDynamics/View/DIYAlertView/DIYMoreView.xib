@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="DIYMoreView">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="250"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" tag="102" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h51-mS-klN">
+                    <rect key="frame" x="37" y="25" width="340" height="44"/>
+                    <color key="backgroundColor" red="0.80000000000000004" green="0.80000000000000004" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="cue-sb-ibQ"/>
+                    </constraints>
+                    <state key="normal" title="屏蔽此条动态">
+                        <color key="titleColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="22"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="itemAction:" destination="iN0-l3-epB" eventType="touchUpInside" id="fpz-by-a6e"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="101" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Ux-6n-ztU">
+                    <rect key="frame" x="37" y="94" width="340" height="44"/>
+                    <color key="backgroundColor" red="0.80000000000000004" green="0.80000000000000004" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="dnw-ob-r5V"/>
+                    </constraints>
+                    <state key="normal" title="举报此条动态">
+                        <color key="titleColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="22"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="itemAction:" destination="iN0-l3-epB" eventType="touchUpInside" id="1hf-HN-gd2"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="100" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sou-Hj-jNf">
+                    <rect key="frame" x="191.5" y="178" width="31" height="14"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="14" id="r0A-pO-tgs"/>
+                    </constraints>
+                    <state key="normal" title="取消">
+                        <color key="titleColor" red="0.8862745098" green="0.26274509800000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="itemAction:" destination="iN0-l3-epB" eventType="touchUpInside" id="uk0-af-787"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="h51-mS-klN" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="25" id="GbL-6x-L89"/>
+                <constraint firstItem="Sou-Hj-jNf" firstAttribute="top" secondItem="3Ux-6n-ztU" secondAttribute="bottom" constant="40" id="NDd-kD-Y9R"/>
+                <constraint firstAttribute="trailing" secondItem="3Ux-6n-ztU" secondAttribute="trailing" constant="37" id="Vg8-SE-fkm"/>
+                <constraint firstItem="Sou-Hj-jNf" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="bks-Bv-qoE"/>
+                <constraint firstAttribute="trailing" secondItem="h51-mS-klN" secondAttribute="trailing" constant="37" id="d6c-tm-X8R"/>
+                <constraint firstItem="3Ux-6n-ztU" firstAttribute="top" secondItem="h51-mS-klN" secondAttribute="bottom" constant="25" id="dW6-aL-GyD"/>
+                <constraint firstItem="3Ux-6n-ztU" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="37" id="jAe-BQ-gCA"/>
+                <constraint firstItem="h51-mS-klN" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="37" id="tos-Wq-dUx"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <userDefinedRuntimeAttributes>
+                <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                    <integer key="value" value="5"/>
+                </userDefinedRuntimeAttribute>
+                <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+            </userDefinedRuntimeAttributes>
+        </view>
+    </objects>
+</document>

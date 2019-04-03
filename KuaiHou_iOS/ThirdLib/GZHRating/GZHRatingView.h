@@ -22,7 +22,7 @@ typedef NS_ENUM(NSUInteger, RatingType) {
     INTEGER_TYPE, // 整颗心
     FLOAT_TYPE, // 任意心 保留的两位小数
     HALF_TYPE // 半颗心
-};;
+};
 
 @interface GZHRatingView : UIView
 

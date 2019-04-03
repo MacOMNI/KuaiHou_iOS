@@ -12,7 +12,9 @@
 #import "NearByDynamicsImageCell.h"
 #import "NearByDynamicsToolCell.h"
 #import "DynamicsDetailVC.h"
-
+#import "DIYMoreView.h"
+#import "DIYReportView.h"
+#import "DIYFilterView.h"
 
 static NSString * cellIdentifierIDHead = @"UserCireHeadCell";
 static NSString * cellIdentifierIDText = @"UserCircleTextCell";
@@ -112,6 +114,24 @@ static NSString * testStr = @"湖南沃趣娱乐传媒有限公司是一家专�
     }
     else if (indexPath.row == 3){
         NearByDynamicsToolCell *cell =  [tableView dequeueReusableCellWithIdentifier:cellIdentifierIDTool forIndexPath:indexPath];
+        [cell setItmeBlock:^(NSInteger tag) {
+            if (tag == 100) {
+                
+            }else if (tag == 101){
+                
+            }else{
+                DIYMoreView *more = [[DIYMoreView alloc] init];
+                __weak DIYMoreView *weakMore = more;
+                [more setItmeBlock:^(NSInteger tag) {
+                    if (101 == tag) { // 举报此动态
+                        [weakMore hiddenView];
+                        DIYReportView *report = [[DIYReportView alloc] init];
+                        [report showView];
+                    }
+                }];
+                [more showView];
+            }
+        }];
         return cell;
     }
     

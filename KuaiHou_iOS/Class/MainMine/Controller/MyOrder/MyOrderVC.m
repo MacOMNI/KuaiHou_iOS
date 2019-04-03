@@ -45,7 +45,7 @@
     [self fixUI];
 }
 -(void)fixUI{
-    self.title = @"酒水图片";
+    self.title = @"订单";
 }
 
 - (NSArray *)childVCs {

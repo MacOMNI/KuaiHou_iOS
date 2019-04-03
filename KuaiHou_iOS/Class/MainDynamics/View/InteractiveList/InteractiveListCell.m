@@ -1,14 +1,14 @@
 //
-//  NearByDynamicsToolCell.m
+//  InteractiveListCell.m
 //  KuaiHou_iOS
 //
-//  Created by user on 2019/3/18.
+//  Created by user on 2019/4/3.
 //  Copyright © 2019 郭子豪. All rights reserved.
 //
 
-#import "NearByDynamicsToolCell.h"
+#import "InteractiveListCell.h"
 
-@implementation NearByDynamicsToolCell
+@implementation InteractiveListCell
 
 - (void)awakeFromNib {
     [super awakeFromNib];
@@ -19,11 +19,6 @@
     [super setSelected:selected animated:animated];
 
     // Configure the view for the selected state
-}
-- (IBAction)itemAction:(UIButton *)sender {
-    if (self.itmeBlock) {
-        self.itmeBlock(sender.tag);
-    }
 }
 
 @end
