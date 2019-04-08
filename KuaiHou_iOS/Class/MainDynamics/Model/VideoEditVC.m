@@ -88,30 +88,29 @@
     [[UIApplication sharedApplication] beginReceivingRemoteControlEvents];
     [session setCategory:AVAudioSessionCategoryPlayback error:nil];
     
-    
-    
-    bottomView = [[UIView alloc] initWithFrame:CGRectMake(0, SCREEN_HEIGHT-80 - SafeAreaBottom, SCREEN_WIDTH, 80)];
-    bottomView.backgroundColor = [UIColor blackColor];
-    [self.view addSubview:bottomView];
-    editScrollView = [[UIScrollView alloc] initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, 50)];
-    editScrollView.showsHorizontalScrollIndicator = NO;
-    editScrollView.bounces = NO;
-    [bottomView addSubview:editScrollView];
-    editScrollView.delegate = self;
-    
-    // 添加编辑框上下边线
-    self.boderX = 45;
-    self.boderWidth = SCREEN_WIDTH-90;
-    topBorder = [[UIView alloc] initWithFrame:CGRectMake(self.boderX, 0, self.boderWidth, 2)];
-    topBorder.backgroundColor = [UIColor whiteColor];
-    [bottomView addSubview:topBorder];
-
-    bottomBorder = [[UIView alloc] initWithFrame:CGRectMake(self.boderX, 50-2, self.boderWidth, 2)];
-    bottomBorder.backgroundColor = [UIColor whiteColor];
-    [bottomView addSubview:bottomBorder];
-
     // 添加左右编辑框拖动条
     MAIN(^{
+        self->bottomView = [[UIView alloc] initWithFrame:CGRectMake(0, SCREEN_HEIGHT-80 - SafeAreaBottom, SCREEN_WIDTH, 80)];
+        self->bottomView.backgroundColor = [UIColor blackColor];
+        [self.view addSubview:self->bottomView];
+        self->editScrollView = [[UIScrollView alloc] initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, 50)];
+        self->editScrollView.showsHorizontalScrollIndicator = NO;
+        self->editScrollView.bounces = NO;
+        [self->bottomView addSubview:self->editScrollView];
+        self->editScrollView.delegate = self;
+        
+        // 添加编辑框上下边线
+        self.boderX = 45;
+        self.boderWidth = SCREEN_WIDTH-90;
+        self->topBorder = [[UIView alloc] initWithFrame:CGRectMake(self.boderX, 0, self.boderWidth, 2)];
+        self->topBorder.backgroundColor = [UIColor whiteColor];
+        [self->bottomView addSubview:self->topBorder];
+        
+        self->bottomBorder = [[UIView alloc] initWithFrame:CGRectMake(self.boderX, 50-2, self.boderWidth, 2)];
+        self->bottomBorder.backgroundColor = [UIColor whiteColor];
+        [self->bottomView addSubview:self->bottomBorder];
+        
+        
         self->leftDragView = [[DragEditView alloc] initWithFrame:CGRectMake(-(SCREEN_WIDTH-50), 0, SCREEN_WIDTH, 50) Left:YES];
         self->leftDragView.hitTestEdgeInsets = UIEdgeInsetsMake(0, -(EDGE_EXTENSION_FOR_THUMB), 0, -(EDGE_EXTENSION_FOR_THUMB));
         [self->bottomView addSubview:self->leftDragView];
@@ -119,29 +118,33 @@
         self->rightDragView = [[DragEditView alloc] initWithFrame:CGRectMake((SCREEN_WIDTH-50), 0, SCREEN_WIDTH, 50) Left:NO];
         self->rightDragView.hitTestEdgeInsets = UIEdgeInsetsMake(0, -(EDGE_EXTENSION_FOR_THUMB), 0, -(EDGE_EXTENSION_FOR_THUMB));
         [self->bottomView addSubview:self->rightDragView];
+        
+        UIPanGestureRecognizer *panGestureRecognizer = [[UIPanGestureRecognizer alloc] initWithTarget:self action:@selector(moveOverlayView:)];
+        [self->bottomView addGestureRecognizer:panGestureRecognizer];
+        //
+        //    // 播放条
+        self->line = [[UIView alloc] initWithFrame:CGRectMake(10, 0, 3, 50)];
+        self->line.backgroundColor = [UIColor colorWithRed:214/255.0 green:230/255.0 blue:247/255.0 alpha:1.0];
+        [self->bottomView addSubview:self->line];
+        self->line.hidden = YES;
+        //
+        UIButton *doneBtn = [[UIButton alloc] initWithFrame:CGRectMake(SCREEN_WIDTH-60, 50, 60, 30)];
+        [doneBtn setTitle:@"完成" forState:UIControlStateNormal];
+        [doneBtn setTitleColor:[UIColor colorWithRed:14/255.0 green:178/255.0 blue:10/255.0 alpha:1.0] forState:UIControlStateNormal];
+        [doneBtn addTarget:self action:@selector(notifyDelegateOfDidChange) forControlEvents:UIControlEventTouchUpInside];
+        [self->bottomView addSubview:doneBtn];
+        
+        
     });
-    
-    UIPanGestureRecognizer *panGestureRecognizer = [[UIPanGestureRecognizer alloc] initWithTarget:self action:@selector(moveOverlayView:)];
-    [bottomView addGestureRecognizer:panGestureRecognizer];
-//
-    // 播放条
-    line = [[UIView alloc] initWithFrame:CGRectMake(10, 0, 3, 50)];
-    line.backgroundColor = [UIColor colorWithRed:214/255.0 green:230/255.0 blue:247/255.0 alpha:1.0];
-    [bottomView addSubview:line];
-    line.hidden = YES;
-//
-    UIButton *doneBtn = [[UIButton alloc] initWithFrame:CGRectMake(SCREEN_WIDTH-60, 50, 60, 30)];
-    [doneBtn setTitle:@"完成" forState:UIControlStateNormal];
-    [doneBtn setTitleColor:[UIColor colorWithRed:14/255.0 green:178/255.0 blue:10/255.0 alpha:1.0] forState:UIControlStateNormal];
-    [doneBtn addTarget:self action:@selector(notifyDelegateOfDidChange) forControlEvents:UIControlEventTouchUpInside];
-    [bottomView addSubview:doneBtn];
-//
-    // 默认startTime 0秒 endTime 10秒
     self.startTime = 0;
     self.endTime = 15;
     self.startPointX = 50;
     self.endPointX = SCREEN_WIDTH-50;
     self.IMG_Width = (SCREEN_WIDTH-100)/10;
+    
+//
+//    // 默认startTime 0秒 endTime 10秒
+    
 }
 
 #pragma mark 编辑区域手势拖动
@@ -279,7 +282,7 @@
                     weakSelf.isEdited = YES;
                     [weakSelf invalidatePlayer];
                     [weakSelf initPlayerWithVideoUrl:furl];
-                    self->bottomView.hidden = YES;
+                    bottomView.hidden = YES;
                 });
             }
                 break;
@@ -342,26 +345,12 @@
                 NSLog(@"KVO：未知状态，此时不能播放");
                 break;
             case AVPlayerStatusReadyToPlay:
-                if (@available(iOS 10.0, *)) {
-                    if (!_player.timeControlStatus || _player.timeControlStatus != AVPlayerTimeControlStatusPaused) {
-                        [_player play];
-                        if (!self.isEdited) {
-                            line.hidden = NO;
-                            [self startTimer];
-                        }
+                if (!_player.timeControlStatus || _player.timeControlStatus != AVPlayerTimeControlStatusPaused) {
+                    [_player play];
+                    if (!self.isEdited) {
+                        line.hidden = NO;
+                        [self startTimer];
                     }
-                } else {
-                    // Fallback on earlier versions
-                }if (@available(iOS 10.0, *)) {
-                    if (!_player.timeControlStatus || _player.timeControlStatus != AVPlayerTimeControlStatusPaused) {
-                        [_player play];
-                        if (!self.isEdited) {
-                            line.hidden = NO;
-                            [self startTimer];
-                        }
-                    }
-                } else {
-                    // Fallback on earlier versions
                 }
                 NSLog(@"KVO：准备完毕，可以播放");
                 break;
@@ -375,13 +364,9 @@
     
     if ([keyPath isEqualToString:@"timeControlStatus"]) {
         // 剪切完视频后自动循环播放
-        if (@available(iOS 10.0, *)) {
-            if (self.player.timeControlStatus == AVPlayerTimeControlStatusPaused) {
-                [self.player seekToTime:CMTimeMake(0, 1)];
-                [self.player play];
-            }
-        } else {
-            // Fallback on earlier versions
+        if (self.player.timeControlStatus == AVPlayerTimeControlStatusPaused) {
+            [self.player seekToTime:CMTimeMake(0, 1)];
+            [self.player play];
         }
     }
 }
