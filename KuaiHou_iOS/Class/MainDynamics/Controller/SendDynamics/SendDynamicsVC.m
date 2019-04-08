@@ -11,6 +11,7 @@
 #import "SendDynamicsHeadView.h"
 #import "SendDynamicsVideoCell.h"
 #import "VideoEditVC.h"
+#import "VideoRecordingViewController.h"
 
 @interface SendDynamicsVC ()<TZImagePickerControllerDelegate,UIActionSheetDelegate>
 {
@@ -239,7 +240,13 @@
 
     }
     if (actionSheet.tag == 999) {
-        if (buttonIndex == 0) {
+        if (buttonIndex == 0) { // 录制视频
+            VideoRecordingViewController *vc = [[VideoRecordingViewController alloc] init];
+            [vc setFinshRecord:^(NSString *videoPath, NSString *thumbnailPath, CGFloat recordTime) {
+                self.videoPath = videoPath;
+                NSLog(@"视频路径: %@ \n 截图路径:%@  视频时长:%f",videoPath,thumbnailPath,recordTime);
+            }];
+            [self presentViewController:vc animated:YES completion:nil];
             
         }else if(buttonIndex == 1){
             [self pushTZImageVideoController];

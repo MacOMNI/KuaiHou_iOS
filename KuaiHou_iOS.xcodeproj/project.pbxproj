@@ -128,6 +128,12 @@
 		CECE8037225B12A70069FD55 /* DragEditView.m in Sources */ = {isa = PBXBuildFile; fileRef = CECE8032225B12A60069FD55 /* DragEditView.m */; };
 		CECE8038225B12A70069FD55 /* drag.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CECE8033225B12A60069FD55 /* drag.jpg */; };
 		CECE8039225B12A70069FD55 /* VideoEditVC.m in Sources */ = {isa = PBXBuildFile; fileRef = CECE8036225B12A70069FD55 /* VideoEditVC.m */; };
+		CECE8045225B494C0069FD55 /* ShortVideoSession.m in Sources */ = {isa = PBXBuildFile; fileRef = CECE803D225B494C0069FD55 /* ShortVideoSession.m */; };
+		CECE8046225B494C0069FD55 /* ShortVideoRecorder.m in Sources */ = {isa = PBXBuildFile; fileRef = CECE803F225B494C0069FD55 /* ShortVideoRecorder.m */; };
+		CECE8047225B494C0069FD55 /* VideoRecordManager.m in Sources */ = {isa = PBXBuildFile; fileRef = CECE8040225B494C0069FD55 /* VideoRecordManager.m */; };
+		CECE8048225B494C0069FD55 /* CircleProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = CECE8041225B494C0069FD55 /* CircleProgressView.m */; };
+		CECE8049225B494C0069FD55 /* VideoFileManager.m in Sources */ = {isa = PBXBuildFile; fileRef = CECE8043225B494C0069FD55 /* VideoFileManager.m */; };
+		CECE804E225B4AF60069FD55 /* VideoRecordingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CECE804D225B4AF60069FD55 /* VideoRecordingViewController.m */; };
 		CECEEEB62249C05E0068F267 /* WLButtonCountdownManager.m in Sources */ = {isa = PBXBuildFile; fileRef = CECEEEB42249C05E0068F267 /* WLButtonCountdownManager.m */; };
 		CECEEEB72249C4010068F267 /* WithdrawWordVC.m in Sources */ = {isa = PBXBuildFile; fileRef = CE6B05A02248789900AD44D7 /* WithdrawWordVC.m */; };
 		CECEEEBB2249D9560068F267 /* InfoDetaildNorCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CECEEEB92249D9560068F267 /* InfoDetaildNorCell.m */; };
@@ -584,6 +590,18 @@
 		CECE8034225B12A60069FD55 /* VideoEditVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VideoEditVC.h; sourceTree = "<group>"; };
 		CECE8035225B12A70069FD55 /* DragEditView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DragEditView.h; sourceTree = "<group>"; };
 		CECE8036225B12A70069FD55 /* VideoEditVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VideoEditVC.m; sourceTree = "<group>"; };
+		CECE803B225B494C0069FD55 /* VideoRecordManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VideoRecordManager.h; sourceTree = "<group>"; };
+		CECE803C225B494C0069FD55 /* CircleProgressView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CircleProgressView.h; sourceTree = "<group>"; };
+		CECE803D225B494C0069FD55 /* ShortVideoSession.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShortVideoSession.m; sourceTree = "<group>"; };
+		CECE803E225B494C0069FD55 /* VideoFileManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VideoFileManager.h; sourceTree = "<group>"; };
+		CECE803F225B494C0069FD55 /* ShortVideoRecorder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShortVideoRecorder.m; sourceTree = "<group>"; };
+		CECE8040225B494C0069FD55 /* VideoRecordManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VideoRecordManager.m; sourceTree = "<group>"; };
+		CECE8041225B494C0069FD55 /* CircleProgressView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CircleProgressView.m; sourceTree = "<group>"; };
+		CECE8042225B494C0069FD55 /* ShortVideoRecorder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShortVideoRecorder.h; sourceTree = "<group>"; };
+		CECE8043225B494C0069FD55 /* VideoFileManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VideoFileManager.m; sourceTree = "<group>"; };
+		CECE8044225B494C0069FD55 /* ShortVideoSession.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShortVideoSession.h; sourceTree = "<group>"; };
+		CECE804C225B4AF60069FD55 /* VideoRecordingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VideoRecordingViewController.h; sourceTree = "<group>"; };
+		CECE804D225B4AF60069FD55 /* VideoRecordingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VideoRecordingViewController.m; sourceTree = "<group>"; };
 		CECEEEB42249C05E0068F267 /* WLButtonCountdownManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WLButtonCountdownManager.m; sourceTree = "<group>"; };
 		CECEEEB52249C05E0068F267 /* WLButtonCountdownManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WLButtonCountdownManager.h; sourceTree = "<group>"; };
 		CECEEEB82249D9560068F267 /* InfoDetaildNorCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InfoDetaildNorCell.h; sourceTree = "<group>"; };
@@ -1334,6 +1352,7 @@
 		CECC0D4F223A4615001CF0A2 /* ThirdLib */ = {
 			isa = PBXGroup;
 			children = (
+				CECE803A225B494C0069FD55 /* VideoRecord */,
 				CEE5FCE922530F260093D567 /* GZHRating */,
 				CEF2B362224CE05900687E5B /* JLDoubleSlider */,
 				CEACEB18224BA63F00A2AE2D /* WGDigitField */,
@@ -1412,6 +1431,41 @@
 			);
 			name = log;
 			path = "../../../../Documents/项目/信书/LetterBookProject/LetterBookProject/Class/UserAndMineProject/Category/log";
+			sourceTree = "<group>";
+		};
+		CECE803A225B494C0069FD55 /* VideoRecord */ = {
+			isa = PBXGroup;
+			children = (
+				CECE804B225B4ABD0069FD55 /* Controller */,
+				CECE804A225B4AAE0069FD55 /* model */,
+			);
+			path = VideoRecord;
+			sourceTree = "<group>";
+		};
+		CECE804A225B4AAE0069FD55 /* model */ = {
+			isa = PBXGroup;
+			children = (
+				CECE803B225B494C0069FD55 /* VideoRecordManager.h */,
+				CECE8040225B494C0069FD55 /* VideoRecordManager.m */,
+				CECE803C225B494C0069FD55 /* CircleProgressView.h */,
+				CECE8041225B494C0069FD55 /* CircleProgressView.m */,
+				CECE8044225B494C0069FD55 /* ShortVideoSession.h */,
+				CECE803D225B494C0069FD55 /* ShortVideoSession.m */,
+				CECE803E225B494C0069FD55 /* VideoFileManager.h */,
+				CECE8043225B494C0069FD55 /* VideoFileManager.m */,
+				CECE8042225B494C0069FD55 /* ShortVideoRecorder.h */,
+				CECE803F225B494C0069FD55 /* ShortVideoRecorder.m */,
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		CECE804B225B4ABD0069FD55 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				CECE804C225B4AF60069FD55 /* VideoRecordingViewController.h */,
+				CECE804D225B4AF60069FD55 /* VideoRecordingViewController.m */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 		CECEEEB32249C05E0068F267 /* WLButtonCountdownManager */ = {
@@ -2941,6 +2995,7 @@
 				CEF5DDE22254A1860025F406 /* DIYMoreView.m in Sources */,
 				CE9C4BF7223B4F9B00DE9DC1 /* PLEmptyView.m in Sources */,
 				CECEEEB62249C05E0068F267 /* WLButtonCountdownManager.m in Sources */,
+				CECE804E225B4AF60069FD55 /* VideoRecordingViewController.m in Sources */,
 				CEE28F24224355E100C3D7E9 /* JXCategoryIndicatorComponentView.m in Sources */,
 				CE28A7662251D96000B62032 /* ManagementStoreChangeTimeCell.m in Sources */,
 				CE6B05BD2248B8BE00AD44D7 /* DIYSendToolbarView.m in Sources */,
@@ -2957,6 +3012,7 @@
 				CEE28F3A224355E100C3D7E9 /* JXCategoryCollectionView.m in Sources */,
 				CECC0D6A223A56B8001CF0A2 /* NSString+unicode.m in Sources */,
 				CEE28EB52243344D00C3D7E9 /* MainSetBtnCell.m in Sources */,
+				CECE8046225B494C0069FD55 /* ShortVideoRecorder.m in Sources */,
 				CEE28F26224355E100C3D7E9 /* JXCategoryIndicatorCellModel.m in Sources */,
 				CE9C4BF9223B4F9B00DE9DC1 /* PLEmptyConfig.m in Sources */,
 				CEFA92A2224088500015F7EE /* FriendMessageVC.m in Sources */,
@@ -3021,6 +3077,7 @@
 				CEE28F3D224355E100C3D7E9 /* JXCategoryBaseCell.m in Sources */,
 				CE6B059D22486BC900AD44D7 /* SafeCenterVCTableViewCell.m in Sources */,
 				CE5A642A224C5CF600891AC9 /* FillInTheInfoVC.m in Sources */,
+				CECE8048225B494C0069FD55 /* CircleProgressView.m in Sources */,
 				CE28A76B2251E3D200B62032 /* StoreSingleProductVC.m in Sources */,
 				CEFA9235223F639D0015F7EE /* MainDynamicsVC.m in Sources */,
 				CEACEB07224B949700A2AE2D /* ForgetWordVC.m in Sources */,
@@ -3050,6 +3107,7 @@
 				CECC0D29223A411F001CF0A2 /* main.m in Sources */,
 				CE5A644E224CBCA400891AC9 /* OpenStoreTipCell.m in Sources */,
 				CECEEF35224A4DF80068F267 /* ManagerOrdersVC.m in Sources */,
+				CECE8047225B494C0069FD55 /* VideoRecordManager.m in Sources */,
 				CE5A6439224C81FB00891AC9 /* OpenStoreHeadView.m in Sources */,
 				CEE28EC52243375800C3D7E9 /* SWQRCodeManager.m in Sources */,
 				CECEEEBB2249D9560068F267 /* InfoDetaildNorCell.m in Sources */,
@@ -3084,6 +3142,7 @@
 				CECC0D5E223A5670001CF0A2 /* UIView+LayoutMethods.m in Sources */,
 				CECE8037225B12A70069FD55 /* DragEditView.m in Sources */,
 				CE28A7902252099200B62032 /* StoreBoxTypeVC.m in Sources */,
+				CECE8045225B494C0069FD55 /* ShortVideoSession.m in Sources */,
 				CECEEF49224B17680068F267 /* CALayer+XibConfiguration.m in Sources */,
 				CEFA9270223F99BB0015F7EE /* FavorableDynamicsVC.m in Sources */,
 				CEF5DDEE2254B6E10025F406 /* DIYFilterView.m in Sources */,
@@ -3105,6 +3164,7 @@
 				CE9C4C1E223B7B3F00DE9DC1 /* AppUrlConfig.m in Sources */,
 				CEE28F682243571800C3D7E9 /* UINavigationItem+GKCategory.m in Sources */,
 				CECC0D6E223A5849001CF0A2 /* MyTool.m in Sources */,
+				CECE8049225B494C0069FD55 /* VideoFileManager.m in Sources */,
 				CEE28ED3224355DA00C3D7E9 /* GKPageScrollView.m in Sources */,
 				CE28A78B2252019600B62032 /* StorePackageVC.m in Sources */,
 				CECEEEDD224A17620068F267 /* MyPhotoVC.m in Sources */,
