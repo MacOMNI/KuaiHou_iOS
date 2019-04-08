@@ -20,5 +20,10 @@
 
     // Configure the view for the selected state
 }
+- (IBAction)replyAction:(UIButton *)sender {
+    if (self.replyBlock) {
+        self.replyBlock();
+    }
+}
 
 @end

@@ -28,6 +28,10 @@ target 'KuaiHou_iOS' do
   pod 'WMPageController'
   # 富文本labbel
   pod 'MLLabel'
+  # 百度地图SDK
+  pod 'BaiduMapKit'
+  # 播放器
+  pod 'KSYMediaPlayer_iOS', :git => 'https://github.com/ksvc/KSYMediaPlayer_iOS.git'
 
   use_frameworks!
 

@@ -18,17 +18,14 @@
 @interface ChangeInfoVC () <GKPageScrollViewDelegate, WMPageControllerDataSource, WMPageControllerDelegate, GKWBPageViewControllDelegate>
 
 @property (nonatomic, strong) GKPageScrollView          *pageScrollView;
-
 @property (nonatomic, strong) ChangeInfoHeadView        *headerView;
-
 @property (nonatomic, strong) GKWBPageViewController    *pageVC;
 @property (nonatomic, strong) UIView                    *pageView;
-
 @property (nonatomic, strong) NSArray                   *titles;
 @property (nonatomic, strong) NSArray                   *childVCs;
-
 @property (nonatomic, strong) UIView                    *titleView;
 @property (nonatomic, strong) UILabel                   *titleLabel;
+
 @property (weak, nonatomic) IBOutlet UIView *savaBgView;
 @property (weak, nonatomic) IBOutlet NSLayoutConstraint *centerX;
 @property (weak, nonatomic) IBOutlet UILabel *savaTitle;
@@ -43,6 +40,7 @@
     self.gk_navBarAlpha = 0.0f;
     self.gk_statusBarStyle = UIStatusBarStyleLightContent;
     self.gk_navTitleView = self.titleView;
+//    self.gk_navRightBarButtonItem = [UIBarButtonItem itemWithImageName:<#(NSString *)#> target:<#(id)#> action:<#(SEL)#>];
     [self.view addSubview:self.pageScrollView];
     [self.pageScrollView mas_makeConstraints:^(MASConstraintMaker *make) {
         make.edges.equalTo(self.view);

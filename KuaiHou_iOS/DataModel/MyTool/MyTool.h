@@ -83,7 +83,7 @@ typedef void(^CancelAlertBtnBlock)(UIAlertAction * action);
  @param title <#title description#>
  @param imageName <#imageName description#>
  */
-+(void)fixNoDataCount:(NSInteger )count viewController:(UIViewController *)viewController tragetView:(UIView *)view title:(NSString *)title imageName:(NSString *)imageName;
++(void)fixNoDataCount:(NSInteger )count viewController:(UIViewController *)viewController targetView:(UIView *)view title:(NSString *)title imageName:(NSString *)imageName;
 
 
 /**
@@ -93,7 +93,7 @@ typedef void(^CancelAlertBtnBlock)(UIAlertAction * action);
  @param view <#view description#>
  @param btnBlock <#btnBlock description#>
  */
-+(void)fixNetErrByViewController:(UIViewController *)viewController tragetView:(UIView *)view btnBlock:(void (^)(void))btnBlock;
++(void)fixNetErrByViewController:(UIViewController *)viewController targetView:(UIView *)view btnBlock:(void (^)(void))btnBlock;
 
 
 // 实现图文混排的方法
@@ -153,7 +153,12 @@ typedef void(^CancelAlertBtnBlock)(UIAlertAction * action);
 + (NSMutableAttributedString *)stringWithImage:(NSString *)imageName textStr:(NSString *)textStr;
 
 
+/**
+ 预览播放视频
 
+ @param videPath videPath description
+ */
++(void)playVideoByPath:(NSString *)videPath;
 
 @end
 

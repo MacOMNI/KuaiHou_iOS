@@ -18,6 +18,7 @@
 #import "ManagerVC.h"
 #import "MyQRCodeView.h"
 #import "MyOrderVC.h"
+#import "MyVoucherVC.h"
 
 @interface MainMineVC ()
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
@@ -131,7 +132,7 @@
                 }
                     break;
                 case 103:{ // 代金券
-                    [self.navigationController pushViewController:[VoucherVC new] animated:YES];
+                    [self.navigationController pushViewController:[MyVoucherVC new] animated:YES];
                 }
                     break;
                 default:

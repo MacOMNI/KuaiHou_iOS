@@ -1,20 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="VoucherVC">
             <connections>
                 <outlet property="bottomLayout" destination="euQ-ol-tYb" id="09o-8F-K77"/>
+                <outlet property="collectionView" destination="9ZX-Iq-4Qm" id="p9n-y9-BVI"/>
                 <outlet property="nextBtn" destination="h7f-oC-HUh" id="ZVo-xI-mXG"/>
                 <outlet property="selectNumLab" destination="050-mY-BL7" id="j77-xd-3i9"/>
-                <outlet property="tableView" destination="Mw4-Jl-E7V" id="88E-72-vM5"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -23,14 +23,6 @@
             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Mw4-Jl-E7V">
-                    <rect key="frame" x="0.0" y="0.0" width="375" height="616.5"/>
-                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                    <connections>
-                        <outlet property="dataSource" destination="-1" id="jh3-6r-yhg"/>
-                        <outlet property="delegate" destination="-1" id="n3G-Kf-f3P"/>
-                    </connections>
-                </tableView>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="H3m-fU-FxO">
                     <rect key="frame" x="0.0" y="617" width="375" height="50"/>
                     <subviews>
@@ -83,19 +75,29 @@
                         <constraint firstAttribute="height" constant="0.5" id="9Z2-sd-q5b"/>
                     </constraints>
                 </view>
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="9ZX-Iq-4Qm">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="616.5"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="wdE-zk-2h8">
+                        <size key="itemSize" width="50" height="50"/>
+                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    </collectionViewFlowLayout>
+                </collectionView>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
-                <constraint firstAttribute="trailing" secondItem="Mw4-Jl-E7V" secondAttribute="trailing" id="8fv-wz-Hmq"/>
                 <constraint firstAttribute="trailing" secondItem="H3m-fU-FxO" secondAttribute="trailing" id="AQf-xc-IlV"/>
                 <constraint firstItem="H3m-fU-FxO" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="Dh3-3H-zUX"/>
-                <constraint firstItem="Mw4-Jl-E7V" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="UU6-1B-2Dh"/>
+                <constraint firstItem="QvG-er-3sU" firstAttribute="top" secondItem="9ZX-Iq-4Qm" secondAttribute="bottom" id="QL4-FL-zTc"/>
+                <constraint firstItem="9ZX-Iq-4Qm" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="SAf-1C-SRZ"/>
                 <constraint firstAttribute="trailing" secondItem="QvG-er-3sU" secondAttribute="trailing" id="Vx9-6E-Spx"/>
                 <constraint firstItem="H3m-fU-FxO" firstAttribute="top" secondItem="QvG-er-3sU" secondAttribute="bottom" id="aPr-Fv-QDU"/>
                 <constraint firstAttribute="bottom" secondItem="H3m-fU-FxO" secondAttribute="bottom" id="euQ-ol-tYb"/>
-                <constraint firstItem="QvG-er-3sU" firstAttribute="top" secondItem="Mw4-Jl-E7V" secondAttribute="bottom" id="kyv-Oo-UNQ"/>
-                <constraint firstItem="Mw4-Jl-E7V" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="lPV-Ih-AcJ"/>
                 <constraint firstItem="QvG-er-3sU" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="n3O-vy-BPp"/>
+                <constraint firstItem="9ZX-Iq-4Qm" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="oC6-xJ-YS0"/>
+                <constraint firstAttribute="trailing" secondItem="9ZX-Iq-4Qm" secondAttribute="trailing" id="yhm-x5-Cb8"/>
             </constraints>
             <point key="canvasLocation" x="52" y="68.815592203898049"/>
         </view>

@@ -125,6 +125,9 @@
 		CECC0D6A223A56B8001CF0A2 /* NSString+unicode.m in Sources */ = {isa = PBXBuildFile; fileRef = CECC0D64223A56B8001CF0A2 /* NSString+unicode.m */; };
 		CECC0D6B223A56B8001CF0A2 /* NSArray+Log.m in Sources */ = {isa = PBXBuildFile; fileRef = CECC0D67223A56B8001CF0A2 /* NSArray+Log.m */; };
 		CECC0D6E223A5849001CF0A2 /* MyTool.m in Sources */ = {isa = PBXBuildFile; fileRef = CECC0D6D223A5849001CF0A2 /* MyTool.m */; };
+		CECE8037225B12A70069FD55 /* DragEditView.m in Sources */ = {isa = PBXBuildFile; fileRef = CECE8032225B12A60069FD55 /* DragEditView.m */; };
+		CECE8038225B12A70069FD55 /* drag.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CECE8033225B12A60069FD55 /* drag.jpg */; };
+		CECE8039225B12A70069FD55 /* VideoEditVC.m in Sources */ = {isa = PBXBuildFile; fileRef = CECE8036225B12A70069FD55 /* VideoEditVC.m */; };
 		CECEEEB62249C05E0068F267 /* WLButtonCountdownManager.m in Sources */ = {isa = PBXBuildFile; fileRef = CECEEEB42249C05E0068F267 /* WLButtonCountdownManager.m */; };
 		CECEEEB72249C4010068F267 /* WithdrawWordVC.m in Sources */ = {isa = PBXBuildFile; fileRef = CE6B05A02248789900AD44D7 /* WithdrawWordVC.m */; };
 		CECEEEBB2249D9560068F267 /* InfoDetaildNorCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CECEEEB92249D9560068F267 /* InfoDetaildNorCell.m */; };
@@ -270,6 +273,13 @@
 		CEE6E37D22420731006ED98F /* SendDynamicsVideoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CEE6E37B22420731006ED98F /* SendDynamicsVideoCell.xib */; };
 		CEE9B4502244EA060004E4FA /* ChangePassWordVC.m in Sources */ = {isa = PBXBuildFile; fileRef = CEE9B44E2244EA060004E4FA /* ChangePassWordVC.m */; };
 		CEE9B4512244EA060004E4FA /* ChangePassWordVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = CEE9B44F2244EA060004E4FA /* ChangePassWordVC.xib */; };
+		CEECC0222255A5FD004EE5C2 /* VoucherCollectionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CEECC0202255A5FD004EE5C2 /* VoucherCollectionCell.m */; };
+		CEECC0232255A5FD004EE5C2 /* VoucherCollectionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CEECC0212255A5FD004EE5C2 /* VoucherCollectionCell.xib */; };
+		CEECC0272255D085004EE5C2 /* MyVoucherVC.m in Sources */ = {isa = PBXBuildFile; fileRef = CEECC0252255D085004EE5C2 /* MyVoucherVC.m */; };
+		CEECC0282255D085004EE5C2 /* MyVoucherVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = CEECC0262255D085004EE5C2 /* MyVoucherVC.xib */; };
+		CEECC02D2255D84F004EE5C2 /* MyChildVoucherVC.m in Sources */ = {isa = PBXBuildFile; fileRef = CEECC02B2255D84F004EE5C2 /* MyChildVoucherVC.m */; };
+		CEECC02E2255D84F004EE5C2 /* MyChildVoucherVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = CEECC02C2255D84F004EE5C2 /* MyChildVoucherVC.xib */; };
+		CEECC03222560866004EE5C2 /* MainVideoShowVC.m in Sources */ = {isa = PBXBuildFile; fileRef = CEECC03122560866004EE5C2 /* MainVideoShowVC.m */; };
 		CEF2B360224CCA4300687E5B /* StoreContentTextCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CEF2B35E224CCA4300687E5B /* StoreContentTextCell.m */; };
 		CEF2B361224CCA4300687E5B /* StoreContentTextCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CEF2B35F224CCA4300687E5B /* StoreContentTextCell.xib */; };
 		CEF2B367224CE06A00687E5B /* JLDoubleSlider.m in Sources */ = {isa = PBXBuildFile; fileRef = CEF2B364224CE06900687E5B /* JLDoubleSlider.m */; };
@@ -569,6 +579,11 @@
 		CECC0D68223A56B8001CF0A2 /* NSString+unicode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+unicode.h"; sourceTree = "<group>"; };
 		CECC0D6C223A5849001CF0A2 /* MyTool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyTool.h; sourceTree = "<group>"; };
 		CECC0D6D223A5849001CF0A2 /* MyTool.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyTool.m; sourceTree = "<group>"; };
+		CECE8032225B12A60069FD55 /* DragEditView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DragEditView.m; sourceTree = "<group>"; };
+		CECE8033225B12A60069FD55 /* drag.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = drag.jpg; sourceTree = "<group>"; };
+		CECE8034225B12A60069FD55 /* VideoEditVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VideoEditVC.h; sourceTree = "<group>"; };
+		CECE8035225B12A70069FD55 /* DragEditView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DragEditView.h; sourceTree = "<group>"; };
+		CECE8036225B12A70069FD55 /* VideoEditVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VideoEditVC.m; sourceTree = "<group>"; };
 		CECEEEB42249C05E0068F267 /* WLButtonCountdownManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WLButtonCountdownManager.m; sourceTree = "<group>"; };
 		CECEEEB52249C05E0068F267 /* WLButtonCountdownManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WLButtonCountdownManager.h; sourceTree = "<group>"; };
 		CECEEEB82249D9560068F267 /* InfoDetaildNorCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InfoDetaildNorCell.h; sourceTree = "<group>"; };
@@ -816,6 +831,17 @@
 		CEE9B44D2244EA060004E4FA /* ChangePassWordVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ChangePassWordVC.h; sourceTree = "<group>"; };
 		CEE9B44E2244EA060004E4FA /* ChangePassWordVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ChangePassWordVC.m; sourceTree = "<group>"; };
 		CEE9B44F2244EA060004E4FA /* ChangePassWordVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChangePassWordVC.xib; sourceTree = "<group>"; };
+		CEECC01F2255A5FD004EE5C2 /* VoucherCollectionCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VoucherCollectionCell.h; sourceTree = "<group>"; };
+		CEECC0202255A5FD004EE5C2 /* VoucherCollectionCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VoucherCollectionCell.m; sourceTree = "<group>"; };
+		CEECC0212255A5FD004EE5C2 /* VoucherCollectionCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = VoucherCollectionCell.xib; sourceTree = "<group>"; };
+		CEECC0242255D085004EE5C2 /* MyVoucherVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyVoucherVC.h; sourceTree = "<group>"; };
+		CEECC0252255D085004EE5C2 /* MyVoucherVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyVoucherVC.m; sourceTree = "<group>"; };
+		CEECC0262255D085004EE5C2 /* MyVoucherVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MyVoucherVC.xib; sourceTree = "<group>"; };
+		CEECC02A2255D84F004EE5C2 /* MyChildVoucherVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyChildVoucherVC.h; sourceTree = "<group>"; };
+		CEECC02B2255D84F004EE5C2 /* MyChildVoucherVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyChildVoucherVC.m; sourceTree = "<group>"; };
+		CEECC02C2255D84F004EE5C2 /* MyChildVoucherVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MyChildVoucherVC.xib; sourceTree = "<group>"; };
+		CEECC03022560866004EE5C2 /* MainVideoShowVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainVideoShowVC.h; sourceTree = "<group>"; };
+		CEECC03122560866004EE5C2 /* MainVideoShowVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainVideoShowVC.m; sourceTree = "<group>"; };
 		CEF2B35D224CCA4300687E5B /* StoreContentTextCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StoreContentTextCell.h; sourceTree = "<group>"; };
 		CEF2B35E224CCA4300687E5B /* StoreContentTextCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StoreContentTextCell.m; sourceTree = "<group>"; };
 		CEF2B35F224CCA4300687E5B /* StoreContentTextCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StoreContentTextCell.xib; sourceTree = "<group>"; };
@@ -1116,6 +1142,12 @@
 				CE6B05AF2248A2C500AD44D7 /* VoucherVC.h */,
 				CE6B05B02248A2C500AD44D7 /* VoucherVC.m */,
 				CE6B05B12248A2C500AD44D7 /* VoucherVC.xib */,
+				CEECC0242255D085004EE5C2 /* MyVoucherVC.h */,
+				CEECC0252255D085004EE5C2 /* MyVoucherVC.m */,
+				CEECC0262255D085004EE5C2 /* MyVoucherVC.xib */,
+				CEECC02A2255D84F004EE5C2 /* MyChildVoucherVC.h */,
+				CEECC02B2255D84F004EE5C2 /* MyChildVoucherVC.m */,
+				CEECC02C2255D84F004EE5C2 /* MyChildVoucherVC.xib */,
 			);
 			path = Voucher;
 			sourceTree = "<group>";
@@ -1155,6 +1187,7 @@
 				CE9C4BE8223B4F9B00DE9DC1 /* icon_error_network.png */,
 				CE9C4BED223B4F9B00DE9DC1 /* icon_no_data.png */,
 				CE9C4BEA223B4F9B00DE9DC1 /* PLEmptyConfig.h */,
+				CE9C4BF1223B4F9B00DE9DC1 /* PLEmptyView.h */,
 				CE9C4BE9223B4F9B00DE9DC1 /* PLEmptyView.m */,
 				CE9C4BEB223B4F9B00DE9DC1 /* PLScrollViewEmptyView.h */,
 				CE9C4BF2223B4F9B00DE9DC1 /* PLScrollViewEmptyView.m */,
@@ -1164,7 +1197,6 @@
 				CE9C4BF5223B4F9B00DE9DC1 /* PLEmptyViewFactory.m */,
 				CE9C4BEF223B4F9B00DE9DC1 /* NSString+Size.h */,
 				CE9C4BF4223B4F9B00DE9DC1 /* NSString+Size.m */,
-				CE9C4BF1223B4F9B00DE9DC1 /* PLEmptyView.h */,
 				CE9C4BF0223B4F9B00DE9DC1 /* PLEmptyConfig.m */,
 			);
 			path = Empty;
@@ -1280,6 +1312,7 @@
 		CECC0D4D223A45C2001CF0A2 /* Class */ = {
 			isa = PBXGroup;
 			children = (
+				CEECC02F2256055B004EE5C2 /* MainBase */,
 				CEFA921A223F61BA0015F7EE /* MainHome */,
 				CEFA921D223F61E60015F7EE /* MainDynamics */,
 				CEFA921B223F61C70015F7EE /* MainMessage */,
@@ -2090,6 +2123,25 @@
 			path = ChangePassWord;
 			sourceTree = "<group>";
 		};
+		CEECC01E2255A5A8004EE5C2 /* Voucher */ = {
+			isa = PBXGroup;
+			children = (
+				CEECC01F2255A5FD004EE5C2 /* VoucherCollectionCell.h */,
+				CEECC0202255A5FD004EE5C2 /* VoucherCollectionCell.m */,
+				CEECC0212255A5FD004EE5C2 /* VoucherCollectionCell.xib */,
+			);
+			path = Voucher;
+			sourceTree = "<group>";
+		};
+		CEECC02F2256055B004EE5C2 /* MainBase */ = {
+			isa = PBXGroup;
+			children = (
+				CEECC03022560866004EE5C2 /* MainVideoShowVC.h */,
+				CEECC03122560866004EE5C2 /* MainVideoShowVC.m */,
+			);
+			path = MainBase;
+			sourceTree = "<group>";
+		};
 		CEF2B35C224CC9EB00687E5B /* StoreContent */ = {
 			isa = PBXGroup;
 			children = (
@@ -2262,6 +2314,11 @@
 		CEFA9223223F62740015F7EE /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				CECE8033225B12A60069FD55 /* drag.jpg */,
+				CECE8035225B12A70069FD55 /* DragEditView.h */,
+				CECE8032225B12A60069FD55 /* DragEditView.m */,
+				CECE8034225B12A60069FD55 /* VideoEditVC.h */,
+				CECE8036225B12A70069FD55 /* VideoEditVC.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -2324,6 +2381,7 @@
 				CEFA92C22240ED9C0015F7EE /* MainMineListCell.h */,
 				CEFA92C32240ED9C0015F7EE /* MainMineListCell.m */,
 				CEFA92C42240ED9C0015F7EE /* MainMineListCell.xib */,
+				CEECC01E2255A5A8004EE5C2 /* Voucher */,
 				CE28A7AC22523B8900B62032 /* MyOrder */,
 				CEE3F663224DE71A00151BE7 /* ManagementStore */,
 				CEE3F65D224DAFC600151BE7 /* UnpaidOrders */,
@@ -2490,6 +2548,7 @@
 				CECC0D10223A411D001CF0A2 /* Frameworks */,
 				CECC0D11223A411D001CF0A2 /* Resources */,
 				3D9DDDEFF7E1D5F714357D97 /* [CP] Embed Pods Frameworks */,
+				209F1B3607AFAD3B02D4F801 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -2594,6 +2653,7 @@
 				CE6B05A822487D5100AD44D7 /* AboutMeVC.xib in Resources */,
 				CECEEF31224A4DE90068F267 /* ReleaseEventVC.xib in Resources */,
 				CEDBEF662254C66D004E714E /* InteractiveListCell.xib in Resources */,
+				CEECC0282255D085004EE5C2 /* MyVoucherVC.xib in Resources */,
 				CE9C4BF6223B4F9B00DE9DC1 /* icon_error_network.png in Resources */,
 				CE28A75D2251B93200B62032 /* ManagementStoreConfigTitleCell.xib in Resources */,
 				CECEEF05224A45CE0068F267 /* OpenStoreVC.xib in Resources */,
@@ -2608,6 +2668,7 @@
 				CE28A76C2251E3D200B62032 /* StoreSingleProductVC.xib in Resources */,
 				CED7ECBC225390E900E0BFF3 /* MyOrderDetailItemCell.xib in Resources */,
 				CEE3F673224DF12200151BE7 /* ManagementStoreBoxTypeCell.xib in Resources */,
+				CEECC02E2255D84F004EE5C2 /* MyChildVoucherVC.xib in Resources */,
 				CE6B05AD224884F300AD44D7 /* HelpVC.xib in Resources */,
 				CE9C4BF8223B4F9B00DE9DC1 /* icon_no_data.png in Resources */,
 				CEE9B4512244EA060004E4FA /* ChangePassWordVC.xib in Resources */,
@@ -2638,6 +2699,7 @@
 				CEFA92DA2241DDF40015F7EE /* SendDynamicsHeadCell.xib in Resources */,
 				CE6B05A32248789900AD44D7 /* WithdrawWordVC.xib in Resources */,
 				CEFA92CC2241C93D0015F7EE /* SendDynamicsVC.xib in Resources */,
+				CECE8038225B12A70069FD55 /* drag.jpg in Resources */,
 				CECEEEF9224A41AB0068F267 /* ActivityVC.xib in Resources */,
 				CEF5DDDE22548B5E0025F406 /* OrderComplaintCell.xib in Resources */,
 				CEFA929E2240883B0015F7EE /* NewMessageVC.xib in Resources */,
@@ -2661,6 +2723,7 @@
 				CE28A7582251AA7100B62032 /* ManagementStoreConfigCell.xib in Resources */,
 				CE5A6445224CA06700891AC9 /* OpenStoreItemCell.xib in Resources */,
 				CEE3F662224DAFF000151BE7 /* UnpaidOrdersListCell.xib in Resources */,
+				CEECC0232255A5FD004EE5C2 /* VoucherCollectionCell.xib in Resources */,
 				CE5A6440224C9F9900891AC9 /* OpenStoreListCell.xib in Resources */,
 				CECEEF0B224A47DF0068F267 /* ManagerVC.xib in Resources */,
 				CEF5DDCA22545D8B0025F406 /* ChecklistVC.xib in Resources */,
@@ -2723,6 +2786,28 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		209F1B3607AFAD3B02D4F801 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-KuaiHou_iOS/Pods-KuaiHou_iOS-resources.sh",
+				"${PODS_ROOT}/BaiduMapKit/BaiduMapKit/BaiduMapAPI_Map.framework/mapapi.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/mapapi.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-KuaiHou_iOS/Pods-KuaiHou_iOS-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		3D9DDDEFF7E1D5F714357D97 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -2808,6 +2893,7 @@
 				CEE28F2F224355E100C3D7E9 /* JXCategoryTitleCellModel.m in Sources */,
 				CECEEF3A224A4E040068F267 /* UnpaidOrdersVC.m in Sources */,
 				CEF2B368224CE06A00687E5B /* UIView+Dimension.m in Sources */,
+				CEECC02D2255D84F004EE5C2 /* MyChildVoucherVC.m in Sources */,
 				CE28A77A2251EB3100B62032 /* FileCacheManager.m in Sources */,
 				CEF2B36D224CE21100687E5B /* ReleaseEventSliderCell.m in Sources */,
 				CEFA9287223FAB190015F7EE /* NearByDynamicsTextCell.m in Sources */,
@@ -2823,6 +2909,7 @@
 				CEACEB02224B8B7900A2AE2D /* RegisVC.m in Sources */,
 				CEE28F3E224355E100C3D7E9 /* JXCategoryBaseCellModel.m in Sources */,
 				CEF5DDD3225488730025F406 /* TheOrderActivityVC.m in Sources */,
+				CEECC0272255D085004EE5C2 /* MyVoucherVC.m in Sources */,
 				CEE28F37224355E100C3D7E9 /* JXCategoryNumberCellModel.m in Sources */,
 				CE6B058E2248667800AD44D7 /* SafeCenterVC.m in Sources */,
 				CEE28F642243571800C3D7E9 /* UINavigationController+GKCategory.m in Sources */,
@@ -2978,20 +3065,24 @@
 				CEE3F667224DE75300151BE7 /* ManagementStoreActivityCell.m in Sources */,
 				CEFA927A223FA59A0015F7EE /* BaseCell.m in Sources */,
 				CEF5DDC922545D8B0025F406 /* ChecklistVC.m in Sources */,
+				CEECC03222560866004EE5C2 /* MainVideoShowVC.m in Sources */,
 				CEF2B367224CE06A00687E5B /* JLDoubleSlider.m in Sources */,
 				CECEEED8224A0F660068F267 /* MyDynamicsImageCell.m in Sources */,
 				CECEEEFE224A43150068F267 /* ActivityCell.m in Sources */,
+				CEECC0222255A5FD004EE5C2 /* VoucherCollectionCell.m in Sources */,
 				CEACEAF3224B5BF800A2AE2D /* BaseTipView.m in Sources */,
 				CEACEB1D224BA65D00A2AE2D /* WGDigitView.m in Sources */,
 				CEFA92AC2240A01C0015F7EE /* FriendMessageCell.m in Sources */,
 				CE28A7A5225238E100B62032 /* MyOrderVC.m in Sources */,
 				CECC0D21223A411D001CF0A2 /* KuaiHou_iOS.xcdatamodeld in Sources */,
+				CECE8039225B12A70069FD55 /* VideoEditVC.m in Sources */,
 				CEE28F632243571800C3D7E9 /* GKPopTransitionAnimation.m in Sources */,
 				CEE28F2A224355E100C3D7E9 /* JXCategoryDotView.m in Sources */,
 				CECEEED1224A09130068F267 /* MyDynamicsTextCell.m in Sources */,
 				CEACEB16224BA19000A2AE2D /* GetCodeVC.m in Sources */,
 				CECEEF53224B56EE0068F267 /* CleanChatView.m in Sources */,
 				CECC0D5E223A5670001CF0A2 /* UIView+LayoutMethods.m in Sources */,
+				CECE8037225B12A70069FD55 /* DragEditView.m in Sources */,
 				CE28A7902252099200B62032 /* StoreBoxTypeVC.m in Sources */,
 				CECEEF49224B17680068F267 /* CALayer+XibConfiguration.m in Sources */,
 				CEFA9270223F99BB0015F7EE /* FavorableDynamicsVC.m in Sources */,

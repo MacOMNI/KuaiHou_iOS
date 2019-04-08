@@ -22,7 +22,7 @@
 }
 
 +(CGFloat)getHeightBycontent:(NSString *)content{
-    CGFloat height = [MyTool getHeightByWidth:kScreenSizeWidth - 115 title:@"content" font:12] - 12;
+    CGFloat height = [MyTool getHeightByWidth:kScreenSizeWidth - 130 title:@"content" font:12] - 12;
     
     if (height < 0) {
         height = 0;

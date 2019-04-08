@@ -475,7 +475,7 @@
  @param title title description
  @param imageName imageName description
  */
-+(void)fixNoDataCount:(NSInteger )count viewController:(UIViewController *)viewController tragetView:(UIView *)view title:(NSString *)title imageName:(NSString *)imageName{
++(void)fixNoDataCount:(NSInteger )count viewController:(UIViewController *)viewController targetView:(UIView *)view title:(NSString *)title imageName:(NSString *)imageName{
     if (count == 0) {
         if (viewController.emptyView) {
             [viewController.emptyView removeFromSuperview];
@@ -496,7 +496,7 @@
  @param view view description
  @param btnBlock btnBlock description
  */
-+(void)fixNetErrByViewController:(UIViewController *)viewController tragetView:(UIView *)view btnBlock:(void (^)(void))btnBlock{
++(void)fixNetErrByViewController:(UIViewController *)viewController targetView:(UIView *)view btnBlock:(void (^)(void))btnBlock{
     viewController.emptyView = [PLEmptyViewFactory errorDataWithView:view btnBlock:btnBlock];
 }
 
@@ -709,7 +709,11 @@
     return numberString;
 }
 
-
++(void)playVideoByPath:(NSString *)videPath{
+    MainVideoShowVC *show = [MainVideoShowVC new];
+    show.videoPath = videPath;
+    [[MyTool getCurrentVC].navigationController pushViewController:show animated:YES];
+}
 
 
 

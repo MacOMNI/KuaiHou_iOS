@@ -12,6 +12,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface InteractiveListCell : BaseCell
 
+@property (nonatomic, copy) void (^replyBlock)(void);
+
 @end
 
 NS_ASSUME_NONNULL_END

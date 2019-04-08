@@ -10,6 +10,7 @@
 #import "XXTextView.h"
 #import "SendDynamicsHeadView.h"
 #import "SendDynamicsVideoCell.h"
+#import "VideoEditVC.h"
 
 @interface SendDynamicsVC ()<TZImagePickerControllerDelegate,UIActionSheetDelegate>
 {
@@ -71,9 +72,10 @@
     _videoPath = videoPath;
     MAIN(^{
         self.selPhotoBtn.enabled = videoPath.length == 0;
+        [self.tableView reloadData];
     });
     
-    [self.tableView reloadData];
+    
 }
 
 -(void)setHeadView{
@@ -131,12 +133,13 @@
 }
 - (UITableViewCell*)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
     SendDynamicsVideoCell *cell = [tableView dequeueReusableCellWithIdentifier:NSStringFromClass([SendDynamicsVideoCell class]) forIndexPath:indexPath];
-    cell.videoImageView.image = [self getScreenShotImageFromVideoPath:_videoPath];
+    UIImage *image = [self getScreenShotImageFromVideoPath:_videoPath];
+    cell.videoImageView.image = image;
     [cell setDelBlock:^{
         self.videoPath = nil;
     }];
     [cell setPlayBlock:^{
-        
+        [MyTool playVideoByPath:self.videoPath];
     }];
     return cell;
 }
@@ -192,7 +195,14 @@
             
             NSURL *url = urlAsset.URL;
             NSLog(@"%@", url);
-            self.videoPath = url.path;
+//            self.videoPath = url.path;
+            
+            
+            
+            VideoEditVC *videoEditVC = [[VideoEditVC alloc] init];
+            videoEditVC.videoUrl = url;
+            
+            [self presentViewController:videoEditVC animated:YES completion:^{   }];
             
             
         }];

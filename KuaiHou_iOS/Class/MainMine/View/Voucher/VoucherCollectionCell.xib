@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="VoucherCollectionCell">
+            <rect key="frame" x="0.0" y="0.0" width="200" height="60"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="200" height="60"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="voucher_right" translatesAutoresizingMaskIntoConstraints="NO" id="Xgg-Dr-G0m">
+                        <rect key="frame" x="150.5" y="1" width="49.5" height="58"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="58" id="G0B-cR-36M"/>
+                            <constraint firstAttribute="width" constant="49.5" id="ncm-4L-I2w"/>
+                        </constraints>
+                    </imageView>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="voucher_left" translatesAutoresizingMaskIntoConstraints="NO" id="wrH-wH-Wm7">
+                        <rect key="frame" x="0.0" y="1" width="150.5" height="58"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1500" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QLm-Jq-1V4">
+                        <rect key="frame" x="30" y="10" width="64.5" height="22"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="22" id="6y9-Bc-zLi"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="28"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="voucher_moneyicon" translatesAutoresizingMaskIntoConstraints="NO" id="Fnm-H8-EGf">
+                        <rect key="frame" x="18" y="25" width="7" height="7"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="7" id="Hqy-iU-6ck"/>
+                            <constraint firstAttribute="height" constant="7" id="Mlz-wH-rFl"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="平台内任意网店均可使用永久有效" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XP1-Nl-AvD">
+                        <rect key="frame" x="20" y="38" width="100.5" height="7.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="6"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1kr-OV-Cjw">
+                        <rect key="frame" x="150.5" y="0.0" width="49.5" height="60"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                        <state key="normal" title="使用">
+                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </state>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HcW-gQ-dOy">
+                        <rect key="frame" x="181.5" y="8.5" width="10" height="10"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="10" id="KOR-Ze-JAt"/>
+                            <constraint firstAttribute="width" constant="10" id="e0g-wP-llx"/>
+                        </constraints>
+                        <state key="normal" image="base_unsel"/>
+                        <state key="selected" image="base_sel"/>
+                    </button>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="voucher_type1" translatesAutoresizingMaskIntoConstraints="NO" id="uo1-GN-2lG">
+                        <rect key="frame" x="147" y="10" width="53" height="40"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="53" id="NgH-2M-Mcb"/>
+                            <constraint firstAttribute="height" constant="40" id="WbL-lQ-yoH"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+            </view>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="1kr-OV-Cjw" secondAttribute="bottom" id="9K2-rA-HKA"/>
+                <constraint firstItem="wrH-wH-Wm7" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="D2S-ex-ofK"/>
+                <constraint firstItem="1kr-OV-Cjw" firstAttribute="leading" secondItem="wrH-wH-Wm7" secondAttribute="trailing" id="JkU-By-7IG"/>
+                <constraint firstItem="wrH-wH-Wm7" firstAttribute="height" secondItem="Xgg-Dr-G0m" secondAttribute="height" id="Moh-FY-krb"/>
+                <constraint firstItem="QLm-Jq-1V4" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="10" id="NuX-IQ-eOe"/>
+                <constraint firstItem="Xgg-Dr-G0m" firstAttribute="leading" secondItem="wrH-wH-Wm7" secondAttribute="trailing" id="PbA-Bo-5rm"/>
+                <constraint firstAttribute="trailing" secondItem="1kr-OV-Cjw" secondAttribute="trailing" id="Qx6-j6-BpZ"/>
+                <constraint firstItem="1kr-OV-Cjw" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="STd-qC-lAM"/>
+                <constraint firstItem="Fnm-H8-EGf" firstAttribute="bottom" secondItem="QLm-Jq-1V4" secondAttribute="bottom" id="Tnt-he-lBw"/>
+                <constraint firstItem="XP1-Nl-AvD" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="20" id="U3Y-14-YTB"/>
+                <constraint firstItem="uo1-GN-2lG" firstAttribute="centerY" secondItem="wrH-wH-Wm7" secondAttribute="centerY" id="Voi-Ly-vFe"/>
+                <constraint firstAttribute="trailing" secondItem="Xgg-Dr-G0m" secondAttribute="trailing" id="eHB-VD-SQS"/>
+                <constraint firstItem="wrH-wH-Wm7" firstAttribute="centerY" secondItem="Xgg-Dr-G0m" secondAttribute="centerY" id="f5t-Da-dxH"/>
+                <constraint firstItem="Xgg-Dr-G0m" firstAttribute="leading" secondItem="XP1-Nl-AvD" secondAttribute="trailing" constant="30" id="gCB-Jv-XAg"/>
+                <constraint firstItem="Xgg-Dr-G0m" firstAttribute="centerY" secondItem="gTV-IL-0wX" secondAttribute="centerY" id="jY6-Jg-McY"/>
+                <constraint firstItem="QLm-Jq-1V4" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="30" id="o3m-2o-uOO"/>
+                <constraint firstItem="QLm-Jq-1V4" firstAttribute="leading" secondItem="Fnm-H8-EGf" secondAttribute="trailing" constant="5" id="p2e-mf-8fu"/>
+                <constraint firstItem="HcW-gQ-dOy" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="8.5" id="pXk-Do-9N9"/>
+                <constraint firstItem="XP1-Nl-AvD" firstAttribute="top" secondItem="QLm-Jq-1V4" secondAttribute="bottom" constant="6" id="w5W-fQ-IOR"/>
+                <constraint firstAttribute="trailing" secondItem="uo1-GN-2lG" secondAttribute="trailing" id="x0E-iC-77F"/>
+                <constraint firstAttribute="trailing" secondItem="HcW-gQ-dOy" secondAttribute="trailing" constant="8.5" id="zwO-ny-Qfb"/>
+            </constraints>
+            <point key="canvasLocation" x="131.8840579710145" y="109.82142857142857"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="base_sel" width="10" height="10"/>
+        <image name="base_unsel" width="10" height="10"/>
+        <image name="voucher_left" width="115.5" height="58"/>
+        <image name="voucher_moneyicon" width="7" height="7"/>
+        <image name="voucher_right" width="49.5" height="58"/>
+        <image name="voucher_type1" width="53" height="40"/>
+    </resources>
+</document>

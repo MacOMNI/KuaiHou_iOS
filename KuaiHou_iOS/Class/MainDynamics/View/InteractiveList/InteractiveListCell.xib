@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
     <device id="retina6_1" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
-        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
@@ -44,10 +43,41 @@
                     </label>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8fl-fY-pe5">
                         <rect key="frame" x="230" y="25" width="75" height="75"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bMy-bc-Lh8">
+                                <rect key="frame" x="5" y="10" width="65" height="55"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="kea-e8-cyv">
+                                <rect key="frame" x="0.0" y="0.0" width="75" height="75"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1fx-ND-UMG">
+                                <rect key="frame" x="25.5" y="25.5" width="24" height="24"/>
+                                <state key="normal" image="Interactive_play"/>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" red="0.93333333333333335" green="0.93333333333333335" blue="0.93333333333333335" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
+                            <constraint firstAttribute="trailing" secondItem="kea-e8-cyv" secondAttribute="trailing" id="1Y1-UR-yNe"/>
                             <constraint firstAttribute="width" constant="75" id="6OD-dA-ohx"/>
                             <constraint firstAttribute="height" constant="75" id="Ms9-xN-RUX"/>
+                            <constraint firstItem="kea-e8-cyv" firstAttribute="top" secondItem="8fl-fY-pe5" secondAttribute="top" id="WNx-Dq-3kL"/>
+                            <constraint firstAttribute="trailing" secondItem="bMy-bc-Lh8" secondAttribute="trailing" constant="5" id="Xke-Aq-gRg"/>
+                            <constraint firstItem="1fx-ND-UMG" firstAttribute="centerY" secondItem="kea-e8-cyv" secondAttribute="centerY" id="YhN-0t-Hpf"/>
+                            <constraint firstItem="1fx-ND-UMG" firstAttribute="centerX" secondItem="kea-e8-cyv" secondAttribute="centerX" id="ZWY-qe-7ck"/>
+                            <constraint firstItem="kea-e8-cyv" firstAttribute="leading" secondItem="8fl-fY-pe5" secondAttribute="leading" id="ekK-vr-kcV"/>
+                            <constraint firstItem="bMy-bc-Lh8" firstAttribute="leading" secondItem="8fl-fY-pe5" secondAttribute="leading" constant="5" id="fD9-aV-X4e"/>
+                            <constraint firstAttribute="bottom" secondItem="kea-e8-cyv" secondAttribute="bottom" id="fsA-qn-Muz"/>
+                            <constraint firstAttribute="bottom" secondItem="bMy-bc-Lh8" secondAttribute="bottom" constant="10" id="ldS-IU-v5x"/>
+                            <constraint firstItem="bMy-bc-Lh8" firstAttribute="top" secondItem="8fl-fY-pe5" secondAttribute="top" constant="10" id="rk8-gp-9gC"/>
                         </constraints>
                     </view>
                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iZP-Yn-kEk">
@@ -104,6 +134,9 @@
                                 <color key="value" red="0.80000000000000004" green="0.80000000000000004" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
                             </userDefinedRuntimeAttribute>
                         </userDefinedRuntimeAttributes>
+                        <connections>
+                            <action selector="replyAction:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="ao5-dg-9mr"/>
+                        </connections>
                     </button>
                 </subviews>
                 <constraints>
@@ -126,11 +159,11 @@
                     <constraint firstItem="mxs-sD-leM" firstAttribute="leading" secondItem="tPg-sG-x3q" secondAttribute="trailing" constant="15" id="zJ8-XU-qfD"/>
                 </constraints>
             </tableViewCellContentView>
-            <viewLayoutGuide key="safeArea" id="aW0-zy-SZf"/>
-            <point key="canvasLocation" x="131.8840579710145" y="109.48660714285714"/>
+            <point key="canvasLocation" x="-33" y="82"/>
         </tableViewCell>
     </objects>
     <resources>
+        <image name="Interactive_play" width="24" height="24"/>
         <image name="base_location" width="10.5" height="15"/>
         <image name="sex_woman" width="14" height="13.5"/>
     </resources>

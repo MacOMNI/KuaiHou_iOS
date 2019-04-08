@@ -81,7 +81,7 @@
 }
 - (CGRect)pageController:(WMPageController *)pageController preferredFrameForContentView:(WMScrollView *)contentView {
     CGFloat menuViewHeight = [self pageController:pageController preferredFrameForMenuView:self.menuView].size.height;
-    return CGRectMake(0, menuViewHeight, kScreenSizeWidth, kScreenSizeHeight - menuViewHeight - SafeAreaTopHeight - 10);
+    return CGRectMake(0, menuViewHeight + 15, kScreenSizeWidth, kScreenSizeHeight - menuViewHeight - SafeAreaTopHeight - 10 - 15);
 }
 #pragma mark - WMPageControllerDelegate
 - (void)pageController:(WMPageController *)pageController didEnterViewController:(__kindof UIViewController *)viewController withInfo:(NSDictionary *)info {

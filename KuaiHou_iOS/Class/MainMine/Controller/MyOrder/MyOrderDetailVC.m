@@ -64,7 +64,7 @@
     
     [self.tableView registerNib:[UINib nibWithNibName:NSStringFromClass([OpenStoreTextViewCell class]) bundle:[NSBundle mainBundle]] forCellReuseIdentifier:NSStringFromClass([OpenStoreTextViewCell class])];
     
-    self.titleArray = @[@"包厢/台号",@"人数",@"到店时间",@"已使用代金券",@"提供代驾",@"提供代驾",@"订单号"];
+    self.titleArray = @[@"包厢/台号",@"人数",@"到店时间",@"已使用代金券",@"提供代驾",@"订单日期",@"订单号"];
 }
 
 
