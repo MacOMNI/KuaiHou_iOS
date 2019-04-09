@@ -21,7 +21,7 @@
     if (self) {
         self = [[NSBundle mainBundle] loadNibNamed:@"CleanChatView" owner:nil options:nil].lastObject;
         self.width = kScreenSizeWidth - 50;
-        self.height = 155;
+        self.height = 175;
         self.center = [UIApplication sharedApplication].keyWindow.center;
         
         self.transform = CGAffineTransformMakeScale(0.05, 0.05);

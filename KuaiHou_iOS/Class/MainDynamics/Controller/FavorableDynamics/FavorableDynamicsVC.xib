@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="FavorableDynamicsVC">
             <connections>
+                <outlet property="tableView" destination="FDg-LU-LUV" id="y3w-B5-QPQ"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -18,7 +19,23 @@
         <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-            <color key="backgroundColor" red="0.33225885148100598" green="0.35177896185428226" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="grouped" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="FDg-LU-LUV">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="MhV-rH-mdU"/>
+                        <outlet property="delegate" destination="-1" id="blD-nB-btd"/>
+                    </connections>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="FDg-LU-LUV" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="OSc-8p-eEU"/>
+                <constraint firstAttribute="bottom" secondItem="FDg-LU-LUV" secondAttribute="bottom" id="WQm-Gi-2E9"/>
+                <constraint firstAttribute="trailing" secondItem="FDg-LU-LUV" secondAttribute="trailing" id="Zre-uJ-4XP"/>
+                <constraint firstItem="FDg-LU-LUV" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="cGd-Bn-3ae"/>
+            </constraints>
         </view>
     </objects>
 </document>

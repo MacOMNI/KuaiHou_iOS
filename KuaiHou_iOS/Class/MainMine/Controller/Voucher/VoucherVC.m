@@ -8,6 +8,7 @@
 
 #import "VoucherVC.h"
 #import "VoucherCollectionCell.h"
+#import "FillTargetStoreInfoVC.h"
 
 @interface VoucherVC () <UICollectionViewDelegate, UICollectionViewDataSource>
 
@@ -81,6 +82,9 @@
 - (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout*)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath *)indexPath {
     CGFloat weidth = (kScreenSizeWidth - 45) / 2;
     return CGSizeMake(weidth, 59);
+}
+- (IBAction)nextAction:(UIButton *)sender {
+    [self.navigationController pushViewController:[FillTargetStoreInfoVC new] animated:YES];
 }
 
 

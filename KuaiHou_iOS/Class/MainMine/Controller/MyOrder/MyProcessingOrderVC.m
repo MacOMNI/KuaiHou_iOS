@@ -96,9 +96,11 @@
         }];
         
         if (tag == 101) {
+
             clean.titleLab.text = @"温馨提示";
             clean.tipLab.text = @"确认到店后，您使用的代金券将无法退回 结账时请与接待经理联系抵扣您使用的代金券";
             clean.tipLab.numberOfLines = 0;
+            
             [clean showView];
         }else if (tag == 102){
             

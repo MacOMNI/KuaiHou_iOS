@@ -43,6 +43,7 @@
 #import "UIViewController+FLInsert.h"
 #import "UILabel+BaseChangeDefaultFont.h"
 #import "CALayer+XibConfiguration.h"
+#import "UITextField+Configuration.h"
 
 #import "BaseViewController.h"
 #import "BaseCell.h"

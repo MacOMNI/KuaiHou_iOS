@@ -11,7 +11,11 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="FillInTheInfoVC">
             <connections>
+                <outlet property="birTextField" destination="kZg-Fh-QJd" id="Vo0-ht-g9O"/>
+                <outlet property="nameTextField" destination="vXD-XW-yhp" id="yfS-IO-j3p"/>
+                <outlet property="nextTextField" destination="4JN-YH-yHD" id="XnQ-22-PXy"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+                <outlet property="wordTextField" destination="4vj-J1-f06" id="vkG-7g-joF"/>
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>

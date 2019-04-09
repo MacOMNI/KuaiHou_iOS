@@ -14,6 +14,7 @@
 @property (weak, nonatomic) IBOutlet UILabel *accLab;
 @property (weak, nonatomic) IBOutlet UIImageView *weChatImageView;
 @property (weak, nonatomic) IBOutlet UILabel *weChatLab;
+@property (weak, nonatomic) IBOutlet UITextField *textField;
 
 @end
 
@@ -32,6 +33,7 @@
     [self.accLab setTapActionWithBlock:^{
         [self.navigationController popViewControllerAnimated:YES];
     }];
+    self.textField.placeholderDIYColor = kMain_TextColor_9;
 }
 
 - (void)viewWillAppear:(BOOL)animated {

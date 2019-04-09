@@ -15,6 +15,8 @@ NS_ASSUME_NONNULL_BEGIN
 @property (weak, nonatomic) IBOutlet UILabel *nickNameLab;
 @property (weak, nonatomic) IBOutlet UILabel *timeLab;
 @property (weak, nonatomic) IBOutlet UIButton *distanceBtn;
+@property (weak, nonatomic) IBOutlet UILabel *ageLab;
+@property (weak, nonatomic) IBOutlet UIImageView *sexIconView;
 
 @end
 

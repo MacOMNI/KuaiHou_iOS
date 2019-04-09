@@ -11,7 +11,11 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ForgetWordVC">
             <connections>
+                <outlet property="accTextField" destination="bcf-0k-90v" id="rAL-hE-Kjg"/>
+                <outlet property="codeTextField" destination="GlE-gF-oJH" id="Kr2-Aa-j9J"/>
+                <outlet property="nextWordTextField" destination="GWg-9P-0Ik" id="7LK-KE-wMq"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+                <outlet property="wordTextField" destination="pvZ-Yo-YdW" id="IsV-h8-hfL"/>
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
@@ -37,7 +41,7 @@
                         </view>
                         <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="请输入手机号码" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bcf-0k-90v">
                             <rect key="frame" x="85" y="0.0" width="252.5" height="55"/>
-                            <nil key="textColor"/>
+                            <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
                             <fontDescription key="fontDescription" type="system" pointSize="18"/>
                             <textInputTraits key="textInputTraits"/>
                         </textField>
@@ -77,7 +81,7 @@
                         </view>
                         <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="验证码" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="GlE-gF-oJH">
                             <rect key="frame" x="37.5" y="0.0" width="215" height="54.5"/>
-                            <nil key="textColor"/>
+                            <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
                             <fontDescription key="fontDescription" type="system" pointSize="15"/>
                             <textInputTraits key="textInputTraits"/>
                         </textField>
@@ -131,7 +135,7 @@
                         </view>
                         <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="新密码" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="pvZ-Yo-YdW">
                             <rect key="frame" x="37.5" y="0.0" width="300" height="54.5"/>
-                            <nil key="textColor"/>
+                            <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
                             <fontDescription key="fontDescription" type="system" pointSize="15"/>
                             <textInputTraits key="textInputTraits"/>
                         </textField>
@@ -160,7 +164,7 @@
                         </view>
                         <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="确认新密码" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="GWg-9P-0Ik">
                             <rect key="frame" x="37.5" y="0.0" width="300" height="54.5"/>
-                            <nil key="textColor"/>
+                            <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
                             <fontDescription key="fontDescription" type="system" pointSize="15"/>
                             <textInputTraits key="textInputTraits"/>
                         </textField>

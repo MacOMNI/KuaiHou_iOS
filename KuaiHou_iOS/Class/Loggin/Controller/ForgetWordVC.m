@@ -9,6 +9,10 @@
 #import "ForgetWordVC.h"
 
 @interface ForgetWordVC ()
+@property (weak, nonatomic) IBOutlet UITextField *accTextField;
+@property (weak, nonatomic) IBOutlet UITextField *codeTextField;
+@property (weak, nonatomic) IBOutlet UITextField *wordTextField;
+@property (weak, nonatomic) IBOutlet UITextField *nextWordTextField;
 
 @end
 
@@ -17,6 +21,13 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
+    [self fixUI];
+}
+-(void)fixUI{
+    self.accTextField.placeholderDIYColor = kMain_TextColor_9;
+    self.codeTextField.placeholderDIYColor = kMain_TextColor_9;
+    self.wordTextField.placeholderDIYColor = kMain_TextColor_9;
+    self.nextWordTextField.placeholderDIYColor = kMain_TextColor_9;
 }
 
 /*

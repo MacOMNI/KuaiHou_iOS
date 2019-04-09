@@ -13,6 +13,10 @@
 #import "MainDynamicsVC.h"
 #import "MainMessageVC.h"
 #import "MainMineVC.h"
+#import "DIYMoreView.h"
+#import "DIYTelPhoneView.h"
+#import "VoucherVC.h"
+#import "FillTargetStoreInfoVC.h"
 
 @interface BaseTabBarController ()<UITabBarControllerDelegate,BaseTabBarDelegate>
 
@@ -65,6 +69,41 @@
 #pragma mark - LBTabBarDelegate
 //点击中间按钮的代理方法
 - (void)tabBarPlusBtnClick:(BaseTableBar *)tabBar{
+    DIYMoreView *more = [[DIYMoreView alloc] init];
+    [more.itme_1 setTitle:@"填写需求预定" forState:(UIControlStateNormal)];
+    [more.item_2 setTitle:@"电话预定" forState:(UIControlStateNormal)];
+    __weak DIYMoreView *weakMore = more;
+    [more setItmeBlock:^(NSInteger tag) {
+        if (tag == 101) { // 填写需求预定
+            [weakMore hiddenView];
+            DIYTelPhoneView *tel = [[DIYTelPhoneView alloc] init];
+            tel.cancle_w.constant = 80;
+            [tel.cancleBtn setTitle:@"下次使用" forState:(UIControlStateNormal)];
+            tel.tipLab.text = @"当前代金券累计金额为3500";
+            tel.titleLab.text = @"是否使用代金券";
+            [tel setCommitBlock:^{ // 确定就去选择代金券的页面
+                [[MyTool getCurrentVC].navigationController pushViewController:[VoucherVC new] animated:YES];
+            }];
+            [tel setCancleBlock:^{ // 直接去填写信息页面
+                [[MyTool getCurrentVC].navigationController pushViewController:[FillTargetStoreInfoVC new] animated:YES];
+            }];
+            [tel showView];
+        }else{ // 电话预定
+            [weakMore hiddenView];
+            
+            DIYTelPhoneView *tel = [[DIYTelPhoneView alloc] init];
+            
+            [tel setCommitBlock:^{
+                NSMutableString* str=[[NSMutableString alloc] initWithFormat:@"tel:%@",@"073182295219"];
+                UIWebView * callWebview = [[UIWebView alloc] init];
+                [callWebview loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:str]]];
+                [[MyTool getCurrentVC].view addSubview:callWebview];
+            }];
+            [tel showView];
+        }
+    }];
+    
+    [more showView];
 }
 
 // 添加子控制器

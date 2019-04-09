@@ -142,7 +142,7 @@
 
 - (NSArray *)titleList {
     if (!_titleList) {
-        _titleList = @[@"附近", @"特惠", @"关注"];
+        _titleList = @[@"附近", @"活动", @"关注"];
     }
     return _titleList;
 }

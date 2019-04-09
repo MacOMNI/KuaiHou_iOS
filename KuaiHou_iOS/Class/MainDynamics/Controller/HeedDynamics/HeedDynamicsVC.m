@@ -7,8 +7,25 @@
 //
 
 #import "HeedDynamicsVC.h"
+#import "NearByDynamicsHeadCell.h"
+#import "NearByDynamicsTextCell.h"
+#import "NearByDynamicsImageCell.h"
+#import "NearByDynamicsToolCell.h"
+#import "DynamicsDetailVC.h"
+#import "DIYMoreView.h"
+#import "DIYReportView.h"
+#import "DIYFilterView.h"
+
+
+static NSString * cellIdentifierIDHead = @"UserCireHeadCell";
+static NSString * cellIdentifierIDText = @"UserCircleTextCell";
+static NSString * cellIdentifierIDTool = @"UserCircleToolCell";
+static NSString * cellIdentifierIDMoreImage = @"UserCircleImageCell";
+
+static NSString * testStr = @"湖南沃趣娱乐传媒有限公司是一家专注互联网软件 开发和运营的企业。湖南沃趣娱乐传媒有限公司是一家专注互联网软件 开发和运营的企业。湖南沃趣娱乐传媒有限公司是一家专注互联网软件 开发和运营的企业。湖南沃趣娱乐传媒有限公司是一家专注互联网软件 开发和运营的企业。湖南沃趣娱乐传媒有限公司是一家专注互联网软件 开发和运营的企业。湖南沃趣娱乐传媒有限公司是一家专注互联网软件 开发和运营的企业。湖南沃趣娱乐传媒有限公司是一家专注互联网软件 开发和运营的企业。湖南沃趣娱乐传媒有限公司是一家专注互联网软件 开发和运营的企业。湖南沃趣娱乐传媒有限公司是一家专注互联网软件 开发和运营的企业。";
 
 @interface HeedDynamicsVC ()
+@property (weak, nonatomic) IBOutlet UITableView *tableView;
 
 @end
 
@@ -17,9 +34,111 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
+    [self fixUI];
 }
+
 -(void)fixUI{
+    self.tableView.superAnimationType = TABViewSuperAnimationTypeClassic;
+    self.tableView.estimatedRowHeight = 0;
+    self.tableView.estimatedSectionFooterHeight = 0;
+    self.tableView.estimatedSectionHeaderHeight = 0;
+    self.tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
     
+    [self.tableView registerNib:[UINib nibWithNibName:NSStringFromClass([NearByDynamicsHeadCell class]) bundle:[NSBundle mainBundle]] forCellReuseIdentifier:cellIdentifierIDHead];
+    [self.tableView registerNib:[UINib nibWithNibName:NSStringFromClass([NearByDynamicsToolCell class]) bundle:[NSBundle mainBundle]] forCellReuseIdentifier:cellIdentifierIDTool];
+    
+}
+
+#pragma mark - UITableViewDelegate & Datasource
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
+    return 10;
+}
+
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+    return 4;
+}
+
+- (CGFloat)tableView:(UITableView *)tableView heightForFooterInSection:(NSInteger)section {
+    return 10;
+}
+
+- (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section {
+    return 0.0001;
+}
+
+- (nullable UIView *)tableView:(UITableView *)tableView viewForFooterInSection:(NSInteger)section{
+    UIView *lineView = [[UIView alloc] init];
+    lineView.backgroundColor = kMain_lineColor;
+    return lineView;
+}
+
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
+    if (indexPath.row ==0) {
+        return 79;
+    }else if (indexPath.row == 1){
+        return [NearByDynamicsTextCell cellHeightWithContent:testStr isOpen:YES];
+    }else if (indexPath.row == 2){
+        return [NearByDynamicsImageCell cellHeightWithImageCount:(int)indexPath.section];
+    }else if (indexPath.row == 3){
+        return 60;
+    }
+    return 0;
+    
+}
+
+- (UITableViewCell*)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
+    UITableViewCell* cell = nil;
+    
+    if (indexPath.row == 0) {
+        NearByDynamicsHeadCell *cell = (NearByDynamicsHeadCell *)[tableView dequeueReusableCellWithIdentifier:cellIdentifierIDHead forIndexPath:indexPath];
+        
+        return cell;
+    }else if (indexPath.row == 1){
+        cell = (NearByDynamicsTextCell *)[tableView dequeueReusableCellWithIdentifier:cellIdentifierIDText];
+        if (!cell) {
+            cell = [[NearByDynamicsTextCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:cellIdentifierIDText];
+        }
+        [(NearByDynamicsTextCell *)cell  setDataWithContent:testStr userId:@(111) isForwarding:NO isOpen:YES];
+        ((NearByDynamicsTextCell*)cell).openBlock = ^() {
+        };
+        return cell;
+    }else if (indexPath.row == 2){
+        // setCircleModelImageCount
+        cell = (NearByDynamicsImageCell *)[tableView dequeueReusableCellWithIdentifier:cellIdentifierIDMoreImage];
+        if (!cell) {
+            cell = [[NearByDynamicsImageCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:cellIdentifierIDMoreImage];
+        }
+        [(NearByDynamicsImageCell *)cell setCircleModelImageCount:(int)indexPath.section];
+        return cell;
+    }
+    else if (indexPath.row == 3){
+        NearByDynamicsToolCell *cell =  [tableView dequeueReusableCellWithIdentifier:cellIdentifierIDTool forIndexPath:indexPath];
+        [cell setItmeBlock:^(NSInteger tag) {
+            if (tag == 100) {
+                
+            }else if (tag == 101){
+                
+            }else{
+                DIYMoreView *more = [[DIYMoreView alloc] init];
+                __weak DIYMoreView *weakMore = more;
+                [more setItmeBlock:^(NSInteger tag) {
+                    if (101 == tag) { // 举报此动态
+                        [weakMore hiddenView];
+                        DIYReportView *report = [[DIYReportView alloc] init];
+                        [report showView];
+                    }
+                }];
+                [more showView];
+            }
+        }];
+        return cell;
+    }
+    
+    return cell;
+}
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+    [self.navigationController pushViewController:[DynamicsDetailVC new] animated:YES];
 }
 
 /*

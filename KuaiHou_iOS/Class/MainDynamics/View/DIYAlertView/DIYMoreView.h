@@ -13,6 +13,8 @@ NS_ASSUME_NONNULL_BEGIN
 @interface DIYMoreView : BaseTipView
 
 @property (nonatomic, copy) void (^itmeBlock)(NSInteger tag);
+@property (weak, nonatomic) IBOutlet UIButton *itme_1;
+@property (weak, nonatomic) IBOutlet UIButton *item_2;
 
 @end
 

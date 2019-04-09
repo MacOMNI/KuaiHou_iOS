@@ -13,6 +13,10 @@
 - (void)awakeFromNib {
     [super awakeFromNib];
     // Initialization code
+    
+    self.accTextField.placeholderDIYColor = kMain_TextColor_9;
+    self.wordTextField.placeholderDIYColor = kMain_TextColor_9;
+    
 }
 
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated {

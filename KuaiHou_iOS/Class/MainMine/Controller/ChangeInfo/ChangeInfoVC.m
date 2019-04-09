@@ -49,6 +49,13 @@
     [self mainTableViewDidScroll:self.pageScrollView.mainTableView];
     
     [self.view bringSubviewToFront:self.savaBgView];
+    
+    [self.headerView reloadViewByArray:@[@"",@"",@"",@"",@""]];
+}
+-(void)viewWillDisappear:(BOOL)animated{
+    [super viewWillDisappear:animated];
+    // 隐藏系统导航栏
+    [self.navigationController setNavigationBarHidden:NO];
 }
 
 - (void)back {
@@ -293,7 +300,7 @@
         _titleLabel = [UILabel new];
         _titleLabel.font = [UIFont systemFontOfSize:18.0f];
         _titleLabel.textColor = [UIColor blackColor];
-        _titleLabel.text = @"编辑资料";
+        _titleLabel.text = @"时光无声";
         _titleLabel.alpha = 0;
         _titleLabel.textAlignment = NSTextAlignmentCenter;
     }

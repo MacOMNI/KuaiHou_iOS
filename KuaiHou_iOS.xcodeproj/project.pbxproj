@@ -8,6 +8,25 @@
 
 /* Begin PBXBuildFile section */
 		C3343E751DE353D40FC29AA8 /* Pods_KuaiHou_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F72C78518845A6C8D2F549AB /* Pods_KuaiHou_iOS.framework */; };
+		CE1FE53A225C2D3600197B8D /* DIYTelPhoneView.m in Sources */ = {isa = PBXBuildFile; fileRef = CE1FE539225C2D3600197B8D /* DIYTelPhoneView.m */; };
+		CE1FE53C225C2D4E00197B8D /* DIYTelPhoneView.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE1FE53B225C2D4E00197B8D /* DIYTelPhoneView.xib */; };
+		CE1FE540225C3B5700197B8D /* FillTargetStoreInfoVC.m in Sources */ = {isa = PBXBuildFile; fileRef = CE1FE53E225C3B5700197B8D /* FillTargetStoreInfoVC.m */; };
+		CE1FE541225C3B5700197B8D /* FillTargetStoreInfoVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE1FE53F225C3B5700197B8D /* FillTargetStoreInfoVC.xib */; };
+		CE1FE545225C3DFB00197B8D /* FillStoreItemCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CE1FE543225C3DFB00197B8D /* FillStoreItemCell.m */; };
+		CE1FE546225C3DFB00197B8D /* FillStoreItemCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE1FE544225C3DFB00197B8D /* FillStoreItemCell.xib */; };
+		CE1FE549225C47BB00197B8D /* UITextField+Configuration.m in Sources */ = {isa = PBXBuildFile; fileRef = CE1FE548225C47BB00197B8D /* UITextField+Configuration.m */; };
+		CE1FE54D225C557300197B8D /* FillStoreSexTypeCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CE1FE54B225C557300197B8D /* FillStoreSexTypeCell.m */; };
+		CE1FE54E225C557300197B8D /* FillStoreSexTypeCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE1FE54C225C557300197B8D /* FillStoreSexTypeCell.xib */; };
+		CE1FE552225C5A2200197B8D /* FillStoreSliderCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CE1FE550225C5A2200197B8D /* FillStoreSliderCell.m */; };
+		CE1FE553225C5A2200197B8D /* FillStoreSliderCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE1FE551225C5A2200197B8D /* FillStoreSliderCell.xib */; };
+		CE1FE558225C6BF400197B8D /* FavorableDynamicsCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CE1FE556225C6BF400197B8D /* FavorableDynamicsCell.m */; };
+		CE1FE559225C6BF400197B8D /* FavorableDynamicsCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE1FE557225C6BF400197B8D /* FavorableDynamicsCell.xib */; };
+		CE1FE55D225C7EA200197B8D /* ChangeInfoHeadViewUserIconCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CE1FE55B225C7EA200197B8D /* ChangeInfoHeadViewUserIconCell.m */; };
+		CE1FE55E225C7EA200197B8D /* ChangeInfoHeadViewUserIconCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE1FE55C225C7EA200197B8D /* ChangeInfoHeadViewUserIconCell.xib */; };
+		CE1FE563225C90CD00197B8D /* AccessListVC.m in Sources */ = {isa = PBXBuildFile; fileRef = CE1FE561225C90CD00197B8D /* AccessListVC.m */; };
+		CE1FE564225C90CD00197B8D /* AccessListVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE1FE562225C90CD00197B8D /* AccessListVC.xib */; };
+		CE1FE569225C966800197B8D /* AccessListCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CE1FE567225C966800197B8D /* AccessListCell.m */; };
+		CE1FE56A225C966800197B8D /* AccessListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE1FE568225C966800197B8D /* AccessListCell.xib */; };
 		CE28A7572251AA7100B62032 /* ManagementStoreConfigCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CE28A7552251AA7100B62032 /* ManagementStoreConfigCell.m */; };
 		CE28A7582251AA7100B62032 /* ManagementStoreConfigCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE28A7562251AA7100B62032 /* ManagementStoreConfigCell.xib */; };
 		CE28A75C2251B93200B62032 /* ManagementStoreConfigTitleCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CE28A75A2251B93200B62032 /* ManagementStoreConfigTitleCell.m */; };
@@ -388,6 +407,35 @@
 /* Begin PBXFileReference section */
 		1C969EC6FE4B3B6CA38C6D17 /* Pods-KuaiHou_iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KuaiHou_iOS.debug.xcconfig"; path = "Target Support Files/Pods-KuaiHou_iOS/Pods-KuaiHou_iOS.debug.xcconfig"; sourceTree = "<group>"; };
 		9462F2C576846C42B4EADD4A /* Pods-KuaiHou_iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KuaiHou_iOS.release.xcconfig"; path = "Target Support Files/Pods-KuaiHou_iOS/Pods-KuaiHou_iOS.release.xcconfig"; sourceTree = "<group>"; };
+		CE1FE538225C2D3600197B8D /* DIYTelPhoneView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DIYTelPhoneView.h; sourceTree = "<group>"; };
+		CE1FE539225C2D3600197B8D /* DIYTelPhoneView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DIYTelPhoneView.m; sourceTree = "<group>"; };
+		CE1FE53B225C2D4E00197B8D /* DIYTelPhoneView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DIYTelPhoneView.xib; sourceTree = "<group>"; };
+		CE1FE53D225C3B5700197B8D /* FillTargetStoreInfoVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FillTargetStoreInfoVC.h; sourceTree = "<group>"; };
+		CE1FE53E225C3B5700197B8D /* FillTargetStoreInfoVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FillTargetStoreInfoVC.m; sourceTree = "<group>"; };
+		CE1FE53F225C3B5700197B8D /* FillTargetStoreInfoVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FillTargetStoreInfoVC.xib; sourceTree = "<group>"; };
+		CE1FE542225C3DFB00197B8D /* FillStoreItemCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FillStoreItemCell.h; sourceTree = "<group>"; };
+		CE1FE543225C3DFB00197B8D /* FillStoreItemCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FillStoreItemCell.m; sourceTree = "<group>"; };
+		CE1FE544225C3DFB00197B8D /* FillStoreItemCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FillStoreItemCell.xib; sourceTree = "<group>"; };
+		CE1FE547225C47BB00197B8D /* UITextField+Configuration.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UITextField+Configuration.h"; sourceTree = "<group>"; };
+		CE1FE548225C47BB00197B8D /* UITextField+Configuration.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UITextField+Configuration.m"; sourceTree = "<group>"; };
+		CE1FE54A225C557300197B8D /* FillStoreSexTypeCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FillStoreSexTypeCell.h; sourceTree = "<group>"; };
+		CE1FE54B225C557300197B8D /* FillStoreSexTypeCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FillStoreSexTypeCell.m; sourceTree = "<group>"; };
+		CE1FE54C225C557300197B8D /* FillStoreSexTypeCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FillStoreSexTypeCell.xib; sourceTree = "<group>"; };
+		CE1FE54F225C5A2200197B8D /* FillStoreSliderCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FillStoreSliderCell.h; sourceTree = "<group>"; };
+		CE1FE550225C5A2200197B8D /* FillStoreSliderCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FillStoreSliderCell.m; sourceTree = "<group>"; };
+		CE1FE551225C5A2200197B8D /* FillStoreSliderCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FillStoreSliderCell.xib; sourceTree = "<group>"; };
+		CE1FE555225C6BF400197B8D /* FavorableDynamicsCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FavorableDynamicsCell.h; sourceTree = "<group>"; };
+		CE1FE556225C6BF400197B8D /* FavorableDynamicsCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FavorableDynamicsCell.m; sourceTree = "<group>"; };
+		CE1FE557225C6BF400197B8D /* FavorableDynamicsCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FavorableDynamicsCell.xib; sourceTree = "<group>"; };
+		CE1FE55A225C7EA200197B8D /* ChangeInfoHeadViewUserIconCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ChangeInfoHeadViewUserIconCell.h; sourceTree = "<group>"; };
+		CE1FE55B225C7EA200197B8D /* ChangeInfoHeadViewUserIconCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ChangeInfoHeadViewUserIconCell.m; sourceTree = "<group>"; };
+		CE1FE55C225C7EA200197B8D /* ChangeInfoHeadViewUserIconCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChangeInfoHeadViewUserIconCell.xib; sourceTree = "<group>"; };
+		CE1FE560225C90CD00197B8D /* AccessListVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AccessListVC.h; sourceTree = "<group>"; };
+		CE1FE561225C90CD00197B8D /* AccessListVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AccessListVC.m; sourceTree = "<group>"; };
+		CE1FE562225C90CD00197B8D /* AccessListVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AccessListVC.xib; sourceTree = "<group>"; };
+		CE1FE566225C966800197B8D /* AccessListCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AccessListCell.h; sourceTree = "<group>"; };
+		CE1FE567225C966800197B8D /* AccessListCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AccessListCell.m; sourceTree = "<group>"; };
+		CE1FE568225C966800197B8D /* AccessListCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AccessListCell.xib; sourceTree = "<group>"; };
 		CE28A7542251AA7100B62032 /* ManagementStoreConfigCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ManagementStoreConfigCell.h; sourceTree = "<group>"; };
 		CE28A7552251AA7100B62032 /* ManagementStoreConfigCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ManagementStoreConfigCell.m; sourceTree = "<group>"; };
 		CE28A7562251AA7100B62032 /* ManagementStoreConfigCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ManagementStoreConfigCell.xib; sourceTree = "<group>"; };
@@ -1037,6 +1085,26 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		CE1FE554225C6BDD00197B8D /* FavorableDynamics */ = {
+			isa = PBXGroup;
+			children = (
+				CE1FE555225C6BF400197B8D /* FavorableDynamicsCell.h */,
+				CE1FE556225C6BF400197B8D /* FavorableDynamicsCell.m */,
+				CE1FE557225C6BF400197B8D /* FavorableDynamicsCell.xib */,
+			);
+			path = FavorableDynamics;
+			sourceTree = "<group>";
+		};
+		CE1FE55F225C907A00197B8D /* AccessList */ = {
+			isa = PBXGroup;
+			children = (
+				CE1FE560225C90CD00197B8D /* AccessListVC.h */,
+				CE1FE561225C90CD00197B8D /* AccessListVC.m */,
+				CE1FE562225C90CD00197B8D /* AccessListVC.xib */,
+			);
+			path = AccessList;
+			sourceTree = "<group>";
+		};
 		CE28A76D2251E58300B62032 /* StoreSingleProduct */ = {
 			isa = PBXGroup;
 			children = (
@@ -1166,6 +1234,9 @@
 				CEECC02A2255D84F004EE5C2 /* MyChildVoucherVC.h */,
 				CEECC02B2255D84F004EE5C2 /* MyChildVoucherVC.m */,
 				CEECC02C2255D84F004EE5C2 /* MyChildVoucherVC.xib */,
+				CE1FE53D225C3B5700197B8D /* FillTargetStoreInfoVC.h */,
+				CE1FE53E225C3B5700197B8D /* FillTargetStoreInfoVC.m */,
+				CE1FE53F225C3B5700197B8D /* FillTargetStoreInfoVC.xib */,
 			);
 			path = Voucher;
 			sourceTree = "<group>";
@@ -1385,6 +1456,8 @@
 				CEFA9212223F5AAA0015F7EE /* UILabel+BaseChangeDefaultFont.m */,
 				CECEEF47224B17680068F267 /* CALayer+XibConfiguration.h */,
 				CECEEF48224B17680068F267 /* CALayer+XibConfiguration.m */,
+				CE1FE547225C47BB00197B8D /* UITextField+Configuration.h */,
+				CE1FE548225C47BB00197B8D /* UITextField+Configuration.m */,
 			);
 			path = Category;
 			sourceTree = "<group>";
@@ -1856,6 +1929,7 @@
 				CEE28F71224357EA00C3D7E9 /* ChangeInfoVC.xib */,
 				CEE28F812243872F00C3D7E9 /* GKWBPageViewController.h */,
 				CEE28F802243872F00C3D7E9 /* GKWBPageViewController.m */,
+				CE1FE55F225C907A00197B8D /* AccessList */,
 				CEE28F7822436C9D00C3D7E9 /* InfoDetail */,
 				CECEEEC22249E3DF0068F267 /* MyDynamics */,
 				CECEEED9224A17130068F267 /* MyPhoto */,
@@ -2044,14 +2118,14 @@
 			children = (
 				CEE28F422243571800C3D7E9 /* TransitionAnimation */,
 				CEE28F492243571800C3D7E9 /* Category */,
+				CEE28F5C2243571800C3D7E9 /* GKCommon.h */,
 				CEE28F572243571800C3D7E9 /* GKNavigationBarViewController.h */,
+				CEE28F5B2243571800C3D7E9 /* GKNavigationBarViewController.m */,
 				CEE28F582243571800C3D7E9 /* GKNavigationBarConfigure.h */,
+				CEE28F5E2243571800C3D7E9 /* GKNavigationBarConfigure.m */,
+				CEE28F5D2243571800C3D7E9 /* GKNavigationBar.h */,
 				CEE28F592243571800C3D7E9 /* GKNavigationBar.m */,
 				CEE28F5A2243571800C3D7E9 /* GKNavigationBarViewController.bundle */,
-				CEE28F5B2243571800C3D7E9 /* GKNavigationBarViewController.m */,
-				CEE28F5C2243571800C3D7E9 /* GKCommon.h */,
-				CEE28F5D2243571800C3D7E9 /* GKNavigationBar.h */,
-				CEE28F5E2243571800C3D7E9 /* GKNavigationBarConfigure.m */,
 			);
 			path = GKNavigationBarViewController;
 			sourceTree = "<group>";
@@ -2059,12 +2133,12 @@
 		CEE28F422243571800C3D7E9 /* TransitionAnimation */ = {
 			isa = PBXGroup;
 			children = (
-				CEE28F432243571800C3D7E9 /* GKPushTransitionAnimation.m */,
-				CEE28F442243571800C3D7E9 /* GKDelegateHandler.m */,
-				CEE28F452243571800C3D7E9 /* GKPopTransitionAnimation.m */,
 				CEE28F462243571800C3D7E9 /* GKPushTransitionAnimation.h */,
+				CEE28F432243571800C3D7E9 /* GKPushTransitionAnimation.m */,
 				CEE28F472243571800C3D7E9 /* GKDelegateHandler.h */,
+				CEE28F442243571800C3D7E9 /* GKDelegateHandler.m */,
 				CEE28F482243571800C3D7E9 /* GKPopTransitionAnimation.h */,
+				CEE28F452243571800C3D7E9 /* GKPopTransitionAnimation.m */,
 			);
 			path = TransitionAnimation;
 			sourceTree = "<group>";
@@ -2072,19 +2146,19 @@
 		CEE28F492243571800C3D7E9 /* Category */ = {
 			isa = PBXGroup;
 			children = (
-				CEE28F4A2243571800C3D7E9 /* UINavigationController+GKCategory.m */,
-				CEE28F4B2243571800C3D7E9 /* UIViewController+GKRotation.m */,
-				CEE28F4C2243571800C3D7E9 /* UINavigationItem+GKCategory.h */,
-				CEE28F4D2243571800C3D7E9 /* UIBarButtonItem+GKCategory.m */,
-				CEE28F4E2243571800C3D7E9 /* UIViewController+GKCategory.h */,
-				CEE28F4F2243571800C3D7E9 /* UIScrollView+GKCategory.m */,
 				CEE28F502243571800C3D7E9 /* GKCategory.h */,
-				CEE28F512243571800C3D7E9 /* UIViewController+GKRotation.h */,
-				CEE28F522243571800C3D7E9 /* UINavigationItem+GKCategory.m */,
 				CEE28F532243571800C3D7E9 /* UINavigationController+GKCategory.h */,
-				CEE28F542243571800C3D7E9 /* UIBarButtonItem+GKCategory.h */,
-				CEE28F552243571800C3D7E9 /* UIScrollView+GKCategory.h */,
+				CEE28F4A2243571800C3D7E9 /* UINavigationController+GKCategory.m */,
+				CEE28F4C2243571800C3D7E9 /* UINavigationItem+GKCategory.h */,
+				CEE28F522243571800C3D7E9 /* UINavigationItem+GKCategory.m */,
+				CEE28F4E2243571800C3D7E9 /* UIViewController+GKCategory.h */,
 				CEE28F562243571800C3D7E9 /* UIViewController+GKCategory.m */,
+				CEE28F512243571800C3D7E9 /* UIViewController+GKRotation.h */,
+				CEE28F4B2243571800C3D7E9 /* UIViewController+GKRotation.m */,
+				CEE28F552243571800C3D7E9 /* UIScrollView+GKCategory.h */,
+				CEE28F4F2243571800C3D7E9 /* UIScrollView+GKCategory.m */,
+				CEE28F542243571800C3D7E9 /* UIBarButtonItem+GKCategory.h */,
+				CEE28F4D2243571800C3D7E9 /* UIBarButtonItem+GKCategory.m */,
 			);
 			path = Category;
 			sourceTree = "<group>";
@@ -2101,6 +2175,12 @@
 				CECEEEBD2249DA630068F267 /* InfoDetailIconCell.h */,
 				CECEEEBE2249DA630068F267 /* InfoDetailIconCell.m */,
 				CECEEEBF2249DA630068F267 /* InfoDetailIconCell.xib */,
+				CE1FE55A225C7EA200197B8D /* ChangeInfoHeadViewUserIconCell.h */,
+				CE1FE55B225C7EA200197B8D /* ChangeInfoHeadViewUserIconCell.m */,
+				CE1FE55C225C7EA200197B8D /* ChangeInfoHeadViewUserIconCell.xib */,
+				CE1FE566225C966800197B8D /* AccessListCell.h */,
+				CE1FE567225C966800197B8D /* AccessListCell.m */,
+				CE1FE568225C966800197B8D /* AccessListCell.xib */,
 			);
 			path = ChangeInfo;
 			sourceTree = "<group>";
@@ -2183,6 +2263,15 @@
 				CEECC01F2255A5FD004EE5C2 /* VoucherCollectionCell.h */,
 				CEECC0202255A5FD004EE5C2 /* VoucherCollectionCell.m */,
 				CEECC0212255A5FD004EE5C2 /* VoucherCollectionCell.xib */,
+				CE1FE542225C3DFB00197B8D /* FillStoreItemCell.h */,
+				CE1FE543225C3DFB00197B8D /* FillStoreItemCell.m */,
+				CE1FE544225C3DFB00197B8D /* FillStoreItemCell.xib */,
+				CE1FE54A225C557300197B8D /* FillStoreSexTypeCell.h */,
+				CE1FE54B225C557300197B8D /* FillStoreSexTypeCell.m */,
+				CE1FE54C225C557300197B8D /* FillStoreSexTypeCell.xib */,
+				CE1FE54F225C5A2200197B8D /* FillStoreSliderCell.h */,
+				CE1FE550225C5A2200197B8D /* FillStoreSliderCell.m */,
+				CE1FE551225C5A2200197B8D /* FillStoreSliderCell.xib */,
 			);
 			path = Voucher;
 			sourceTree = "<group>";
@@ -2239,6 +2328,9 @@
 				CEF5DDEC2254B6E10025F406 /* DIYFilterView.h */,
 				CEF5DDED2254B6E10025F406 /* DIYFilterView.m */,
 				CEF5DDF12254B70E0025F406 /* DIYFilterView.xib */,
+				CE1FE538225C2D3600197B8D /* DIYTelPhoneView.h */,
+				CE1FE539225C2D3600197B8D /* DIYTelPhoneView.m */,
+				CE1FE53B225C2D4E00197B8D /* DIYTelPhoneView.xib */,
 			);
 			path = DIYAlertView;
 			sourceTree = "<group>";
@@ -2355,6 +2447,7 @@
 		CEFA9222223F62720015F7EE /* View */ = {
 			isa = PBXGroup;
 			children = (
+				CE1FE554225C6BDD00197B8D /* FavorableDynamics */,
 				CEDBEF612254C64C004E714E /* InteractiveList */,
 				CEF5DDDF2254A1520025F406 /* DIYAlertView */,
 				CE6B05BE2248EEC900AD44D7 /* DynamicsDetail */,
@@ -2704,6 +2797,7 @@
 				CE5A644A224CA46400891AC9 /* OpenStoreTextViewCell.xib in Resources */,
 				CEE28EB62243344D00C3D7E9 /* MainSetBtnCell.xib in Resources */,
 				CE6B05B92248AA3200AD44D7 /* DynamicsDetailVC.xib in Resources */,
+				CE1FE56A225C966800197B8D /* AccessListCell.xib in Resources */,
 				CE6B05A822487D5100AD44D7 /* AboutMeVC.xib in Resources */,
 				CECEEF31224A4DE90068F267 /* ReleaseEventVC.xib in Resources */,
 				CEDBEF662254C66D004E714E /* InteractiveListCell.xib in Resources */,
@@ -2724,6 +2818,7 @@
 				CEE3F673224DF12200151BE7 /* ManagementStoreBoxTypeCell.xib in Resources */,
 				CEECC02E2255D84F004EE5C2 /* MyChildVoucherVC.xib in Resources */,
 				CE6B05AD224884F300AD44D7 /* HelpVC.xib in Resources */,
+				CE1FE546225C3DFB00197B8D /* FillStoreItemCell.xib in Resources */,
 				CE9C4BF8223B4F9B00DE9DC1 /* icon_no_data.png in Resources */,
 				CEE9B4512244EA060004E4FA /* ChangePassWordVC.xib in Resources */,
 				CECEEECD224A041C0068F267 /* MyDynamicsHeadCell.xib in Resources */,
@@ -2752,6 +2847,7 @@
 				CECEEF46224B131C0068F267 /* InviteStoreView.xib in Resources */,
 				CEFA92DA2241DDF40015F7EE /* SendDynamicsHeadCell.xib in Resources */,
 				CE6B05A32248789900AD44D7 /* WithdrawWordVC.xib in Resources */,
+				CE1FE553225C5A2200197B8D /* FillStoreSliderCell.xib in Resources */,
 				CEFA92CC2241C93D0015F7EE /* SendDynamicsVC.xib in Resources */,
 				CECE8038225B12A70069FD55 /* drag.jpg in Resources */,
 				CECEEEF9224A41AB0068F267 /* ActivityVC.xib in Resources */,
@@ -2766,11 +2862,13 @@
 				CE5A6430224C642300891AC9 /* SelPhotoVC.xib in Resources */,
 				CEE28EAB224329A900C3D7E9 /* MainSetVC.xib in Resources */,
 				CEACEB03224B8B7900A2AE2D /* RegisVC.xib in Resources */,
+				CE1FE541225C3B5700197B8D /* FillTargetStoreInfoVC.xib in Resources */,
 				CEE28F6B2243571800C3D7E9 /* GKNavigationBarViewController.bundle in Resources */,
 				CECC0D23223A411F001CF0A2 /* Assets.xcassets in Resources */,
 				CEACEB0D224B9CD700A2AE2D /* BindPhoneVC.xib in Resources */,
 				CEACEB08224B949700A2AE2D /* ForgetWordVC.xib in Resources */,
 				CE28A79B22522F5500B62032 /* LiquorImageDataVC.xib in Resources */,
+				CE1FE55E225C7EA200197B8D /* ChangeInfoHeadViewUserIconCell.xib in Resources */,
 				CEE28F602243571800C3D7E9 /* LICENSE in Resources */,
 				CECEEF2C224A4DD30068F267 /* StoreContentVC.xib in Resources */,
 				CE28A7622251C66C00B62032 /* ManagementStoreTextViewCell.xib in Resources */,
@@ -2780,6 +2878,7 @@
 				CEECC0232255A5FD004EE5C2 /* VoucherCollectionCell.xib in Resources */,
 				CE5A6440224C9F9900891AC9 /* OpenStoreListCell.xib in Resources */,
 				CECEEF0B224A47DF0068F267 /* ManagerVC.xib in Resources */,
+				CE1FE564225C90CD00197B8D /* AccessListVC.xib in Resources */,
 				CEF5DDCA22545D8B0025F406 /* ChecklistVC.xib in Resources */,
 				CE6B05C32248EEF900AD44D7 /* DynamicsContentCell.xib in Resources */,
 				CEE5FCF222530F260093D567 /* starGray@3x.png in Resources */,
@@ -2790,6 +2889,7 @@
 				CE6B0594224867FE00AD44D7 /* ShieldDynamicVC.xib in Resources */,
 				CE28A7A02252333100B62032 /* SendActivityViewController.xib in Resources */,
 				CEE5FCF422530F260093D567 /* starFore@2x.png in Resources */,
+				CE1FE53C225C2D4E00197B8D /* DIYTelPhoneView.xib in Resources */,
 				CEE5FCF122530F260093D567 /* starFore@3x.png in Resources */,
 				CEFA9271223F99BB0015F7EE /* FavorableDynamicsVC.xib in Resources */,
 				CE28A7722251E63D00B62032 /* StoreSingleProductAddPhotoCell.xib in Resources */,
@@ -2804,11 +2904,13 @@
 				CEF5DDEB2254A6960025F406 /* DIYReportView.xib in Resources */,
 				CECEEF27224A4DC30068F267 /* ManagementStoreVC.xib in Resources */,
 				CEFA9276223F99CF0015F7EE /* HeedDynamicsVC.xib in Resources */,
+				CE1FE54E225C557300197B8D /* FillStoreSexTypeCell.xib in Resources */,
 				CEE3F668224DE75300151BE7 /* ManagementStoreActivityCell.xib in Resources */,
 				CEE28F7F2243732E00C3D7E9 /* wb_bg.jpg in Resources */,
 				CEE5FCF322530F260093D567 /* starGray@2x.png in Resources */,
 				CECEEEE4224A1F4E0068F267 /* MyVideoVC.xib in Resources */,
 				CECEEEDE224A17620068F267 /* MyPhotoVC.xib in Resources */,
+				CE1FE559225C6BF400197B8D /* FavorableDynamicsCell.xib in Resources */,
 				CEFA9245223F63E70015F7EE /* MainMineVC.xib in Resources */,
 				CEFA926C223F99A90015F7EE /* NearbyDynamicsVC.xib in Resources */,
 				CE6B05B32248A2C500AD44D7 /* VoucherVC.xib in Resources */,
@@ -2955,6 +3057,7 @@
 				CEFA928E223FAB430015F7EE /* NearByDynamicsToolCell.m in Sources */,
 				CE28A7B022523BAA00B62032 /* MyProcessingOrderCell.m in Sources */,
 				CE9C4C03223B5B1600DE9DC1 /* BaseTabBarController.m in Sources */,
+				CE1FE53A225C2D3600197B8D /* DIYTelPhoneView.m in Sources */,
 				CEE5FD052253857C0093D567 /* TESTFloatingView.m in Sources */,
 				CEE28F72224357EA00C3D7E9 /* ChangeInfoVC.m in Sources */,
 				CE28A7812251EEFC00B62032 /* StoreSingleProductUnitCell.m in Sources */,
@@ -2979,7 +3082,9 @@
 				CEE9B4502244EA060004E4FA /* ChangePassWordVC.m in Sources */,
 				CE6B05B82248AA3200AD44D7 /* DynamicsDetailVC.m in Sources */,
 				CEFA92C02240CB870015F7EE /* MainMineHeadCell.m in Sources */,
+				CE1FE569225C966800197B8D /* AccessListCell.m in Sources */,
 				CEFA9210223F535E0015F7EE /* AppDelegate+Config.m in Sources */,
+				CE1FE540225C3B5700197B8D /* FillTargetStoreInfoVC.m in Sources */,
 				CEE28F6C2243571800C3D7E9 /* GKNavigationBarViewController.m in Sources */,
 				CEACEB1E224BA65D00A2AE2D /* WGDigitField.m in Sources */,
 				CEFA9248223F6F450015F7EE /* AppDelegate+Logging.m in Sources */,
@@ -3025,6 +3130,7 @@
 				CEE3F66D224DEC5E00151BE7 /* ManagementStoreAddCell.m in Sources */,
 				CE9C4C00223B58F800DE9DC1 /* BaseNavigationController.m in Sources */,
 				CECEEEC6224A020C0068F267 /* MyDynamicsVC.m in Sources */,
+				CE1FE54D225C557300197B8D /* FillStoreSexTypeCell.m in Sources */,
 				CE5A642F224C642300891AC9 /* SelPhotoVC.m in Sources */,
 				CEACEB11224B9EC600A2AE2D /* SetPassWordVC.m in Sources */,
 				CEFA9260223F84750015F7EE /* FSPageContentView.m in Sources */,
@@ -3087,6 +3193,7 @@
 				CEE28F29224355E100C3D7E9 /* JXCategoryDotCell.m in Sources */,
 				CE9C4C09223B650C00DE9DC1 /* BaseViewController.m in Sources */,
 				CED7ECBB225390E900E0BFF3 /* MyOrderDetailItemCell.m in Sources */,
+				CE1FE549225C47BB00197B8D /* UITextField+Configuration.m in Sources */,
 				CE9C4BFA223B4F9B00DE9DC1 /* PLScrollViewEmptyView.m in Sources */,
 				CECEEF04224A45CE0068F267 /* OpenStoreVC.m in Sources */,
 				CEDBEF5F2254C579004E714E /* InteractiveListVC.m in Sources */,
@@ -3142,6 +3249,7 @@
 				CECC0D5E223A5670001CF0A2 /* UIView+LayoutMethods.m in Sources */,
 				CECE8037225B12A70069FD55 /* DragEditView.m in Sources */,
 				CE28A7902252099200B62032 /* StoreBoxTypeVC.m in Sources */,
+				CE1FE558225C6BF400197B8D /* FavorableDynamicsCell.m in Sources */,
 				CECE8045225B494C0069FD55 /* ShortVideoSession.m in Sources */,
 				CECEEF49224B17680068F267 /* CALayer+XibConfiguration.m in Sources */,
 				CEFA9270223F99BB0015F7EE /* FavorableDynamicsVC.m in Sources */,
@@ -3149,10 +3257,13 @@
 				CEE28F22224355E100C3D7E9 /* JXCategoryIndicatorImageView.m in Sources */,
 				CEFA9283223FA6920015F7EE /* NearByDynamicsHeadCell.m in Sources */,
 				CECEEF26224A4DC30068F267 /* ManagementStoreVC.m in Sources */,
+				CE1FE545225C3DFB00197B8D /* FillStoreItemCell.m in Sources */,
 				CEFA92CF2241CEB70015F7EE /* BaseView.m in Sources */,
 				CEFA9213223F5AAA0015F7EE /* UILabel+BaseChangeDefaultFont.m in Sources */,
+				CE1FE55D225C7EA200197B8D /* ChangeInfoHeadViewUserIconCell.m in Sources */,
 				CEF5DDB5225444970025F406 /* MyOrderDetailUserCell.m in Sources */,
 				CECEEF4D224B246F0068F267 /* MyQRCodeView.m in Sources */,
+				CE1FE552225C5A2200197B8D /* FillStoreSliderCell.m in Sources */,
 				CECEEF44224B12E10068F267 /* InviteStoreView.m in Sources */,
 				CECEEECC224A041C0068F267 /* MyDynamicsHeadCell.m in Sources */,
 				CEE6E37C22420731006ED98F /* SendDynamicsVideoCell.m in Sources */,
@@ -3169,6 +3280,7 @@
 				CE28A78B2252019600B62032 /* StorePackageVC.m in Sources */,
 				CECEEEDD224A17620068F267 /* MyPhotoVC.m in Sources */,
 				CE9C4C15223B740D00DE9DC1 /* NetWorkManager.m in Sources */,
+				CE1FE563225C90CD00197B8D /* AccessListVC.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

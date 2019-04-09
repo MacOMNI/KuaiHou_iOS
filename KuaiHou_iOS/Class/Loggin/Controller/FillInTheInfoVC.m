@@ -10,6 +10,10 @@
 #import "SelPhotoVC.h"
 
 @interface FillInTheInfoVC ()
+@property (weak, nonatomic) IBOutlet UITextField *nameTextField;
+@property (weak, nonatomic) IBOutlet UITextField *birTextField;
+@property (weak, nonatomic) IBOutlet UITextField *wordTextField;
+@property (weak, nonatomic) IBOutlet UITextField *nextTextField;
 
 @end
 
@@ -18,6 +22,13 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
+    self.nameTextField.placeholderDIYColor = kMain_TextColor_9;
+    
+    self.birTextField.placeholderDIYColor = kMain_TextColor_9;
+    
+    self.wordTextField.placeholderDIYColor = kMain_TextColor_9;
+    
+    self.nextTextField.placeholderDIYColor = kMain_TextColor_9;
 }
 - (IBAction)commit:(UIButton *)sender {
     [self.navigationController pushViewController:[SelPhotoVC new] animated:YES];

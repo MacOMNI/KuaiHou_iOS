@@ -11,6 +11,8 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="BindPhoneVC">
             <connections>
+                <outlet property="accTextField" destination="arS-GP-ywC" id="WpK-mE-05b"/>
+                <outlet property="codeTextField" destination="jNp-nd-dg4" id="NE4-UT-3Cp"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>

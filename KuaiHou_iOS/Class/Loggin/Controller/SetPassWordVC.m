@@ -9,6 +9,8 @@
 #import "SetPassWordVC.h"
 
 @interface SetPassWordVC ()
+@property (weak, nonatomic) IBOutlet UITextField *textField;
+@property (weak, nonatomic) IBOutlet UITextField *nextTextField;
 
 @end
 
@@ -17,6 +19,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
+    self.textField.placeholderDIYColor = kMain_TextColor_9;
+    self.nextTextField.placeholderDIYColor = kMain_TextColor_9;
 }
 
 /*

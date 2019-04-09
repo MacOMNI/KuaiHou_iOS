@@ -10,6 +10,8 @@
 #import "SetPassWordVC.h"
 
 @interface BindPhoneVC ()
+@property (weak, nonatomic) IBOutlet UITextField *accTextField;
+@property (weak, nonatomic) IBOutlet UITextField *codeTextField;
 
 @end
 
@@ -18,6 +20,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
+    self.accTextField.placeholderDIYColor = kMain_TextColor_9;
+    self.codeTextField.placeholderDIYColor = kMain_TextColor_9;
 }
 - (IBAction)commitAction:(UIButton *)sender {
     [self.navigationController pushViewController:[SetPassWordVC new] animated:YES];

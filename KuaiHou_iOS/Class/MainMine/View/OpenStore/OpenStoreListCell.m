@@ -13,6 +13,8 @@
 - (void)awakeFromNib {
     [super awakeFromNib];
     // Initialization code
+    self.textField.placeholderDIYColor = kMain_TextColor_9;
+    self.textField.placeholderDIYFont = kFont(12);
     
     [_textField addTarget:self action:@selector(actionToValueChange:) forControlEvents:UIControlEventEditingChanged];
 }

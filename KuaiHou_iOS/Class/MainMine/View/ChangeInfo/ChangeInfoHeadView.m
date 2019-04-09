@@ -7,10 +7,14 @@
 //
 
 #import "ChangeInfoHeadView.h"
+#import "ChangeInfoHeadViewUserIconCell.h"
+#import "AccessListVC.h"
 
-@interface ChangeInfoHeadView()
 
+@interface ChangeInfoHeadView()<UICollectionViewDelegate, UICollectionViewDataSource>
 
+@property (nonatomic, assign) int maxUserIconNum;
+@property (nonatomic, strong) NSMutableArray *dataArray;
 
 @end
 
@@ -18,6 +22,7 @@
 
 - (instancetype)initWithFrame:(CGRect)frame {
     if (self == [super initWithFrame:frame]) {
+        self.maxUserIconNum = (kScreenSizeWidth - 15) / 47;
 //        self.backgroundColor = [UIColor redColor];
         [self addSubview:self.bgImgView];
         [self addSubview:self.nameLabel];
@@ -54,7 +59,7 @@
         [self.sexImageView mas_makeConstraints:^(MASConstraintMaker *make) {
             make.top.equalTo(self.ypLab.mas_bottom).offset(15);
             make.left.equalTo(self.mas_left).offset(15);
-            make.size.mas_equalTo(CGSizeMake(22, 22));
+            make.size.mas_equalTo(CGSizeMake(14, 14));
         }];
         
         [self.ageLab mas_makeConstraints:^(MASConstraintMaker *make) {
@@ -87,7 +92,7 @@
         
         [self.collectionView mas_makeConstraints:^(MASConstraintMaker *make) {
             make.left.equalTo(self.mas_left).offset(15);
-            make.right.equalTo(self.mas_right).offset(-15);
+            make.right.equalTo(self.mas_right).offset(0);
             make.top.equalTo(self.lookNumLab.mas_bottom).offset(15);
             make.height.mas_equalTo(@32);
         }];
@@ -110,8 +115,9 @@
     frame.size.height -= offsetY;
 
     if (frame.size.height >= self.bgImgH) {
-        frame.size.height = self.bgImgH;
-        frame.origin.y = -(self.bgImgH - kScreenSizeWidth);
+        frame.size.height = self.bgImgH - offsetY;
+//        frame.origin.y = -(self.bgImgH - kScreenSizeWidth);
+        frame.origin.y = offsetY;
     }else {
         frame.origin.y = offsetY;
     }
@@ -154,7 +160,7 @@
 -(UIImageView *)sexImageView{
     if (!_sexImageView) {
         _sexImageView = [UIImageView new];
-        _sexImageView.image = [UIImage createImageWithColor:[UIColor yellowColor]];
+        _sexImageView.image = [UIImage loadImageWithName:@"sex_woman"];
     }
     return _sexImageView;
 }
@@ -221,10 +227,19 @@
     return _lookNumLab;
 }
 
--(UIView *)collectionView{
+-(UICollectionView *)collectionView{
     if (!_collectionView) {
-        _collectionView = [[UIView alloc] init];
-        _collectionView.backgroundColor = [UIColor redColor];
+        
+        UICollectionViewFlowLayout *layout = [[UICollectionViewFlowLayout alloc] init];
+        layout.scrollDirection = UICollectionViewScrollDirectionHorizontal;
+        layout.minimumLineSpacing = 0;
+        layout.minimumInteritemSpacing = 0;
+        _collectionView = [[UICollectionView alloc] initWithFrame:CGRectZero collectionViewLayout:layout];
+        _collectionView.backgroundColor = [UIColor whiteColor];
+        _collectionView.delegate = self;
+        _collectionView.dataSource = self;
+        _collectionView.collectionViewLayout = layout;
+        [_collectionView registerNib:[UINib nibWithNibName:NSStringFromClass([ChangeInfoHeadViewUserIconCell class]) bundle:nil] forCellWithReuseIdentifier:NSStringFromClass([ChangeInfoHeadViewUserIconCell class])];
     }
     return _collectionView;
 }
@@ -235,6 +250,79 @@
         _lineView.backgroundColor = kMain_lineColor;
     }
     return _lineView;
+}
+
+#pragma mark - 代理方法 Delegate Methods
+// 设置分区
+
+- (NSInteger)numberOfSectionsInCollectionView:(UICollectionView *)collectionView {
+    return 1;
+}
+
+// 每个分区上得元素个数
+- (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section {
+    if (self.dataArray.count > 0) {
+        if (self.dataArray.count < self.maxUserIconNum) {
+            return self.dataArray.count + 1;
+        }else{
+            return self.maxUserIconNum;
+        }
+    }
+    return 0;
+    
+}
+// 设置cell大小 itemSize：可以给每一个cell指定不同的尺寸
+- (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout*)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath *)indexPath {
+    return CGSizeMake(47, 32);
+}
+
+// 设置cell
+- (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
+    
+    ChangeInfoHeadViewUserIconCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:NSStringFromClass([ChangeInfoHeadViewUserIconCell class]) forIndexPath:indexPath];
+    if (self.dataArray.count < self.maxUserIconNum) {
+        cell.headImageView.hidden = indexPath.row == self.dataArray.count;
+        cell.more_icon.hidden = indexPath.row != self.dataArray.count;
+    }else{
+        cell.headImageView.hidden = indexPath.row == self.maxUserIconNum - 1;
+        cell.more_icon.hidden = indexPath.row != self.maxUserIconNum - 1;
+    }
+    
+    return cell;
+}
+- (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath{
+    if (self.dataArray.count < self.maxUserIconNum) {
+        if (indexPath.row == self.dataArray.count) {
+            NSLog(@"查看列表");
+            [[MyTool getCurrentVC].navigationController pushViewController:[AccessListVC new] animated:YES];
+//            [self reloadViewByArray:@[@"",@""]];
+        }else{
+            NSLog(@"点击了头像");
+        }
+    }else{
+        if (indexPath.row == self.maxUserIconNum - 1) {
+            NSLog(@"查看列表");
+            [[MyTool getCurrentVC].navigationController pushViewController:[AccessListVC new] animated:YES];
+        }else{
+            NSLog(@"点击了头像");
+        }
+    }
+    
+}
+
+-(void)reloadViewByArray:(NSArray *)dataArray{
+    self.dataArray = [[NSMutableArray alloc] initWithArray:dataArray];
+    
+    [UIView transitionWithView:self.collectionView
+                      duration: 0.35f
+                       options: UIViewAnimationOptionTransitionCrossDissolve
+                    animations: ^(void){
+                        [self.collectionView reloadData];
+                    }
+                    completion: ^(BOOL isFinished){
+                        
+                    }];
+    [self.collectionView reloadData];
 }
 
 /*

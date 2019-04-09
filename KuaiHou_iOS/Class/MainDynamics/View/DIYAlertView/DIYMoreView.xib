@@ -84,6 +84,10 @@
                 </userDefinedRuntimeAttribute>
                 <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
             </userDefinedRuntimeAttributes>
+            <connections>
+                <outlet property="item_2" destination="h51-mS-klN" id="kcG-gL-Iih"/>
+                <outlet property="itme_1" destination="3Ux-6n-ztU" id="Lhq-eL-Qqc"/>
+            </connections>
         </view>
     </objects>
 </document>

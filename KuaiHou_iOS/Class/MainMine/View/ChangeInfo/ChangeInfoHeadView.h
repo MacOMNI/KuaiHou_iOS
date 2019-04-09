@@ -32,11 +32,13 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, strong) UILabel *titleLab;
 @property (nonatomic, strong) UILabel *lookNumLab;
 
-@property (nonatomic, strong) UIView *collectionView;
+@property (nonatomic, strong) UICollectionView *collectionView;
 
 @property (nonatomic, strong) UIView    *lineView;
 
 - (void)scrollViewDidScroll:(CGFloat)offsetY;
+
+-(void)reloadViewByArray:(NSArray *)dataArray;
 
 @end
 

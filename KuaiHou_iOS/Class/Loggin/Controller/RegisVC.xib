@@ -13,6 +13,7 @@
             <connections>
                 <outlet property="accLab" destination="zDm-PH-Dlh" id="eYC-Pt-Gcc"/>
                 <outlet property="accLogginImageView" destination="w1U-Yd-TKQ" id="Qsb-fj-2Ux"/>
+                <outlet property="textField" destination="aSX-wl-YI1" id="dv9-4K-xcT"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
                 <outlet property="weChatImageView" destination="hbL-sD-vwz" id="e5H-p3-i74"/>
                 <outlet property="weChatLab" destination="eMx-Nf-EMI" id="azJ-V3-PoW"/>
@@ -44,7 +45,7 @@
                         </view>
                         <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="请输入手机号码" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="aSX-wl-YI1">
                             <rect key="frame" x="85" y="0.0" width="252.5" height="55"/>
-                            <nil key="textColor"/>
+                            <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
                             <fontDescription key="fontDescription" type="system" pointSize="18"/>
                             <textInputTraits key="textInputTraits"/>
                         </textField>
