@@ -21,6 +21,7 @@
 #import "StoreSingleProductVC.h"
 #import "StorePackageVC.h"
 #import "StoreBoxTypeVC.h"
+#import "SendActivityViewController.h"
 
 @interface ManagementStoreVC ()
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
@@ -288,9 +289,10 @@
         }else{ // 添加按钮
             ManagementStoreAddCell *cell = [tableView dequeueReusableCellWithIdentifier:NSStringFromClass([ManagementStoreAddCell class]) forIndexPath:indexPath];
             [cell setAddBlock:^{
-                NSDictionary *dict = @{@"time":@"2018年10月11日-2018年10月15日", @"content":@"买洋酒、啤酒套餐优惠放假加价实施（P大房加200元、豪华房加 280元、贵宾、总统厢加300元、可免费欢唱3小时）"};
-                [self.activityArray addObject:dict];
-                [self.tableView reloadData];
+                [self.navigationController pushViewController:[SendActivityViewController new] animated:YES];
+//                NSDictionary *dict = @{@"time":@"2018年10月11日-2018年10月15日", @"content":@"买洋酒、啤酒套餐优惠放假加价实施（P大房加200元、豪华房加 280元、贵宾、总统厢加300元、可免费欢唱3小时）"};
+//                [self.activityArray addObject:dict];
+//                [self.tableView reloadData];
             }];
             return cell;
         }

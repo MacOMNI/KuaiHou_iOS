@@ -19,6 +19,9 @@
 #import "MyQRCodeView.h"
 #import "MyOrderVC.h"
 #import "MyVoucherVC.h"
+#import "OpenPartnerVC.h"
+#import "PartnerVC.h"
+#import "WalletVC.h"
 
 @interface MainMineVC ()
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
@@ -122,13 +125,16 @@
                 }
                     break;
                 case 100:{ // 钱包
+                    
+                    [self.navigationController pushViewController:[WalletVC new] animated:YES];
                 }
                     break;
                 case 101:{ // 订单
                     [self.navigationController pushViewController:[MyOrderVC new] animated:YES];
                 }
                     break;
-                case 102:{ // 推广
+                case 102:{ // 合伙人
+                    [self.navigationController pushViewController:[PartnerVC new] animated:YES];
                 }
                     break;
                 case 103:{ // 代金券

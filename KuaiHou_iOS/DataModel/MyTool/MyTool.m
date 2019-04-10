@@ -281,12 +281,13 @@
         //        }
         [mediaTypes addObject:(NSString *)kUTTypeImage];
         if (mediaTypes.count) {
-            _imagePickerVc.mediaTypes = mediaTypes;
+            self.imagePickerVc.mediaTypes = mediaTypes;
         }
         if (iOS8Later) {
-            _imagePickerVc.modalPresentationStyle = UIModalPresentationOverCurrentContext;
+            self.imagePickerVc.modalPresentationStyle = UIModalPresentationOverCurrentContext;
         }
-        [[MyTool getCurrentVC] presentViewController:_imagePickerVc animated:YES completion:nil];
+        [[MyTool getCurrentVC] presentViewController:self.imagePickerVc animated:YES completion:nil];
+        
     } else {
         NSLog(@"模拟器中无法打开照相机,请在真机中使用");
     }

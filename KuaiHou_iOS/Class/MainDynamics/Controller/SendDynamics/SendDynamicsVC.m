@@ -224,7 +224,9 @@
     }];
     [self presentViewController:imagePickerVc animated:YES completion:nil];
 }
-- (void)actionSheet:(UIActionSheet *)actionSheet clickedButtonAtIndex:(NSInteger)buttonIndex {
+
+
+- (void)actionSheet:(UIActionSheet *)actionSheet didDismissWithButtonIndex:(NSInteger)buttonIndex{
     if (actionSheet.tag == 888) {
         if (buttonIndex == 0) { // take photo / 去拍照
             [[MyTool shareInstance] takePhoto];
@@ -233,11 +235,11 @@
                 self.selectPhotoArr = self.selectPhotoArr;
                 [self.selectedAssets addObject:asset];
             }];
-
+            
         } else if (buttonIndex == 1) {
             [self pushTZImagePickerController];
         }
-
+        
     }
     if (actionSheet.tag == 999) {
         if (buttonIndex == 0) { // 录制视频
@@ -253,6 +255,7 @@
         }
     }
 }
+
 - (UIImage *)getScreenShotImageFromVideoPath:(NSString *)filePath{
     UIImage *shotImage;
     //视频路径URL

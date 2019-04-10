@@ -27,6 +27,10 @@
 		CE1FE564225C90CD00197B8D /* AccessListVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE1FE562225C90CD00197B8D /* AccessListVC.xib */; };
 		CE1FE569225C966800197B8D /* AccessListCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CE1FE567225C966800197B8D /* AccessListCell.m */; };
 		CE1FE56A225C966800197B8D /* AccessListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE1FE568225C966800197B8D /* AccessListCell.xib */; };
+		CE1FE56F225CB38E00197B8D /* OpenPartnerVC.m in Sources */ = {isa = PBXBuildFile; fileRef = CE1FE56D225CB38E00197B8D /* OpenPartnerVC.m */; };
+		CE1FE570225CB38E00197B8D /* OpenPartnerVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE1FE56E225CB38E00197B8D /* OpenPartnerVC.xib */; };
+		CE1FE575225CB4E100197B8D /* OpenPartnerCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CE1FE573225CB4E100197B8D /* OpenPartnerCell.m */; };
+		CE1FE576225CB4E100197B8D /* OpenPartnerCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE1FE574225CB4E100197B8D /* OpenPartnerCell.xib */; };
 		CE28A7572251AA7100B62032 /* ManagementStoreConfigCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CE28A7552251AA7100B62032 /* ManagementStoreConfigCell.m */; };
 		CE28A7582251AA7100B62032 /* ManagementStoreConfigCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE28A7562251AA7100B62032 /* ManagementStoreConfigCell.xib */; };
 		CE28A75C2251B93200B62032 /* ManagementStoreConfigTitleCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CE28A75A2251B93200B62032 /* ManagementStoreConfigTitleCell.m */; };
@@ -94,6 +98,24 @@
 		CE6B05BD2248B8BE00AD44D7 /* DIYSendToolbarView.m in Sources */ = {isa = PBXBuildFile; fileRef = CE6B05BC2248B8BE00AD44D7 /* DIYSendToolbarView.m */; };
 		CE6B05C22248EEF900AD44D7 /* DynamicsContentCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CE6B05C02248EEF900AD44D7 /* DynamicsContentCell.m */; };
 		CE6B05C32248EEF900AD44D7 /* DynamicsContentCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE6B05C12248EEF900AD44D7 /* DynamicsContentCell.xib */; };
+		CE7F1B62225D7FF800CC5B09 /* PartnerVC.m in Sources */ = {isa = PBXBuildFile; fileRef = CE7F1B60225D7FF800CC5B09 /* PartnerVC.m */; };
+		CE7F1B63225D7FF800CC5B09 /* PartnerVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE7F1B61225D7FF800CC5B09 /* PartnerVC.xib */; };
+		CE7F1B66225D825400CC5B09 /* PartnerHeadView.m in Sources */ = {isa = PBXBuildFile; fileRef = CE7F1B65225D825400CC5B09 /* PartnerHeadView.m */; };
+		CE7F1B7B225D9CE800CC5B09 /* PartnerChildVC.m in Sources */ = {isa = PBXBuildFile; fileRef = CE7F1B79225D9CE800CC5B09 /* PartnerChildVC.m */; };
+		CE7F1B7C225D9CE800CC5B09 /* PartnerChildVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE7F1B7A225D9CE800CC5B09 /* PartnerChildVC.xib */; };
+		CE7F1B80225D9F4100CC5B09 /* PartnerChildCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CE7F1B7E225D9F4100CC5B09 /* PartnerChildCell.m */; };
+		CE7F1B81225D9F4100CC5B09 /* PartnerChildCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE7F1B7F225D9F4100CC5B09 /* PartnerChildCell.xib */; };
+		CE7F1B85225DC54100CC5B09 /* LiquorImageDataCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CE7F1B83225DC54100CC5B09 /* LiquorImageDataCell.m */; };
+		CE7F1B86225DC54100CC5B09 /* LiquorImageDataCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE7F1B84225DC54100CC5B09 /* LiquorImageDataCell.xib */; };
+		CE7F1B8F225DCA3A00CC5B09 /* MaterialVC.m in Sources */ = {isa = PBXBuildFile; fileRef = CE7F1B8D225DCA3A00CC5B09 /* MaterialVC.m */; };
+		CE7F1B94225DCBA300CC5B09 /* MaterialImageVC.m in Sources */ = {isa = PBXBuildFile; fileRef = CE7F1B92225DCBA300CC5B09 /* MaterialImageVC.m */; };
+		CE7F1B95225DCBA300CC5B09 /* MaterialImageVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE7F1B93225DCBA300CC5B09 /* MaterialImageVC.xib */; };
+		CE7F1B99225DCBB400CC5B09 /* MaterialTxtVC.m in Sources */ = {isa = PBXBuildFile; fileRef = CE7F1B97225DCBB400CC5B09 /* MaterialTxtVC.m */; };
+		CE7F1B9A225DCBB400CC5B09 /* MaterialTxtVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE7F1B98225DCBB400CC5B09 /* MaterialTxtVC.xib */; };
+		CE7F1B9E225DD0AF00CC5B09 /* MaterialImageCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CE7F1B9C225DD0AF00CC5B09 /* MaterialImageCell.m */; };
+		CE7F1B9F225DD0AF00CC5B09 /* MaterialImageCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE7F1B9D225DD0AF00CC5B09 /* MaterialImageCell.xib */; };
+		CE7F1BA4225DEB6D00CC5B09 /* WalletVC.m in Sources */ = {isa = PBXBuildFile; fileRef = CE7F1BA2225DEB6D00CC5B09 /* WalletVC.m */; };
+		CE7F1BA5225DEB6D00CC5B09 /* WalletVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE7F1BA3225DEB6D00CC5B09 /* WalletVC.xib */; };
 		CE9C4BF6223B4F9B00DE9DC1 /* icon_error_network.png in Resources */ = {isa = PBXBuildFile; fileRef = CE9C4BE8223B4F9B00DE9DC1 /* icon_error_network.png */; };
 		CE9C4BF7223B4F9B00DE9DC1 /* PLEmptyView.m in Sources */ = {isa = PBXBuildFile; fileRef = CE9C4BE9223B4F9B00DE9DC1 /* PLEmptyView.m */; };
 		CE9C4BF8223B4F9B00DE9DC1 /* icon_no_data.png in Resources */ = {isa = PBXBuildFile; fileRef = CE9C4BED223B4F9B00DE9DC1 /* icon_no_data.png */; };
@@ -296,6 +318,8 @@
 		CEE5FD052253857C0093D567 /* TESTFloatingView.m in Sources */ = {isa = PBXBuildFile; fileRef = CEE5FD032253857C0093D567 /* TESTFloatingView.m */; };
 		CEE6E37C22420731006ED98F /* SendDynamicsVideoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CEE6E37A22420731006ED98F /* SendDynamicsVideoCell.m */; };
 		CEE6E37D22420731006ED98F /* SendDynamicsVideoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CEE6E37B22420731006ED98F /* SendDynamicsVideoCell.xib */; };
+		CEE79F79225CBA530066CE30 /* DIYPayView.m in Sources */ = {isa = PBXBuildFile; fileRef = CEE79F78225CBA530066CE30 /* DIYPayView.m */; };
+		CEE79F7D225CBA960066CE30 /* DIYPayView.xib in Resources */ = {isa = PBXBuildFile; fileRef = CEE79F7C225CBA960066CE30 /* DIYPayView.xib */; };
 		CEE9B4502244EA060004E4FA /* ChangePassWordVC.m in Sources */ = {isa = PBXBuildFile; fileRef = CEE9B44E2244EA060004E4FA /* ChangePassWordVC.m */; };
 		CEE9B4512244EA060004E4FA /* ChangePassWordVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = CEE9B44F2244EA060004E4FA /* ChangePassWordVC.xib */; };
 		CEECC0222255A5FD004EE5C2 /* VoucherCollectionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CEECC0202255A5FD004EE5C2 /* VoucherCollectionCell.m */; };
@@ -436,6 +460,12 @@
 		CE1FE566225C966800197B8D /* AccessListCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AccessListCell.h; sourceTree = "<group>"; };
 		CE1FE567225C966800197B8D /* AccessListCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AccessListCell.m; sourceTree = "<group>"; };
 		CE1FE568225C966800197B8D /* AccessListCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AccessListCell.xib; sourceTree = "<group>"; };
+		CE1FE56C225CB38E00197B8D /* OpenPartnerVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OpenPartnerVC.h; sourceTree = "<group>"; };
+		CE1FE56D225CB38E00197B8D /* OpenPartnerVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OpenPartnerVC.m; sourceTree = "<group>"; };
+		CE1FE56E225CB38E00197B8D /* OpenPartnerVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OpenPartnerVC.xib; sourceTree = "<group>"; };
+		CE1FE572225CB4E100197B8D /* OpenPartnerCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OpenPartnerCell.h; sourceTree = "<group>"; };
+		CE1FE573225CB4E100197B8D /* OpenPartnerCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OpenPartnerCell.m; sourceTree = "<group>"; };
+		CE1FE574225CB4E100197B8D /* OpenPartnerCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OpenPartnerCell.xib; sourceTree = "<group>"; };
 		CE28A7542251AA7100B62032 /* ManagementStoreConfigCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ManagementStoreConfigCell.h; sourceTree = "<group>"; };
 		CE28A7552251AA7100B62032 /* ManagementStoreConfigCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ManagementStoreConfigCell.m; sourceTree = "<group>"; };
 		CE28A7562251AA7100B62032 /* ManagementStoreConfigCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ManagementStoreConfigCell.xib; sourceTree = "<group>"; };
@@ -541,6 +571,34 @@
 		CE6B05BF2248EEF900AD44D7 /* DynamicsContentCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DynamicsContentCell.h; sourceTree = "<group>"; };
 		CE6B05C02248EEF900AD44D7 /* DynamicsContentCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DynamicsContentCell.m; sourceTree = "<group>"; };
 		CE6B05C12248EEF900AD44D7 /* DynamicsContentCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DynamicsContentCell.xib; sourceTree = "<group>"; };
+		CE7F1B5F225D7FF800CC5B09 /* PartnerVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PartnerVC.h; sourceTree = "<group>"; };
+		CE7F1B60225D7FF800CC5B09 /* PartnerVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PartnerVC.m; sourceTree = "<group>"; };
+		CE7F1B61225D7FF800CC5B09 /* PartnerVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PartnerVC.xib; sourceTree = "<group>"; };
+		CE7F1B64225D825400CC5B09 /* PartnerHeadView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PartnerHeadView.h; sourceTree = "<group>"; };
+		CE7F1B65225D825400CC5B09 /* PartnerHeadView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PartnerHeadView.m; sourceTree = "<group>"; };
+		CE7F1B78225D9CE800CC5B09 /* PartnerChildVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PartnerChildVC.h; sourceTree = "<group>"; };
+		CE7F1B79225D9CE800CC5B09 /* PartnerChildVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PartnerChildVC.m; sourceTree = "<group>"; };
+		CE7F1B7A225D9CE800CC5B09 /* PartnerChildVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PartnerChildVC.xib; sourceTree = "<group>"; };
+		CE7F1B7D225D9F4100CC5B09 /* PartnerChildCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PartnerChildCell.h; sourceTree = "<group>"; };
+		CE7F1B7E225D9F4100CC5B09 /* PartnerChildCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PartnerChildCell.m; sourceTree = "<group>"; };
+		CE7F1B7F225D9F4100CC5B09 /* PartnerChildCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PartnerChildCell.xib; sourceTree = "<group>"; };
+		CE7F1B82225DC54100CC5B09 /* LiquorImageDataCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LiquorImageDataCell.h; sourceTree = "<group>"; };
+		CE7F1B83225DC54100CC5B09 /* LiquorImageDataCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LiquorImageDataCell.m; sourceTree = "<group>"; };
+		CE7F1B84225DC54100CC5B09 /* LiquorImageDataCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LiquorImageDataCell.xib; sourceTree = "<group>"; };
+		CE7F1B8C225DCA3A00CC5B09 /* MaterialVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MaterialVC.h; sourceTree = "<group>"; };
+		CE7F1B8D225DCA3A00CC5B09 /* MaterialVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MaterialVC.m; sourceTree = "<group>"; };
+		CE7F1B91225DCBA300CC5B09 /* MaterialImageVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MaterialImageVC.h; sourceTree = "<group>"; };
+		CE7F1B92225DCBA300CC5B09 /* MaterialImageVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MaterialImageVC.m; sourceTree = "<group>"; };
+		CE7F1B93225DCBA300CC5B09 /* MaterialImageVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MaterialImageVC.xib; sourceTree = "<group>"; };
+		CE7F1B96225DCBB400CC5B09 /* MaterialTxtVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MaterialTxtVC.h; sourceTree = "<group>"; };
+		CE7F1B97225DCBB400CC5B09 /* MaterialTxtVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MaterialTxtVC.m; sourceTree = "<group>"; };
+		CE7F1B98225DCBB400CC5B09 /* MaterialTxtVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MaterialTxtVC.xib; sourceTree = "<group>"; };
+		CE7F1B9B225DD0AF00CC5B09 /* MaterialImageCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MaterialImageCell.h; sourceTree = "<group>"; };
+		CE7F1B9C225DD0AF00CC5B09 /* MaterialImageCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MaterialImageCell.m; sourceTree = "<group>"; };
+		CE7F1B9D225DD0AF00CC5B09 /* MaterialImageCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MaterialImageCell.xib; sourceTree = "<group>"; };
+		CE7F1BA1225DEB6D00CC5B09 /* WalletVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WalletVC.h; sourceTree = "<group>"; };
+		CE7F1BA2225DEB6D00CC5B09 /* WalletVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WalletVC.m; sourceTree = "<group>"; };
+		CE7F1BA3225DEB6D00CC5B09 /* WalletVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WalletVC.xib; sourceTree = "<group>"; };
 		CE9C4BE8223B4F9B00DE9DC1 /* icon_error_network.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_error_network.png; sourceTree = "<group>"; };
 		CE9C4BE9223B4F9B00DE9DC1 /* PLEmptyView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PLEmptyView.m; sourceTree = "<group>"; };
 		CE9C4BEA223B4F9B00DE9DC1 /* PLEmptyConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PLEmptyConfig.h; sourceTree = "<group>"; };
@@ -894,6 +952,9 @@
 		CEE6E37922420731006ED98F /* SendDynamicsVideoCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SendDynamicsVideoCell.h; sourceTree = "<group>"; };
 		CEE6E37A22420731006ED98F /* SendDynamicsVideoCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SendDynamicsVideoCell.m; sourceTree = "<group>"; };
 		CEE6E37B22420731006ED98F /* SendDynamicsVideoCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SendDynamicsVideoCell.xib; sourceTree = "<group>"; };
+		CEE79F77225CBA530066CE30 /* DIYPayView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DIYPayView.h; sourceTree = "<group>"; };
+		CEE79F78225CBA530066CE30 /* DIYPayView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DIYPayView.m; sourceTree = "<group>"; };
+		CEE79F7C225CBA960066CE30 /* DIYPayView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DIYPayView.xib; sourceTree = "<group>"; };
 		CEE9B44D2244EA060004E4FA /* ChangePassWordVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ChangePassWordVC.h; sourceTree = "<group>"; };
 		CEE9B44E2244EA060004E4FA /* ChangePassWordVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ChangePassWordVC.m; sourceTree = "<group>"; };
 		CEE9B44F2244EA060004E4FA /* ChangePassWordVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChangePassWordVC.xib; sourceTree = "<group>"; };
@@ -1105,6 +1166,51 @@
 			path = AccessList;
 			sourceTree = "<group>";
 		};
+		CE1FE56B225CB34D00197B8D /* Partner */ = {
+			isa = PBXGroup;
+			children = (
+				CE1FE56C225CB38E00197B8D /* OpenPartnerVC.h */,
+				CE1FE56D225CB38E00197B8D /* OpenPartnerVC.m */,
+				CE1FE56E225CB38E00197B8D /* OpenPartnerVC.xib */,
+				CE7F1B5F225D7FF800CC5B09 /* PartnerVC.h */,
+				CE7F1B60225D7FF800CC5B09 /* PartnerVC.m */,
+				CE7F1B61225D7FF800CC5B09 /* PartnerVC.xib */,
+				CE7F1B78225D9CE800CC5B09 /* PartnerChildVC.h */,
+				CE7F1B79225D9CE800CC5B09 /* PartnerChildVC.m */,
+				CE7F1B7A225D9CE800CC5B09 /* PartnerChildVC.xib */,
+				CE7F1B8C225DCA3A00CC5B09 /* MaterialVC.h */,
+				CE7F1B8D225DCA3A00CC5B09 /* MaterialVC.m */,
+				CE7F1B91225DCBA300CC5B09 /* MaterialImageVC.h */,
+				CE7F1B92225DCBA300CC5B09 /* MaterialImageVC.m */,
+				CE7F1B93225DCBA300CC5B09 /* MaterialImageVC.xib */,
+				CE7F1B96225DCBB400CC5B09 /* MaterialTxtVC.h */,
+				CE7F1B97225DCBB400CC5B09 /* MaterialTxtVC.m */,
+				CE7F1B98225DCBB400CC5B09 /* MaterialTxtVC.xib */,
+			);
+			path = Partner;
+			sourceTree = "<group>";
+		};
+		CE1FE571225CB4B200197B8D /* Partner */ = {
+			isa = PBXGroup;
+			children = (
+				CE1FE572225CB4E100197B8D /* OpenPartnerCell.h */,
+				CE1FE573225CB4E100197B8D /* OpenPartnerCell.m */,
+				CE1FE574225CB4E100197B8D /* OpenPartnerCell.xib */,
+				CEE79F77225CBA530066CE30 /* DIYPayView.h */,
+				CEE79F78225CBA530066CE30 /* DIYPayView.m */,
+				CEE79F7C225CBA960066CE30 /* DIYPayView.xib */,
+				CE7F1B64225D825400CC5B09 /* PartnerHeadView.h */,
+				CE7F1B65225D825400CC5B09 /* PartnerHeadView.m */,
+				CE7F1B7D225D9F4100CC5B09 /* PartnerChildCell.h */,
+				CE7F1B7E225D9F4100CC5B09 /* PartnerChildCell.m */,
+				CE7F1B7F225D9F4100CC5B09 /* PartnerChildCell.xib */,
+				CE7F1B9B225DD0AF00CC5B09 /* MaterialImageCell.h */,
+				CE7F1B9C225DD0AF00CC5B09 /* MaterialImageCell.m */,
+				CE7F1B9D225DD0AF00CC5B09 /* MaterialImageCell.xib */,
+			);
+			path = Partner;
+			sourceTree = "<group>";
+		};
 		CE28A76D2251E58300B62032 /* StoreSingleProduct */ = {
 			isa = PBXGroup;
 			children = (
@@ -1268,6 +1374,16 @@
 				CE6B05C12248EEF900AD44D7 /* DynamicsContentCell.xib */,
 			);
 			path = DynamicsDetail;
+			sourceTree = "<group>";
+		};
+		CE7F1BA0225DEB4100CC5B09 /* Wallet */ = {
+			isa = PBXGroup;
+			children = (
+				CE7F1BA1225DEB6D00CC5B09 /* WalletVC.h */,
+				CE7F1BA2225DEB6D00CC5B09 /* WalletVC.m */,
+				CE7F1BA3225DEB6D00CC5B09 /* WalletVC.xib */,
+			);
+			path = Wallet;
 			sourceTree = "<group>";
 		};
 		CE9C4BE7223B4F9B00DE9DC1 /* Empty */ = {
@@ -2208,6 +2324,7 @@
 		CEE3F663224DE71A00151BE7 /* ManagementStore */ = {
 			isa = PBXGroup;
 			children = (
+				CE28A76D2251E58300B62032 /* StoreSingleProduct */,
 				CEE3F664224DE75300151BE7 /* ManagementStoreActivityCell.h */,
 				CEE3F665224DE75300151BE7 /* ManagementStoreActivityCell.m */,
 				CEE3F666224DE75300151BE7 /* ManagementStoreActivityCell.xib */,
@@ -2229,7 +2346,9 @@
 				CE28A7632251D96000B62032 /* ManagementStoreChangeTimeCell.h */,
 				CE28A7642251D96000B62032 /* ManagementStoreChangeTimeCell.m */,
 				CE28A7652251D96000B62032 /* ManagementStoreChangeTimeCell.xib */,
-				CE28A76D2251E58300B62032 /* StoreSingleProduct */,
+				CE7F1B82225DC54100CC5B09 /* LiquorImageDataCell.h */,
+				CE7F1B83225DC54100CC5B09 /* LiquorImageDataCell.m */,
+				CE7F1B84225DC54100CC5B09 /* LiquorImageDataCell.xib */,
 			);
 			path = ManagementStore;
 			sourceTree = "<group>";
@@ -2504,15 +2623,17 @@
 		CEFA9227223F627C0015F7EE /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				CEFA9241223F63E70015F7EE /* MainMineVC.h */,
+				CEFA9242223F63E70015F7EE /* MainMineVC.m */,
+				CEFA9243223F63E70015F7EE /* MainMineVC.xib */,
+				CE7F1BA0225DEB4100CC5B09 /* Wallet */,
+				CE1FE56B225CB34D00197B8D /* Partner */,
 				CE28A7A1225238C700B62032 /* MyOrder */,
 				CECEEF06224A47C50068F267 /* Manager */,
 				CECEEF00224A45770068F267 /* OpenStore */,
 				CECEEEF4224A41940068F267 /* Activity */,
 				CECEEEEE224A2CDB0068F267 /* Task */,
 				CE6B05AE2248A2B400AD44D7 /* Voucher */,
-				CEFA9241223F63E70015F7EE /* MainMineVC.h */,
-				CEFA9242223F63E70015F7EE /* MainMineVC.m */,
-				CEFA9243223F63E70015F7EE /* MainMineVC.xib */,
 				CEE28ECC22434DA100C3D7E9 /* ChangeInfo */,
 				CEE28EA52243297000C3D7E9 /* Setting */,
 			);
@@ -2528,6 +2649,7 @@
 				CEFA92C22240ED9C0015F7EE /* MainMineListCell.h */,
 				CEFA92C32240ED9C0015F7EE /* MainMineListCell.m */,
 				CEFA92C42240ED9C0015F7EE /* MainMineListCell.xib */,
+				CE1FE571225CB4B200197B8D /* Partner */,
 				CEECC01E2255A5A8004EE5C2 /* Voucher */,
 				CE28A7AC22523B8900B62032 /* MyOrder */,
 				CEE3F663224DE71A00151BE7 /* ManagementStore */,
@@ -2814,6 +2936,7 @@
 				CECEEEBC2249D9560068F267 /* InfoDetaildNorCell.xib in Resources */,
 				CEFA92C12240CB870015F7EE /* MainMineHeadCell.xib in Resources */,
 				CE28A76C2251E3D200B62032 /* StoreSingleProductVC.xib in Resources */,
+				CE7F1B86225DC54100CC5B09 /* LiquorImageDataCell.xib in Resources */,
 				CED7ECBC225390E900E0BFF3 /* MyOrderDetailItemCell.xib in Resources */,
 				CEE3F673224DF12200151BE7 /* ManagementStoreBoxTypeCell.xib in Resources */,
 				CEECC02E2255D84F004EE5C2 /* MyChildVoucherVC.xib in Resources */,
@@ -2824,9 +2947,11 @@
 				CECEEECD224A041C0068F267 /* MyDynamicsHeadCell.xib in Resources */,
 				CE28A7822251EEFC00B62032 /* StoreSingleProductUnitCell.xib in Resources */,
 				CE5A643B224C820400891AC9 /* OpenStoreHeadView.xib in Resources */,
+				CE1FE570225CB38E00197B8D /* OpenPartnerVC.xib in Resources */,
 				CEF5DDCF225480450025F406 /* BillObjectionVC.xib in Resources */,
 				CECEEEC7224A020C0068F267 /* MyDynamicsVC.xib in Resources */,
 				CECEEF55224B56FF0068F267 /* CleanChatView.xib in Resources */,
+				CE7F1B63225D7FF800CC5B09 /* PartnerVC.xib in Resources */,
 				CECEEF18224A4D290068F267 /* ManagerUserVC.xib in Resources */,
 				CECEEEED224A27F20068F267 /* LogginVC.xib in Resources */,
 				CE28A7B122523BAA00B62032 /* MyProcessingOrderCell.xib in Resources */,
@@ -2850,6 +2975,7 @@
 				CE1FE553225C5A2200197B8D /* FillStoreSliderCell.xib in Resources */,
 				CEFA92CC2241C93D0015F7EE /* SendDynamicsVC.xib in Resources */,
 				CECE8038225B12A70069FD55 /* drag.jpg in Resources */,
+				CE7F1B95225DCBA300CC5B09 /* MaterialImageVC.xib in Resources */,
 				CECEEEF9224A41AB0068F267 /* ActivityVC.xib in Resources */,
 				CEF5DDDE22548B5E0025F406 /* OrderComplaintCell.xib in Resources */,
 				CEFA929E2240883B0015F7EE /* NewMessageVC.xib in Resources */,
@@ -2871,16 +2997,21 @@
 				CE1FE55E225C7EA200197B8D /* ChangeInfoHeadViewUserIconCell.xib in Resources */,
 				CEE28F602243571800C3D7E9 /* LICENSE in Resources */,
 				CECEEF2C224A4DD30068F267 /* StoreContentVC.xib in Resources */,
+				CE7F1B81225D9F4100CC5B09 /* PartnerChildCell.xib in Resources */,
 				CE28A7622251C66C00B62032 /* ManagementStoreTextViewCell.xib in Resources */,
 				CE28A7582251AA7100B62032 /* ManagementStoreConfigCell.xib in Resources */,
 				CE5A6445224CA06700891AC9 /* OpenStoreItemCell.xib in Resources */,
+				CE7F1B9A225DCBB400CC5B09 /* MaterialTxtVC.xib in Resources */,
 				CEE3F662224DAFF000151BE7 /* UnpaidOrdersListCell.xib in Resources */,
 				CEECC0232255A5FD004EE5C2 /* VoucherCollectionCell.xib in Resources */,
 				CE5A6440224C9F9900891AC9 /* OpenStoreListCell.xib in Resources */,
 				CECEEF0B224A47DF0068F267 /* ManagerVC.xib in Resources */,
+				CE7F1BA5225DEB6D00CC5B09 /* WalletVC.xib in Resources */,
+				CEE79F7D225CBA960066CE30 /* DIYPayView.xib in Resources */,
 				CE1FE564225C90CD00197B8D /* AccessListVC.xib in Resources */,
 				CEF5DDCA22545D8B0025F406 /* ChecklistVC.xib in Resources */,
 				CE6B05C32248EEF900AD44D7 /* DynamicsContentCell.xib in Resources */,
+				CE7F1B9F225DD0AF00CC5B09 /* MaterialImageCell.xib in Resources */,
 				CEE5FCF222530F260093D567 /* starGray@3x.png in Resources */,
 				CECEEEF3224A2CF30068F267 /* TaskVC.xib in Resources */,
 				CEF5DDBB22544E3E0025F406 /* MyOrderDetailListCell.xib in Resources */,
@@ -2889,10 +3020,12 @@
 				CE6B0594224867FE00AD44D7 /* ShieldDynamicVC.xib in Resources */,
 				CE28A7A02252333100B62032 /* SendActivityViewController.xib in Resources */,
 				CEE5FCF422530F260093D567 /* starFore@2x.png in Resources */,
+				CE1FE576225CB4E100197B8D /* OpenPartnerCell.xib in Resources */,
 				CE1FE53C225C2D4E00197B8D /* DIYTelPhoneView.xib in Resources */,
 				CEE5FCF122530F260093D567 /* starFore@3x.png in Resources */,
 				CEFA9271223F99BB0015F7EE /* FavorableDynamicsVC.xib in Resources */,
 				CE28A7722251E63D00B62032 /* StoreSingleProductAddPhotoCell.xib in Resources */,
+				CE7F1B7C225D9CE800CC5B09 /* PartnerChildVC.xib in Resources */,
 				CEACEB12224B9EC600A2AE2D /* SetPassWordVC.xib in Resources */,
 				CEFA9284223FA6920015F7EE /* NearByDynamicsHeadCell.xib in Resources */,
 				CEF5DDD922548AAE0025F406 /* OrderComplaintVC.xib in Resources */,
@@ -3042,6 +3175,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				CECEEEF8224A41AB0068F267 /* ActivityVC.m in Sources */,
+				CE7F1B85225DC54100CC5B09 /* LiquorImageDataCell.m in Sources */,
+				CE7F1B80225D9F4100CC5B09 /* PartnerChildCell.m in Sources */,
 				CECEEEB72249C4010068F267 /* WithdrawWordVC.m in Sources */,
 				CEE28F33224355E100C3D7E9 /* JXCategoryImageCell.m in Sources */,
 				CEFA9230223F634D0015F7EE /* MainHomeVC.m in Sources */,
@@ -3051,6 +3186,7 @@
 				CEF2B368224CE06A00687E5B /* UIView+Dimension.m in Sources */,
 				CEECC02D2255D84F004EE5C2 /* MyChildVoucherVC.m in Sources */,
 				CE28A77A2251EB3100B62032 /* FileCacheManager.m in Sources */,
+				CE7F1B66225D825400CC5B09 /* PartnerHeadView.m in Sources */,
 				CEF2B36D224CE21100687E5B /* ReleaseEventSliderCell.m in Sources */,
 				CEFA9287223FAB190015F7EE /* NearByDynamicsTextCell.m in Sources */,
 				CEE28F622243571800C3D7E9 /* GKDelegateHandler.m in Sources */,
@@ -3071,6 +3207,7 @@
 				CE6B058E2248667800AD44D7 /* SafeCenterVC.m in Sources */,
 				CEE28F642243571800C3D7E9 /* UINavigationController+GKCategory.m in Sources */,
 				CE6B0598224869CB00AD44D7 /* VerifiedVC.m in Sources */,
+				CE7F1B99225DCBB400CC5B09 /* MaterialTxtVC.m in Sources */,
 				CE9C4C0D223B662600DE9DC1 /* BaseWebViewController.m in Sources */,
 				CEE28F822243872F00C3D7E9 /* GKWBPageViewController.m in Sources */,
 				CEFA9293223FB8870015F7EE /* CirclePhotosView.m in Sources */,
@@ -3091,9 +3228,11 @@
 				CE9C4BFD223B4F9B00DE9DC1 /* PLEmptyViewFactory.m in Sources */,
 				CEF5DDE92254A68F0025F406 /* DIYReportView.m in Sources */,
 				CEE28F39224355E100C3D7E9 /* JXCategoryFactory.m in Sources */,
+				CE7F1B8F225DCA3A00CC5B09 /* MaterialVC.m in Sources */,
 				CEE28F28224355E100C3D7E9 /* JXCategoryIndicatorView.m in Sources */,
 				CEE28F7722435A1900C3D7E9 /* ChangeInfoHeadView.m in Sources */,
 				CEF2B360224CCA4300687E5B /* StoreContentTextCell.m in Sources */,
+				CE7F1BA4225DEB6D00CC5B09 /* WalletVC.m in Sources */,
 				CEFA9275223F99CF0015F7EE /* HeedDynamicsVC.m in Sources */,
 				CE28A7612251C66C00B62032 /* ManagementStoreTextViewCell.m in Sources */,
 				CEE28F3B224355E100C3D7E9 /* UIColor+JXAdd.m in Sources */,
@@ -3124,9 +3263,11 @@
 				CECEEF30224A4DE90068F267 /* ReleaseEventVC.m in Sources */,
 				CE6B05A722487D5100AD44D7 /* AboutMeVC.m in Sources */,
 				CEE28F25224355E100C3D7E9 /* JXCategoryIndicatorBackgroundView.m in Sources */,
+				CE7F1B94225DCBA300CC5B09 /* MaterialImageVC.m in Sources */,
 				CEFA92C52240ED9C0015F7EE /* MainMineListCell.m in Sources */,
 				CECC0D58223A525F001CF0A2 /* UIColor+Hex.m in Sources */,
 				CEF5DDBF225453040025F406 /* MyOrderDetailPhotoCell.m in Sources */,
+				CE7F1B9E225DD0AF00CC5B09 /* MaterialImageCell.m in Sources */,
 				CEE3F66D224DEC5E00151BE7 /* ManagementStoreAddCell.m in Sources */,
 				CE9C4C00223B58F800DE9DC1 /* BaseNavigationController.m in Sources */,
 				CECEEEC6224A020C0068F267 /* MyDynamicsVC.m in Sources */,
@@ -3188,6 +3329,7 @@
 				CEFA9235223F639D0015F7EE /* MainDynamicsVC.m in Sources */,
 				CEACEB07224B949700A2AE2D /* ForgetWordVC.m in Sources */,
 				CEACEB0C224B9CD700A2AE2D /* BindPhoneVC.m in Sources */,
+				CE7F1B7B225D9CE800CC5B09 /* PartnerChildVC.m in Sources */,
 				CE6B05AC224884F300AD44D7 /* HelpVC.m in Sources */,
 				CE9C4C06223B5ED800DE9DC1 /* UIImage+BundleImage.m in Sources */,
 				CEE28F29224355E100C3D7E9 /* JXCategoryDotCell.m in Sources */,
@@ -3197,7 +3339,10 @@
 				CE9C4BFA223B4F9B00DE9DC1 /* PLScrollViewEmptyView.m in Sources */,
 				CECEEF04224A45CE0068F267 /* OpenStoreVC.m in Sources */,
 				CEDBEF5F2254C579004E714E /* InteractiveListVC.m in Sources */,
+				CE1FE575225CB4E100197B8D /* OpenPartnerCell.m in Sources */,
 				CEFA925F223F84750015F7EE /* FSSegmentTitleView.m in Sources */,
+				CEE79F79225CBA530066CE30 /* DIYPayView.m in Sources */,
+				CE7F1B62225D7FF800CC5B09 /* PartnerVC.m in Sources */,
 				CEE3F672224DF12200151BE7 /* ManagementStoreBoxTypeCell.m in Sources */,
 				CE28A7712251E63D00B62032 /* StoreSingleProductAddPhotoCell.m in Sources */,
 				CEF5DDD822548AAE0025F406 /* OrderComplaintVC.m in Sources */,
@@ -3229,6 +3374,7 @@
 				CEE28F2E224355E100C3D7E9 /* JXCategoryTitleImageCellModel.m in Sources */,
 				CEE3F667224DE75300151BE7 /* ManagementStoreActivityCell.m in Sources */,
 				CEFA927A223FA59A0015F7EE /* BaseCell.m in Sources */,
+				CE1FE56F225CB38E00197B8D /* OpenPartnerVC.m in Sources */,
 				CEF5DDC922545D8B0025F406 /* ChecklistVC.m in Sources */,
 				CEECC03222560866004EE5C2 /* MainVideoShowVC.m in Sources */,
 				CEF2B367224CE06A00687E5B /* JLDoubleSlider.m in Sources */,

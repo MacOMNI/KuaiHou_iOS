@@ -65,7 +65,7 @@
     UIButton *filterBtn = [[UIButton alloc] init];
     [filterBtn setImage:[UIImage loadImageWithName:@"dynamics_filter"] forState:(UIControlStateNormal)];
     [filterBtn addTarget:self action:@selector(filterAction) forControlEvents:(UIControlEventTouchUpInside)];
-    [self.view addSubview:filterBtn];
+    [self.menuView addSubview:filterBtn];
     
     [filterBtn mas_makeConstraints:^(MASConstraintMaker *make) {
         make.right.mas_equalTo(@(-15));
@@ -159,7 +159,7 @@
     return self.childVCs[index];
 }
 - (CGRect)pageController:(WMPageController *)pageController preferredFrameForMenuView:(WMMenuView *)menuView {
-    return CGRectMake(15, 15, 400, 50.0f);
+    return CGRectMake(15, 15, kScreenSizeWidth - 15, 50.0f);
 }
 - (CGRect)pageController:(WMPageController *)pageController preferredFrameForContentView:(WMScrollView *)contentView {
     CGFloat menuViewHeight = [self pageController:pageController preferredFrameForMenuView:self.menuView].size.height;

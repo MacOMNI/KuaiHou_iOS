@@ -157,13 +157,29 @@
 }
 
 - (IBAction)savaAction:(id)sender {
-    [self loadImageFinished:self.qrCodeImageView.image];
+//    UIImage *image = [self openglSnapshotImage];
+//
+    
+    UIImage *image = [self getImageViewWithView:self];
+    [self loadImageFinished:image];
 }
 - (IBAction)shareAction:(id)sender {
     [self hiddenView];
 }
 
-
+/**
+ 针对有用过OpenGL渲染过的视图截图
+ 
+ @return 截取的图片
+ */
+-(UIImage *)getImageViewWithView:(UIView *)view{
+    UIGraphicsBeginImageContext(view.frame.size);
+    [view drawViewHierarchyInRect:view.bounds afterScreenUpdates:NO];
+    UIImage *image =  UIGraphicsGetImageFromCurrentImageContext();
+    UIGraphicsEndImageContext();
+    return image;
+    
+}
 
 
 @end

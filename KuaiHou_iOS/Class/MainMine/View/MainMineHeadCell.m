@@ -38,7 +38,7 @@
     self.levelLab.attributedText = string;
     
     CGFloat distance = (kScreenSizeWidth - 30 - 50 * 4) / 3.0;
-    NSArray *imageArray = @[@{@"image":@"mine_headitem1", @"title":@"钱包"},@{@"image":@"mine_headitem2", @"title":@"订单"},@{@"image":@"mine_headitem3", @"title":@"推广"},@{@"image":@"mine_headitem4", @"title":@"代金券"}];
+    NSArray *imageArray = @[@{@"image":@"mine_headitem1", @"title":@"钱包"},@{@"image":@"mine_headitem2", @"title":@"订单"},@{@"image":@"mine_headitem3", @"title":@"合伙人"},@{@"image":@"mine_headitem4", @"title":@"代金券"}];
     
     for (int i = 0 ; i < 4; i ++) {
         NSDictionary *dict = imageArray[i];
@@ -63,8 +63,8 @@
         
         [imageview mas_makeConstraints:^(MASConstraintMaker *make) {
             make.top.mas_equalTo(bgView.mas_top);
-            make.centerX.mas_equalTo(bgView.mas_centerX);
             make.size.mas_equalTo(CGSizeMake(44, 44));
+            make.centerX.equalTo(bgView.mas_centerX);
         }];
         
         UILabel *lab = [MyTool setupLabel:dict[@"title"] textAlignment:NSTextAlignmentCenter textColor:kMain_TextColor font:kFont(15)];
@@ -72,7 +72,7 @@
         
         [lab mas_makeConstraints:^(MASConstraintMaker *make) {
             make.bottom.mas_equalTo(bgView.mas_bottom);
-            make.centerX.mas_equalTo(bgView.mas_centerX);
+            make.centerX.equalTo(imageview.mas_centerX);
         }];
     }
 }
