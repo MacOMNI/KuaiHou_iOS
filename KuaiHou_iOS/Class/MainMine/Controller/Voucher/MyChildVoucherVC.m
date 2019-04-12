@@ -8,10 +8,11 @@
 
 #import "MyChildVoucherVC.h"
 #import "VoucherCollectionCell.h"
+#import "VoucherCell.h"
 
-@interface MyChildVoucherVC () <UICollectionViewDelegate, UICollectionViewDataSource>
+@interface MyChildVoucherVC ()
 
-@property (weak, nonatomic) IBOutlet UICollectionView *collectionView;
+@property (weak, nonatomic) IBOutlet UITableView *tableView;
 
 @end
 
@@ -25,49 +26,61 @@
 
 -(void)fixUI{
     self.title = @"使用代金券";
+    self.tableView.superAnimationType = TABViewSuperAnimationTypeClassic;
+    self.tableView.estimatedRowHeight = 0;
+    self.tableView.estimatedSectionFooterHeight = 0;
+    self.tableView.estimatedSectionHeaderHeight = 0;
     
-    self.collectionView.delegate = self;
-    self.collectionView.dataSource = self;
-    self.collectionView.alwaysBounceVertical = YES;
-    
-    // 1.创建流水布局
-    UICollectionViewFlowLayout *layout = [[UICollectionViewFlowLayout alloc] init];
-    //    layout.scrollDirection = UICollectionViewScrollDirectionHorizontal;
-    self.collectionView.collectionViewLayout = layout;
-    
-    [self.collectionView registerNib:[UINib nibWithNibName:NSStringFromClass([VoucherCollectionCell class]) bundle:nil] forCellWithReuseIdentifier:NSStringFromClass([VoucherCollectionCell class])];
+    [self.tableView registerNib:[UINib nibWithNibName:NSStringFromClass([VoucherCell class]) bundle:[NSBundle mainBundle]] forCellReuseIdentifier:NSStringFromClass([VoucherCell class])];
     
 }
-
-// 每个分区上得元素个数
-- (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section {
-    return 50;
+-(void)setType:(NSInteger)type{
+    _type = type;
+    [self.tableView reloadData];
 }
 
-// 设置cell
-- (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
+    return 1;
+}
+
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+    return 40;
+}
+
+- (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section {
+    return 0.0001;
+}
+
+- (CGFloat)tableView:(UITableView *)tableView heightForFooterInSection:(NSInteger)section {
+    return 0.001;
+}
+- (nullable UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section{
+    return nil;
+}
+
+- (nullable UIView *)tableView:(UITableView *)tableView viewForFooterInSection:(NSInteger)section{
+    return nil;
+}
+
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
+    return 110;
+}
+
+- (UITableViewCell*)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
+    VoucherCell *cell = [tableView dequeueReusableCellWithIdentifier:NSStringFromClass([VoucherCell class]) forIndexPath:indexPath];
     
-    VoucherCollectionCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:NSStringFromClass([VoucherCollectionCell class]) forIndexPath:indexPath];
+    cell.commitBtn.hidden = self.type != 0;
+    cell.typeImageView.hidden = self.type == 0;
+    cell.typeImageView.image = self.type == 0 ? [UIImage new] : [UIImage loadImageWithName:[NSString stringWithFormat:@"voucher_type%ld", self.type]];
     
     return cell;
+
 }
 
-// 设置UIcollectionView整体的内边距（这样item不贴边显示）
-- (UIEdgeInsets)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout insetForSectionAtIndex:(NSInteger)section {
-    // 上 左 下 右
-    return UIEdgeInsetsMake(20, 15, 15, 15);
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+    
 }
 
-// 设置minimumInteritemSpacing：cell左右之间最小的距离
-- (CGFloat)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout minimumInteritemSpacingForSectionAtIndex:(NSInteger)section {
-    return 15;
-}
-
-// 设置cell大小 itemSize：可以给每一个cell指定不同的尺寸
-- (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout*)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath *)indexPath {
-    CGFloat weidth = (kScreenSizeWidth - 45) / 2;
-    return CGSizeMake(weidth, 59);
-}
 
 /*
 #pragma mark - Navigation

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="WhereToPlayVC">
+            <connections>
+                <outlet property="tableView" destination="0S3-Sk-0LR" id="WqC-pu-nie"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="home_bg" translatesAutoresizingMaskIntoConstraints="NO" id="3cl-Vn-Bfu">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                </imageView>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="0S3-Sk-0LR">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="w3h-rw-Cbj"/>
+                        <outlet property="delegate" destination="-1" id="Fea-x9-3dg"/>
+                    </connections>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="0S3-Sk-0LR" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="4uO-4w-erM"/>
+                <constraint firstItem="3cl-Vn-Bfu" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="HWd-yW-lAP"/>
+                <constraint firstItem="3cl-Vn-Bfu" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="Juk-ES-JLE"/>
+                <constraint firstAttribute="bottom" secondItem="0S3-Sk-0LR" secondAttribute="bottom" id="R7n-ay-Tnd"/>
+                <constraint firstAttribute="trailing" secondItem="3cl-Vn-Bfu" secondAttribute="trailing" id="khH-9J-ekt"/>
+                <constraint firstAttribute="bottom" secondItem="3cl-Vn-Bfu" secondAttribute="bottom" id="mER-hz-zBn"/>
+                <constraint firstItem="0S3-Sk-0LR" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="nIC-3o-ZMR"/>
+                <constraint firstAttribute="trailing" secondItem="0S3-Sk-0LR" secondAttribute="trailing" id="xAQ-Qn-7oa"/>
+            </constraints>
+        </view>
+    </objects>
+    <resources>
+        <image name="home_bg" width="375" height="667"/>
+    </resources>
+</document>

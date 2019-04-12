@@ -14,6 +14,7 @@
 #import "MaterialVC.h"
 #import "CleanChatView.h"
 #import "OpenPartnerVC.h"
+#import "PartnerIncomeVC.h"
 
 @interface PartnerVC ()<GKPageScrollViewDelegate, WMPageControllerDataSource, WMPageControllerDelegate, GKWBPageViewControllDelegate>
 
@@ -71,6 +72,25 @@
 }
 
 -(void)rightAction{
+    
+    if ([[self backViewController] isKindOfClass:[PartnerIncomeVC class]]) {
+//        NSLog(@"我从这个页面过来的");
+        [self.navigationController popViewControllerAnimated:YES];
+    }else{
+//        NSLog(@"我没来过");
+        [self.navigationController pushViewController:[PartnerIncomeVC new] animated:YES];
+    }
+}
+
+- (UIViewController*)backViewController{
+    NSInteger myIndex = [self.navigationController.viewControllers indexOfObject:self];
+    if( myIndex !=0 && myIndex !=NSNotFound) {
+        return [self.navigationController.viewControllers objectAtIndex:myIndex-1];
+        
+    }else{
+        return self;
+        
+    }
     
 }
 

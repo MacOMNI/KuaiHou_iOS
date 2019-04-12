@@ -58,8 +58,11 @@
 - (NSArray *)childVCs {
     if (!_childVCs) {
         MyChildVoucherVC *child = [MyChildVoucherVC new];
+        child.type = 0;
         MyChildVoucherVC *child1 = [MyChildVoucherVC new];
+        child1.type = 1;
         MyChildVoucherVC *child2 = [MyChildVoucherVC new];
+        child2.type = 2;
         _childVCs = @[child, child1, child2];
     }
     return _childVCs;

@@ -7,9 +7,17 @@
 //
 
 #import "WalletVC.h"
+#import "MainMineListCell.h"
+#import "AppCurrencyVC.h"
+#import "PartnerIncomeVC.h"
+#import "OtherIncomeVC.h"
+#import "QuitMoneyVC.h"
+#import "BillVC.h"
+#import "VerifiedVC.h"
+#import "SettlementDetaildVC.h"
 
 #define kFloatingViewMinimumHeight 0
-#define kFloatingViewMaximumHeight 330
+#define kFloatingViewMaximumHeight 340
 
 @interface WalletVC ()
 
@@ -20,6 +28,13 @@
 @property (nonatomic, strong) UIView                    *titleView;
 @property (nonatomic, strong) UILabel                   *titleLabel;
 @property (weak, nonatomic) IBOutlet UIView *walletContentView;
+
+@property (nonatomic, strong) NSArray *listArray;
+
+@property (weak, nonatomic) IBOutlet UIView *itmeView0;
+@property (weak, nonatomic) IBOutlet UIView *itmeView1;
+@property (weak, nonatomic) IBOutlet UIView *itmeView2;
+
 
 @end
 
@@ -59,6 +74,10 @@
     // Do any additional setup after loading the view from its nib.
     [self fixUI];
 }
+-(void)viewDidDisappear:(BOOL)animated{
+    [super viewDidDisappear:animated];
+    
+}
 
 -(void)fixUI{
     _walletContentView.layer.shadowColor = [UIColor colorWithRed:107/255.0 green:107/255.0 blue:107/255.0 alpha:0.4].CGColor;
@@ -79,6 +98,23 @@
     self.edgesForExtendedLayout = UIRectEdgeNone;
     self.tableView.contentInset = UIEdgeInsetsMake(kFloatingViewMaximumHeight, 0, 0, 0);
     [self.tableView addObserver:self forKeyPath:@"contentOffset" options:NSKeyValueObservingOptionNew context:nil];
+    
+    [self.tableView registerNib:[UINib nibWithNibName:NSStringFromClass([MainMineListCell class]) bundle:[NSBundle mainBundle]] forCellReuseIdentifier:NSStringFromClass([MainMineListCell class])];
+    
+    self.listArray = @[@{@"image":@"wallet_item0", @"title":@"结算明细"},@{@"image":@"wallet_item1", @"title":@"账单"},@{@"image":@"wallet_item2", @"title":@"实名认证"}];
+    
+    [_itmeView0 setTapActionWithBlock:^{ // 快币
+        [self.navigationController pushViewController:[AppCurrencyVC new] animated:YES];
+    }];
+    
+    [_itmeView1 setTapActionWithBlock:^{ // 合伙人收益
+        [self.navigationController pushViewController:[PartnerIncomeVC new] animated:YES];
+    }];
+    
+    [_itmeView2 setTapActionWithBlock:^{ // 其他收益
+        [self.navigationController pushViewController:[OtherIncomeVC new] animated:YES];
+    }];
+    
 }
 - (void)back {
     [self.navigationController popViewControllerAnimated:YES];
@@ -89,7 +125,7 @@
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return 1;
+    return self.listArray.count;
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section {
@@ -110,50 +146,29 @@
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
-    return 40;
+    return 44;
 }
 
 - (UITableViewCell*)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:NSStringFromClass([UITableViewCell class])];
-    if (!cell) {
-        cell = [[UITableViewCell alloc] initWithStyle:(UITableViewCellStyleValue1) reuseIdentifier:@"cell"];
-    }
     
+    MainMineListCell *cell = [tableView dequeueReusableCellWithIdentifier:NSStringFromClass([MainMineListCell class]) forIndexPath:indexPath];
+    NSDictionary *dict = self.listArray[indexPath.row];
+    cell.titleLab.text = dict[@"title"];
+    cell.headImageView.image = [UIImage loadImageWithName:dict[@"image"]];
+    cell.lineView.hidden = YES;
     return cell;
 
 }
-- (void)scrollViewDidScroll:(UIScrollView *)scrollView {
-    // 获取mainScrollview偏移量
-    CGFloat offsetY = scrollView.contentOffset.y;
-    CGFloat alpha = 0;
-    if (offsetY <= 60.0f) {
-        alpha = 0.0f;
-//        self.titleLabel.alpha = 0;
-        self.titleLabel.textColor = [UIColor whiteColor];
-        self.gk_statusBarStyle = UIStatusBarStyleLightContent;
-        self.gk_navLeftBarButtonItem = [UIBarButtonItem itemWithTitle:nil image:GKImage(@"btn_back_white") target:self action:@selector(back)];
-    }else if (offsetY >= 100.0f){
-        alpha = 1.0f;
-        self.titleLabel.textColor = [UIColor blackColor];
-        self.gk_statusBarStyle = UIStatusBarStyleDefault;
-        self.gk_navLeftBarButtonItem = [UIBarButtonItem itemWithTitle:nil image:GKImage(@"btn_back_black") target:self action:@selector(back)];
-    }else{
-        alpha = (offsetY - 60) / (100 - 60);
-        if (alpha > 0.8) {
-            self.gk_statusBarStyle = UIStatusBarStyleDefault;
-            self.gk_navLeftBarButtonItem = [UIBarButtonItem itemWithTitle:nil image:GKImage(@"btn_back_black") target:self action:@selector(back)];
-            self.titleLabel.textColor = [UIColor blackColor];
-        }else{
-            self.titleLabel.textColor = [UIColor whiteColor];
-            self.gk_statusBarStyle = UIStatusBarStyleLightContent;
-            self.gk_navLeftBarButtonItem = [UIBarButtonItem itemWithTitle:nil image:GKImage(@"btn_back_white") target:self action:@selector(back)];
-        }
-    }
-    
-    self.gk_navBarAlpha = alpha;
-}
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+    
+    if (indexPath.row == 0) {
+        [self.navigationController pushViewController:[SettlementDetaildVC new] animated:YES];
+    }else if (indexPath.row == 1){ // 账单
+        [self.navigationController pushViewController:[BillVC new] animated:YES];
+    }else{
+        [self.navigationController pushViewController:[VerifiedVC new] animated:YES];
+    }
     
 }
 
@@ -167,7 +182,40 @@
         } else {
             self.headViewHeightConstraint.constant = kFloatingViewMinimumHeight;
         }
+        
+        // 获取mainScrollview偏移量
+        CGFloat offsetY = offset.y;
+        NSLog(@"%f", offsetY);
+        CGFloat alpha = 0;
+        if (offsetY <= -280.0f) {
+            alpha = 0.0f;
+            //        self.titleLabel.alpha = 0;
+            self.titleLabel.textColor = [UIColor whiteColor];
+            self.gk_statusBarStyle = UIStatusBarStyleLightContent;
+            self.gk_navLeftBarButtonItem = [UIBarButtonItem itemWithTitle:nil image:GKImage(@"btn_back_white") target:self action:@selector(back)];
+        }else if (offsetY >= -240.0f){
+            alpha = 1.0f;
+            self.titleLabel.textColor = [UIColor blackColor];
+            self.gk_statusBarStyle = UIStatusBarStyleDefault;
+            self.gk_navLeftBarButtonItem = [UIBarButtonItem itemWithTitle:nil image:GKImage(@"btn_back_black") target:self action:@selector(back)];
+        }else{
+            alpha = (offsetY + 280) / (-240 + 280);
+            if (alpha > 0.8) {
+                self.gk_statusBarStyle = UIStatusBarStyleDefault;
+                self.gk_navLeftBarButtonItem = [UIBarButtonItem itemWithTitle:nil image:GKImage(@"btn_back_black") target:self action:@selector(back)];
+                self.titleLabel.textColor = [UIColor blackColor];
+            }else{
+                self.titleLabel.textColor = [UIColor whiteColor];
+                self.gk_statusBarStyle = UIStatusBarStyleLightContent;
+                self.gk_navLeftBarButtonItem = [UIBarButtonItem itemWithTitle:nil image:GKImage(@"btn_back_white") target:self action:@selector(back)];
+            }
+        }
+        
+        self.gk_navBarAlpha = alpha;
     }
+}
+- (IBAction)quitAction:(UIButton *)sender {
+    [self.navigationController pushViewController:[QuitMoneyVC new] animated:YES];
 }
 
 /*

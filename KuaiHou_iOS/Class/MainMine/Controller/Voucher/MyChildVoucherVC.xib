@@ -11,7 +11,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MyChildVoucherVC">
             <connections>
-                <outlet property="collectionView" destination="7ue-5L-KUM" id="nqa-te-tzt"/>
+                <outlet property="tableView" destination="qIB-iB-pSU" id="WNw-C3-ACa"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -29,25 +29,23 @@
                     <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="7ue-5L-KUM">
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="qIB-iB-pSU">
                     <rect key="frame" x="0.0" y="45" width="414" height="851"/>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                    <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="LWS-Kh-B8S">
-                        <size key="itemSize" width="50" height="50"/>
-                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
-                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
-                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
-                    </collectionViewFlowLayout>
-                </collectionView>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="CcD-a5-lD6"/>
+                        <outlet property="delegate" destination="-1" id="SPO-Hd-WAI"/>
+                    </connections>
+                </tableView>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
                 <constraint firstItem="zXI-HS-kSD" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="15" id="1AN-W0-5rC"/>
-                <constraint firstAttribute="bottom" secondItem="7ue-5L-KUM" secondAttribute="bottom" id="ElC-pf-pbu"/>
-                <constraint firstAttribute="trailing" secondItem="7ue-5L-KUM" secondAttribute="trailing" id="Oe6-5L-nDS"/>
+                <constraint firstItem="qIB-iB-pSU" firstAttribute="top" secondItem="zXI-HS-kSD" secondAttribute="bottom" constant="15" id="Ipm-Ee-0EX"/>
+                <constraint firstAttribute="bottom" secondItem="qIB-iB-pSU" secondAttribute="bottom" id="JDV-eP-1Pr"/>
+                <constraint firstItem="qIB-iB-pSU" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="MPv-Sg-WTS"/>
                 <constraint firstItem="zXI-HS-kSD" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="15" id="Rew-m7-0yB"/>
-                <constraint firstItem="7ue-5L-KUM" firstAttribute="top" secondItem="zXI-HS-kSD" secondAttribute="bottom" constant="15" id="jsX-bG-WhC"/>
-                <constraint firstItem="7ue-5L-KUM" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="vIe-28-9NZ"/>
+                <constraint firstAttribute="trailing" secondItem="qIB-iB-pSU" secondAttribute="trailing" id="igm-pt-ezv"/>
             </constraints>
         </view>
     </objects>

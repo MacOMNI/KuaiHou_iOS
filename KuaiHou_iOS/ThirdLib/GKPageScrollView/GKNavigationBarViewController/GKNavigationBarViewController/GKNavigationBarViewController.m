@@ -36,7 +36,7 @@
     [super viewWillAppear:animated];
     
     // 隐藏系统导航栏
-    [self.navigationController setNavigationBarHidden:YES];
+    [self.navigationController setNavigationBarHidden:YES animated:animated];
     
     // 将自定义导航栏放置顶层
     if (self.gk_navigationBar && !self.gk_navigationBar.hidden) {
@@ -55,7 +55,7 @@
 
 - (void)viewWillDisappear:(BOOL)animated {
     [super viewWillDisappear:animated];
-    
+    [self.navigationController setNavigationBarHidden:NO animated:animated];
     // 重置navitem_space
     [GKConfigure updateConfigure:^(GKNavigationBarConfigure *configure) {
         configure.gk_navItemLeftSpace  = self.last_navItemLeftSpace;

@@ -8,6 +8,38 @@
 
 /* Begin PBXBuildFile section */
 		C3343E751DE353D40FC29AA8 /* Pods_KuaiHou_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F72C78518845A6C8D2F549AB /* Pods_KuaiHou_iOS.framework */; };
+		CE034369225ECA5600CB695C /* AppCurrencyVC.m in Sources */ = {isa = PBXBuildFile; fileRef = CE034367225ECA5600CB695C /* AppCurrencyVC.m */; };
+		CE03436A225ECA5600CB695C /* AppCurrencyVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE034368225ECA5600CB695C /* AppCurrencyVC.xib */; };
+		CE03436F225ED24F00CB695C /* AppCurrencyItemCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CE03436D225ED24F00CB695C /* AppCurrencyItemCell.m */; };
+		CE034370225ED24F00CB695C /* AppCurrencyItemCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE03436E225ED24F00CB695C /* AppCurrencyItemCell.xib */; };
+		CE034374225ED4AF00CB695C /* AppCurrencyItemCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CE034372225ED4AF00CB695C /* AppCurrencyItemCollectionViewCell.m */; };
+		CE034375225ED4AF00CB695C /* AppCurrencyItemCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE034373225ED4AF00CB695C /* AppCurrencyItemCollectionViewCell.xib */; };
+		CE034379225EDD6100CB695C /* AppCurrencyTextFieldCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CE034377225EDD6100CB695C /* AppCurrencyTextFieldCell.m */; };
+		CE03437A225EDD6100CB695C /* AppCurrencyTextFieldCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE034378225EDD6100CB695C /* AppCurrencyTextFieldCell.xib */; };
+		CE03437E225EE0DC00CB695C /* AppCurrencyListCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CE03437C225EE0DC00CB695C /* AppCurrencyListCell.m */; };
+		CE03437F225EE0DC00CB695C /* AppCurrencyListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE03437D225EE0DC00CB695C /* AppCurrencyListCell.xib */; };
+		CE034383225EF7ED00CB695C /* AppCurrencyDetailVC.m in Sources */ = {isa = PBXBuildFile; fileRef = CE034381225EF7ED00CB695C /* AppCurrencyDetailVC.m */; };
+		CE034384225EF7ED00CB695C /* AppCurrencyDetailVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE034382225EF7ED00CB695C /* AppCurrencyDetailVC.xib */; };
+		CE034388225EFA8600CB695C /* AppCurrencyDetailCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CE034386225EFA8600CB695C /* AppCurrencyDetailCell.m */; };
+		CE034389225EFA8600CB695C /* AppCurrencyDetailCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE034387225EFA8600CB695C /* AppCurrencyDetailCell.xib */; };
+		CE03438D225EFFD000CB695C /* PartnerIncomeVC.m in Sources */ = {isa = PBXBuildFile; fileRef = CE03438B225EFFD000CB695C /* PartnerIncomeVC.m */; };
+		CE03438E225EFFD000CB695C /* PartnerIncomeVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE03438C225EFFD000CB695C /* PartnerIncomeVC.xib */; };
+		CE034392225F062500CB695C /* OtherIncomeVC.m in Sources */ = {isa = PBXBuildFile; fileRef = CE034390225F062500CB695C /* OtherIncomeVC.m */; };
+		CE034393225F062500CB695C /* OtherIncomeVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE034391225F062500CB695C /* OtherIncomeVC.xib */; };
+		CE034397225F072000CB695C /* OtherIncomeChildVC.m in Sources */ = {isa = PBXBuildFile; fileRef = CE034395225F072000CB695C /* OtherIncomeChildVC.m */; };
+		CE034398225F072000CB695C /* OtherIncomeChildVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE034396225F072000CB695C /* OtherIncomeChildVC.xib */; };
+		CE03439C225F13BC00CB695C /* QuitMoneyVC.m in Sources */ = {isa = PBXBuildFile; fileRef = CE03439A225F13BC00CB695C /* QuitMoneyVC.m */; };
+		CE03439D225F13BC00CB695C /* QuitMoneyVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE03439B225F13BC00CB695C /* QuitMoneyVC.xib */; };
+		CE0343A1225F262D00CB695C /* QuitMoneyTextFieldTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CE03439F225F262D00CB695C /* QuitMoneyTextFieldTableViewCell.m */; };
+		CE0343A2225F262D00CB695C /* QuitMoneyTextFieldTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE0343A0225F262D00CB695C /* QuitMoneyTextFieldTableViewCell.xib */; };
+		CE0343A6225F2C6600CB695C /* QuitMoneyCodeCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CE0343A4225F2C6600CB695C /* QuitMoneyCodeCell.m */; };
+		CE0343A7225F2C6600CB695C /* QuitMoneyCodeCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE0343A5225F2C6600CB695C /* QuitMoneyCodeCell.xib */; };
+		CE0343AB225F342100CB695C /* BillVC.m in Sources */ = {isa = PBXBuildFile; fileRef = CE0343A9225F342100CB695C /* BillVC.m */; };
+		CE0343AC225F342100CB695C /* BillVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE0343AA225F342100CB695C /* BillVC.xib */; };
+		CE0343B0225F51D900CB695C /* BillTypeCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CE0343AE225F51D900CB695C /* BillTypeCell.m */; };
+		CE0343B1225F51D900CB695C /* BillTypeCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE0343AF225F51D900CB695C /* BillTypeCell.xib */; };
+		CE0343B4225F5DBB00CB695C /* DIYSelectTimeView.m in Sources */ = {isa = PBXBuildFile; fileRef = CE0343B3225F5DBB00CB695C /* DIYSelectTimeView.m */; };
+		CE0343B6225F5DC500CB695C /* DIYSelectTimeView.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE0343B5225F5DC500CB695C /* DIYSelectTimeView.xib */; };
 		CE1FE53A225C2D3600197B8D /* DIYTelPhoneView.m in Sources */ = {isa = PBXBuildFile; fileRef = CE1FE539225C2D3600197B8D /* DIYTelPhoneView.m */; };
 		CE1FE53C225C2D4E00197B8D /* DIYTelPhoneView.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE1FE53B225C2D4E00197B8D /* DIYTelPhoneView.xib */; };
 		CE1FE540225C3B5700197B8D /* FillTargetStoreInfoVC.m in Sources */ = {isa = PBXBuildFile; fileRef = CE1FE53E225C3B5700197B8D /* FillTargetStoreInfoVC.m */; };
@@ -231,6 +263,19 @@
 		CEDBEF602254C579004E714E /* InteractiveListVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = CEDBEF5E2254C579004E714E /* InteractiveListVC.xib */; };
 		CEDBEF652254C66D004E714E /* InteractiveListCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CEDBEF632254C66D004E714E /* InteractiveListCell.m */; };
 		CEDBEF662254C66D004E714E /* InteractiveListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CEDBEF642254C66D004E714E /* InteractiveListCell.xib */; };
+		CEDE3B1D22602B47006D9EAE /* SettlementDetaildVC.m in Sources */ = {isa = PBXBuildFile; fileRef = CEDE3B1B22602B47006D9EAE /* SettlementDetaildVC.m */; };
+		CEDE3B1E22602B47006D9EAE /* SettlementDetaildVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = CEDE3B1C22602B47006D9EAE /* SettlementDetaildVC.xib */; };
+		CEDE3B2222602D91006D9EAE /* SettlementDetaildCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CEDE3B2022602D91006D9EAE /* SettlementDetaildCell.m */; };
+		CEDE3B2322602D91006D9EAE /* SettlementDetaildCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CEDE3B2122602D91006D9EAE /* SettlementDetaildCell.xib */; };
+		CEDE3B272260399B006D9EAE /* VoucherCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CEDE3B252260399B006D9EAE /* VoucherCell.m */; };
+		CEDE3B282260399B006D9EAE /* VoucherCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CEDE3B262260399B006D9EAE /* VoucherCell.xib */; };
+		CEDE3B2B22606495006D9EAE /* MainHomeHeadView.m in Sources */ = {isa = PBXBuildFile; fileRef = CEDE3B2A22606495006D9EAE /* MainHomeHeadView.m */; };
+		CEDE3B3122606CD6006D9EAE /* WhereToPlayVC.m in Sources */ = {isa = PBXBuildFile; fileRef = CEDE3B2F22606CD6006D9EAE /* WhereToPlayVC.m */; };
+		CEDE3B3222606CD6006D9EAE /* WhereToPlayVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = CEDE3B3022606CD6006D9EAE /* WhereToPlayVC.xib */; };
+		CEDE3B3822607AEB006D9EAE /* WhereToPlayCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CEDE3B3622607AEB006D9EAE /* WhereToPlayCell.m */; };
+		CEDE3B3922607AEB006D9EAE /* WhereToPlayCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CEDE3B3722607AEB006D9EAE /* WhereToPlayCell.xib */; };
+		CEDE3B3E22609956006D9EAE /* FindTaPlayVC.m in Sources */ = {isa = PBXBuildFile; fileRef = CEDE3B3C22609956006D9EAE /* FindTaPlayVC.m */; };
+		CEDE3B3F22609956006D9EAE /* FindTaPlayVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = CEDE3B3D22609956006D9EAE /* FindTaPlayVC.xib */; };
 		CEE28EAA224329A900C3D7E9 /* MainSetVC.m in Sources */ = {isa = PBXBuildFile; fileRef = CEE28EA8224329A900C3D7E9 /* MainSetVC.m */; };
 		CEE28EAB224329A900C3D7E9 /* MainSetVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = CEE28EA9224329A900C3D7E9 /* MainSetVC.xib */; };
 		CEE28EB022432EEE00C3D7E9 /* MainSetListCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CEE28EAE22432EEE00C3D7E9 /* MainSetListCell.m */; };
@@ -431,6 +476,54 @@
 /* Begin PBXFileReference section */
 		1C969EC6FE4B3B6CA38C6D17 /* Pods-KuaiHou_iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KuaiHou_iOS.debug.xcconfig"; path = "Target Support Files/Pods-KuaiHou_iOS/Pods-KuaiHou_iOS.debug.xcconfig"; sourceTree = "<group>"; };
 		9462F2C576846C42B4EADD4A /* Pods-KuaiHou_iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KuaiHou_iOS.release.xcconfig"; path = "Target Support Files/Pods-KuaiHou_iOS/Pods-KuaiHou_iOS.release.xcconfig"; sourceTree = "<group>"; };
+		CE034366225ECA5600CB695C /* AppCurrencyVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppCurrencyVC.h; sourceTree = "<group>"; };
+		CE034367225ECA5600CB695C /* AppCurrencyVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppCurrencyVC.m; sourceTree = "<group>"; };
+		CE034368225ECA5600CB695C /* AppCurrencyVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AppCurrencyVC.xib; sourceTree = "<group>"; };
+		CE03436C225ED24F00CB695C /* AppCurrencyItemCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppCurrencyItemCell.h; sourceTree = "<group>"; };
+		CE03436D225ED24F00CB695C /* AppCurrencyItemCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppCurrencyItemCell.m; sourceTree = "<group>"; };
+		CE03436E225ED24F00CB695C /* AppCurrencyItemCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AppCurrencyItemCell.xib; sourceTree = "<group>"; };
+		CE034371225ED4AF00CB695C /* AppCurrencyItemCollectionViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppCurrencyItemCollectionViewCell.h; sourceTree = "<group>"; };
+		CE034372225ED4AF00CB695C /* AppCurrencyItemCollectionViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppCurrencyItemCollectionViewCell.m; sourceTree = "<group>"; };
+		CE034373225ED4AF00CB695C /* AppCurrencyItemCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AppCurrencyItemCollectionViewCell.xib; sourceTree = "<group>"; };
+		CE034376225EDD6100CB695C /* AppCurrencyTextFieldCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppCurrencyTextFieldCell.h; sourceTree = "<group>"; };
+		CE034377225EDD6100CB695C /* AppCurrencyTextFieldCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppCurrencyTextFieldCell.m; sourceTree = "<group>"; };
+		CE034378225EDD6100CB695C /* AppCurrencyTextFieldCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AppCurrencyTextFieldCell.xib; sourceTree = "<group>"; };
+		CE03437B225EE0DC00CB695C /* AppCurrencyListCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppCurrencyListCell.h; sourceTree = "<group>"; };
+		CE03437C225EE0DC00CB695C /* AppCurrencyListCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppCurrencyListCell.m; sourceTree = "<group>"; };
+		CE03437D225EE0DC00CB695C /* AppCurrencyListCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AppCurrencyListCell.xib; sourceTree = "<group>"; };
+		CE034380225EF7ED00CB695C /* AppCurrencyDetailVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppCurrencyDetailVC.h; sourceTree = "<group>"; };
+		CE034381225EF7ED00CB695C /* AppCurrencyDetailVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppCurrencyDetailVC.m; sourceTree = "<group>"; };
+		CE034382225EF7ED00CB695C /* AppCurrencyDetailVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AppCurrencyDetailVC.xib; sourceTree = "<group>"; };
+		CE034385225EFA8600CB695C /* AppCurrencyDetailCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppCurrencyDetailCell.h; sourceTree = "<group>"; };
+		CE034386225EFA8600CB695C /* AppCurrencyDetailCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppCurrencyDetailCell.m; sourceTree = "<group>"; };
+		CE034387225EFA8600CB695C /* AppCurrencyDetailCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AppCurrencyDetailCell.xib; sourceTree = "<group>"; };
+		CE03438A225EFFD000CB695C /* PartnerIncomeVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PartnerIncomeVC.h; sourceTree = "<group>"; };
+		CE03438B225EFFD000CB695C /* PartnerIncomeVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PartnerIncomeVC.m; sourceTree = "<group>"; };
+		CE03438C225EFFD000CB695C /* PartnerIncomeVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PartnerIncomeVC.xib; sourceTree = "<group>"; };
+		CE03438F225F062500CB695C /* OtherIncomeVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OtherIncomeVC.h; sourceTree = "<group>"; };
+		CE034390225F062500CB695C /* OtherIncomeVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OtherIncomeVC.m; sourceTree = "<group>"; };
+		CE034391225F062500CB695C /* OtherIncomeVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OtherIncomeVC.xib; sourceTree = "<group>"; };
+		CE034394225F072000CB695C /* OtherIncomeChildVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OtherIncomeChildVC.h; sourceTree = "<group>"; };
+		CE034395225F072000CB695C /* OtherIncomeChildVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OtherIncomeChildVC.m; sourceTree = "<group>"; };
+		CE034396225F072000CB695C /* OtherIncomeChildVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OtherIncomeChildVC.xib; sourceTree = "<group>"; };
+		CE034399225F13BC00CB695C /* QuitMoneyVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QuitMoneyVC.h; sourceTree = "<group>"; };
+		CE03439A225F13BC00CB695C /* QuitMoneyVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QuitMoneyVC.m; sourceTree = "<group>"; };
+		CE03439B225F13BC00CB695C /* QuitMoneyVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = QuitMoneyVC.xib; sourceTree = "<group>"; };
+		CE03439E225F262D00CB695C /* QuitMoneyTextFieldTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QuitMoneyTextFieldTableViewCell.h; sourceTree = "<group>"; };
+		CE03439F225F262D00CB695C /* QuitMoneyTextFieldTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QuitMoneyTextFieldTableViewCell.m; sourceTree = "<group>"; };
+		CE0343A0225F262D00CB695C /* QuitMoneyTextFieldTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = QuitMoneyTextFieldTableViewCell.xib; sourceTree = "<group>"; };
+		CE0343A3225F2C6600CB695C /* QuitMoneyCodeCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QuitMoneyCodeCell.h; sourceTree = "<group>"; };
+		CE0343A4225F2C6600CB695C /* QuitMoneyCodeCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QuitMoneyCodeCell.m; sourceTree = "<group>"; };
+		CE0343A5225F2C6600CB695C /* QuitMoneyCodeCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = QuitMoneyCodeCell.xib; sourceTree = "<group>"; };
+		CE0343A8225F342100CB695C /* BillVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BillVC.h; sourceTree = "<group>"; };
+		CE0343A9225F342100CB695C /* BillVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BillVC.m; sourceTree = "<group>"; };
+		CE0343AA225F342100CB695C /* BillVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BillVC.xib; sourceTree = "<group>"; };
+		CE0343AD225F51D900CB695C /* BillTypeCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BillTypeCell.h; sourceTree = "<group>"; };
+		CE0343AE225F51D900CB695C /* BillTypeCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BillTypeCell.m; sourceTree = "<group>"; };
+		CE0343AF225F51D900CB695C /* BillTypeCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BillTypeCell.xib; sourceTree = "<group>"; };
+		CE0343B2225F5DBB00CB695C /* DIYSelectTimeView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DIYSelectTimeView.h; sourceTree = "<group>"; };
+		CE0343B3225F5DBB00CB695C /* DIYSelectTimeView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DIYSelectTimeView.m; sourceTree = "<group>"; };
+		CE0343B5225F5DC500CB695C /* DIYSelectTimeView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DIYSelectTimeView.xib; sourceTree = "<group>"; };
 		CE1FE538225C2D3600197B8D /* DIYTelPhoneView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DIYTelPhoneView.h; sourceTree = "<group>"; };
 		CE1FE539225C2D3600197B8D /* DIYTelPhoneView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DIYTelPhoneView.m; sourceTree = "<group>"; };
 		CE1FE53B225C2D4E00197B8D /* DIYTelPhoneView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DIYTelPhoneView.xib; sourceTree = "<group>"; };
@@ -793,6 +886,26 @@
 		CEDBEF622254C66D004E714E /* InteractiveListCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InteractiveListCell.h; sourceTree = "<group>"; };
 		CEDBEF632254C66D004E714E /* InteractiveListCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InteractiveListCell.m; sourceTree = "<group>"; };
 		CEDBEF642254C66D004E714E /* InteractiveListCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = InteractiveListCell.xib; sourceTree = "<group>"; };
+		CEDE3B1A22602B47006D9EAE /* SettlementDetaildVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SettlementDetaildVC.h; sourceTree = "<group>"; };
+		CEDE3B1B22602B47006D9EAE /* SettlementDetaildVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SettlementDetaildVC.m; sourceTree = "<group>"; };
+		CEDE3B1C22602B47006D9EAE /* SettlementDetaildVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SettlementDetaildVC.xib; sourceTree = "<group>"; };
+		CEDE3B1F22602D91006D9EAE /* SettlementDetaildCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SettlementDetaildCell.h; sourceTree = "<group>"; };
+		CEDE3B2022602D91006D9EAE /* SettlementDetaildCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SettlementDetaildCell.m; sourceTree = "<group>"; };
+		CEDE3B2122602D91006D9EAE /* SettlementDetaildCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SettlementDetaildCell.xib; sourceTree = "<group>"; };
+		CEDE3B242260399B006D9EAE /* VoucherCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VoucherCell.h; sourceTree = "<group>"; };
+		CEDE3B252260399B006D9EAE /* VoucherCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VoucherCell.m; sourceTree = "<group>"; };
+		CEDE3B262260399B006D9EAE /* VoucherCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = VoucherCell.xib; sourceTree = "<group>"; };
+		CEDE3B2922606495006D9EAE /* MainHomeHeadView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainHomeHeadView.h; sourceTree = "<group>"; };
+		CEDE3B2A22606495006D9EAE /* MainHomeHeadView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainHomeHeadView.m; sourceTree = "<group>"; };
+		CEDE3B2E22606CD6006D9EAE /* WhereToPlayVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WhereToPlayVC.h; sourceTree = "<group>"; };
+		CEDE3B2F22606CD6006D9EAE /* WhereToPlayVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WhereToPlayVC.m; sourceTree = "<group>"; };
+		CEDE3B3022606CD6006D9EAE /* WhereToPlayVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WhereToPlayVC.xib; sourceTree = "<group>"; };
+		CEDE3B3522607AEB006D9EAE /* WhereToPlayCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WhereToPlayCell.h; sourceTree = "<group>"; };
+		CEDE3B3622607AEB006D9EAE /* WhereToPlayCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WhereToPlayCell.m; sourceTree = "<group>"; };
+		CEDE3B3722607AEB006D9EAE /* WhereToPlayCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WhereToPlayCell.xib; sourceTree = "<group>"; };
+		CEDE3B3B22609956006D9EAE /* FindTaPlayVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FindTaPlayVC.h; sourceTree = "<group>"; };
+		CEDE3B3C22609956006D9EAE /* FindTaPlayVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FindTaPlayVC.m; sourceTree = "<group>"; };
+		CEDE3B3D22609956006D9EAE /* FindTaPlayVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FindTaPlayVC.xib; sourceTree = "<group>"; };
 		CEE28EA7224329A900C3D7E9 /* MainSetVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainSetVC.h; sourceTree = "<group>"; };
 		CEE28EA8224329A900C3D7E9 /* MainSetVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainSetVC.m; sourceTree = "<group>"; };
 		CEE28EA9224329A900C3D7E9 /* MainSetVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainSetVC.xib; sourceTree = "<group>"; };
@@ -1146,6 +1259,43 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		CE03436B225ED1FA00CB695C /* Wallet */ = {
+			isa = PBXGroup;
+			children = (
+				CE03436C225ED24F00CB695C /* AppCurrencyItemCell.h */,
+				CE03436D225ED24F00CB695C /* AppCurrencyItemCell.m */,
+				CE03436E225ED24F00CB695C /* AppCurrencyItemCell.xib */,
+				CE034371225ED4AF00CB695C /* AppCurrencyItemCollectionViewCell.h */,
+				CE034372225ED4AF00CB695C /* AppCurrencyItemCollectionViewCell.m */,
+				CE034373225ED4AF00CB695C /* AppCurrencyItemCollectionViewCell.xib */,
+				CE034376225EDD6100CB695C /* AppCurrencyTextFieldCell.h */,
+				CE034377225EDD6100CB695C /* AppCurrencyTextFieldCell.m */,
+				CE034378225EDD6100CB695C /* AppCurrencyTextFieldCell.xib */,
+				CE03437B225EE0DC00CB695C /* AppCurrencyListCell.h */,
+				CE03437C225EE0DC00CB695C /* AppCurrencyListCell.m */,
+				CE03437D225EE0DC00CB695C /* AppCurrencyListCell.xib */,
+				CE034385225EFA8600CB695C /* AppCurrencyDetailCell.h */,
+				CE034386225EFA8600CB695C /* AppCurrencyDetailCell.m */,
+				CE034387225EFA8600CB695C /* AppCurrencyDetailCell.xib */,
+				CE03439E225F262D00CB695C /* QuitMoneyTextFieldTableViewCell.h */,
+				CE03439F225F262D00CB695C /* QuitMoneyTextFieldTableViewCell.m */,
+				CE0343A0225F262D00CB695C /* QuitMoneyTextFieldTableViewCell.xib */,
+				CE0343A3225F2C6600CB695C /* QuitMoneyCodeCell.h */,
+				CE0343A4225F2C6600CB695C /* QuitMoneyCodeCell.m */,
+				CE0343A5225F2C6600CB695C /* QuitMoneyCodeCell.xib */,
+				CE0343AD225F51D900CB695C /* BillTypeCell.h */,
+				CE0343AE225F51D900CB695C /* BillTypeCell.m */,
+				CE0343AF225F51D900CB695C /* BillTypeCell.xib */,
+				CE0343B2225F5DBB00CB695C /* DIYSelectTimeView.h */,
+				CE0343B3225F5DBB00CB695C /* DIYSelectTimeView.m */,
+				CE0343B5225F5DC500CB695C /* DIYSelectTimeView.xib */,
+				CEDE3B1F22602D91006D9EAE /* SettlementDetaildCell.h */,
+				CEDE3B2022602D91006D9EAE /* SettlementDetaildCell.m */,
+				CEDE3B2122602D91006D9EAE /* SettlementDetaildCell.xib */,
+			);
+			path = Wallet;
+			sourceTree = "<group>";
+		};
 		CE1FE554225C6BDD00197B8D /* FavorableDynamics */ = {
 			isa = PBXGroup;
 			children = (
@@ -1382,6 +1532,30 @@
 				CE7F1BA1225DEB6D00CC5B09 /* WalletVC.h */,
 				CE7F1BA2225DEB6D00CC5B09 /* WalletVC.m */,
 				CE7F1BA3225DEB6D00CC5B09 /* WalletVC.xib */,
+				CE034366225ECA5600CB695C /* AppCurrencyVC.h */,
+				CE034367225ECA5600CB695C /* AppCurrencyVC.m */,
+				CE034368225ECA5600CB695C /* AppCurrencyVC.xib */,
+				CE034380225EF7ED00CB695C /* AppCurrencyDetailVC.h */,
+				CE034381225EF7ED00CB695C /* AppCurrencyDetailVC.m */,
+				CE034382225EF7ED00CB695C /* AppCurrencyDetailVC.xib */,
+				CE03438A225EFFD000CB695C /* PartnerIncomeVC.h */,
+				CE03438B225EFFD000CB695C /* PartnerIncomeVC.m */,
+				CE03438C225EFFD000CB695C /* PartnerIncomeVC.xib */,
+				CE03438F225F062500CB695C /* OtherIncomeVC.h */,
+				CE034390225F062500CB695C /* OtherIncomeVC.m */,
+				CE034391225F062500CB695C /* OtherIncomeVC.xib */,
+				CE034394225F072000CB695C /* OtherIncomeChildVC.h */,
+				CE034395225F072000CB695C /* OtherIncomeChildVC.m */,
+				CE034396225F072000CB695C /* OtherIncomeChildVC.xib */,
+				CE034399225F13BC00CB695C /* QuitMoneyVC.h */,
+				CE03439A225F13BC00CB695C /* QuitMoneyVC.m */,
+				CE03439B225F13BC00CB695C /* QuitMoneyVC.xib */,
+				CE0343A8225F342100CB695C /* BillVC.h */,
+				CE0343A9225F342100CB695C /* BillVC.m */,
+				CE0343AA225F342100CB695C /* BillVC.xib */,
+				CEDE3B1A22602B47006D9EAE /* SettlementDetaildVC.h */,
+				CEDE3B1B22602B47006D9EAE /* SettlementDetaildVC.m */,
+				CEDE3B1C22602B47006D9EAE /* SettlementDetaildVC.xib */,
 			);
 			path = Wallet;
 			sourceTree = "<group>";
@@ -1959,6 +2133,55 @@
 			path = InteractiveList;
 			sourceTree = "<group>";
 		};
+		CEDE3B2C22606C70006D9EAE /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				CEFA922D223F634D0015F7EE /* MainHomeVC.h */,
+				CEFA922E223F634D0015F7EE /* MainHomeVC.m */,
+				CEFA922F223F634D0015F7EE /* MainHomeVC.xib */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		CEDE3B2D22606C8E006D9EAE /* WhereToPlay */ = {
+			isa = PBXGroup;
+			children = (
+				CEDE3B2E22606CD6006D9EAE /* WhereToPlayVC.h */,
+				CEDE3B2F22606CD6006D9EAE /* WhereToPlayVC.m */,
+				CEDE3B3022606CD6006D9EAE /* WhereToPlayVC.xib */,
+			);
+			path = WhereToPlay;
+			sourceTree = "<group>";
+		};
+		CEDE3B3322607ABD006D9EAE /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				CEDE3B2922606495006D9EAE /* MainHomeHeadView.h */,
+				CEDE3B2A22606495006D9EAE /* MainHomeHeadView.m */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		CEDE3B3422607AC9006D9EAE /* WhereToPlay */ = {
+			isa = PBXGroup;
+			children = (
+				CEDE3B3522607AEB006D9EAE /* WhereToPlayCell.h */,
+				CEDE3B3622607AEB006D9EAE /* WhereToPlayCell.m */,
+				CEDE3B3722607AEB006D9EAE /* WhereToPlayCell.xib */,
+			);
+			path = WhereToPlay;
+			sourceTree = "<group>";
+		};
+		CEDE3B3A2260992B006D9EAE /* FindTaPlayVC */ = {
+			isa = PBXGroup;
+			children = (
+				CEDE3B3B22609956006D9EAE /* FindTaPlayVC.h */,
+				CEDE3B3C22609956006D9EAE /* FindTaPlayVC.m */,
+				CEDE3B3D22609956006D9EAE /* FindTaPlayVC.xib */,
+			);
+			path = FindTaPlayVC;
+			sourceTree = "<group>";
+		};
 		CEE28EA52243297000C3D7E9 /* Setting */ = {
 			isa = PBXGroup;
 			children = (
@@ -2391,6 +2614,9 @@
 				CE1FE54F225C5A2200197B8D /* FillStoreSliderCell.h */,
 				CE1FE550225C5A2200197B8D /* FillStoreSliderCell.m */,
 				CE1FE551225C5A2200197B8D /* FillStoreSliderCell.xib */,
+				CEDE3B242260399B006D9EAE /* VoucherCell.h */,
+				CEDE3B252260399B006D9EAE /* VoucherCell.m */,
+				CEDE3B262260399B006D9EAE /* VoucherCell.xib */,
 			);
 			path = Voucher;
 			sourceTree = "<group>";
@@ -2527,9 +2753,9 @@
 		CEFA921E223F623D0015F7EE /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				CEFA922D223F634D0015F7EE /* MainHomeVC.h */,
-				CEFA922E223F634D0015F7EE /* MainHomeVC.m */,
-				CEFA922F223F634D0015F7EE /* MainHomeVC.xib */,
+				CEDE3B2C22606C70006D9EAE /* Main */,
+				CEDE3B2D22606C8E006D9EAE /* WhereToPlay */,
+				CEDE3B3A2260992B006D9EAE /* FindTaPlayVC */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -2537,6 +2763,8 @@
 		CEFA921F223F62510015F7EE /* View */ = {
 			isa = PBXGroup;
 			children = (
+				CEDE3B3422607AC9006D9EAE /* WhereToPlay */,
+				CEDE3B3322607ABD006D9EAE /* Main */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -2649,6 +2877,7 @@
 				CEFA92C22240ED9C0015F7EE /* MainMineListCell.h */,
 				CEFA92C32240ED9C0015F7EE /* MainMineListCell.m */,
 				CEFA92C42240ED9C0015F7EE /* MainMineListCell.xib */,
+				CE03436B225ED1FA00CB695C /* Wallet */,
 				CE1FE571225CB4B200197B8D /* Partner */,
 				CEECC01E2255A5A8004EE5C2 /* Voucher */,
 				CE28A7AC22523B8900B62032 /* MyOrder */,
@@ -2914,6 +3143,7 @@
 				CEE5FCFE225337040093D567 /* MyOrderDetailVC.xib in Resources */,
 				CECEEF4F224B24810068F267 /* MyQRCodeView.xib in Resources */,
 				CEF5DDD4225488730025F406 /* TheOrderActivityVC.xib in Resources */,
+				CEDE3B3222606CD6006D9EAE /* WhereToPlayVC.xib in Resources */,
 				CECEEF36224A4DF80068F267 /* ManagerOrdersVC.xib in Resources */,
 				CECEEF41224B09620068F267 /* ManagerUserCell.xib in Resources */,
 				CE5A644A224CA46400891AC9 /* OpenStoreTextViewCell.xib in Resources */,
@@ -2926,6 +3156,7 @@
 				CEECC0282255D085004EE5C2 /* MyVoucherVC.xib in Resources */,
 				CE9C4BF6223B4F9B00DE9DC1 /* icon_error_network.png in Resources */,
 				CE28A75D2251B93200B62032 /* ManagementStoreConfigTitleCell.xib in Resources */,
+				CE034370225ED24F00CB695C /* AppCurrencyItemCell.xib in Resources */,
 				CECEEF05224A45CE0068F267 /* OpenStoreVC.xib in Resources */,
 				CEE3F66E224DEC5E00151BE7 /* ManagementStoreAddCell.xib in Resources */,
 				CEFA92C62240ED9C0015F7EE /* MainMineListCell.xib in Resources */,
@@ -2936,10 +3167,12 @@
 				CECEEEBC2249D9560068F267 /* InfoDetaildNorCell.xib in Resources */,
 				CEFA92C12240CB870015F7EE /* MainMineHeadCell.xib in Resources */,
 				CE28A76C2251E3D200B62032 /* StoreSingleProductVC.xib in Resources */,
+				CEDE3B2322602D91006D9EAE /* SettlementDetaildCell.xib in Resources */,
 				CE7F1B86225DC54100CC5B09 /* LiquorImageDataCell.xib in Resources */,
 				CED7ECBC225390E900E0BFF3 /* MyOrderDetailItemCell.xib in Resources */,
 				CEE3F673224DF12200151BE7 /* ManagementStoreBoxTypeCell.xib in Resources */,
 				CEECC02E2255D84F004EE5C2 /* MyChildVoucherVC.xib in Resources */,
+				CE034384225EF7ED00CB695C /* AppCurrencyDetailVC.xib in Resources */,
 				CE6B05AD224884F300AD44D7 /* HelpVC.xib in Resources */,
 				CE1FE546225C3DFB00197B8D /* FillStoreItemCell.xib in Resources */,
 				CE9C4BF8223B4F9B00DE9DC1 /* icon_no_data.png in Resources */,
@@ -2952,12 +3185,16 @@
 				CECEEEC7224A020C0068F267 /* MyDynamicsVC.xib in Resources */,
 				CECEEF55224B56FF0068F267 /* CleanChatView.xib in Resources */,
 				CE7F1B63225D7FF800CC5B09 /* PartnerVC.xib in Resources */,
+				CE03437A225EDD6100CB695C /* AppCurrencyTextFieldCell.xib in Resources */,
 				CECEEF18224A4D290068F267 /* ManagerUserVC.xib in Resources */,
 				CECEEEED224A27F20068F267 /* LogginVC.xib in Resources */,
 				CE28A7B122523BAA00B62032 /* MyProcessingOrderCell.xib in Resources */,
 				CEFA92D52241D1970015F7EE /* SendDynamicsHeadView.xib in Resources */,
 				CEFA92A3224088500015F7EE /* FriendMessageVC.xib in Resources */,
 				CEF5DDC0225453040025F406 /* MyOrderDetailPhotoCell.xib in Resources */,
+				CE034389225EFA8600CB695C /* AppCurrencyDetailCell.xib in Resources */,
+				CEDE3B3922607AEB006D9EAE /* WhereToPlayCell.xib in Resources */,
+				CE034375225ED4AF00CB695C /* AppCurrencyItemCollectionViewCell.xib in Resources */,
 				CEDBEF602254C579004E714E /* InteractiveListVC.xib in Resources */,
 				CEF5DDF22254B70E0025F406 /* DIYFilterView.xib in Resources */,
 				CEFA92AD2240A01C0015F7EE /* FriendMessageCell.xib in Resources */,
@@ -2967,13 +3204,17 @@
 				CEE28F7D22436D0500C3D7E9 /* InfoDetailVC.xib in Resources */,
 				CEF2B36E224CE21100687E5B /* ReleaseEventSliderCell.xib in Resources */,
 				CEFA9231223F634D0015F7EE /* MainHomeVC.xib in Resources */,
+				CE0343B1225F51D900CB695C /* BillTypeCell.xib in Resources */,
 				CEF5DDB6225444970025F406 /* MyOrderDetailUserCell.xib in Resources */,
 				CE5A642B224C5CF600891AC9 /* FillInTheInfoVC.xib in Resources */,
+				CE034393225F062500CB695C /* OtherIncomeVC.xib in Resources */,
 				CECEEF46224B131C0068F267 /* InviteStoreView.xib in Resources */,
+				CE0343AC225F342100CB695C /* BillVC.xib in Resources */,
 				CEFA92DA2241DDF40015F7EE /* SendDynamicsHeadCell.xib in Resources */,
 				CE6B05A32248789900AD44D7 /* WithdrawWordVC.xib in Resources */,
 				CE1FE553225C5A2200197B8D /* FillStoreSliderCell.xib in Resources */,
 				CEFA92CC2241C93D0015F7EE /* SendDynamicsVC.xib in Resources */,
+				CE03438E225EFFD000CB695C /* PartnerIncomeVC.xib in Resources */,
 				CECE8038225B12A70069FD55 /* drag.jpg in Resources */,
 				CE7F1B95225DCBA300CC5B09 /* MaterialImageVC.xib in Resources */,
 				CECEEEF9224A41AB0068F267 /* ActivityVC.xib in Resources */,
@@ -2988,14 +3229,18 @@
 				CE5A6430224C642300891AC9 /* SelPhotoVC.xib in Resources */,
 				CEE28EAB224329A900C3D7E9 /* MainSetVC.xib in Resources */,
 				CEACEB03224B8B7900A2AE2D /* RegisVC.xib in Resources */,
+				CE0343B6225F5DC500CB695C /* DIYSelectTimeView.xib in Resources */,
+				CEDE3B282260399B006D9EAE /* VoucherCell.xib in Resources */,
 				CE1FE541225C3B5700197B8D /* FillTargetStoreInfoVC.xib in Resources */,
 				CEE28F6B2243571800C3D7E9 /* GKNavigationBarViewController.bundle in Resources */,
 				CECC0D23223A411F001CF0A2 /* Assets.xcassets in Resources */,
 				CEACEB0D224B9CD700A2AE2D /* BindPhoneVC.xib in Resources */,
 				CEACEB08224B949700A2AE2D /* ForgetWordVC.xib in Resources */,
+				CE03437F225EE0DC00CB695C /* AppCurrencyListCell.xib in Resources */,
 				CE28A79B22522F5500B62032 /* LiquorImageDataVC.xib in Resources */,
 				CE1FE55E225C7EA200197B8D /* ChangeInfoHeadViewUserIconCell.xib in Resources */,
 				CEE28F602243571800C3D7E9 /* LICENSE in Resources */,
+				CEDE3B3F22609956006D9EAE /* FindTaPlayVC.xib in Resources */,
 				CECEEF2C224A4DD30068F267 /* StoreContentVC.xib in Resources */,
 				CE7F1B81225D9F4100CC5B09 /* PartnerChildCell.xib in Resources */,
 				CE28A7622251C66C00B62032 /* ManagementStoreTextViewCell.xib in Resources */,
@@ -3010,6 +3255,7 @@
 				CEE79F7D225CBA960066CE30 /* DIYPayView.xib in Resources */,
 				CE1FE564225C90CD00197B8D /* AccessListVC.xib in Resources */,
 				CEF5DDCA22545D8B0025F406 /* ChecklistVC.xib in Resources */,
+				CE03439D225F13BC00CB695C /* QuitMoneyVC.xib in Resources */,
 				CE6B05C32248EEF900AD44D7 /* DynamicsContentCell.xib in Resources */,
 				CE7F1B9F225DD0AF00CC5B09 /* MaterialImageCell.xib in Resources */,
 				CEE5FCF222530F260093D567 /* starGray@3x.png in Resources */,
@@ -3018,9 +3264,11 @@
 				CECEEEC12249DA630068F267 /* InfoDetailIconCell.xib in Resources */,
 				CEE6E37D22420731006ED98F /* SendDynamicsVideoCell.xib in Resources */,
 				CE6B0594224867FE00AD44D7 /* ShieldDynamicVC.xib in Resources */,
+				CE0343A7225F2C6600CB695C /* QuitMoneyCodeCell.xib in Resources */,
 				CE28A7A02252333100B62032 /* SendActivityViewController.xib in Resources */,
 				CEE5FCF422530F260093D567 /* starFore@2x.png in Resources */,
 				CE1FE576225CB4E100197B8D /* OpenPartnerCell.xib in Resources */,
+				CE0343A2225F262D00CB695C /* QuitMoneyTextFieldTableViewCell.xib in Resources */,
 				CE1FE53C225C2D4E00197B8D /* DIYTelPhoneView.xib in Resources */,
 				CEE5FCF122530F260093D567 /* starFore@3x.png in Resources */,
 				CEFA9271223F99BB0015F7EE /* FavorableDynamicsVC.xib in Resources */,
@@ -3030,6 +3278,7 @@
 				CEFA9284223FA6920015F7EE /* NearByDynamicsHeadCell.xib in Resources */,
 				CEF5DDD922548AAE0025F406 /* OrderComplaintVC.xib in Resources */,
 				CEE28EB122432EEE00C3D7E9 /* MainSetListCell.xib in Resources */,
+				CE03436A225ECA5600CB695C /* AppCurrencyVC.xib in Resources */,
 				CE5A6435224C64E800891AC9 /* SelPhotoCell.xib in Resources */,
 				CE6B059E22486BC900AD44D7 /* SafeCenterVCTableViewCell.xib in Resources */,
 				CEF5DDE62254A19D0025F406 /* DIYMoreView.xib in Resources */,
@@ -3044,9 +3293,11 @@
 				CECEEEE4224A1F4E0068F267 /* MyVideoVC.xib in Resources */,
 				CECEEEDE224A17620068F267 /* MyPhotoVC.xib in Resources */,
 				CE1FE559225C6BF400197B8D /* FavorableDynamicsCell.xib in Resources */,
+				CEDE3B1E22602B47006D9EAE /* SettlementDetaildVC.xib in Resources */,
 				CEFA9245223F63E70015F7EE /* MainMineVC.xib in Resources */,
 				CEFA926C223F99A90015F7EE /* NearbyDynamicsVC.xib in Resources */,
 				CE6B05B32248A2C500AD44D7 /* VoucherVC.xib in Resources */,
+				CE034398225F072000CB695C /* OtherIncomeChildVC.xib in Resources */,
 				CEFA92A8224091000015F7EE /* NewMessageCell.xib in Resources */,
 				CEE5FCF9225312970093D567 /* StartContentView.xib in Resources */,
 				CE28A7912252099200B62032 /* StoreBoxTypeVC.xib in Resources */,
@@ -3175,7 +3426,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				CECEEEF8224A41AB0068F267 /* ActivityVC.m in Sources */,
+				CE034379225EDD6100CB695C /* AppCurrencyTextFieldCell.m in Sources */,
 				CE7F1B85225DC54100CC5B09 /* LiquorImageDataCell.m in Sources */,
+				CE03436F225ED24F00CB695C /* AppCurrencyItemCell.m in Sources */,
 				CE7F1B80225D9F4100CC5B09 /* PartnerChildCell.m in Sources */,
 				CECEEEB72249C4010068F267 /* WithdrawWordVC.m in Sources */,
 				CEE28F33224355E100C3D7E9 /* JXCategoryImageCell.m in Sources */,
@@ -3192,6 +3445,7 @@
 				CEE28F622243571800C3D7E9 /* GKDelegateHandler.m in Sources */,
 				CEFA928E223FAB430015F7EE /* NearByDynamicsToolCell.m in Sources */,
 				CE28A7B022523BAA00B62032 /* MyProcessingOrderCell.m in Sources */,
+				CEDE3B272260399B006D9EAE /* VoucherCell.m in Sources */,
 				CE9C4C03223B5B1600DE9DC1 /* BaseTabBarController.m in Sources */,
 				CE1FE53A225C2D3600197B8D /* DIYTelPhoneView.m in Sources */,
 				CEE5FD052253857C0093D567 /* TESTFloatingView.m in Sources */,
@@ -3208,18 +3462,21 @@
 				CEE28F642243571800C3D7E9 /* UINavigationController+GKCategory.m in Sources */,
 				CE6B0598224869CB00AD44D7 /* VerifiedVC.m in Sources */,
 				CE7F1B99225DCBB400CC5B09 /* MaterialTxtVC.m in Sources */,
+				CE03439C225F13BC00CB695C /* QuitMoneyVC.m in Sources */,
 				CE9C4C0D223B662600DE9DC1 /* BaseWebViewController.m in Sources */,
 				CEE28F822243872F00C3D7E9 /* GKWBPageViewController.m in Sources */,
 				CEFA9293223FB8870015F7EE /* CirclePhotosView.m in Sources */,
 				CEFA928A223FAB310015F7EE /* NearByDynamicsImageCell.m in Sources */,
 				CEFA92B52240A6030015F7EE /* SCIndexViewConfiguration.m in Sources */,
 				CEFA9244223F63E70015F7EE /* MainMineVC.m in Sources */,
+				CE034392225F062500CB695C /* OtherIncomeVC.m in Sources */,
 				CEE28ECB2243385C00C3D7E9 /* AppDelegate+AvoidCrash.m in Sources */,
 				CEE5FCF7225312870093D567 /* StartContentView.m in Sources */,
 				CEE9B4502244EA060004E4FA /* ChangePassWordVC.m in Sources */,
 				CE6B05B82248AA3200AD44D7 /* DynamicsDetailVC.m in Sources */,
 				CEFA92C02240CB870015F7EE /* MainMineHeadCell.m in Sources */,
 				CE1FE569225C966800197B8D /* AccessListCell.m in Sources */,
+				CEDE3B2222602D91006D9EAE /* SettlementDetaildCell.m in Sources */,
 				CEFA9210223F535E0015F7EE /* AppDelegate+Config.m in Sources */,
 				CE1FE540225C3B5700197B8D /* FillTargetStoreInfoVC.m in Sources */,
 				CEE28F6C2243571800C3D7E9 /* GKNavigationBarViewController.m in Sources */,
@@ -3234,6 +3491,7 @@
 				CEF2B360224CCA4300687E5B /* StoreContentTextCell.m in Sources */,
 				CE7F1BA4225DEB6D00CC5B09 /* WalletVC.m in Sources */,
 				CEFA9275223F99CF0015F7EE /* HeedDynamicsVC.m in Sources */,
+				CEDE3B3E22609956006D9EAE /* FindTaPlayVC.m in Sources */,
 				CE28A7612251C66C00B62032 /* ManagementStoreTextViewCell.m in Sources */,
 				CEE28F3B224355E100C3D7E9 /* UIColor+JXAdd.m in Sources */,
 				CEF5DDE22254A1860025F406 /* DIYMoreView.m in Sources */,
@@ -3279,6 +3537,7 @@
 				CE5A6449224CA46400891AC9 /* OpenStoreTextViewCell.m in Sources */,
 				CECC0D61223A569F001CF0A2 /* NSDictionary+Json.m in Sources */,
 				CEFA926B223F99A90015F7EE /* NearbyDynamicsVC.m in Sources */,
+				CE0343B4225F5DBB00CB695C /* DIYSelectTimeView.m in Sources */,
 				CEE5FCFD225337040093D567 /* MyOrderDetailVC.m in Sources */,
 				CEFA923A223F63B10015F7EE /* MainMessageVC.m in Sources */,
 				CEF5DDDD22548B5E0025F406 /* OrderComplaintCell.m in Sources */,
@@ -3305,7 +3564,9 @@
 				CE5A6444224CA06700891AC9 /* OpenStoreItemCell.m in Sources */,
 				CE6B05B22248A2C500AD44D7 /* VoucherVC.m in Sources */,
 				CEE28F6D2243571800C3D7E9 /* GKNavigationBarConfigure.m in Sources */,
+				CE034383225EF7ED00CB695C /* AppCurrencyDetailVC.m in Sources */,
 				CEE28F2C224355E100C3D7E9 /* JXCategoryTitleImageView.m in Sources */,
+				CE03437E225EE0DC00CB695C /* AppCurrencyListCell.m in Sources */,
 				CE28A75C2251B93200B62032 /* ManagementStoreConfigTitleCell.m in Sources */,
 				CEF5DDCE225480450025F406 /* BillObjectionVC.m in Sources */,
 				CECEEF17224A4D290068F267 /* ManagerUserVC.m in Sources */,
@@ -3318,8 +3579,10 @@
 				CECC0D6B223A56B8001CF0A2 /* NSArray+Log.m in Sources */,
 				CEF5DDBA22544E3E0025F406 /* MyOrderDetailListCell.m in Sources */,
 				CEE28F31224355E100C3D7E9 /* JXCategoryTitleView.m in Sources */,
+				CE03438D225EFFD000CB695C /* PartnerIncomeVC.m in Sources */,
 				CE28A7AA225239FD00B62032 /* MyProcessingOrderVC.m in Sources */,
 				CECEEF40224B09620068F267 /* ManagerUserCell.m in Sources */,
+				CE0343A1225F262D00CB695C /* QuitMoneyTextFieldTableViewCell.m in Sources */,
 				CEFA92B72240A6030015F7EE /* UITableView+SCIndexView.m in Sources */,
 				CEE28F3D224355E100C3D7E9 /* JXCategoryBaseCell.m in Sources */,
 				CE6B059D22486BC900AD44D7 /* SafeCenterVCTableViewCell.m in Sources */,
@@ -3340,7 +3603,9 @@
 				CECEEF04224A45CE0068F267 /* OpenStoreVC.m in Sources */,
 				CEDBEF5F2254C579004E714E /* InteractiveListVC.m in Sources */,
 				CE1FE575225CB4E100197B8D /* OpenPartnerCell.m in Sources */,
+				CEDE3B2B22606495006D9EAE /* MainHomeHeadView.m in Sources */,
 				CEFA925F223F84750015F7EE /* FSSegmentTitleView.m in Sources */,
+				CE034369225ECA5600CB695C /* AppCurrencyVC.m in Sources */,
 				CEE79F79225CBA530066CE30 /* DIYPayView.m in Sources */,
 				CE7F1B62225D7FF800CC5B09 /* PartnerVC.m in Sources */,
 				CEE3F672224DF12200151BE7 /* ManagementStoreBoxTypeCell.m in Sources */,
@@ -3348,6 +3613,7 @@
 				CEF5DDD822548AAE0025F406 /* OrderComplaintVC.m in Sources */,
 				CEE28F20224355E100C3D7E9 /* JXCategoryIndicatorLineView.m in Sources */,
 				CEE28F612243571800C3D7E9 /* GKPushTransitionAnimation.m in Sources */,
+				CEDE3B3122606CD6006D9EAE /* WhereToPlayVC.m in Sources */,
 				CEE28F3C224355E100C3D7E9 /* JXCategoryBaseView.m in Sources */,
 				CEFA92D32241D16A0015F7EE /* SendDynamicsHeadView.m in Sources */,
 				CE5A643F224C9F9900891AC9 /* OpenStoreListCell.m in Sources */,
@@ -3365,6 +3631,7 @@
 				CECEEEBB2249D9560068F267 /* InfoDetaildNorCell.m in Sources */,
 				CEE28F34224355E100C3D7E9 /* JXCategoryImageCellModel.m in Sources */,
 				CE6B0593224867FE00AD44D7 /* ShieldDynamicVC.m in Sources */,
+				CE034397225F072000CB695C /* OtherIncomeChildVC.m in Sources */,
 				CECC0D5D223A5670001CF0A2 /* UIView+Tap.m in Sources */,
 				CEFA92B62240A6030015F7EE /* SCIndexView.m in Sources */,
 				CEE5FCF022530F260093D567 /* GZHRatingView.m in Sources */,
@@ -3376,6 +3643,7 @@
 				CEFA927A223FA59A0015F7EE /* BaseCell.m in Sources */,
 				CE1FE56F225CB38E00197B8D /* OpenPartnerVC.m in Sources */,
 				CEF5DDC922545D8B0025F406 /* ChecklistVC.m in Sources */,
+				CEDE3B1D22602B47006D9EAE /* SettlementDetaildVC.m in Sources */,
 				CEECC03222560866004EE5C2 /* MainVideoShowVC.m in Sources */,
 				CEF2B367224CE06A00687E5B /* JLDoubleSlider.m in Sources */,
 				CECEEED8224A0F660068F267 /* MyDynamicsImageCell.m in Sources */,
@@ -3396,17 +3664,22 @@
 				CECE8037225B12A70069FD55 /* DragEditView.m in Sources */,
 				CE28A7902252099200B62032 /* StoreBoxTypeVC.m in Sources */,
 				CE1FE558225C6BF400197B8D /* FavorableDynamicsCell.m in Sources */,
+				CE034374225ED4AF00CB695C /* AppCurrencyItemCollectionViewCell.m in Sources */,
 				CECE8045225B494C0069FD55 /* ShortVideoSession.m in Sources */,
+				CE0343A6225F2C6600CB695C /* QuitMoneyCodeCell.m in Sources */,
 				CECEEF49224B17680068F267 /* CALayer+XibConfiguration.m in Sources */,
 				CEFA9270223F99BB0015F7EE /* FavorableDynamicsVC.m in Sources */,
 				CEF5DDEE2254B6E10025F406 /* DIYFilterView.m in Sources */,
+				CEDE3B3822607AEB006D9EAE /* WhereToPlayCell.m in Sources */,
 				CEE28F22224355E100C3D7E9 /* JXCategoryIndicatorImageView.m in Sources */,
 				CEFA9283223FA6920015F7EE /* NearByDynamicsHeadCell.m in Sources */,
+				CE0343AB225F342100CB695C /* BillVC.m in Sources */,
 				CECEEF26224A4DC30068F267 /* ManagementStoreVC.m in Sources */,
 				CE1FE545225C3DFB00197B8D /* FillStoreItemCell.m in Sources */,
 				CEFA92CF2241CEB70015F7EE /* BaseView.m in Sources */,
 				CEFA9213223F5AAA0015F7EE /* UILabel+BaseChangeDefaultFont.m in Sources */,
 				CE1FE55D225C7EA200197B8D /* ChangeInfoHeadViewUserIconCell.m in Sources */,
+				CE0343B0225F51D900CB695C /* BillTypeCell.m in Sources */,
 				CEF5DDB5225444970025F406 /* MyOrderDetailUserCell.m in Sources */,
 				CECEEF4D224B246F0068F267 /* MyQRCodeView.m in Sources */,
 				CE1FE552225C5A2200197B8D /* FillStoreSliderCell.m in Sources */,
@@ -3425,6 +3698,7 @@
 				CEE28ED3224355DA00C3D7E9 /* GKPageScrollView.m in Sources */,
 				CE28A78B2252019600B62032 /* StorePackageVC.m in Sources */,
 				CECEEEDD224A17620068F267 /* MyPhotoVC.m in Sources */,
+				CE034388225EFA8600CB695C /* AppCurrencyDetailCell.m in Sources */,
 				CE9C4C15223B740D00DE9DC1 /* NetWorkManager.m in Sources */,
 				CE1FE563225C90CD00197B8D /* AccessListVC.m in Sources */,
 			);

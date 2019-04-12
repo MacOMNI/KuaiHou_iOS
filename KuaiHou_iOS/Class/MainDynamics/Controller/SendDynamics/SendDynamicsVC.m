@@ -202,7 +202,9 @@
             
             VideoEditVC *videoEditVC = [[VideoEditVC alloc] init];
             videoEditVC.videoUrl = url;
-            
+            [videoEditVC setFinshEditVideoBlock:^(NSString *path) {
+                self.videoPath = path;
+            }];
             [self presentViewController:videoEditVC animated:YES completion:^{   }];
             
             
@@ -274,6 +276,17 @@
 
 
 -(void)sendAction{
+    if (self.videoPath.length > 0) {
+        [APIManagerInstance postUploadWithUrl:@"/kuaihou-platform/api/user/updateUserImageOrVideoList.do" params:@{@"uId":@"20000333", @"type":@"2"} fileData:[NSData dataWithContentsOfFile:self.videoPath] fileType:@"mp4" success:^(BOOL isSuccess, id  _Nonnull responseObject) {
+            NSLog(@"%@", responseObject);
+            if (isSuccess) {
+                
+            }
+        } fail:^{
+            NSLog(@"失败");
+        }];
+    }
+    
     
 }
 - (IBAction)selPhotoAction:(UIButton *)sender {

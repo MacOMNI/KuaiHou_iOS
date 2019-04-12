@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="AppCurrencyItemCollectionViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="100" height="60"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="100" height="60"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GK1-P6-Uzq">
+                        <rect key="frame" x="0.0" y="0.0" width="100" height="60"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="20快币" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hoH-rC-bWT">
+                                <rect key="frame" x="25.5" y="10" width="49" height="14"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="14" id="vJY-jY-qa6"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <color key="textColor" red="0.8862745098" green="0.26274509800000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="售价20.00元" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4f1-hn-p1T">
+                                <rect key="frame" x="15.5" y="38" width="69.5" height="12"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="12" id="4lb-UC-KvC"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <color key="textColor" red="1" green="0.62745098039215685" blue="0.58823529411764708" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="hoH-rC-bWT" firstAttribute="top" secondItem="GK1-P6-Uzq" secondAttribute="top" constant="10" id="62M-1x-jv0"/>
+                            <constraint firstItem="hoH-rC-bWT" firstAttribute="centerX" secondItem="GK1-P6-Uzq" secondAttribute="centerX" id="G3y-yW-nH1"/>
+                            <constraint firstAttribute="bottom" secondItem="4f1-hn-p1T" secondAttribute="bottom" constant="10" id="eC5-8V-yx6"/>
+                            <constraint firstItem="4f1-hn-p1T" firstAttribute="centerX" secondItem="GK1-P6-Uzq" secondAttribute="centerX" id="rN4-g7-glC"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                <integer key="value" value="5"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.borderWidth">
+                                <real key="value" value="0.5"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="layer.borderUIColor">
+                                <color key="value" red="0.8862745098" green="0.26274509800000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="GK1-P6-Uzq" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="7Kc-Bc-axi"/>
+                <constraint firstAttribute="trailing" secondItem="GK1-P6-Uzq" secondAttribute="trailing" id="WTB-WS-boy"/>
+                <constraint firstItem="GK1-P6-Uzq" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="jc0-Um-6LM"/>
+                <constraint firstAttribute="bottom" secondItem="GK1-P6-Uzq" secondAttribute="bottom" id="rbo-1h-0tW"/>
+            </constraints>
+            <connections>
+                <outlet property="bgView" destination="GK1-P6-Uzq" id="Ozm-uI-uqM"/>
+                <outlet property="detailLab" destination="4f1-hn-p1T" id="c1Y-Th-x5m"/>
+                <outlet property="titleLab" destination="hoH-rC-bWT" id="Pi6-aO-7Bs"/>
+            </connections>
+            <point key="canvasLocation" x="131.8840579710145" y="114.50892857142857"/>
+        </collectionViewCell>
+    </objects>
+</document>

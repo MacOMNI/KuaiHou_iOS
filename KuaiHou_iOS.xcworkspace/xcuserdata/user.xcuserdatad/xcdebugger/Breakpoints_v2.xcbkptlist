@@ -35,13 +35,13 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "KuaiHou_iOS/Class/MainMine/Controller/Wallet/WalletVC.m"
-            timestampString = "576585288.382827"
+            filePath = "KuaiHou_iOS/Class/MainDynamics/Controller/SendDynamics/SendDynamicsVC.m"
+            timestampString = "576673725.267597"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "136"
-            endingLineNumber = "136"
-            landmarkName = "-scrollViewDidScroll:"
+            startingLineNumber = "286"
+            endingLineNumber = "286"
+            landmarkName = "-sendAction"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -51,13 +51,13 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "KuaiHou_iOS/Class/MainMine/Controller/Wallet/WalletVC.m"
-            timestampString = "576585288.3828959"
+            filePath = "KuaiHou_iOS/Class/MainDynamics/Controller/SendDynamics/SendDynamicsVC.m"
+            timestampString = "576673725.267688"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "141"
-            endingLineNumber = "141"
-            landmarkName = "-scrollViewDidScroll:"
+            startingLineNumber = "281"
+            endingLineNumber = "281"
+            landmarkName = "-sendAction"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

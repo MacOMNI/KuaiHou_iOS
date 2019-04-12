@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="QuitMoneyCodeCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3s8-lT-6h1">
+                        <rect key="frame" x="60" y="43" width="245" height="0.5"/>
+                        <color key="backgroundColor" red="0.93333333330000001" green="0.93333333330000001" blue="0.93333333330000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="0.5" id="DUi-Gy-8Jf"/>
+                        </constraints>
+                    </view>
+                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="s62-0j-7hM">
+                        <rect key="frame" x="60" y="23" width="150" height="15"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="15" id="gVO-lz-WR2"/>
+                        </constraints>
+                        <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <textInputTraits key="textInputTraits"/>
+                    </textField>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LgQ-4y-sue">
+                        <rect key="frame" x="225" y="11" width="80" height="22"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="22" id="h84-A2-ypX"/>
+                            <constraint firstAttribute="width" constant="80" id="ygk-gh-VMh"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <state key="normal" title="获取验证码">
+                            <color key="titleColor" red="0.94901960784313721" green="0.25490196078431371" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </state>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                <real key="value" value="2.5"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="NO"/>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.borderWidth">
+                                <real key="value" value="0.5"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="layer.borderUIColor">
+                                <color key="value" red="0.94901960784313721" green="0.25490196078431371" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="LgQ-4y-sue" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="7hB-Sa-q1G"/>
+                    <constraint firstAttribute="bottom" secondItem="3s8-lT-6h1" secondAttribute="bottom" id="IiI-VE-Oy2"/>
+                    <constraint firstItem="3s8-lT-6h1" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="60" id="NMW-fr-deT"/>
+                    <constraint firstItem="LgQ-4y-sue" firstAttribute="leading" secondItem="s62-0j-7hM" secondAttribute="trailing" constant="15" id="Yzp-Pd-SDe"/>
+                    <constraint firstItem="3s8-lT-6h1" firstAttribute="top" secondItem="s62-0j-7hM" secondAttribute="bottom" constant="5" id="sRn-n8-aCY"/>
+                    <constraint firstItem="s62-0j-7hM" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="60" id="sdL-fz-6K6"/>
+                    <constraint firstAttribute="trailing" secondItem="LgQ-4y-sue" secondAttribute="trailing" constant="15" id="t6X-28-3eb"/>
+                    <constraint firstAttribute="trailing" secondItem="3s8-lT-6h1" secondAttribute="trailing" constant="15" id="tbF-hB-jfn"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="codeBtn" destination="LgQ-4y-sue" id="UVW-h8-ASk"/>
+                <outlet property="textField" destination="s62-0j-7hM" id="qUD-xD-dM2"/>
+            </connections>
+            <point key="canvasLocation" x="34.782608695652179" y="34.821428571428569"/>
+        </tableViewCell>
+    </objects>
+</document>

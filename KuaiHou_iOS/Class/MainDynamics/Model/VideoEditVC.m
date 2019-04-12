@@ -301,7 +301,13 @@
     }
     else {
         NSLog(@"保存到相册成功");
+        if (self.finshEditVideoBlock) {
+            self.finshEditVideoBlock(videoPath);
+        }
+        
     }
+    
+    [self dismissSelfVC];
 }
 
 - (void)deleteTempFile{

@@ -171,6 +171,7 @@ isPhoneX = [[UIApplication sharedApplication] delegate].window.safeAreaInsets.bo
     UIView *pageView = [self.delegate pageViewInPageScrollView:self];
     pageView.frame = CGRectMake(0, 0, GKPAGE_SCREEN_WIDTH, GKPAGE_SCREEN_HEIGHT - self.ceilPointHeight);
     [cell.contentView addSubview:pageView];
+    cell.backgroundColor = [UIColor clearColor];
     return cell;
 }
 

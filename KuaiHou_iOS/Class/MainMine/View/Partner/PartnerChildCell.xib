@@ -147,6 +147,17 @@
                     <constraint firstItem="JyV-px-BV7" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="15" id="xd1-g6-sYy"/>
                 </constraints>
             </tableViewCellContentView>
+            <connections>
+                <outlet property="ageLab" destination="cHU-DS-okc" id="7i4-Fq-CS2"/>
+                <outlet property="headImageView" destination="JyV-px-BV7" id="sKP-Ft-8Lx"/>
+                <outlet property="incomeLab" destination="zmH-jC-Rmt" id="yEe-SP-xya"/>
+                <outlet property="itemBtn" destination="1Mv-ND-m0C" id="efW-EE-aIY"/>
+                <outlet property="nickNameLab" destination="7Oe-Dq-Ypz" id="w26-5S-p4c"/>
+                <outlet property="sexIcon" destination="CQj-Qd-7y2" id="1eJ-D1-lLE"/>
+                <outlet property="superNameLab" destination="bEd-GD-Kst" id="In7-Y8-h7D"/>
+                <outlet property="timeLab" destination="WyB-L7-cpo" id="dDm-Yi-2IU"/>
+                <outlet property="typeLab" destination="joZ-cK-ww8" id="vRt-oX-FNV"/>
+            </connections>
             <point key="canvasLocation" x="131.8840579710145" y="122.87946428571428"/>
         </tableViewCell>
     </objects>

@@ -25,4 +25,6 @@
  */
 @property (nonatomic, assign) BOOL isEdit;
 
+@property (nonatomic, copy) void (^finshEditVideoBlock)(NSString *path);
+
 @end

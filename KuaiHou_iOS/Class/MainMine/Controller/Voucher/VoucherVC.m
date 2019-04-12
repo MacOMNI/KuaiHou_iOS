@@ -7,16 +7,17 @@
 //
 
 #import "VoucherVC.h"
-#import "VoucherCollectionCell.h"
+#import "VoucherCell.h"
 #import "FillTargetStoreInfoVC.h"
 
-@interface VoucherVC () <UICollectionViewDelegate, UICollectionViewDataSource>
+@interface VoucherVC ()
 
 @property (weak, nonatomic) IBOutlet UILabel *selectNumLab;
 @property (weak, nonatomic) IBOutlet UIButton *nextBtn;
 @property (weak, nonatomic) IBOutlet NSLayoutConstraint *bottomLayout;
 
-@property (weak, nonatomic) IBOutlet UICollectionView *collectionView;
+@property (weak, nonatomic) IBOutlet UITableView *tableView;
+
 
 @property (nonatomic, strong) NSArray *dataArray;
 
@@ -36,53 +37,61 @@
     [MyTool fixCornerradius:self.nextBtn cornerRadius:15 Color:kMain_lineColor_C Width:0.5];
     self.bottomLayout.constant = SafeAreaBottom;
     
-    self.collectionView.delegate = self;
-    self.collectionView.dataSource = self;
-    self.collectionView.alwaysBounceVertical = YES;
+    self.tableView.superAnimationType = TABViewSuperAnimationTypeClassic;
+    self.tableView.estimatedRowHeight = 0;
+    self.tableView.estimatedSectionFooterHeight = 0;
+    self.tableView.estimatedSectionHeaderHeight = 0;
     
-    // 1.创建流水布局
-    UICollectionViewFlowLayout *layout = [[UICollectionViewFlowLayout alloc] init];
-//    layout.scrollDirection = UICollectionViewScrollDirectionHorizontal;
-    self.collectionView.collectionViewLayout = layout;
-    
-    [self.collectionView registerNib:[UINib nibWithNibName:NSStringFromClass([VoucherCollectionCell class]) bundle:nil] forCellWithReuseIdentifier:NSStringFromClass([VoucherCollectionCell class])];
+    [self.tableView registerNib:[UINib nibWithNibName:NSStringFromClass([VoucherCell class]) bundle:[NSBundle mainBundle]] forCellReuseIdentifier:NSStringFromClass([VoucherCell class])];
 }
 
-// 设置分区
-//
-//- (NSInteger)numberOfSectionsInCollectionView:(UICollectionView *)collectionView {
-//    return 1;
-//}
-
-// 每个分区上得元素个数
-- (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section {
-    return 50;
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
+    return 1;
 }
 
-// 设置cell
-- (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+    return 40;
+}
+
+- (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section {
+    return 0.0001;
+}
+
+- (CGFloat)tableView:(UITableView *)tableView heightForFooterInSection:(NSInteger)section {
+    return 0.001;
+}
+- (nullable UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section{
+    return nil;
+}
+
+- (nullable UIView *)tableView:(UITableView *)tableView viewForFooterInSection:(NSInteger)section{
+    return nil;
+}
+
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
+    return 110;
+}
+
+- (UITableViewCell*)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
+    VoucherCell *cell = [tableView dequeueReusableCellWithIdentifier:NSStringFromClass([VoucherCell class]) forIndexPath:indexPath];
     
-    VoucherCollectionCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:NSStringFromClass([VoucherCollectionCell class]) forIndexPath:indexPath];
+    cell.commitBtn.hidden = YES;
+    cell.typeImageView.hidden = YES;
+    cell.iconBtn.hidden = NO;
     
     return cell;
+    
 }
 
-// 设置UIcollectionView整体的内边距（这样item不贴边显示）
-- (UIEdgeInsets)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout insetForSectionAtIndex:(NSInteger)section {
-    // 上 左 下 右
-    return UIEdgeInsetsMake(20, 15, 15, 15);
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+    
 }
 
-// 设置minimumInteritemSpacing：cell左右之间最小的距离
-- (CGFloat)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout minimumInteritemSpacingForSectionAtIndex:(NSInteger)section {
-    return 15;
-}
 
-// 设置cell大小 itemSize：可以给每一个cell指定不同的尺寸
-- (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout*)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath *)indexPath {
-    CGFloat weidth = (kScreenSizeWidth - 45) / 2;
-    return CGSizeMake(weidth, 59);
-}
+
+
+
+
 - (IBAction)nextAction:(UIButton *)sender {
     [self.navigationController pushViewController:[FillTargetStoreInfoVC new] animated:YES];
 }

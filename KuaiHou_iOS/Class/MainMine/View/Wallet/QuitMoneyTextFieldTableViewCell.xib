@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="QuitMoneyTextFieldTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kUu-2V-bwo">
+                        <rect key="frame" x="60" y="43" width="245" height="0.5"/>
+                        <color key="backgroundColor" red="0.93333333333333335" green="0.93333333333333335" blue="0.93333333333333335" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="0.5" id="r0Y-26-ThJ"/>
+                        </constraints>
+                    </view>
+                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="UYJ-0r-GRc">
+                        <rect key="frame" x="60" y="23" width="245" height="15"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="15" id="1pt-cV-zfs"/>
+                        </constraints>
+                        <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <textInputTraits key="textInputTraits"/>
+                    </textField>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="UYJ-0r-GRc" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="60" id="MLx-8Q-IBG"/>
+                    <constraint firstItem="kUu-2V-bwo" firstAttribute="top" secondItem="UYJ-0r-GRc" secondAttribute="bottom" constant="5" id="Uka-XC-DQo"/>
+                    <constraint firstAttribute="trailing" secondItem="UYJ-0r-GRc" secondAttribute="trailing" constant="15" id="XBY-SP-WMY"/>
+                    <constraint firstAttribute="bottom" secondItem="kUu-2V-bwo" secondAttribute="bottom" id="gsU-4f-BEo"/>
+                    <constraint firstAttribute="trailing" secondItem="kUu-2V-bwo" secondAttribute="trailing" constant="15" id="mh4-ab-uHt"/>
+                    <constraint firstItem="kUu-2V-bwo" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="60" id="rfw-XF-HaA"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="textField" destination="UYJ-0r-GRc" id="fYk-cj-LAH"/>
+            </connections>
+            <point key="canvasLocation" x="37.681159420289859" y="34.821428571428569"/>
+        </tableViewCell>
+    </objects>
+</document>
