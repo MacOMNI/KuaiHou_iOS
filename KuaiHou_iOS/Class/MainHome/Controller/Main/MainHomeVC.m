@@ -12,6 +12,7 @@
 #import "InfoDetailVC.h"
 #import "WhereToPlayVC.h"
 #import "FindTaPlayVC.h"
+#import "DIYWhereToPlayFilterView.h"
 
 @interface MainHomeVC ()<GKPageScrollViewDelegate, WMPageControllerDataSource, WMPageControllerDelegate, GKWBPageViewControllDelegate>
 
@@ -72,14 +73,14 @@
     if (!_pageScrollView) {
         _pageScrollView = [[GKPageScrollView alloc] initWithDelegate:self];
         _pageScrollView.mainTableView.backgroundColor = [UIColor clearColor];
-        _pageScrollView.ceilPointHeight = IPHONE_X ? 44 : 20;
+        _pageScrollView.ceilPointHeight = SafeAreaTopStatueMin;
     }
     return _pageScrollView;
 }
 
 -(MainHomeHeadView *)headerView{
     if (!_headerView) {
-        _headerView = [[MainHomeHeadView alloc] initWithFrame:CGRectMake(0, 0, kScreenSizeWidth, 300)];
+        _headerView = [[MainHomeHeadView alloc] initWithFrame:CGRectMake(0, 0, kScreenSizeWidth, 300 +SafeAreaTopStatueMin)];
     }
     return _headerView;
 }
@@ -104,7 +105,7 @@
         _pageVC.progressColor               = kMainColor;
         _pageVC.progressWidth               = 15.0f;
         _pageVC.progressHeight              = 3.0f;
-        _pageVC.progressViewBottomSpace     = 2.0f;
+        _pageVC.progressViewBottomSpace     = 10.0f;
         _pageVC.progressViewCornerRadius    = _pageVC.progressHeight / 2;
         _pageVC.menuViewLayoutMode = WMMenuViewLayoutModeLeft;
         // 调皮效果
@@ -139,7 +140,8 @@
 
 // 去哪玩的筛选
 -(void)filterAction{
-    
+    DIYWhereToPlayFilterView *diy = [[DIYWhereToPlayFilterView alloc] init];
+    [diy showView];
 }
 
 - (NSArray *)titles {
@@ -188,11 +190,11 @@
     return self.childVCs[index];
 }
 - (CGRect)pageController:(WMPageController *)pageController preferredFrameForMenuView:(WMMenuView *)menuView {
-    return CGRectMake(15, 0, kScreenSizeWidth - 15, 50.0f);
+    return CGRectMake(15, 0, kScreenSizeWidth - 15, 70);
 }
 - (CGRect)pageController:(WMPageController *)pageController preferredFrameForContentView:(WMScrollView *)contentView {
     CGFloat maxY = CGRectGetMaxY([self pageController:pageController preferredFrameForMenuView:pageController.menuView]);
-    return CGRectMake(0, maxY, kScreenSizeWidth, kScreenSizeHeight - maxY - SafeAreaBottomHeight - SafeAreaTopStatue);
+    return CGRectMake(0, maxY, kScreenSizeWidth, kScreenSizeHeight - maxY - SafeAreaBottomHeight - 15);
 }
 #pragma mark - WMPageControllerDelegate
 - (void)pageController:(WMPageController *)pageController didEnterViewController:(__kindof UIViewController *)viewController withInfo:(NSDictionary *)info {

@@ -8,6 +8,7 @@
 
 #import "WhereToPlayVC.h"
 #import "WhereToPlayCell.h"
+#import "WhereToPlayDetailVC.h"
 
 @interface WhereToPlayVC ()
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
@@ -67,7 +68,7 @@
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
-    
+    [self.navigationController pushViewController:[WhereToPlayDetailVC new] animated:YES];
 }
 
 #pragma mark - GKPageListViewDelegate

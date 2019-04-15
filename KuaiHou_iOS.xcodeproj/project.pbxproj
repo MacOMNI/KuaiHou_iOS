@@ -8,6 +8,40 @@
 
 /* Begin PBXBuildFile section */
 		C3343E751DE353D40FC29AA8 /* Pods_KuaiHou_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F72C78518845A6C8D2F549AB /* Pods_KuaiHou_iOS.framework */; };
+		CE009EF2226411D200A6AE81 /* FindTaPlayListCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CE009EF0226411D200A6AE81 /* FindTaPlayListCell.m */; };
+		CE009EF3226411D200A6AE81 /* FindTaPlayListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE009EF1226411D200A6AE81 /* FindTaPlayListCell.xib */; };
+		CE009EF72264224100A6AE81 /* CustomTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = CE009EF62264224100A6AE81 /* CustomTextField.m */; };
+		CE009EFA22642DCB00A6AE81 /* DIYWhereToPlayFilterView.m in Sources */ = {isa = PBXBuildFile; fileRef = CE009EF922642DCB00A6AE81 /* DIYWhereToPlayFilterView.m */; };
+		CE009EFC22642DDC00A6AE81 /* DIYWhereToPlayFilterView.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE009EFB22642DDC00A6AE81 /* DIYWhereToPlayFilterView.xib */; };
+		CE009F09226445D200A6AE81 /* WhereToPlayDetailHeadView.m in Sources */ = {isa = PBXBuildFile; fileRef = CE009F08226445D200A6AE81 /* WhereToPlayDetailHeadView.m */; };
+		CE009F0C226446A300A6AE81 /* WhereToPlayDetailVC.m in Sources */ = {isa = PBXBuildFile; fileRef = CE009F0B226446A300A6AE81 /* WhereToPlayDetailVC.m */; };
+		CE009F1D2264507F00A6AE81 /* SDCycleScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = CE009F112264507F00A6AE81 /* SDCycleScrollView.m */; };
+		CE009F1E2264507F00A6AE81 /* UIView+SDExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = CE009F122264507F00A6AE81 /* UIView+SDExtension.m */; };
+		CE009F1F2264507F00A6AE81 /* SDCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CE009F132264507F00A6AE81 /* SDCollectionViewCell.m */; };
+		CE009F202264507F00A6AE81 /* TADotView.m in Sources */ = {isa = PBXBuildFile; fileRef = CE009F162264507F00A6AE81 /* TADotView.m */; };
+		CE009F212264507F00A6AE81 /* TAPageControl.m in Sources */ = {isa = PBXBuildFile; fileRef = CE009F172264507F00A6AE81 /* TAPageControl.m */; };
+		CE009F222264507F00A6AE81 /* TAAnimatedDotView.m in Sources */ = {isa = PBXBuildFile; fileRef = CE009F182264507F00A6AE81 /* TAAnimatedDotView.m */; };
+		CE009F232264507F00A6AE81 /* TAAbstractDotView.m in Sources */ = {isa = PBXBuildFile; fileRef = CE009F192264507F00A6AE81 /* TAAbstractDotView.m */; };
+		CE009F272264659F00A6AE81 /* WhereToPlayDetailInfoVC.m in Sources */ = {isa = PBXBuildFile; fileRef = CE009F252264659F00A6AE81 /* WhereToPlayDetailInfoVC.m */; };
+		CE009F282264659F00A6AE81 /* WhereToPlayDetailInfoVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE009F262264659F00A6AE81 /* WhereToPlayDetailInfoVC.xib */; };
+		CE009F2B22646AA400A6AE81 /* WhereToPlayDetailInfoHeadView.m in Sources */ = {isa = PBXBuildFile; fileRef = CE009F2A22646AA400A6AE81 /* WhereToPlayDetailInfoHeadView.m */; };
+		CE009F2D22646AAD00A6AE81 /* WhereToPlayDetailInfoHeadView.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE009F2C22646AAD00A6AE81 /* WhereToPlayDetailInfoHeadView.xib */; };
+		CE009F312264763F00A6AE81 /* WhereToPlayDetailInfoUserListCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CE009F2F2264763F00A6AE81 /* WhereToPlayDetailInfoUserListCell.m */; };
+		CE009F322264763F00A6AE81 /* WhereToPlayDetailInfoUserListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE009F302264763F00A6AE81 /* WhereToPlayDetailInfoUserListCell.xib */; };
+		CE009F362264805800A6AE81 /* ContentCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CE009F342264805800A6AE81 /* ContentCell.m */; };
+		CE009F372264805800A6AE81 /* ContentCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE009F352264805800A6AE81 /* ContentCell.xib */; };
+		CE009F3B226483FA00A6AE81 /* RatingStarCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CE009F39226483FA00A6AE81 /* RatingStarCell.m */; };
+		CE009F3C226483FA00A6AE81 /* RatingStarCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE009F3A226483FA00A6AE81 /* RatingStarCell.xib */; };
+		CE009F40226499A900A6AE81 /* WhereToPlayDetailActivityVC.m in Sources */ = {isa = PBXBuildFile; fileRef = CE009F3E226499A900A6AE81 /* WhereToPlayDetailActivityVC.m */; };
+		CE009F41226499A900A6AE81 /* WhereToPlayDetailActivityVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE009F3F226499A900A6AE81 /* WhereToPlayDetailActivityVC.xib */; };
+		CE009F452264A03900A6AE81 /* WhereConsumeVC.m in Sources */ = {isa = PBXBuildFile; fileRef = CE009F432264A03900A6AE81 /* WhereConsumeVC.m */; };
+		CE009F462264A03900A6AE81 /* WhereConsumeVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE009F442264A03900A6AE81 /* WhereConsumeVC.xib */; };
+		CE009F4A2264A3D400A6AE81 /* WhereConsumeCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CE009F482264A3D400A6AE81 /* WhereConsumeCell.m */; };
+		CE009F4B2264A3D400A6AE81 /* WhereConsumeCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE009F492264A3D400A6AE81 /* WhereConsumeCell.xib */; };
+		CE009F4F2264A53900A6AE81 /* WhereConsumeFirstCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CE009F4D2264A53900A6AE81 /* WhereConsumeFirstCell.m */; };
+		CE009F502264A53900A6AE81 /* WhereConsumeFirstCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE009F4E2264A53900A6AE81 /* WhereConsumeFirstCell.xib */; };
+		CE009F542264A55400A6AE81 /* WhereConsumeTwoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CE009F522264A55400A6AE81 /* WhereConsumeTwoCell.m */; };
+		CE009F552264A55400A6AE81 /* WhereConsumeTwoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE009F532264A55400A6AE81 /* WhereConsumeTwoCell.xib */; };
 		CE034369225ECA5600CB695C /* AppCurrencyVC.m in Sources */ = {isa = PBXBuildFile; fileRef = CE034367225ECA5600CB695C /* AppCurrencyVC.m */; };
 		CE03436A225ECA5600CB695C /* AppCurrencyVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE034368225ECA5600CB695C /* AppCurrencyVC.xib */; };
 		CE03436F225ED24F00CB695C /* AppCurrencyItemCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CE03436D225ED24F00CB695C /* AppCurrencyItemCell.m */; };
@@ -476,6 +510,62 @@
 /* Begin PBXFileReference section */
 		1C969EC6FE4B3B6CA38C6D17 /* Pods-KuaiHou_iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KuaiHou_iOS.debug.xcconfig"; path = "Target Support Files/Pods-KuaiHou_iOS/Pods-KuaiHou_iOS.debug.xcconfig"; sourceTree = "<group>"; };
 		9462F2C576846C42B4EADD4A /* Pods-KuaiHou_iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KuaiHou_iOS.release.xcconfig"; path = "Target Support Files/Pods-KuaiHou_iOS/Pods-KuaiHou_iOS.release.xcconfig"; sourceTree = "<group>"; };
+		CE009EEF226411D200A6AE81 /* FindTaPlayListCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FindTaPlayListCell.h; sourceTree = "<group>"; };
+		CE009EF0226411D200A6AE81 /* FindTaPlayListCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FindTaPlayListCell.m; sourceTree = "<group>"; };
+		CE009EF1226411D200A6AE81 /* FindTaPlayListCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FindTaPlayListCell.xib; sourceTree = "<group>"; };
+		CE009EF52264224100A6AE81 /* CustomTextField.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CustomTextField.h; sourceTree = "<group>"; };
+		CE009EF62264224100A6AE81 /* CustomTextField.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CustomTextField.m; sourceTree = "<group>"; };
+		CE009EF822642DCB00A6AE81 /* DIYWhereToPlayFilterView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DIYWhereToPlayFilterView.h; sourceTree = "<group>"; };
+		CE009EF922642DCB00A6AE81 /* DIYWhereToPlayFilterView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DIYWhereToPlayFilterView.m; sourceTree = "<group>"; };
+		CE009EFB22642DDC00A6AE81 /* DIYWhereToPlayFilterView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DIYWhereToPlayFilterView.xib; sourceTree = "<group>"; };
+		CE009F07226445D200A6AE81 /* WhereToPlayDetailHeadView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WhereToPlayDetailHeadView.h; sourceTree = "<group>"; };
+		CE009F08226445D200A6AE81 /* WhereToPlayDetailHeadView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WhereToPlayDetailHeadView.m; sourceTree = "<group>"; };
+		CE009F0A226446A300A6AE81 /* WhereToPlayDetailVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WhereToPlayDetailVC.h; sourceTree = "<group>"; };
+		CE009F0B226446A300A6AE81 /* WhereToPlayDetailVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WhereToPlayDetailVC.m; sourceTree = "<group>"; };
+		CE009F0E2264507F00A6AE81 /* UIView+SDExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+SDExtension.h"; sourceTree = "<group>"; };
+		CE009F0F2264507F00A6AE81 /* SDCycleScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDCycleScrollView.h; sourceTree = "<group>"; };
+		CE009F102264507F00A6AE81 /* SDCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDCollectionViewCell.h; sourceTree = "<group>"; };
+		CE009F112264507F00A6AE81 /* SDCycleScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDCycleScrollView.m; sourceTree = "<group>"; };
+		CE009F122264507F00A6AE81 /* UIView+SDExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+SDExtension.m"; sourceTree = "<group>"; };
+		CE009F132264507F00A6AE81 /* SDCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDCollectionViewCell.m; sourceTree = "<group>"; };
+		CE009F152264507F00A6AE81 /* TAAbstractDotView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TAAbstractDotView.h; sourceTree = "<group>"; };
+		CE009F162264507F00A6AE81 /* TADotView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TADotView.m; sourceTree = "<group>"; };
+		CE009F172264507F00A6AE81 /* TAPageControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TAPageControl.m; sourceTree = "<group>"; };
+		CE009F182264507F00A6AE81 /* TAAnimatedDotView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TAAnimatedDotView.m; sourceTree = "<group>"; };
+		CE009F192264507F00A6AE81 /* TAAbstractDotView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TAAbstractDotView.m; sourceTree = "<group>"; };
+		CE009F1A2264507F00A6AE81 /* TADotView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TADotView.h; sourceTree = "<group>"; };
+		CE009F1B2264507F00A6AE81 /* TAAnimatedDotView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TAAnimatedDotView.h; sourceTree = "<group>"; };
+		CE009F1C2264507F00A6AE81 /* TAPageControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TAPageControl.h; sourceTree = "<group>"; };
+		CE009F242264659F00A6AE81 /* WhereToPlayDetailInfoVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WhereToPlayDetailInfoVC.h; sourceTree = "<group>"; };
+		CE009F252264659F00A6AE81 /* WhereToPlayDetailInfoVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WhereToPlayDetailInfoVC.m; sourceTree = "<group>"; };
+		CE009F262264659F00A6AE81 /* WhereToPlayDetailInfoVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WhereToPlayDetailInfoVC.xib; sourceTree = "<group>"; };
+		CE009F2922646AA400A6AE81 /* WhereToPlayDetailInfoHeadView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WhereToPlayDetailInfoHeadView.h; sourceTree = "<group>"; };
+		CE009F2A22646AA400A6AE81 /* WhereToPlayDetailInfoHeadView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WhereToPlayDetailInfoHeadView.m; sourceTree = "<group>"; };
+		CE009F2C22646AAD00A6AE81 /* WhereToPlayDetailInfoHeadView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WhereToPlayDetailInfoHeadView.xib; sourceTree = "<group>"; };
+		CE009F2E2264763F00A6AE81 /* WhereToPlayDetailInfoUserListCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WhereToPlayDetailInfoUserListCell.h; sourceTree = "<group>"; };
+		CE009F2F2264763F00A6AE81 /* WhereToPlayDetailInfoUserListCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WhereToPlayDetailInfoUserListCell.m; sourceTree = "<group>"; };
+		CE009F302264763F00A6AE81 /* WhereToPlayDetailInfoUserListCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WhereToPlayDetailInfoUserListCell.xib; sourceTree = "<group>"; };
+		CE009F332264805800A6AE81 /* ContentCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ContentCell.h; sourceTree = "<group>"; };
+		CE009F342264805800A6AE81 /* ContentCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ContentCell.m; sourceTree = "<group>"; };
+		CE009F352264805800A6AE81 /* ContentCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ContentCell.xib; sourceTree = "<group>"; };
+		CE009F38226483FA00A6AE81 /* RatingStarCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RatingStarCell.h; sourceTree = "<group>"; };
+		CE009F39226483FA00A6AE81 /* RatingStarCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RatingStarCell.m; sourceTree = "<group>"; };
+		CE009F3A226483FA00A6AE81 /* RatingStarCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RatingStarCell.xib; sourceTree = "<group>"; };
+		CE009F3D226499A900A6AE81 /* WhereToPlayDetailActivityVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WhereToPlayDetailActivityVC.h; sourceTree = "<group>"; };
+		CE009F3E226499A900A6AE81 /* WhereToPlayDetailActivityVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WhereToPlayDetailActivityVC.m; sourceTree = "<group>"; };
+		CE009F3F226499A900A6AE81 /* WhereToPlayDetailActivityVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WhereToPlayDetailActivityVC.xib; sourceTree = "<group>"; };
+		CE009F422264A03900A6AE81 /* WhereConsumeVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WhereConsumeVC.h; sourceTree = "<group>"; };
+		CE009F432264A03900A6AE81 /* WhereConsumeVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WhereConsumeVC.m; sourceTree = "<group>"; };
+		CE009F442264A03900A6AE81 /* WhereConsumeVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WhereConsumeVC.xib; sourceTree = "<group>"; };
+		CE009F472264A3D400A6AE81 /* WhereConsumeCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WhereConsumeCell.h; sourceTree = "<group>"; };
+		CE009F482264A3D400A6AE81 /* WhereConsumeCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WhereConsumeCell.m; sourceTree = "<group>"; };
+		CE009F492264A3D400A6AE81 /* WhereConsumeCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WhereConsumeCell.xib; sourceTree = "<group>"; };
+		CE009F4C2264A53900A6AE81 /* WhereConsumeFirstCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WhereConsumeFirstCell.h; sourceTree = "<group>"; };
+		CE009F4D2264A53900A6AE81 /* WhereConsumeFirstCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WhereConsumeFirstCell.m; sourceTree = "<group>"; };
+		CE009F4E2264A53900A6AE81 /* WhereConsumeFirstCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WhereConsumeFirstCell.xib; sourceTree = "<group>"; };
+		CE009F512264A55400A6AE81 /* WhereConsumeTwoCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WhereConsumeTwoCell.h; sourceTree = "<group>"; };
+		CE009F522264A55400A6AE81 /* WhereConsumeTwoCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WhereConsumeTwoCell.m; sourceTree = "<group>"; };
+		CE009F532264A55400A6AE81 /* WhereConsumeTwoCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WhereConsumeTwoCell.xib; sourceTree = "<group>"; };
 		CE034366225ECA5600CB695C /* AppCurrencyVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppCurrencyVC.h; sourceTree = "<group>"; };
 		CE034367225ECA5600CB695C /* AppCurrencyVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppCurrencyVC.m; sourceTree = "<group>"; };
 		CE034368225ECA5600CB695C /* AppCurrencyVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AppCurrencyVC.xib; sourceTree = "<group>"; };
@@ -1259,6 +1349,82 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		CE009EEE2264110200A6AE81 /* FindTaPlay */ = {
+			isa = PBXGroup;
+			children = (
+				CE009EEF226411D200A6AE81 /* FindTaPlayListCell.h */,
+				CE009EF0226411D200A6AE81 /* FindTaPlayListCell.m */,
+				CE009EF1226411D200A6AE81 /* FindTaPlayListCell.xib */,
+			);
+			path = FindTaPlay;
+			sourceTree = "<group>";
+		};
+		CE009EF4226421F500A6AE81 /* CustomTexrField */ = {
+			isa = PBXGroup;
+			children = (
+				CE009EF52264224100A6AE81 /* CustomTextField.h */,
+				CE009EF62264224100A6AE81 /* CustomTextField.m */,
+			);
+			path = CustomTexrField;
+			sourceTree = "<group>";
+		};
+		CE009EFD2264441600A6AE81 /* main */ = {
+			isa = PBXGroup;
+			children = (
+				CEDE3B2E22606CD6006D9EAE /* WhereToPlayVC.h */,
+				CEDE3B2F22606CD6006D9EAE /* WhereToPlayVC.m */,
+				CEDE3B3022606CD6006D9EAE /* WhereToPlayVC.xib */,
+			);
+			path = main;
+			sourceTree = "<group>";
+		};
+		CE009EFE2264442100A6AE81 /* detail */ = {
+			isa = PBXGroup;
+			children = (
+				CE009F0A226446A300A6AE81 /* WhereToPlayDetailVC.h */,
+				CE009F0B226446A300A6AE81 /* WhereToPlayDetailVC.m */,
+				CE009F242264659F00A6AE81 /* WhereToPlayDetailInfoVC.h */,
+				CE009F252264659F00A6AE81 /* WhereToPlayDetailInfoVC.m */,
+				CE009F262264659F00A6AE81 /* WhereToPlayDetailInfoVC.xib */,
+				CE009F3D226499A900A6AE81 /* WhereToPlayDetailActivityVC.h */,
+				CE009F3E226499A900A6AE81 /* WhereToPlayDetailActivityVC.m */,
+				CE009F3F226499A900A6AE81 /* WhereToPlayDetailActivityVC.xib */,
+				CE009F422264A03900A6AE81 /* WhereConsumeVC.h */,
+				CE009F432264A03900A6AE81 /* WhereConsumeVC.m */,
+				CE009F442264A03900A6AE81 /* WhereConsumeVC.xib */,
+			);
+			path = detail;
+			sourceTree = "<group>";
+		};
+		CE009F0D2264507F00A6AE81 /* SDCycleScrollView */ = {
+			isa = PBXGroup;
+			children = (
+				CE009F0E2264507F00A6AE81 /* UIView+SDExtension.h */,
+				CE009F0F2264507F00A6AE81 /* SDCycleScrollView.h */,
+				CE009F112264507F00A6AE81 /* SDCycleScrollView.m */,
+				CE009F102264507F00A6AE81 /* SDCollectionViewCell.h */,
+				CE009F122264507F00A6AE81 /* UIView+SDExtension.m */,
+				CE009F132264507F00A6AE81 /* SDCollectionViewCell.m */,
+				CE009F142264507F00A6AE81 /* PageControl */,
+			);
+			path = SDCycleScrollView;
+			sourceTree = "<group>";
+		};
+		CE009F142264507F00A6AE81 /* PageControl */ = {
+			isa = PBXGroup;
+			children = (
+				CE009F152264507F00A6AE81 /* TAAbstractDotView.h */,
+				CE009F162264507F00A6AE81 /* TADotView.m */,
+				CE009F172264507F00A6AE81 /* TAPageControl.m */,
+				CE009F182264507F00A6AE81 /* TAAnimatedDotView.m */,
+				CE009F192264507F00A6AE81 /* TAAbstractDotView.m */,
+				CE009F1A2264507F00A6AE81 /* TADotView.h */,
+				CE009F1B2264507F00A6AE81 /* TAAnimatedDotView.h */,
+				CE009F1C2264507F00A6AE81 /* TAPageControl.h */,
+			);
+			path = PageControl;
+			sourceTree = "<group>";
+		};
 		CE03436B225ED1FA00CB695C /* Wallet */ = {
 			isa = PBXGroup;
 			children = (
@@ -1713,6 +1879,8 @@
 		CECC0D4F223A4615001CF0A2 /* ThirdLib */ = {
 			isa = PBXGroup;
 			children = (
+				CE009F0D2264507F00A6AE81 /* SDCycleScrollView */,
+				CE009EF4226421F500A6AE81 /* CustomTexrField */,
 				CECE803A225B494C0069FD55 /* VideoRecord */,
 				CEE5FCE922530F260093D567 /* GZHRating */,
 				CEF2B362224CE05900687E5B /* JLDoubleSlider */,
@@ -2146,9 +2314,8 @@
 		CEDE3B2D22606C8E006D9EAE /* WhereToPlay */ = {
 			isa = PBXGroup;
 			children = (
-				CEDE3B2E22606CD6006D9EAE /* WhereToPlayVC.h */,
-				CEDE3B2F22606CD6006D9EAE /* WhereToPlayVC.m */,
-				CEDE3B3022606CD6006D9EAE /* WhereToPlayVC.xib */,
+				CE009EFD2264441600A6AE81 /* main */,
+				CE009EFE2264442100A6AE81 /* detail */,
 			);
 			path = WhereToPlay;
 			sourceTree = "<group>";
@@ -2168,6 +2335,32 @@
 				CEDE3B3522607AEB006D9EAE /* WhereToPlayCell.h */,
 				CEDE3B3622607AEB006D9EAE /* WhereToPlayCell.m */,
 				CEDE3B3722607AEB006D9EAE /* WhereToPlayCell.xib */,
+				CE009EF822642DCB00A6AE81 /* DIYWhereToPlayFilterView.h */,
+				CE009EF922642DCB00A6AE81 /* DIYWhereToPlayFilterView.m */,
+				CE009EFB22642DDC00A6AE81 /* DIYWhereToPlayFilterView.xib */,
+				CE009F07226445D200A6AE81 /* WhereToPlayDetailHeadView.h */,
+				CE009F08226445D200A6AE81 /* WhereToPlayDetailHeadView.m */,
+				CE009F2922646AA400A6AE81 /* WhereToPlayDetailInfoHeadView.h */,
+				CE009F2A22646AA400A6AE81 /* WhereToPlayDetailInfoHeadView.m */,
+				CE009F2C22646AAD00A6AE81 /* WhereToPlayDetailInfoHeadView.xib */,
+				CE009F2E2264763F00A6AE81 /* WhereToPlayDetailInfoUserListCell.h */,
+				CE009F2F2264763F00A6AE81 /* WhereToPlayDetailInfoUserListCell.m */,
+				CE009F302264763F00A6AE81 /* WhereToPlayDetailInfoUserListCell.xib */,
+				CE009F332264805800A6AE81 /* ContentCell.h */,
+				CE009F342264805800A6AE81 /* ContentCell.m */,
+				CE009F352264805800A6AE81 /* ContentCell.xib */,
+				CE009F38226483FA00A6AE81 /* RatingStarCell.h */,
+				CE009F39226483FA00A6AE81 /* RatingStarCell.m */,
+				CE009F3A226483FA00A6AE81 /* RatingStarCell.xib */,
+				CE009F472264A3D400A6AE81 /* WhereConsumeCell.h */,
+				CE009F482264A3D400A6AE81 /* WhereConsumeCell.m */,
+				CE009F492264A3D400A6AE81 /* WhereConsumeCell.xib */,
+				CE009F4C2264A53900A6AE81 /* WhereConsumeFirstCell.h */,
+				CE009F4D2264A53900A6AE81 /* WhereConsumeFirstCell.m */,
+				CE009F4E2264A53900A6AE81 /* WhereConsumeFirstCell.xib */,
+				CE009F512264A55400A6AE81 /* WhereConsumeTwoCell.h */,
+				CE009F522264A55400A6AE81 /* WhereConsumeTwoCell.m */,
+				CE009F532264A55400A6AE81 /* WhereConsumeTwoCell.xib */,
 			);
 			path = WhereToPlay;
 			sourceTree = "<group>";
@@ -2763,6 +2956,7 @@
 		CEFA921F223F62510015F7EE /* View */ = {
 			isa = PBXGroup;
 			children = (
+				CE009EEE2264110200A6AE81 /* FindTaPlay */,
 				CEDE3B3422607AC9006D9EAE /* WhereToPlay */,
 				CEDE3B3322607ABD006D9EAE /* Main */,
 			);
@@ -3182,22 +3376,28 @@
 				CE5A643B224C820400891AC9 /* OpenStoreHeadView.xib in Resources */,
 				CE1FE570225CB38E00197B8D /* OpenPartnerVC.xib in Resources */,
 				CEF5DDCF225480450025F406 /* BillObjectionVC.xib in Resources */,
+				CE009F4B2264A3D400A6AE81 /* WhereConsumeCell.xib in Resources */,
 				CECEEEC7224A020C0068F267 /* MyDynamicsVC.xib in Resources */,
+				CE009F41226499A900A6AE81 /* WhereToPlayDetailActivityVC.xib in Resources */,
 				CECEEF55224B56FF0068F267 /* CleanChatView.xib in Resources */,
 				CE7F1B63225D7FF800CC5B09 /* PartnerVC.xib in Resources */,
 				CE03437A225EDD6100CB695C /* AppCurrencyTextFieldCell.xib in Resources */,
 				CECEEF18224A4D290068F267 /* ManagerUserVC.xib in Resources */,
 				CECEEEED224A27F20068F267 /* LogginVC.xib in Resources */,
 				CE28A7B122523BAA00B62032 /* MyProcessingOrderCell.xib in Resources */,
+				CE009EF3226411D200A6AE81 /* FindTaPlayListCell.xib in Resources */,
 				CEFA92D52241D1970015F7EE /* SendDynamicsHeadView.xib in Resources */,
 				CEFA92A3224088500015F7EE /* FriendMessageVC.xib in Resources */,
 				CEF5DDC0225453040025F406 /* MyOrderDetailPhotoCell.xib in Resources */,
 				CE034389225EFA8600CB695C /* AppCurrencyDetailCell.xib in Resources */,
+				CE009F2D22646AAD00A6AE81 /* WhereToPlayDetailInfoHeadView.xib in Resources */,
 				CEDE3B3922607AEB006D9EAE /* WhereToPlayCell.xib in Resources */,
 				CE034375225ED4AF00CB695C /* AppCurrencyItemCollectionViewCell.xib in Resources */,
 				CEDBEF602254C579004E714E /* InteractiveListVC.xib in Resources */,
+				CE009F462264A03900A6AE81 /* WhereConsumeVC.xib in Resources */,
 				CEF5DDF22254B70E0025F406 /* DIYFilterView.xib in Resources */,
 				CEFA92AD2240A01C0015F7EE /* FriendMessageCell.xib in Resources */,
+				CE009F322264763F00A6AE81 /* WhereToPlayDetailInfoUserListCell.xib in Resources */,
 				CEF2B361224CCA4300687E5B /* StoreContentTextCell.xib in Resources */,
 				CE28A7AB225239FD00B62032 /* MyProcessingOrderVC.xib in Resources */,
 				CE28A7672251D96000B62032 /* ManagementStoreChangeTimeCell.xib in Resources */,
@@ -3209,6 +3409,7 @@
 				CE5A642B224C5CF600891AC9 /* FillInTheInfoVC.xib in Resources */,
 				CE034393225F062500CB695C /* OtherIncomeVC.xib in Resources */,
 				CECEEF46224B131C0068F267 /* InviteStoreView.xib in Resources */,
+				CE009F3C226483FA00A6AE81 /* RatingStarCell.xib in Resources */,
 				CE0343AC225F342100CB695C /* BillVC.xib in Resources */,
 				CEFA92DA2241DDF40015F7EE /* SendDynamicsHeadCell.xib in Resources */,
 				CE6B05A32248789900AD44D7 /* WithdrawWordVC.xib in Resources */,
@@ -3231,6 +3432,7 @@
 				CEACEB03224B8B7900A2AE2D /* RegisVC.xib in Resources */,
 				CE0343B6225F5DC500CB695C /* DIYSelectTimeView.xib in Resources */,
 				CEDE3B282260399B006D9EAE /* VoucherCell.xib in Resources */,
+				CE009F282264659F00A6AE81 /* WhereToPlayDetailInfoVC.xib in Resources */,
 				CE1FE541225C3B5700197B8D /* FillTargetStoreInfoVC.xib in Resources */,
 				CEE28F6B2243571800C3D7E9 /* GKNavigationBarViewController.bundle in Resources */,
 				CECC0D23223A411F001CF0A2 /* Assets.xcassets in Resources */,
@@ -3253,6 +3455,7 @@
 				CECEEF0B224A47DF0068F267 /* ManagerVC.xib in Resources */,
 				CE7F1BA5225DEB6D00CC5B09 /* WalletVC.xib in Resources */,
 				CEE79F7D225CBA960066CE30 /* DIYPayView.xib in Resources */,
+				CE009F552264A55400A6AE81 /* WhereConsumeTwoCell.xib in Resources */,
 				CE1FE564225C90CD00197B8D /* AccessListVC.xib in Resources */,
 				CEF5DDCA22545D8B0025F406 /* ChecklistVC.xib in Resources */,
 				CE03439D225F13BC00CB695C /* QuitMoneyVC.xib in Resources */,
@@ -3267,6 +3470,7 @@
 				CE0343A7225F2C6600CB695C /* QuitMoneyCodeCell.xib in Resources */,
 				CE28A7A02252333100B62032 /* SendActivityViewController.xib in Resources */,
 				CEE5FCF422530F260093D567 /* starFore@2x.png in Resources */,
+				CE009F372264805800A6AE81 /* ContentCell.xib in Resources */,
 				CE1FE576225CB4E100197B8D /* OpenPartnerCell.xib in Resources */,
 				CE0343A2225F262D00CB695C /* QuitMoneyTextFieldTableViewCell.xib in Resources */,
 				CE1FE53C225C2D4E00197B8D /* DIYTelPhoneView.xib in Resources */,
@@ -3275,6 +3479,7 @@
 				CE28A7722251E63D00B62032 /* StoreSingleProductAddPhotoCell.xib in Resources */,
 				CE7F1B7C225D9CE800CC5B09 /* PartnerChildVC.xib in Resources */,
 				CEACEB12224B9EC600A2AE2D /* SetPassWordVC.xib in Resources */,
+				CE009EFC22642DDC00A6AE81 /* DIYWhereToPlayFilterView.xib in Resources */,
 				CEFA9284223FA6920015F7EE /* NearByDynamicsHeadCell.xib in Resources */,
 				CEF5DDD922548AAE0025F406 /* OrderComplaintVC.xib in Resources */,
 				CEE28EB122432EEE00C3D7E9 /* MainSetListCell.xib in Resources */,
@@ -3297,6 +3502,7 @@
 				CEFA9245223F63E70015F7EE /* MainMineVC.xib in Resources */,
 				CEFA926C223F99A90015F7EE /* NearbyDynamicsVC.xib in Resources */,
 				CE6B05B32248A2C500AD44D7 /* VoucherVC.xib in Resources */,
+				CE009F502264A53900A6AE81 /* WhereConsumeFirstCell.xib in Resources */,
 				CE034398225F072000CB695C /* OtherIncomeChildVC.xib in Resources */,
 				CEFA92A8224091000015F7EE /* NewMessageCell.xib in Resources */,
 				CEE5FCF9225312970093D567 /* StartContentView.xib in Resources */,
@@ -3433,6 +3639,7 @@
 				CECEEEB72249C4010068F267 /* WithdrawWordVC.m in Sources */,
 				CEE28F33224355E100C3D7E9 /* JXCategoryImageCell.m in Sources */,
 				CEFA9230223F634D0015F7EE /* MainHomeVC.m in Sources */,
+				CE009F222264507F00A6AE81 /* TAAnimatedDotView.m in Sources */,
 				CEFA92A7224091000015F7EE /* NewMessageCell.m in Sources */,
 				CEE28F2F224355E100C3D7E9 /* JXCategoryTitleCellModel.m in Sources */,
 				CECEEF3A224A4E040068F267 /* UnpaidOrdersVC.m in Sources */,
@@ -3455,6 +3662,7 @@
 				CECEEED5224A0DDE0068F267 /* MyDynamicsPhotosView.m in Sources */,
 				CEACEB02224B8B7900A2AE2D /* RegisVC.m in Sources */,
 				CEE28F3E224355E100C3D7E9 /* JXCategoryBaseCellModel.m in Sources */,
+				CE009F362264805800A6AE81 /* ContentCell.m in Sources */,
 				CEF5DDD3225488730025F406 /* TheOrderActivityVC.m in Sources */,
 				CEECC0272255D085004EE5C2 /* MyVoucherVC.m in Sources */,
 				CEE28F37224355E100C3D7E9 /* JXCategoryNumberCellModel.m in Sources */,
@@ -3469,6 +3677,7 @@
 				CEFA928A223FAB310015F7EE /* NearByDynamicsImageCell.m in Sources */,
 				CEFA92B52240A6030015F7EE /* SCIndexViewConfiguration.m in Sources */,
 				CEFA9244223F63E70015F7EE /* MainMineVC.m in Sources */,
+				CE009EF2226411D200A6AE81 /* FindTaPlayListCell.m in Sources */,
 				CE034392225F062500CB695C /* OtherIncomeVC.m in Sources */,
 				CEE28ECB2243385C00C3D7E9 /* AppDelegate+AvoidCrash.m in Sources */,
 				CEE5FCF7225312870093D567 /* StartContentView.m in Sources */,
@@ -3480,6 +3689,7 @@
 				CEFA9210223F535E0015F7EE /* AppDelegate+Config.m in Sources */,
 				CE1FE540225C3B5700197B8D /* FillTargetStoreInfoVC.m in Sources */,
 				CEE28F6C2243571800C3D7E9 /* GKNavigationBarViewController.m in Sources */,
+				CE009F1E2264507F00A6AE81 /* UIView+SDExtension.m in Sources */,
 				CEACEB1E224BA65D00A2AE2D /* WGDigitField.m in Sources */,
 				CEFA9248223F6F450015F7EE /* AppDelegate+Logging.m in Sources */,
 				CE9C4BFD223B4F9B00DE9DC1 /* PLEmptyViewFactory.m in Sources */,
@@ -3504,6 +3714,7 @@
 				CECEEEC02249DA630068F267 /* InfoDetailIconCell.m in Sources */,
 				CE9C4C12223B6AB900DE9DC1 /* UIViewController+FLInsert.m in Sources */,
 				CEE28F672243571800C3D7E9 /* UIScrollView+GKCategory.m in Sources */,
+				CE009F542264A55400A6AE81 /* WhereConsumeTwoCell.m in Sources */,
 				CECEEEF2224A2CF30068F267 /* TaskVC.m in Sources */,
 				CEE28F32224355E100C3D7E9 /* JXCategoryImageView.m in Sources */,
 				CEE28F38224355E100C3D7E9 /* JXCategoryListVCContainerView.m in Sources */,
@@ -3519,6 +3730,7 @@
 				CE9C4BF9223B4F9B00DE9DC1 /* PLEmptyConfig.m in Sources */,
 				CEFA92A2224088500015F7EE /* FriendMessageVC.m in Sources */,
 				CECEEF30224A4DE90068F267 /* ReleaseEventVC.m in Sources */,
+				CE009F4A2264A3D400A6AE81 /* WhereConsumeCell.m in Sources */,
 				CE6B05A722487D5100AD44D7 /* AboutMeVC.m in Sources */,
 				CEE28F25224355E100C3D7E9 /* JXCategoryIndicatorBackgroundView.m in Sources */,
 				CE7F1B94225DCBA300CC5B09 /* MaterialImageVC.m in Sources */,
@@ -3528,6 +3740,7 @@
 				CE7F1B9E225DD0AF00CC5B09 /* MaterialImageCell.m in Sources */,
 				CEE3F66D224DEC5E00151BE7 /* ManagementStoreAddCell.m in Sources */,
 				CE9C4C00223B58F800DE9DC1 /* BaseNavigationController.m in Sources */,
+				CE009EF72264224100A6AE81 /* CustomTextField.m in Sources */,
 				CECEEEC6224A020C0068F267 /* MyDynamicsVC.m in Sources */,
 				CE1FE54D225C557300197B8D /* FillStoreSexTypeCell.m in Sources */,
 				CE5A642F224C642300891AC9 /* SelPhotoVC.m in Sources */,
@@ -3542,10 +3755,12 @@
 				CEFA923A223F63B10015F7EE /* MainMessageVC.m in Sources */,
 				CEF5DDDD22548B5E0025F406 /* OrderComplaintCell.m in Sources */,
 				CEE28F36224355E100C3D7E9 /* JXCategoryNumberCell.m in Sources */,
+				CE009F232264507F00A6AE81 /* TAAbstractDotView.m in Sources */,
 				CEACEAFD224B7F0300A2AE2D /* LogginCell.m in Sources */,
 				CE28A79F2252333100B62032 /* SendActivityViewController.m in Sources */,
 				CEE28F30224355E100C3D7E9 /* JXCategoryTitleCell.m in Sources */,
 				CEE28F6A2243571800C3D7E9 /* GKNavigationBar.m in Sources */,
+				CE009F202264507F00A6AE81 /* TADotView.m in Sources */,
 				CEE28F662243571800C3D7E9 /* UIBarButtonItem+GKCategory.m in Sources */,
 				CEE28F21224355E100C3D7E9 /* JXCategoryIndicatorTriangleView.m in Sources */,
 				CEE28F2B224355E100C3D7E9 /* JXCategoryDotCellModel.m in Sources */,
@@ -3557,16 +3772,21 @@
 				CEF5DDC4225455E10025F406 /* PhotoListCollectionViewCell.m in Sources */,
 				CE6B05C22248EEF900AD44D7 /* DynamicsContentCell.m in Sources */,
 				CEFA92D92241DDF40015F7EE /* SendDynamicsHeadCell.m in Sources */,
+				CE009F1F2264507F00A6AE81 /* SDCollectionViewCell.m in Sources */,
 				CEE28F692243571800C3D7E9 /* UIViewController+GKCategory.m in Sources */,
 				CEE28F35224355E100C3D7E9 /* JXCategoryNumberView.m in Sources */,
 				CECEEEE3224A1F4E0068F267 /* MyVideoVC.m in Sources */,
 				CEE28EC82243375800C3D7E9 /* SWScannerView.m in Sources */,
 				CE5A6444224CA06700891AC9 /* OpenStoreItemCell.m in Sources */,
+				CE009F1D2264507F00A6AE81 /* SDCycleScrollView.m in Sources */,
 				CE6B05B22248A2C500AD44D7 /* VoucherVC.m in Sources */,
+				CE009F4F2264A53900A6AE81 /* WhereConsumeFirstCell.m in Sources */,
 				CEE28F6D2243571800C3D7E9 /* GKNavigationBarConfigure.m in Sources */,
 				CE034383225EF7ED00CB695C /* AppCurrencyDetailVC.m in Sources */,
+				CE009F0C226446A300A6AE81 /* WhereToPlayDetailVC.m in Sources */,
 				CEE28F2C224355E100C3D7E9 /* JXCategoryTitleImageView.m in Sources */,
 				CE03437E225EE0DC00CB695C /* AppCurrencyListCell.m in Sources */,
+				CE009F212264507F00A6AE81 /* TAPageControl.m in Sources */,
 				CE28A75C2251B93200B62032 /* ManagementStoreConfigTitleCell.m in Sources */,
 				CEF5DDCE225480450025F406 /* BillObjectionVC.m in Sources */,
 				CECEEF17224A4D290068F267 /* ManagerUserVC.m in Sources */,
@@ -3575,15 +3795,18 @@
 				CE5A6434224C64E800891AC9 /* SelPhotoCell.m in Sources */,
 				CEE3F661224DAFF000151BE7 /* UnpaidOrdersListCell.m in Sources */,
 				CEE28F7C22436D0500C3D7E9 /* InfoDetailVC.m in Sources */,
+				CE009F09226445D200A6AE81 /* WhereToPlayDetailHeadView.m in Sources */,
 				CEACEAF7224B5E9000A2AE2D /* BlackUserView.m in Sources */,
 				CECC0D6B223A56B8001CF0A2 /* NSArray+Log.m in Sources */,
 				CEF5DDBA22544E3E0025F406 /* MyOrderDetailListCell.m in Sources */,
+				CE009EFA22642DCB00A6AE81 /* DIYWhereToPlayFilterView.m in Sources */,
 				CEE28F31224355E100C3D7E9 /* JXCategoryTitleView.m in Sources */,
 				CE03438D225EFFD000CB695C /* PartnerIncomeVC.m in Sources */,
 				CE28A7AA225239FD00B62032 /* MyProcessingOrderVC.m in Sources */,
 				CECEEF40224B09620068F267 /* ManagerUserCell.m in Sources */,
 				CE0343A1225F262D00CB695C /* QuitMoneyTextFieldTableViewCell.m in Sources */,
 				CEFA92B72240A6030015F7EE /* UITableView+SCIndexView.m in Sources */,
+				CE009F312264763F00A6AE81 /* WhereToPlayDetailInfoUserListCell.m in Sources */,
 				CEE28F3D224355E100C3D7E9 /* JXCategoryBaseCell.m in Sources */,
 				CE6B059D22486BC900AD44D7 /* SafeCenterVCTableViewCell.m in Sources */,
 				CE5A642A224C5CF600891AC9 /* FillInTheInfoVC.m in Sources */,
@@ -3596,10 +3819,12 @@
 				CE6B05AC224884F300AD44D7 /* HelpVC.m in Sources */,
 				CE9C4C06223B5ED800DE9DC1 /* UIImage+BundleImage.m in Sources */,
 				CEE28F29224355E100C3D7E9 /* JXCategoryDotCell.m in Sources */,
+				CE009F3B226483FA00A6AE81 /* RatingStarCell.m in Sources */,
 				CE9C4C09223B650C00DE9DC1 /* BaseViewController.m in Sources */,
 				CED7ECBB225390E900E0BFF3 /* MyOrderDetailItemCell.m in Sources */,
 				CE1FE549225C47BB00197B8D /* UITextField+Configuration.m in Sources */,
 				CE9C4BFA223B4F9B00DE9DC1 /* PLScrollViewEmptyView.m in Sources */,
+				CE009F272264659F00A6AE81 /* WhereToPlayDetailInfoVC.m in Sources */,
 				CECEEF04224A45CE0068F267 /* OpenStoreVC.m in Sources */,
 				CEDBEF5F2254C579004E714E /* InteractiveListVC.m in Sources */,
 				CE1FE575225CB4E100197B8D /* OpenPartnerCell.m in Sources */,
@@ -3662,8 +3887,10 @@
 				CECEEF53224B56EE0068F267 /* CleanChatView.m in Sources */,
 				CECC0D5E223A5670001CF0A2 /* UIView+LayoutMethods.m in Sources */,
 				CECE8037225B12A70069FD55 /* DragEditView.m in Sources */,
+				CE009F2B22646AA400A6AE81 /* WhereToPlayDetailInfoHeadView.m in Sources */,
 				CE28A7902252099200B62032 /* StoreBoxTypeVC.m in Sources */,
 				CE1FE558225C6BF400197B8D /* FavorableDynamicsCell.m in Sources */,
+				CE009F452264A03900A6AE81 /* WhereConsumeVC.m in Sources */,
 				CE034374225ED4AF00CB695C /* AppCurrencyItemCollectionViewCell.m in Sources */,
 				CECE8045225B494C0069FD55 /* ShortVideoSession.m in Sources */,
 				CE0343A6225F2C6600CB695C /* QuitMoneyCodeCell.m in Sources */,
@@ -3671,6 +3898,7 @@
 				CEFA9270223F99BB0015F7EE /* FavorableDynamicsVC.m in Sources */,
 				CEF5DDEE2254B6E10025F406 /* DIYFilterView.m in Sources */,
 				CEDE3B3822607AEB006D9EAE /* WhereToPlayCell.m in Sources */,
+				CE009F40226499A900A6AE81 /* WhereToPlayDetailActivityVC.m in Sources */,
 				CEE28F22224355E100C3D7E9 /* JXCategoryIndicatorImageView.m in Sources */,
 				CEFA9283223FA6920015F7EE /* NearByDynamicsHeadCell.m in Sources */,
 				CE0343AB225F342100CB695C /* BillVC.m in Sources */,

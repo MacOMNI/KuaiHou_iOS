@@ -7,6 +7,7 @@
 //
 
 #import "FindTaPlayVC.h"
+#import "FindTaPlayListCell.h"
 
 @interface FindTaPlayVC ()
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
@@ -27,6 +28,7 @@
     self.tableView.estimatedRowHeight = 0;
     self.tableView.estimatedSectionFooterHeight = 0;
     self.tableView.estimatedSectionHeaderHeight = 0;
+    [self.tableView registerNib:[UINib nibWithNibName:NSStringFromClass([FindTaPlayListCell class]) bundle:[NSBundle mainBundle]] forCellReuseIdentifier:NSStringFromClass([FindTaPlayListCell class])];
 }
 
 
@@ -54,18 +56,15 @@
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
-    return 490;
+    return 460;
 }
 
 - (UITableViewCell*)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
-    
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"cell"];
-    if (!cell) {
-        cell = [[UITableViewCell alloc] initWithStyle:(UITableViewCellStyleValue1) reuseIdentifier:@"cell"];
-    }
+    FindTaPlayListCell *cell = [tableView dequeueReusableCellWithIdentifier:NSStringFromClass([FindTaPlayListCell class]) forIndexPath:indexPath];
     cell.backgroundColor = [UIColor clearColor];
     
     return cell;
+
     
     //    return nil;
 }

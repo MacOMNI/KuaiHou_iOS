@@ -53,6 +53,8 @@
 #import "UserInfoManager.h"
 #import "GZHRatingView.h"
 #import "MainVideoShowVC.h"
+#import "CustomTextField.h"
+#import "SDCycleScrollView.h"
 
 #import "GKNavigationBarViewController.h"
 #import "GKPageScrollView.h"
