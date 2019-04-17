@@ -14,6 +14,8 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, assign) NSInteger type;
 @property (weak, nonatomic) IBOutlet UICollectionView *collectionView;
 
+@property (nonatomic, copy) void (^selectItemBlock) (NSInteger row);
+
 @end
 
 NS_ASSUME_NONNULL_END

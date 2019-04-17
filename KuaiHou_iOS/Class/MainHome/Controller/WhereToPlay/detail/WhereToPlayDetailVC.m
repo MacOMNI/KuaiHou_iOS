@@ -13,6 +13,14 @@
 #import "WhereToPlayDetailActivityVC.h"
 #import "InfoDetailVC.h"
 #import "WhereConsumeVC.h"
+#import "WhereMaybeVC.h"
+
+#import "DIYMoreView.h"
+#import "DIYShareView.h"
+#import "DIYTelPhoneView.h"
+#import "VoucherVC.h"
+#import "FillTargetStoreInfoVC.h"
+
 
 @interface WhereToPlayDetailVC ()<GKPageScrollViewDelegate, WMPageControllerDataSource, WMPageControllerDelegate, GKWBPageViewControllDelegate>
 
@@ -48,6 +56,7 @@
     [button setTitle:@"  预定" forState:(UIControlStateNormal)];
     button.titleLabel.font = kFont(18);
     [button setImage:[UIImage loadImageWithName:@"home_btnicon"] forState:(UIControlStateNormal)];
+    [button addTarget:self action:@selector(commitAction) forControlEvents:(UIControlEventTouchUpInside)];
     [self.view addSubview:button];
     
     [button mas_makeConstraints:^(MASConstraintMaker *make) {
@@ -57,12 +66,67 @@
         make.height.mas_equalTo(@40);
     }];
 }
+-(void)commitAction{
+    DIYMoreView *more = [[DIYMoreView alloc] init];
+    [more.itme_1 setTitle:@"填写需求预定" forState:(UIControlStateNormal)];
+    [more.item_2 setTitle:@"电话预定" forState:(UIControlStateNormal)];
+    __weak DIYMoreView *weakMore = more;
+    [more setItmeBlock:^(NSInteger tag) {
+        if (tag == 101) { // 填写需求预定
+            [weakMore hiddenView];
+            DIYTelPhoneView *tel = [[DIYTelPhoneView alloc] init];
+            tel.cancle_w.constant = 80;
+            [tel.cancleBtn setTitle:@"下次使用" forState:(UIControlStateNormal)];
+            tel.tipLab.text = @"当前代金券累计金额为3500";
+            tel.titleLab.text = @"是否使用代金券";
+            [tel setCommitBlock:^{ // 确定就去选择代金券的页面
+                [[MyTool getCurrentVC].navigationController pushViewController:[VoucherVC new] animated:YES];
+            }];
+            [tel setCancleBlock:^{ // 直接去填写信息页面
+                [[MyTool getCurrentVC].navigationController pushViewController:[FillTargetStoreInfoVC new] animated:YES];
+            }];
+            [tel showView];
+        }else{ // 电话预定
+            [weakMore hiddenView];
+            
+            DIYTelPhoneView *tel = [[DIYTelPhoneView alloc] init];
+            
+            [tel setCommitBlock:^{
+                NSMutableString* str=[[NSMutableString alloc] initWithFormat:@"tel:%@",@"073182295219"];
+                UIWebView * callWebview = [[UIWebView alloc] init];
+                [callWebview loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:str]]];
+                [[MyTool getCurrentVC].view addSubview:callWebview];
+            }];
+            [tel showView];
+        }
+    }];
+    
+    [more showView];
+}
 
 - (void)back {
     [self.navigationController popViewControllerAnimated:YES];
 }
 -(void)more{
+    DIYMoreView *more = [[DIYMoreView alloc] init];
+    [more.itme_1 setTitle:@"举报此网店" forState:(UIControlStateNormal)];
+    [more.item_2 setTitle:@"分享此网站" forState:(UIControlStateNormal)];
+    __weak DIYMoreView *weakMore = more;
+    [more setItmeBlock:^(NSInteger tag) {
+        if (tag == 101) { // 举报此网店
+            
+            [weakMore hiddenView];
+            DIYReportView *report = [[DIYReportView alloc] init];
+            [report showView];
+
+        }else{ // 分享此网站
+            [weakMore hiddenView];
+            DIYShareView *share = [[DIYShareView alloc] init];
+            [share showView];
+        }
+    }];
     
+    [more showView];
 }
 
 #pragma mark - GKPageScrollViewDelegate
@@ -184,6 +248,7 @@
     if (!_pageScrollView) {
         _pageScrollView = [[GKPageScrollView alloc] initWithDelegate:self];
         _pageScrollView.mainTableView.backgroundColor = [UIColor whiteColor];
+//        _pageScrollView.mainTableView.bounces = NO;
     }
     return _pageScrollView;
 }
@@ -244,7 +309,7 @@
 
 - (NSArray *)childVCs {
     if (!_childVCs) {
-        _childVCs = @[[WhereToPlayDetailInfoVC new], [WhereToPlayDetailActivityVC new], [WhereConsumeVC new], [InfoDetailVC new]];
+        _childVCs = @[[WhereToPlayDetailInfoVC new], [WhereToPlayDetailActivityVC new], [WhereConsumeVC new], [WhereMaybeVC new]];
     }
     return _childVCs;
 }

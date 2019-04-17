@@ -90,4 +90,10 @@
     return CGSizeZero;
 }
 
+- (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath{
+    if (self.selectItemBlock) {
+        self.selectItemBlock(indexPath.row);
+    }
+}
+
 @end

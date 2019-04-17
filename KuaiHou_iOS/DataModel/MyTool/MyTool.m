@@ -173,9 +173,12 @@
  @param imageName 站位图名字
  */
 +(void)sd_ImageView:(UIImageView *)imageView URLStr:(NSString *)urlStr placeholderImage:(NSString *)imageName{
+    
     if ([MyTool isBlankString:urlStr]) {
         return;
     }
+    imageName = [MyTool isBlankString:imageName] ? @"base_imageload" : imageName;
+    
     if ([MyTool isBlankString:imageName]) {
         [imageView sd_setImageWithURL:[NSURL URLWithString:urlStr] completed:^(UIImage * _Nullable image, NSError * _Nullable error, SDImageCacheType cacheType, NSURL * _Nullable imageURL) {
             if (error) {
@@ -716,6 +719,20 @@
     [[MyTool getCurrentVC].navigationController pushViewController:show animated:YES];
 }
 
++(void)fixTopImageBtn:(UIButton *)btn Spacing:(CGFloat)spacing{
+    btn.contentHorizontalAlignment =UIControlContentHorizontalAlignmentLeft;
+    btn.contentVerticalAlignment =UIControlContentVerticalAlignmentTop;
+    CGFloat imageW = btn.imageView.frame.size.width;
+    CGFloat imageH = btn.imageView.frame.size.height;
+    CGFloat labelW = btn.titleLabel.frame.size.width;
+    CGFloat labelH = btn.titleLabel.frame.size.height;
+    CGFloat imageDistance = (btn.frame.size.width - imageW) * 0.5;
+    CGFloat imageTop = (btn.frame.size.height - imageH - labelH) * 0.5;
+    btn.imageEdgeInsets = UIEdgeInsetsMake(imageTop, imageDistance, 0, 0);
+    CGFloat labelDistance = - imageW + (btn.frame.size.width - labelW) *0.5 ;
+    CGFloat labelTop = imageTop + imageH + spacing;
+    btn.titleEdgeInsets =UIEdgeInsetsMake(labelTop, labelDistance,0,0);
+}
 
 
 

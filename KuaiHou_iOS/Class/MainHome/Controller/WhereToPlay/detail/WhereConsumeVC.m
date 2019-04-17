@@ -8,6 +8,8 @@
 
 #import "WhereConsumeVC.h"
 #import "WhereConsumeCell.h"
+#import "DIYConsumeTypeView.h"
+#import "DIYConsumeCommodityView.h"
 
 @interface WhereConsumeVC ()
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
@@ -98,10 +100,22 @@
     
     cell.type = indexPath.section == 0 ? 0 : 1;
     
+    [cell setSelectItemBlock:^(NSInteger row) {
+        if (indexPath.section == 0) {
+            DIYConsumeTypeView *diy = [[DIYConsumeTypeView alloc] init];
+            [diy showView];
+        }else{
+            DIYConsumeCommodityView *diy = [[DIYConsumeCommodityView alloc] init];
+            [diy showView];
+        }
+    }];
+    
     return cell;
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+    
+    
     
 
 }

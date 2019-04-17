@@ -38,16 +38,11 @@ typedef void(^DownloadProgress) (CGFloat progress,CGFloat total,CGFloat current)
                              params:(id)params success:(ResultBlock)success
                                fail:(FailError)fail;
 
-#pragma mark -上传图片
--(void)POSTUpLoadImageRequestUrlString:(NSString *)urlString
-                                params:(id)params
-             constructingBodyWithBlock:(void (^)(id <AFMultipartFormData> formData))block
-                              progress:(void (^)(NSProgress * uploadProgress))progress
-                               success:(ResultBlock)success
-                                  fail:(FailError)fail;
-
 #pragma mark - POST上传文件
 - (void)postUploadWithUrl:(NSString *)urlString params:(NSDictionary *)params fileData:(NSData *)fileData fileType:(NSString *)fileType success:(ResultBlock)success fail:(FailError)fail;
+
+#pragma mark 上传图片
+-(void)postUpLoadImageWithUrl:(NSString *)urlString params:(NSDictionary *)params imageArray:(NSArray <UIImage *> *)imageArray success:(ResultBlock)success fail:(FailError)fail;
 
 @end
 

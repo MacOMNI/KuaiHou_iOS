@@ -20,6 +20,9 @@
 
 @property (nonatomic, strong) NSArray *dataArray;
 
+@property (nonatomic, strong) WhereToPlayDetailInfoHeadView *headView;
+
+
 @end
 
 @implementation WhereToPlayDetailInfoVC
@@ -28,9 +31,9 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
     self.tableView.superAnimationType = TABViewSuperAnimationTypeClassic;
-    self.tableView.estimatedRowHeight = 0;
-    self.tableView.estimatedSectionFooterHeight = 0;
-    self.tableView.estimatedSectionHeaderHeight = 0;
+//    self.tableView.estimatedRowHeight = 0;
+//    self.tableView.estimatedSectionFooterHeight = 0;
+//    self.tableView.estimatedSectionHeaderHeight = 0;
     self.dataArray = @[@"最近访问的人",@"网店简介",@"评论"];
     [self setHeadView];
     
@@ -56,10 +59,22 @@
 }
 
 -(void)setHeadView{
-    WhereToPlayDetailInfoHeadView *headView = [[WhereToPlayDetailInfoHeadView alloc] init];
-    headView.frame = CGRectMake(0, 0, kScreenSizeWidth, 200);
-    self.tableView.tableHeaderView = headView;
+//    WhereToPlayDetailInfoHeadView *headView = [[WhereToPlayDetailInfoHeadView alloc] init];
+//    headView.frame = CGRectMake(0, 0, kScreenSizeWidth, 200);
+    UIView *view = [[UIView alloc] init];
+    view.height = 200;
+    [view addSubview:self.headView];
+    
+    self.tableView.tableHeaderView = view;
     [self.tableView reloadData];
+}
+
+-(WhereToPlayDetailInfoHeadView *)headView{
+    if (!_headView) {
+        _headView = [[WhereToPlayDetailInfoHeadView alloc] init];
+        _headView.frame = CGRectMake(0, 0, kScreenSizeWidth, 200);
+    }
+    return _headView;
 }
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {

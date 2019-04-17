@@ -61,6 +61,8 @@
 #import "JXCategoryView.h"
 #import "WLButtonCountdownManager.h"
 
+#import "DIYReportView.h"
+
 
 #endif
 

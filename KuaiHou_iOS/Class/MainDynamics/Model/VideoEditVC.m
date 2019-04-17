@@ -282,7 +282,7 @@
                     weakSelf.isEdited = YES;
                     [weakSelf invalidatePlayer];
                     [weakSelf initPlayerWithVideoUrl:furl];
-                    bottomView.hidden = YES;
+                    self->bottomView.hidden = YES;
                 });
             }
                 break;
@@ -351,12 +351,26 @@
                 NSLog(@"KVO：未知状态，此时不能播放");
                 break;
             case AVPlayerStatusReadyToPlay:
-                if (!_player.timeControlStatus || _player.timeControlStatus != AVPlayerTimeControlStatusPaused) {
-                    [_player play];
-                    if (!self.isEdited) {
-                        line.hidden = NO;
-                        [self startTimer];
+                if (@available(iOS 10.0, *)) {
+                    if (!_player.timeControlStatus || _player.timeControlStatus != AVPlayerTimeControlStatusPaused) {
+                        [_player play];
+                        if (!self.isEdited) {
+                            line.hidden = NO;
+                            [self startTimer];
+                        }
                     }
+                } else {
+                    // Fallback on earlier versions
+                }if (@available(iOS 10.0, *)) {
+                    if (!_player.timeControlStatus || _player.timeControlStatus != AVPlayerTimeControlStatusPaused) {
+                        [_player play];
+                        if (!self.isEdited) {
+                            line.hidden = NO;
+                            [self startTimer];
+                        }
+                    }
+                } else {
+                    // Fallback on earlier versions
                 }
                 NSLog(@"KVO：准备完毕，可以播放");
                 break;
@@ -370,9 +384,13 @@
     
     if ([keyPath isEqualToString:@"timeControlStatus"]) {
         // 剪切完视频后自动循环播放
-        if (self.player.timeControlStatus == AVPlayerTimeControlStatusPaused) {
-            [self.player seekToTime:CMTimeMake(0, 1)];
-            [self.player play];
+        if (@available(iOS 10.0, *)) {
+            if (self.player.timeControlStatus == AVPlayerTimeControlStatusPaused) {
+                [self.player seekToTime:CMTimeMake(0, 1)];
+                [self.player play];
+            }
+        } else {
+            // Fallback on earlier versions
         }
     }
 }
@@ -443,13 +461,15 @@
         
         if (result == AVAssetImageGeneratorSucceeded) {
             NSLog(@"%ld",count);
-            UIImageView *thumImgView = [[UIImageView alloc] initWithFrame:CGRectMake(50+count*weakSelf.IMG_Width, 0, weakSelf.IMG_Width, 70)];
-            thumImgView.image = [UIImage imageWithCGImage:img];
+            UIImage *image = [UIImage imageWithCGImage:img];
             dispatch_async(dispatch_get_main_queue(), ^{
+                UIImageView *thumImgView = [[UIImageView alloc] initWithFrame:CGRectMake(50+count*weakSelf.IMG_Width, 0, weakSelf.IMG_Width, 70)];
+                thumImgView.image = image;
                 [self->editScrollView addSubview:thumImgView];
                 self->editScrollView.contentSize = CGSizeMake(100+count*weakSelf.IMG_Width, 0);
+                count++;
             });
-            count++;
+            
         }
         
         if (result == AVAssetImageGeneratorFailed) {

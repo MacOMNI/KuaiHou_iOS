@@ -488,6 +488,22 @@
 		CEFA92D52241D1970015F7EE /* SendDynamicsHeadView.xib in Resources */ = {isa = PBXBuildFile; fileRef = CEFA92D42241D1970015F7EE /* SendDynamicsHeadView.xib */; };
 		CEFA92D92241DDF40015F7EE /* SendDynamicsHeadCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CEFA92D72241DDF40015F7EE /* SendDynamicsHeadCell.m */; };
 		CEFA92DA2241DDF40015F7EE /* SendDynamicsHeadCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CEFA92D82241DDF40015F7EE /* SendDynamicsHeadCell.xib */; };
+		CEFDA4C72265661100FA695C /* WhereMaybeVC.m in Sources */ = {isa = PBXBuildFile; fileRef = CEFDA4C52265661100FA695C /* WhereMaybeVC.m */; };
+		CEFDA4C82265661100FA695C /* WhereMaybeVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = CEFDA4C62265661100FA695C /* WhereMaybeVC.xib */; };
+		CEFDA4CF22656A9300FA695C /* WhereMaybeCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CEFDA4CD22656A9300FA695C /* WhereMaybeCell.m */; };
+		CEFDA4D022656A9300FA695C /* WhereMaybeCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CEFDA4CE22656A9300FA695C /* WhereMaybeCell.xib */; };
+		CEFDA4D32265848600FA695C /* DIYConsumeTypeView.m in Sources */ = {isa = PBXBuildFile; fileRef = CEFDA4D22265848600FA695C /* DIYConsumeTypeView.m */; };
+		CEFDA4D52265849500FA695C /* DIYConsumeTypeView.xib in Resources */ = {isa = PBXBuildFile; fileRef = CEFDA4D42265849500FA695C /* DIYConsumeTypeView.xib */; };
+		CEFDA4D82265897500FA695C /* DIYConsumeCommodityView.m in Sources */ = {isa = PBXBuildFile; fileRef = CEFDA4D72265897500FA695C /* DIYConsumeCommodityView.m */; };
+		CEFDA4DA2265897E00FA695C /* DIYConsumeCommodityView.xib in Resources */ = {isa = PBXBuildFile; fileRef = CEFDA4D92265897E00FA695C /* DIYConsumeCommodityView.xib */; };
+		CEFDA4DD22659EB400FA695C /* DIYShareView.m in Sources */ = {isa = PBXBuildFile; fileRef = CEFDA4DC22659EB400FA695C /* DIYShareView.m */; };
+		CEFDA4DF22659EBE00FA695C /* DIYShareView.xib in Resources */ = {isa = PBXBuildFile; fileRef = CEFDA4DE22659EBE00FA695C /* DIYShareView.xib */; };
+		CEFDA59B2265DB9000FA695C /* ZYBannerFooter.m in Sources */ = {isa = PBXBuildFile; fileRef = CEFDA5942265DB9000FA695C /* ZYBannerFooter.m */; };
+		CEFDA59C2265DB9000FA695C /* ZYBannerView.bundle in Resources */ = {isa = PBXBuildFile; fileRef = CEFDA5972265DB9000FA695C /* ZYBannerView.bundle */; };
+		CEFDA59D2265DB9000FA695C /* ZYBannerView.m in Sources */ = {isa = PBXBuildFile; fileRef = CEFDA5992265DB9000FA695C /* ZYBannerView.m */; };
+		CEFDA59E2265DB9000FA695C /* ZYBannerCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CEFDA59A2265DB9000FA695C /* ZYBannerCell.m */; };
+		CEFDA5CB2265EDD900FA695C /* SPCycleScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = CEFDA5C72265EDD800FA695C /* SPCycleScrollView.m */; };
+		CEFDA5CC2265EDD900FA695C /* SPageControl.m in Sources */ = {isa = PBXBuildFile; fileRef = CEFDA5C92265EDD900FA695C /* SPageControl.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -1301,6 +1317,32 @@
 		CEFA92D62241DDF40015F7EE /* SendDynamicsHeadCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SendDynamicsHeadCell.h; sourceTree = "<group>"; };
 		CEFA92D72241DDF40015F7EE /* SendDynamicsHeadCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SendDynamicsHeadCell.m; sourceTree = "<group>"; };
 		CEFA92D82241DDF40015F7EE /* SendDynamicsHeadCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SendDynamicsHeadCell.xib; sourceTree = "<group>"; };
+		CEFDA4C42265661100FA695C /* WhereMaybeVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WhereMaybeVC.h; sourceTree = "<group>"; };
+		CEFDA4C52265661100FA695C /* WhereMaybeVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WhereMaybeVC.m; sourceTree = "<group>"; wrapsLines = 0; };
+		CEFDA4C62265661100FA695C /* WhereMaybeVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WhereMaybeVC.xib; sourceTree = "<group>"; };
+		CEFDA4CC22656A9300FA695C /* WhereMaybeCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WhereMaybeCell.h; sourceTree = "<group>"; };
+		CEFDA4CD22656A9300FA695C /* WhereMaybeCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WhereMaybeCell.m; sourceTree = "<group>"; };
+		CEFDA4CE22656A9300FA695C /* WhereMaybeCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WhereMaybeCell.xib; sourceTree = "<group>"; };
+		CEFDA4D12265848600FA695C /* DIYConsumeTypeView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DIYConsumeTypeView.h; sourceTree = "<group>"; };
+		CEFDA4D22265848600FA695C /* DIYConsumeTypeView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DIYConsumeTypeView.m; sourceTree = "<group>"; };
+		CEFDA4D42265849500FA695C /* DIYConsumeTypeView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DIYConsumeTypeView.xib; sourceTree = "<group>"; };
+		CEFDA4D62265897500FA695C /* DIYConsumeCommodityView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DIYConsumeCommodityView.h; sourceTree = "<group>"; };
+		CEFDA4D72265897500FA695C /* DIYConsumeCommodityView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DIYConsumeCommodityView.m; sourceTree = "<group>"; };
+		CEFDA4D92265897E00FA695C /* DIYConsumeCommodityView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DIYConsumeCommodityView.xib; sourceTree = "<group>"; };
+		CEFDA4DB22659EB400FA695C /* DIYShareView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DIYShareView.h; sourceTree = "<group>"; };
+		CEFDA4DC22659EB400FA695C /* DIYShareView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DIYShareView.m; sourceTree = "<group>"; };
+		CEFDA4DE22659EBE00FA695C /* DIYShareView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DIYShareView.xib; sourceTree = "<group>"; };
+		CEFDA5942265DB9000FA695C /* ZYBannerFooter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZYBannerFooter.m; sourceTree = "<group>"; };
+		CEFDA5952265DB9000FA695C /* ZYBannerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZYBannerView.h; sourceTree = "<group>"; };
+		CEFDA5962265DB9000FA695C /* ZYBannerCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZYBannerCell.h; sourceTree = "<group>"; };
+		CEFDA5972265DB9000FA695C /* ZYBannerView.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = ZYBannerView.bundle; sourceTree = "<group>"; };
+		CEFDA5982265DB9000FA695C /* ZYBannerFooter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZYBannerFooter.h; sourceTree = "<group>"; };
+		CEFDA5992265DB9000FA695C /* ZYBannerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZYBannerView.m; sourceTree = "<group>"; };
+		CEFDA59A2265DB9000FA695C /* ZYBannerCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZYBannerCell.m; sourceTree = "<group>"; };
+		CEFDA5C72265EDD800FA695C /* SPCycleScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPCycleScrollView.m; sourceTree = "<group>"; };
+		CEFDA5C82265EDD900FA695C /* SPCycleScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPCycleScrollView.h; sourceTree = "<group>"; };
+		CEFDA5C92265EDD900FA695C /* SPageControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPageControl.m; sourceTree = "<group>"; };
+		CEFDA5CA2265EDD900FA695C /* SPPageControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPPageControl.h; sourceTree = "<group>"; };
 		F72C78518845A6C8D2F549AB /* Pods_KuaiHou_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KuaiHou_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -1392,6 +1434,9 @@
 				CE009F422264A03900A6AE81 /* WhereConsumeVC.h */,
 				CE009F432264A03900A6AE81 /* WhereConsumeVC.m */,
 				CE009F442264A03900A6AE81 /* WhereConsumeVC.xib */,
+				CEFDA4C42265661100FA695C /* WhereMaybeVC.h */,
+				CEFDA4C52265661100FA695C /* WhereMaybeVC.m */,
+				CEFDA4C62265661100FA695C /* WhereMaybeVC.xib */,
 			);
 			path = detail;
 			sourceTree = "<group>";
@@ -1400,10 +1445,10 @@
 			isa = PBXGroup;
 			children = (
 				CE009F0E2264507F00A6AE81 /* UIView+SDExtension.h */,
+				CE009F122264507F00A6AE81 /* UIView+SDExtension.m */,
 				CE009F0F2264507F00A6AE81 /* SDCycleScrollView.h */,
 				CE009F112264507F00A6AE81 /* SDCycleScrollView.m */,
 				CE009F102264507F00A6AE81 /* SDCollectionViewCell.h */,
-				CE009F122264507F00A6AE81 /* UIView+SDExtension.m */,
 				CE009F132264507F00A6AE81 /* SDCollectionViewCell.m */,
 				CE009F142264507F00A6AE81 /* PageControl */,
 			);
@@ -1879,6 +1924,8 @@
 		CECC0D4F223A4615001CF0A2 /* ThirdLib */ = {
 			isa = PBXGroup;
 			children = (
+				CEFDA5C62265EDC900FA695C /* SPCycleScrollView */,
+				CEFDA5932265DB9000FA695C /* ZYBannerView */,
 				CE009F0D2264507F00A6AE81 /* SDCycleScrollView */,
 				CE009EF4226421F500A6AE81 /* CustomTexrField */,
 				CECE803A225B494C0069FD55 /* VideoRecord */,
@@ -2361,6 +2408,18 @@
 				CE009F512264A55400A6AE81 /* WhereConsumeTwoCell.h */,
 				CE009F522264A55400A6AE81 /* WhereConsumeTwoCell.m */,
 				CE009F532264A55400A6AE81 /* WhereConsumeTwoCell.xib */,
+				CEFDA4CC22656A9300FA695C /* WhereMaybeCell.h */,
+				CEFDA4CD22656A9300FA695C /* WhereMaybeCell.m */,
+				CEFDA4CE22656A9300FA695C /* WhereMaybeCell.xib */,
+				CEFDA4D12265848600FA695C /* DIYConsumeTypeView.h */,
+				CEFDA4D22265848600FA695C /* DIYConsumeTypeView.m */,
+				CEFDA4D42265849500FA695C /* DIYConsumeTypeView.xib */,
+				CEFDA4D62265897500FA695C /* DIYConsumeCommodityView.h */,
+				CEFDA4D72265897500FA695C /* DIYConsumeCommodityView.m */,
+				CEFDA4D92265897E00FA695C /* DIYConsumeCommodityView.xib */,
+				CEFDA4DB22659EB400FA695C /* DIYShareView.h */,
+				CEFDA4DC22659EB400FA695C /* DIYShareView.m */,
+				CEFDA4DE22659EBE00FA695C /* DIYShareView.xib */,
 			);
 			path = WhereToPlay;
 			sourceTree = "<group>";
@@ -3228,6 +3287,31 @@
 			path = SendDynamics;
 			sourceTree = "<group>";
 		};
+		CEFDA5932265DB9000FA695C /* ZYBannerView */ = {
+			isa = PBXGroup;
+			children = (
+				CEFDA5942265DB9000FA695C /* ZYBannerFooter.m */,
+				CEFDA5952265DB9000FA695C /* ZYBannerView.h */,
+				CEFDA5962265DB9000FA695C /* ZYBannerCell.h */,
+				CEFDA5972265DB9000FA695C /* ZYBannerView.bundle */,
+				CEFDA5982265DB9000FA695C /* ZYBannerFooter.h */,
+				CEFDA5992265DB9000FA695C /* ZYBannerView.m */,
+				CEFDA59A2265DB9000FA695C /* ZYBannerCell.m */,
+			);
+			path = ZYBannerView;
+			sourceTree = "<group>";
+		};
+		CEFDA5C62265EDC900FA695C /* SPCycleScrollView */ = {
+			isa = PBXGroup;
+			children = (
+				CEFDA5C82265EDD900FA695C /* SPCycleScrollView.h */,
+				CEFDA5C72265EDD800FA695C /* SPCycleScrollView.m */,
+				CEFDA5CA2265EDD900FA695C /* SPPageControl.h */,
+				CEFDA5C92265EDD900FA695C /* SPageControl.m */,
+			);
+			path = SPCycleScrollView;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -3402,6 +3486,8 @@
 				CE28A7AB225239FD00B62032 /* MyProcessingOrderVC.xib in Resources */,
 				CE28A7672251D96000B62032 /* ManagementStoreChangeTimeCell.xib in Resources */,
 				CEE28F7D22436D0500C3D7E9 /* InfoDetailVC.xib in Resources */,
+				CEFDA4DA2265897E00FA695C /* DIYConsumeCommodityView.xib in Resources */,
+				CEFDA4D022656A9300FA695C /* WhereMaybeCell.xib in Resources */,
 				CEF2B36E224CE21100687E5B /* ReleaseEventSliderCell.xib in Resources */,
 				CEFA9231223F634D0015F7EE /* MainHomeVC.xib in Resources */,
 				CE0343B1225F51D900CB695C /* BillTypeCell.xib in Resources */,
@@ -3432,6 +3518,8 @@
 				CEACEB03224B8B7900A2AE2D /* RegisVC.xib in Resources */,
 				CE0343B6225F5DC500CB695C /* DIYSelectTimeView.xib in Resources */,
 				CEDE3B282260399B006D9EAE /* VoucherCell.xib in Resources */,
+				CEFDA4C82265661100FA695C /* WhereMaybeVC.xib in Resources */,
+				CEFDA4D52265849500FA695C /* DIYConsumeTypeView.xib in Resources */,
 				CE009F282264659F00A6AE81 /* WhereToPlayDetailInfoVC.xib in Resources */,
 				CE1FE541225C3B5700197B8D /* FillTargetStoreInfoVC.xib in Resources */,
 				CEE28F6B2243571800C3D7E9 /* GKNavigationBarViewController.bundle in Resources */,
@@ -3502,8 +3590,10 @@
 				CEFA9245223F63E70015F7EE /* MainMineVC.xib in Resources */,
 				CEFA926C223F99A90015F7EE /* NearbyDynamicsVC.xib in Resources */,
 				CE6B05B32248A2C500AD44D7 /* VoucherVC.xib in Resources */,
+				CEFDA4DF22659EBE00FA695C /* DIYShareView.xib in Resources */,
 				CE009F502264A53900A6AE81 /* WhereConsumeFirstCell.xib in Resources */,
 				CE034398225F072000CB695C /* OtherIncomeChildVC.xib in Resources */,
+				CEFDA59C2265DB9000FA695C /* ZYBannerView.bundle in Resources */,
 				CEFA92A8224091000015F7EE /* NewMessageCell.xib in Resources */,
 				CEE5FCF9225312970093D567 /* StartContentView.xib in Resources */,
 				CE28A7912252099200B62032 /* StoreBoxTypeVC.xib in Resources */,
@@ -3704,6 +3794,7 @@
 				CEDE3B3E22609956006D9EAE /* FindTaPlayVC.m in Sources */,
 				CE28A7612251C66C00B62032 /* ManagementStoreTextViewCell.m in Sources */,
 				CEE28F3B224355E100C3D7E9 /* UIColor+JXAdd.m in Sources */,
+				CEFDA4C72265661100FA695C /* WhereMaybeVC.m in Sources */,
 				CEF5DDE22254A1860025F406 /* DIYMoreView.m in Sources */,
 				CE9C4BF7223B4F9B00DE9DC1 /* PLEmptyView.m in Sources */,
 				CECEEEB62249C05E0068F267 /* WLButtonCountdownManager.m in Sources */,
@@ -3742,6 +3833,7 @@
 				CE9C4C00223B58F800DE9DC1 /* BaseNavigationController.m in Sources */,
 				CE009EF72264224100A6AE81 /* CustomTextField.m in Sources */,
 				CECEEEC6224A020C0068F267 /* MyDynamicsVC.m in Sources */,
+				CEFDA59E2265DB9000FA695C /* ZYBannerCell.m in Sources */,
 				CE1FE54D225C557300197B8D /* FillStoreSexTypeCell.m in Sources */,
 				CE5A642F224C642300891AC9 /* SelPhotoVC.m in Sources */,
 				CEACEB11224B9EC600A2AE2D /* SetPassWordVC.m in Sources */,
@@ -3810,6 +3902,7 @@
 				CEE28F3D224355E100C3D7E9 /* JXCategoryBaseCell.m in Sources */,
 				CE6B059D22486BC900AD44D7 /* SafeCenterVCTableViewCell.m in Sources */,
 				CE5A642A224C5CF600891AC9 /* FillInTheInfoVC.m in Sources */,
+				CEFDA4D82265897500FA695C /* DIYConsumeCommodityView.m in Sources */,
 				CECE8048225B494C0069FD55 /* CircleProgressView.m in Sources */,
 				CE28A76B2251E3D200B62032 /* StoreSingleProductVC.m in Sources */,
 				CEFA9235223F639D0015F7EE /* MainDynamicsVC.m in Sources */,
@@ -3818,11 +3911,14 @@
 				CE7F1B7B225D9CE800CC5B09 /* PartnerChildVC.m in Sources */,
 				CE6B05AC224884F300AD44D7 /* HelpVC.m in Sources */,
 				CE9C4C06223B5ED800DE9DC1 /* UIImage+BundleImage.m in Sources */,
+				CEFDA59D2265DB9000FA695C /* ZYBannerView.m in Sources */,
 				CEE28F29224355E100C3D7E9 /* JXCategoryDotCell.m in Sources */,
 				CE009F3B226483FA00A6AE81 /* RatingStarCell.m in Sources */,
 				CE9C4C09223B650C00DE9DC1 /* BaseViewController.m in Sources */,
 				CED7ECBB225390E900E0BFF3 /* MyOrderDetailItemCell.m in Sources */,
+				CEFDA4CF22656A9300FA695C /* WhereMaybeCell.m in Sources */,
 				CE1FE549225C47BB00197B8D /* UITextField+Configuration.m in Sources */,
+				CEFDA59B2265DB9000FA695C /* ZYBannerFooter.m in Sources */,
 				CE9C4BFA223B4F9B00DE9DC1 /* PLScrollViewEmptyView.m in Sources */,
 				CE009F272264659F00A6AE81 /* WhereToPlayDetailInfoVC.m in Sources */,
 				CECEEF04224A45CE0068F267 /* OpenStoreVC.m in Sources */,
@@ -3866,6 +3962,7 @@
 				CEE28F2E224355E100C3D7E9 /* JXCategoryTitleImageCellModel.m in Sources */,
 				CEE3F667224DE75300151BE7 /* ManagementStoreActivityCell.m in Sources */,
 				CEFA927A223FA59A0015F7EE /* BaseCell.m in Sources */,
+				CEFDA4DD22659EB400FA695C /* DIYShareView.m in Sources */,
 				CE1FE56F225CB38E00197B8D /* OpenPartnerVC.m in Sources */,
 				CEF5DDC922545D8B0025F406 /* ChecklistVC.m in Sources */,
 				CEDE3B1D22602B47006D9EAE /* SettlementDetaildVC.m in Sources */,
@@ -3894,6 +3991,7 @@
 				CE034374225ED4AF00CB695C /* AppCurrencyItemCollectionViewCell.m in Sources */,
 				CECE8045225B494C0069FD55 /* ShortVideoSession.m in Sources */,
 				CE0343A6225F2C6600CB695C /* QuitMoneyCodeCell.m in Sources */,
+				CEFDA5CC2265EDD900FA695C /* SPageControl.m in Sources */,
 				CECEEF49224B17680068F267 /* CALayer+XibConfiguration.m in Sources */,
 				CEFA9270223F99BB0015F7EE /* FavorableDynamicsVC.m in Sources */,
 				CEF5DDEE2254B6E10025F406 /* DIYFilterView.m in Sources */,
@@ -3920,6 +4018,7 @@
 				CEE28EAA224329A900C3D7E9 /* MainSetVC.m in Sources */,
 				CEE28F23224355E100C3D7E9 /* JXCategoryIndicatorBallView.m in Sources */,
 				CE9C4C1E223B7B3F00DE9DC1 /* AppUrlConfig.m in Sources */,
+				CEFDA5CB2265EDD900FA695C /* SPCycleScrollView.m in Sources */,
 				CEE28F682243571800C3D7E9 /* UINavigationItem+GKCategory.m in Sources */,
 				CECC0D6E223A5849001CF0A2 /* MyTool.m in Sources */,
 				CECE8049225B494C0069FD55 /* VideoFileManager.m in Sources */,
@@ -3927,6 +4026,7 @@
 				CE28A78B2252019600B62032 /* StorePackageVC.m in Sources */,
 				CECEEEDD224A17620068F267 /* MyPhotoVC.m in Sources */,
 				CE034388225EFA8600CB695C /* AppCurrencyDetailCell.m in Sources */,
+				CEFDA4D32265848600FA695C /* DIYConsumeTypeView.m in Sources */,
 				CE9C4C15223B740D00DE9DC1 /* NetWorkManager.m in Sources */,
 				CE1FE563225C90CD00197B8D /* AccessListVC.m in Sources */,
 			);

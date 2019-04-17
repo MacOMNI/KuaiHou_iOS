@@ -63,12 +63,12 @@ static NetWorkManager* _instance = nil;
 - (NSMutableDictionary *)params:(NSDictionary *)params
 {
     //    设置请求头信息
-//    NSString *token = [UserInfoManager sharedManager].currentUserInfo.token;
-//    NSString *beforeMd5 = [NSString stringWithFormat:@"%@{%@}",KappNo,Ksecret];
-//    NSString *afterMd5 = [MyTool md5:beforeMd5];
-//    [self.sessionManager.requestSerializer setValue:afterMd5 forHTTPHeaderField:@"sign"];
-//    [self.sessionManager.requestSerializer setValue:KappNo forHTTPHeaderField:@"appNo"];
-//    [self.sessionManager.requestSerializer setValue:[MyTool isNotNull:token] forHTTPHeaderField:@"token"];
+    //    NSString *token = [UserInfoManager sharedManager].currentUserInfo.token;
+    //    NSString *beforeMd5 = [NSString stringWithFormat:@"%@{%@}",KappNo,Ksecret];
+    //    NSString *afterMd5 = [MyTool md5:beforeMd5];
+    //    [self.sessionManager.requestSerializer setValue:afterMd5 forHTTPHeaderField:@"sign"];
+    //    [self.sessionManager.requestSerializer setValue:KappNo forHTTPHeaderField:@"appNo"];
+    //    [self.sessionManager.requestSerializer setValue:[MyTool isNotNull:token] forHTTPHeaderField:@"token"];
     NSMutableDictionary* tempParams = [NSMutableDictionary dictionaryWithDictionary:params];
     
     
@@ -137,73 +137,30 @@ static NetWorkManager* _instance = nil;
         self->_timeOut = 0;
         //[self.taskDict removeObjectForKey:urlString];
         [self removeTask:task];
-//        BOOL isSuccess = [responseObject[CODE_NAME] isEqualToString:CODE_SUCCESS];
-//        BOOL tokenInvalid = [responseObject[CODE_NAME] isEqualToString:CODE_FAILURE]||[responseObject[CODE_NAME] isEqualToString:CODE_FAILURE1]||[responseObject[CODE_NAME] isEqualToString:CODE_FAILURE2];
-//        //登录token失效
-//        if (tokenInvalid) {
-//            [[NSNotificationCenter defaultCenter] postNotificationName:KDidTokenInvalid object:responseObject[CODE_NAME]];
-//        }
-        
-        if (success) {
-//            success(isSuccess,responseObject);
-        }
-        
-    } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
-        NSLog(@"错误信息:%@",error);
-        self->_timeOut = 0;
-        [self removeTask:task];
-        //  [self.taskDict removeObjectForKey:urlString];
-        if (fail) {
-            fail();
-        }
-    }];
-    [self addTask:dataTask];
-    
-}
-#pragma mark -上传图片
--(void)POSTUpLoadImageRequestUrlString:(NSString *)urlString
-                                params:(id)params
-             constructingBodyWithBlock:(void (^)(id <AFMultipartFormData> formData))block
-                              progress:(void (^)(NSProgress * uploadProgress))progress
-                               success:(ResultBlock)success
-                                  fail:(FailError)fail
-{
-    NSString *baseUrl = BASE_URL(urlString);
-    [self cancelUrl:baseUrl];
-    [_sessionManager.requestSerializer willChangeValueForKey:@"timeoutInterval"];
-    _sessionManager.requestSerializer.timeoutInterval = _timeOut<=0?default_timeOut:_timeOut;
-    [_sessionManager.requestSerializer didChangeValueForKey:@"timeoutInterval"];
-    
-    NSURLSessionDataTask *dataTask = [_sessionManager POST:baseUrl parameters:params constructingBodyWithBlock:^(id<AFMultipartFormData>  _Nonnull formData) {
-        block(formData);
-    } progress:^(NSProgress * _Nonnull uploadProgress) {
-        progress(uploadProgress);
-    } success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
-        self->_timeOut = 0;
-        [self removeTask:task];
-        //   [self.taskDict removeObjectForKey:urlString];
         //        BOOL isSuccess = [responseObject[CODE_NAME] isEqualToString:CODE_SUCCESS];
         //        BOOL tokenInvalid = [responseObject[CODE_NAME] isEqualToString:CODE_FAILURE]||[responseObject[CODE_NAME] isEqualToString:CODE_FAILURE1]||[responseObject[CODE_NAME] isEqualToString:CODE_FAILURE2];
         //        //登录token失效
         //        if (tokenInvalid) {
         //            [[NSNotificationCenter defaultCenter] postNotificationName:KDidTokenInvalid object:responseObject[CODE_NAME]];
         //        }
+        
         if (success) {
             //            success(isSuccess,responseObject);
         }
+        
     } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
         NSLog(@"错误信息:%@",error);
+        self->_timeOut = 0;
         [self removeTask:task];
         //  [self.taskDict removeObjectForKey:urlString];
-        self->_timeOut = 0;
         if (fail) {
             fail();
         }
     }];
-    
     [self addTask:dataTask];
     
 }
+
 
 #pragma mark -get请求方式获取数据
 - (void)GETNetworkRequestUrlString:(NSString *)urlString
@@ -223,15 +180,15 @@ static NetWorkManager* _instance = nil;
         self->_timeOut = 0;
         [self removeTask:task];
         //   [self.taskDict removeObjectForKey:urlString];
-//        BOOL isSuccess = [responseObject[CODE_NAME] isEqualToString:CODE_SUCCESS];
-//        BOOL tokenInvalid = [responseObject[CODE_NAME] isEqualToString:CODE_FAILURE]||[responseObject[CODE_NAME] isEqualToString:CODE_FAILURE1]||[responseObject[CODE_NAME] isEqualToString:CODE_FAILURE2];
-//        //登录token失效
-//        if (tokenInvalid) {
-//            [[NSNotificationCenter defaultCenter] postNotificationName:KDidTokenInvalid object:responseObject[CODE_NAME]];
-//        }
+        //        BOOL isSuccess = [responseObject[CODE_NAME] isEqualToString:CODE_SUCCESS];
+        //        BOOL tokenInvalid = [responseObject[CODE_NAME] isEqualToString:CODE_FAILURE]||[responseObject[CODE_NAME] isEqualToString:CODE_FAILURE1]||[responseObject[CODE_NAME] isEqualToString:CODE_FAILURE2];
+        //        //登录token失效
+        //        if (tokenInvalid) {
+        //            [[NSNotificationCenter defaultCenter] postNotificationName:KDidTokenInvalid object:responseObject[CODE_NAME]];
+        //        }
         
         if (success) {
-//            success(isSuccess,responseObject);
+            //            success(isSuccess,responseObject);
         }
     } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
         NSLog(@"错误信息:%@",error);
@@ -287,7 +244,37 @@ static NetWorkManager* _instance = nil;
     }];
 }
 
-
+#pragma mark 上传图片
+-(void)postUpLoadImageWithUrl:(NSString *)urlString params:(NSDictionary *)params imageArray:(NSArray <UIImage *> *)imageArray success:(ResultBlock)success fail:(FailError)fail{
+    NSString *baseUrl = BASE_URL(urlString);
+    //设置返回格式
+    AFHTTPResponseSerializer *responseSerializer =[AFHTTPResponseSerializer serializer];
+    _sessionManager.responseSerializer = responseSerializer;
+    [_sessionManager.requestSerializer willChangeValueForKey:@"timeoutInterval"];
+    _sessionManager.requestSerializer.timeoutInterval = _timeOut<=0?default_timeOut:_timeOut;
+    [_sessionManager.requestSerializer didChangeValueForKey:@"timeoutInterval"];
+    [_sessionManager POST:baseUrl parameters:params constructingBodyWithBlock:^(id<AFMultipartFormData>  _Nonnull formData) {
+        self->_timeOut = 0;
+        for (int i = 0; i < imageArray.count; i++) {
+            NSData *imageData = UIImageJPEGRepresentation(imageArray[i], 0.5);
+            [formData appendPartWithFileData:imageData name:[NSString stringWithFormat:@"field_%d", i] fileName:[NSString stringWithFormat:@"field_%d.jpg",i] mimeType:@"image/jpeg"];
+        }
+        
+    } progress:^(NSProgress * _Nonnull uploadProgress) {
+        
+    } success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
+        self->_timeOut = 0;
+        if (success) {
+            success(YES,responseObject);
+        }
+        
+    } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
+        self->_timeOut = 0;
+        if (fail) {
+            fail();
+        }
+    }];
+}
 
 
 #pragma mark -

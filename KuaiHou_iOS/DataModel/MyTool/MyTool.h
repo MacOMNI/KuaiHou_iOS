@@ -160,6 +160,10 @@ typedef void(^CancelAlertBtnBlock)(UIAlertAction * action);
  */
 +(void)playVideoByPath:(NSString *)videPath;
 
+
+
++(void)fixTopImageBtn:(UIButton *)btn Spacing:(CGFloat)spacing;
+
 @end
 
 NS_ASSUME_NONNULL_END

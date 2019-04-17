@@ -7,6 +7,7 @@
 //
 
 #import "BaseView.h"
+#import "SPCycleScrollView.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -17,6 +18,8 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, assign) CGRect        bgImgFrame;
 @property (nonatomic, assign) CGFloat       bgImgH;
 @property (nonatomic, strong) UILabel *numberLab;
+@property (nonatomic, strong) SPCycleScrollView *cycleScrollView;
+
 
 - (void)scrollViewDidScroll:(CGFloat)offsetY;
 

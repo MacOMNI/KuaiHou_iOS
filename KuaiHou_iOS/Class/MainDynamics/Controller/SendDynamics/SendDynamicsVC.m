@@ -277,13 +277,22 @@
 
 -(void)sendAction{
     if (self.videoPath.length > 0) {
-        [APIManagerInstance postUploadWithUrl:@"/kuaihou-platform/api/user/updateUserImageOrVideoList.do" params:@{@"uId":@"20000333", @"type":@"2"} fileData:[NSData dataWithContentsOfFile:self.videoPath] fileType:@"mp4" success:^(BOOL isSuccess, id  _Nonnull responseObject) {
+        [APIManagerInstance postUploadWithUrl:@"/kuaihou-platform/api/dynamic/addUserDynamic.do" params:@{@"uId":@"20000333", @"type":@"2",@"content":@"sssssss"} fileData:[NSData dataWithContentsOfFile:self.videoPath] fileType:@"mp4" success:^(BOOL isSuccess, id  _Nonnull responseObject) {
             NSLog(@"%@", responseObject);
             if (isSuccess) {
                 
             }
         } fail:^{
             NSLog(@"失败");
+        }];
+    }
+    if (self.selectPhotoArr.count > 0) {
+        NSMutableDictionary *dict = [NSMutableDictionary dictionaryWithDictionary:@{@"uId":@"20000333", @"type":@"1", @"longitude":@"22.22", @"latitude":@"22.222"}];
+        [dict setObject:self.contentStr forKey:@"content"];
+        [APIManagerInstance postUpLoadImageWithUrl:@"/kuaihou-platform/api/dynamic/addUserDynamic.do" params:dict imageArray:self.selectPhotoArr success:^(BOOL isSuccess, id  _Nonnull responseObject) {
+            NSLog(@"%@", responseObject);
+        } fail:^{
+            
         }];
     }
     

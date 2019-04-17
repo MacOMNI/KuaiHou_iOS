@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="DIYConsumeCommodityView">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="450"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="UGM-C5-nci">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="350"/>
+                    <color key="backgroundColor" red="0.8862745098" green="0.26274509800000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="350" id="c9Z-mr-gA8"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="中包（4~7人）" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JOb-eR-POf">
+                    <rect key="frame" x="15" y="365" width="104" height="14"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="14" id="dtg-Up-4BP"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="伏特加1支+软饮6瓶+百威啤酒1箱+小吃4份" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="INK-EL-hA7">
+                    <rect key="frame" x="15" y="389" width="384" height="18"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <color key="textColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="原价：￥1888" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NqB-RK-xmv">
+                    <rect key="frame" x="15" y="423" width="78" height="12"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="12" id="HYd-Xc-9eP"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <color key="textColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="原价：￥1888" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ooe-2g-5UD">
+                    <rect key="frame" x="118" y="422" width="78" height="14.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <color key="textColor" red="0.8862745098" green="0.26274509800000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="UGM-C5-nci" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="3l9-jh-7iv"/>
+                <constraint firstItem="INK-EL-hA7" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="15" id="47o-CI-o15"/>
+                <constraint firstItem="ooe-2g-5UD" firstAttribute="leading" secondItem="NqB-RK-xmv" secondAttribute="trailing" constant="25" id="Faj-NT-04e"/>
+                <constraint firstItem="JOb-eR-POf" firstAttribute="top" secondItem="UGM-C5-nci" secondAttribute="bottom" constant="15" id="HVu-Sc-4Ph"/>
+                <constraint firstItem="JOb-eR-POf" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="15" id="LBG-3q-BfW"/>
+                <constraint firstItem="NqB-RK-xmv" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="15" id="RVx-U7-hfg"/>
+                <constraint firstAttribute="trailing" secondItem="UGM-C5-nci" secondAttribute="trailing" id="azK-vc-I38"/>
+                <constraint firstItem="INK-EL-hA7" firstAttribute="top" secondItem="JOb-eR-POf" secondAttribute="bottom" constant="10" id="bGT-Ss-mur"/>
+                <constraint firstAttribute="bottom" secondItem="NqB-RK-xmv" secondAttribute="bottom" constant="15" id="oMA-Vj-9hD"/>
+                <constraint firstItem="ooe-2g-5UD" firstAttribute="centerY" secondItem="NqB-RK-xmv" secondAttribute="centerY" id="q7T-Gf-AZo"/>
+                <constraint firstAttribute="trailing" secondItem="INK-EL-hA7" secondAttribute="trailing" constant="15" id="sc1-oM-nFY"/>
+                <constraint firstItem="UGM-C5-nci" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="wOm-9X-GwP"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <userDefinedRuntimeAttributes>
+                <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                    <integer key="value" value="5"/>
+                </userDefinedRuntimeAttribute>
+                <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+            </userDefinedRuntimeAttributes>
+        </view>
+    </objects>
+</document>
